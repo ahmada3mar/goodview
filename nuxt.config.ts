@@ -44,11 +44,12 @@ export default defineNuxtConfig({
 
 
   },
-  nitro: {
-    output: {
-      publicDir: path.join(__dirname, '../fast_static/docs')
-    }
-  },
+  // nitro: {
+
+  //   output: {
+  //     publicDir: path.join(__dirname, '../fast_static/docs')
+  //   }
+  // },
 
   site: { 
     url: 'https://www.goodview-moving.com', 
