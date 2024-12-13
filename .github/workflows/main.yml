@@ -3,29 +3,33 @@ name: Deploy Nuxt 3 Static Site
 on:
   push:
     branches:
-      - master
-
+      - master # Remove this line if your primary branch is "main"
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    name: Build and Push
     steps:
-      - name: Checkout repository
+      - name: git-checkout
         uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+        
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+            node-version: 16.20.2
 
-      - name: Install dependencies
+      - name: Install all dependencies
         run: npm install
 
-      - name: Build Nuxt 3 static site
-        run: npm run generate
+      - name: Build
+        run: npm run generate # The build command of your project
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          folder: dist
+
+    
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build # The branch name where you want to push the assets
+          FOLDER: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+          MESSAGE: "Build: ({sha}) {msg}" # The commit message
