@@ -8,14 +8,14 @@
       
       <!-- Text Content -->
       <div class="flex flex-col items-center gap-5 w-full text-center">
-        <h2
+        <h1
         :class="{
         'opacity-100 translate-y-0': isVisible,
         'opacity-0 -translate-y-5': !isVisible,
       }"        
         class="transition-all duration-700 ease-in-out text-primary-500 text-3xl md:text-4xl lg:text-5xl font-extrabold">
          {{ props.title }}
-        </h2>
+        </h1>
         <h2 
         :class="{
         'opacity-100': isVisible,
@@ -35,7 +35,6 @@
 </template>
 
 <script setup>
-import background from "../public/assets/banner-mini.webp"
 
 
 const isVisible = ref(false)
@@ -50,7 +49,7 @@ onMounted(() => {
 
 const props = defineProps({
   background:{
-    default:background
+    default:''
   },
   title:{
     type:String,

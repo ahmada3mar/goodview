@@ -1,6 +1,8 @@
 <template>
+    <div>
+
     <div class="flex flex-col h-full">
-        <Banner :background="background" class="h-[20rem] md:h-[30rem]" title="Tips" text="Moving can be a stressful and time- consuming process, but with some planning
+        <Banner background="/assets/faq.webp" class="h-[20rem] md:h-[30rem]" title="Tips" text="Moving can be a stressful and time- consuming process, but with some planning
 and preparation, it can also be a smooth and hassle-free experience. Here are
 some tips and advice from GoodView, to
 help you with your move." />
@@ -62,10 +64,11 @@ help you with your move." />
 
 
     </div>
+</div>
+
 </template>
 
 <script setup>
-import background from "/public/assets/faq.webp"
 
 const items = [{
     label: 'FAQs',

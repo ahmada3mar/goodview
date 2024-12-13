@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col h-full">
         <Banner
-        :background="background" 
+        background="/assets/aboutus.jpg" 
         class="h-[20rem] md:h-[25rem]"
         title="About Us"
-            text="We provide expertise for planning your move and can handle any moving challenge with practical solutions and professionalism." />
+            text="We are a moving company based in New Jersey, services all North/South East Coast excluding Florida." />
 
         <div 
 
@@ -13,7 +13,7 @@
             <h2 class="text-3xl md:text-4xl mb-3 font-extrabold">WHO WE ARE</h2>
 
             <p class="text-lg md:text-xl my-2">
-                After planning and completing a huge number of moves across Totowa, NJ, Good View Moving and Storage
+                After planning and completing a huge number of moves, Good View Moving and Storage
                 understands that we aren't just transporting items, but transferring people's lives from the old, into
                 the new. Whatever your move requires, our experienced team knows that no two projects are alike and that
                 every customer has particular needs. In fact, we even have pick up and delivery service nationwide!
@@ -101,6 +101,12 @@
                             </div>
                             <p class="text-white">Long Term Storage</p>
                         </div>
+                        <div class="flex flex-col gap-2 w-20">
+                            <div class="bg-primary-500 flex justify-center items-center p-2 w-20 h-20  rounded-md">
+                                <UIcon role="button" name="i-carbon-delivery-truck" class="w-20 h-20 text-black" />
+                            </div>
+                            <p class="text-white">Long Distance Moves</p>
+                        </div>
 
 
 
@@ -140,9 +146,11 @@
                         We are the leading choice in the moving industry, offering unparalleled service quality at the most competitive prices. Our expert team delivers exceptional care and efficiency, ensuring your move is seamless and stress-free. With us, you get the perfect balance of excellence and affordability, making your satisfaction our top priority.
                     </p>
 
-                    <UButton
-                        class="md:mr-auto lg:mr-0 border hover:border-black border-primary-500 bg-black hover:bg-primary-500 hover:text-black transition-all px-7 py-3 ml-auto font-extrabold"
+                    <a class="md:mr-auto lg:mr-0  ml-auto " href="mailto:info@goodview-moving.com">
+                        <UButton
+                        class="border py-3 px-7  hover:border-black border-primary-500 bg-black hover:bg-primary-500 hover:text-black transition-all font-extrabold"
                         label="Contact us" />
+                    </a>
 
                 </div>
 
@@ -161,7 +169,6 @@
 </template>
 
 <script setup>
-import background from "/public/assets/aboutus.jpg"
 
 
 const isVisible = ref([false,false,false])

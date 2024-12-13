@@ -13,6 +13,8 @@
     "@bazzite/nuxt-optimized-images": "^0.4.0",
     "@nuxt/image": "^1.8.1",
     "@nuxt/ui": "^2.18.7",
+    "@nuxtjs/robots": "5.0.0",
+    "@nuxtjs/sitemap": "7.0.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.13.2",
     "nuxt-lazyimage": "^2.0.1",

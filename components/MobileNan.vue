@@ -6,7 +6,7 @@
         w-full`
         ">
         <div class="flex justify-between p-5">
-            <img class="h-10" src="~/assets/good-view-logo-white.png" alt="">
+            <img class="h-10" src="~/assets/good-view-logo-white.png" alt="good view logo">
         </div>
 
         <div class="flex flex-col ">
