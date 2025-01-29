@@ -43,3 +43,7 @@ html{
   opacity: 0;
   filter: blur(1rem);
 }
+
+.relative.flex.items-start{
+  align-items: center !important;
+}
