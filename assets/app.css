@@ -21,3 +21,7 @@
 .lazy-image.loaded {
   opacity: 1;
 }
+
+.relative.flex.items-start{
+  align-items: center !important;
+}
