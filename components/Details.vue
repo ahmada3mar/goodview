@@ -3,9 +3,9 @@
   
       <!-- Main Heading Section -->
       <div class="flex flex-col my-20 md:my-36 justify-center items-center text-center">
-        <h2 class="text-4xl md:text-6xl mb-5">Moving Company in Totowa, NJ</h2>
+        <h2 class="text-4xl md:text-6xl mb-5">Moving Company in USA</h2>
         <p class="text-lg md:text-xl">
-          Every individual or company has considered relocation at some point or another. Why not make your move as smooth as possible and make sure that your possessions are in capable hands? Moving inside, or away from, Totowa, NJ needn't be stressful once you enlist the assistance of the seasoned moving professionals at GoodView Moving And Storage.
+          Every individual or company has considered relocation at some point or another. Why not make your move as smooth as possible and make sure that your possessions are in capable hands? Moving inside, or away from, USA needn't be stressful once you enlist the assistance of the seasoned moving professionals at GoodView Moving And Storage.
         </p>
       </div>
   
@@ -33,7 +33,7 @@
         <div class="flex flex-col gap-5 flex-1">
           <h2 class="text-4xl md:text-6xl mb-5">Local or Long Distance Moves</h2>
           <p class="text-lg md:text-xl">
-            Whether you are moving inside Totowa, NJ or outside of it, we're there to make certain all your property is transported without incident. We map out our routes to be sure that your possessions are on the road for as short a time as possible. When we wrap and package, our customers can rest assured that we always keep in mind that we need to protect any fragile items.
+            Whether you are moving inside USA or outside of it, we're there to make certain all your property is transported without incident. We map out our routes to be sure that your possessions are on the road for as short a time as possible. When we wrap and package, our customers can rest assured that we always keep in mind that we need to protect any fragile items.
           </p>
         </div>
   

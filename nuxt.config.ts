@@ -24,13 +24,13 @@ export default defineNuxtConfig({
         pageTransition: { name: 'page', mode: 'out-in' },
         layoutTransition: false,
         head: {
-          title: 'Reliable Moving Services in Totowa, NJ | Moving | Storing | Relocation',
+          title: 'Reliable Moving Services in USA | Moving | Storing | Relocation',
           meta: [
-            { hid: 'description', name: 'description', content: 'Get trusted moving services in Totowa, NJ, for home, office, Storing, and Relocation. Professional packing, safe transportation, and affordable pricing guaranteed.' },
-            { hid: 'keywords', name: 'keywords', content: 'Totowa NJ movers, moving company Totowa, home movers, office relocation, long-distance moving' },
-            { name: 'author', content: 'Totowa Movers' },
-            { property: 'og:title', content: 'Reliable Moving Services in Totowa, NJ | Home & Office Movers' },
-            { property: 'og:description', content: 'Professional movers offering local, long-distance, and storage services in Totowa, NJ.' },
+            { hid: 'description', name: 'description', content: 'Get trusted moving services in USA, for home, office, Storing, and Relocation. Professional packing, safe transportation, and affordable pricing guaranteed.' },
+            { hid: 'keywords', name: 'keywords', content: 'USA movers, moving company USA, home movers, office relocation, long-distance moving' },
+            { name: 'author', content: 'USA Movers' },
+            { property: 'og:title', content: 'Reliable Moving Services in USA | Home & Office Movers' },
+            { property: 'og:description', content: 'Professional movers offering local, long-distance, and storage services in USA.' },
             { property: 'og:type', content: 'website' },
           ],
           link: [

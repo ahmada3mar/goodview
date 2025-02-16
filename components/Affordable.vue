@@ -49,7 +49,7 @@
               </div>
               <h2 class="text-2xl md:text-3xl font-bold">Pro Moving Crews</h2>
               <p class="text-lg md:text-xl">
-                Our staff, including sales advisers, packers, and vehicle operators, are well trained and experienced in handling local or long-distance moves in Totowa, NJ.
+                Our staff, including sales advisers, packers, and vehicle operators, are well trained and experienced in handling local or long-distance moves in USA.
               </p>
             </div>
           </UCard>
@@ -72,7 +72,7 @@
         <!-- Footer Section -->
         <div class="flex flex-col my-16 md:my-36 justify-center items-center px-4 md:px-36">
           <p class="text-lg md:text-xl px-4 text-center">
-            For local or long-distance moves in Totowa, NJ, exceptional residential or commercial services, protected storage, and more, check out the moving professionals at GOOD VIEW MOVING AND STORAGE.
+            For local or long-distance moves in USA, exceptional residential or commercial services, protected storage, and more, check out the moving professionals at GOOD VIEW MOVING AND STORAGE.
           </p>
           <UButton class="mt-10 p-3 px-7 rounded-full" size="xl" type="submit" label="Get a quote" />
         </div>
