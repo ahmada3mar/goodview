@@ -532,7 +532,7 @@ const submit = async () => {
             break;
         case 3:
             isLoading.value = true
-            $fetch('http://127.0.0.1:8000/api/quote/' + quoteForm.value.quote_id, {
+            $fetch('https://api.goodview-moving.com/api/quote/' + quoteForm.value.quote_id, {
                 method: 'POST',
                 body: {
                     firstName: quoteForm.value.firstName,
