@@ -201,7 +201,7 @@
 
                             <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                                 <label class="block w-20 font-bold text-gray-100 text-xl">From</label>
-                                <div class="flex gap-4 flex-1" >
+                                <div class="flex-col gap-5 flex-1 md:flex-row flex" >
 
                                 <UInput type="text"
                                     :inputClass="`${errors.fromZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
@@ -221,7 +221,7 @@
 
                             <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                                 <label class="block w-20 font-bold text-gray-100 text-xl">To</label>
-                                <div class="flex flex-1 gap-4" >
+                                <div class="flex-col gap-5 flex-1 md:flex-row flex" >
                                 <UInput type="text"
                                     :inputClass="`${errors.toZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
                                     @update:model-value="errors.toZIP = false" v-model="quoteForm.toZIP"
