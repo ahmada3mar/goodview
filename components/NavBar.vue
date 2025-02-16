@@ -24,6 +24,8 @@
             <UIcon role="button" name="i-carbon-add" class="w-5 h-5 text-primary-500" />
           </div>
         </ULink>
+        <a class="text-gray-100 font-semibold" 
+        href="tel:+19737821339">+1 973-782-1339</a>
         <ULink
         to="/quote"
           class="bg-primary-500 py-2 px-3 md:px-7 rounded-lg border border-primary-500 hover:bg-black hover:text-white text-black font-bold"

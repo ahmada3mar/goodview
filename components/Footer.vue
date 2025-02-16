@@ -19,6 +19,8 @@
                         <ULink to="/" class="text-start" >Home</ULink>
                         <ULink to="/about-us" class="text-start" >About Us</ULink>
                         <ULink to="/help" class="text-start" >Help</ULink>
+                        <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/RightsandResponsibilitiesBooklet_2022Update.pdf" class="text-start" >Customer rights</ULink>
+                        <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/ReadytoMoveBrochure_2022Update.pdf" class="text-start" >Ready to move Brochure</ULink>
                     </div>
                 </div>
 

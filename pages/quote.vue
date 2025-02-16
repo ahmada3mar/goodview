@@ -198,34 +198,42 @@
                                     size="xl" />
                             </div>
 
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">City</label>
-                                <UInput @update:model-value="errors.city = false" v-model="quoteForm.city"
-                                    class="flex-1 relative" icon="i-carbon-home"
-                                    :inputClass="`${errors.city ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                    size="xl" placeholder="city" />
-                            </div>
-
-
 
                             <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                                 <label class="block w-20 font-bold text-gray-100 text-xl">From</label>
-                                <UInput type="number"
+                                <div class="flex gap-4 flex-1" >
+
+                                <UInput type="text"
                                     :inputClass="`${errors.fromZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
                                     @update:model-value="errors.fromZIP = false" v-model="quoteForm.fromZIP"
+                                    class=" relative" icon="i-carbon-location-heart-filled"
+                                    inputClass=" rounded-none bg-[#171820] text-slate-300 ring-0 h-14" size="xl"
+                                    placeholder="ZIP code" />
+                                <UInput type="text"
+                                    :inputClass="`${errors.from_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                    @update:model-value="errors.from_address = false" v-model="quoteForm.from_address"
                                     class="flex-1 relative" icon="i-carbon-location-heart-filled"
                                     inputClass="flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14" size="xl"
-                                    placeholder="From ZIP code" />
+                                    placeholder="Address" />
+                                </div>
+
                             </div>
 
-                            <!-- Phone Number Input -->
                             <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                                 <label class="block w-20 font-bold text-gray-100 text-xl">To</label>
-                                <UInput type="number"
+                                <div class="flex flex-1 gap-4" >
+                                <UInput type="text"
                                     :inputClass="`${errors.toZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
                                     @update:model-value="errors.toZIP = false" v-model="quoteForm.toZIP"
+                                    class="relative" icon="i-carbon-location-heart-filled" size="xl"
+                                    placeholder="ZIP code" />
+                                <UInput type="text"
+                                    :inputClass="`${errors.to_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                    @update:model-value="errors.to_address = false" v-model="quoteForm.to_address"
                                     class="flex-1 relative" icon="i-carbon-location-heart-filled" size="xl"
-                                    placeholder="To ZIP code" />
+                                    placeholder="Address" />
+                                </div>
+
                             </div>
                         </div>
 
@@ -303,19 +311,19 @@ const isLoading = ref(false)
 
 
 const houseTypes = [
-    { value: 1, label: "Small Studio" },
-    { value: 2, label: "Large Studio" },
-    { value: 3, label: "1 Bedroom Apt" },
-    { value: 4, label: "1 Bedroom Apt Large" },
-    { value: 5, label: "2 Bedroom Apt" },
-    { value: 6, label: "2 Bedroom Apt Large" },
-    { value: 7, label: "3 Bedroom Apt" },
-    { value: 9, label: "4+ Bedroom Apt" },
-    { value: 10, label: "2 Bedroom House" },
-    { value: 11, label: "3 Bedroom House" },
-    { value: 12, label: "4+ Bedroom House" },
-    { value: 101, label: "Small Office" },
-    { value: 102, label: "Large Office" },
+    { value: "studio", label: "Studio" },
+    { value: "one", label: "One bedroom" },
+    { value: "two", label: "Two bedrooms" },
+    { value: "three", label: "Three bedrooms" },
+    { value: "four", label: "Four bedrooms" },
+    { value: "five", label: "Five bedrooms" },
+    { value: "six", label: "Six bedrooms" },
+    { value: "seven", label: "Seven bedrooms" },
+    { value: "office", label: "Office" },
+    { value: "few", label: "Few Items" },
+    { value: "20ft", label: "20 ft Container" },
+    { value: "40ft", label: "40 ft Container" },
+    { value: "other", label: "Other" }
 ];
 
 const usStates = [
@@ -420,6 +428,9 @@ const errors = reactive({
     fromZIP: false,
     toZIP: false,
 
+    from_address: false,
+    to_address: false,
+
 
 });
 
@@ -482,16 +493,22 @@ const submit = async () => {
                 isError[3] = true
             }
 
-            if (!quoteForm.value.city) {
-                errors.city = true
-                isError[3] = true
-            }
+
             if (!quoteForm.value.fromZIP) {
                 errors.fromZIP = true
                 isError[3] = true
             }
             if (!quoteForm.value.toZIP) {
                 errors.toZIP = true
+                isError[3] = true
+            }
+
+            if (!quoteForm.value.from_address) {
+                errors.from_address = true
+                isError[3] = true
+            }
+            if (!quoteForm.value.to_address) {
+                errors.to_address = true
                 isError[3] = true
             }
 
@@ -529,9 +546,10 @@ const submit = async () => {
                     customer_id: quoteForm.value.customer_id,
                     inOut: quoteForm.value.inOut,
                     state: quoteForm.value.state,
-                    city: quoteForm.value.city,
                     from_zip: quoteForm.value.fromZIP,
                     to_zip: quoteForm.value.toZIP,
+                    from_address: quoteForm.value.from_address,
+                    to_address: quoteForm.value.to_address,
                     date: quoteForm.value.date,
                 }
             }).then(res => {

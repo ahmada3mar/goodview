@@ -40,7 +40,8 @@
         md:items-start
         justify-center items-center">
 
-        <a class="text-black font-semibold" href="">Call us now +1 973-782-1339</a>
+        <a class="text-gray-100 font-semibold underline" 
+        href="tel:+19737821339">Call us now +1 973-782-1339</a>
 
       </div>
 

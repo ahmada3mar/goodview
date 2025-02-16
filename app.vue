@@ -2,7 +2,7 @@
   <NuxtLayout>
     <div>
       <NuxtPage />
-      <NuxtLink role="button" class="flex items-center justify-center 
+      <NuxtLink href="tel:+19737821339" role="button" class="flex items-center justify-center 
           rounded-full  
           fixed bottom-10 right-5 z-50 
           bg-white
