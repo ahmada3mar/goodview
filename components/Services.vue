@@ -254,14 +254,9 @@
 
 
                 <div
-                    class="rounded-lg xl:min-w-[450px] sm:min-w-96 min-w-0 h-96  md:h-auto overflow-hidden border-4 border-gray-500  w-full ">
-
-                    <iframe class="h-full"
-                        title="google maps"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12064.367991436478!2d-74.2191348!3d40.8917968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ca3c479f2d016e5%3A0x6a35626840917859!2sGoodview%20moving%20and%20storage!5e0!3m2!1sen!2sus!4v1685650174127!5m2!1sen!2sus"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    class="rounded-lg md:block hidden card-img  xl:min-w-[450px] sm:min-w-96 min-w-0 h-96  md:h-auto overflow-hidden border-4 border-gray-500  w-full ">
+                    <img alt="goodview contact us" class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-sm"
+                    v-lazy="'/assets/contact_us.avif'" />
 
                 </div>
             </div>

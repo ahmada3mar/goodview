@@ -6,7 +6,7 @@
                 <div class="flex flex-col w-full  mx-auto   gap-5 items-start ">
                     <img class="" src="~/assets/good-view-logo-white.png" alt="good view logo" />
                     <div class="flex flex-col gap-2 it md:items-start">
-                        <p class="text-center md:text-left">Moving Company based in NJ, and services all North/South East Costa 
+                        <p class="text-center md:text-left">Moving Company based in NJ, and services all North/South East Coast 
                             <span class="italic font-bold" >excluding Florida</span>.</p>
                     </div>
 

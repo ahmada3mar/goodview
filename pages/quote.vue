@@ -16,20 +16,20 @@
                             class=" bg-black text-primary-500 lg:h-20  lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                             1</div>
                         <h2 class="md:text-lg text-sm text-start font-bold  text-black">
-                            Personal info
+                            Moving info
                         </h2>
                     </div>
 
                     <div class="flex-1 pip md:translate-y-10 translate-y-8 mx-2 rounded-xl h-2   bg-black">
                     </div>
                     <div :class="{
-                        'opacity-65': step < 2
+                        'opacity-65': !isDone
                     }" class="flex flex-col gap-5 flex-1  items-center  ">
                         <div
                             class=" bg-black text-primary-500 lg:h-20  lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                             2</div>
                         <h2 class="md:text-lg text-sm text-start font-bold  text-black">
-                            About the move
+                            Get the quote
                         </h2>
                     </div>
                     <div class="flex-1 pip md:translate-y-10 translate-y-8 mx-2 rounded-xl h-2  bg-black">
@@ -41,7 +41,7 @@
                             class=" bg-black text-primary-500 lg:h-20  lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                             3</div>
                         <h2 class="md:text-lg text-sm text-start font-bold  text-black">
-                            Address
+                            Job done
                         </h2>
                     </div>
                 </div>
@@ -50,14 +50,15 @@
             </div>
 
             <div class="bg-black  w-full -mb-72 min-h-96 flex justify-center items-center">
-                <div class="flex flex-col items-center justify-center gap-5 mt-5"  v-if="isDone" >
-                    <DotLottieVue style="height: 400px; width: 400px" autoplay 
-                    loop src="https://lottie.host/5985b015-e571-4f7b-b9ac-212322831da2/vej1PvvYj0.json" />
-                    <h4 class="text-primary-500 text-5xl   font-bold" >Thank you for choosing us</h4>
-                    <p class="text-gray-400 text-xl pb-5 mb-16 font-bold" >We will contact you shortly!</p>
+                <div class="flex flex-col items-center justify-center gap-5 mt-5" v-if="isDone">
+                    <DotLottieVue style="height: 400px; width: 400px" autoplay loop
+                        src="https://lottie.host/5985b015-e571-4f7b-b9ac-212322831da2/vej1PvvYj0.json" />
+                    <h4 class="text-primary-500 text-5xl   font-bold">Thank you for choosing us</h4>
+                    <p class="text-gray-400 text-xl pb-5 mb-16 font-bold">We will contact you shortly!</p>
                 </div>
 
-                <div v-else  class="bg-black flex flex-col lg:flex-row justify-center items-center md:p-5 flex-1  h-full ">
+                <div v-else
+                    class="bg-black flex flex-col lg:flex-row justify-center items-center md:p-5 flex-1  h-full ">
 
                     <div
                         class="p-8 flex w-full lg:w-3/4 pl-8 md:pl-18 xl:pl-36 flex-col gap-10 bg-black   rounded-lg  ">
@@ -97,12 +98,9 @@
                                     :inputClass="`${errors.mobile ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
                                     size="xl" placeholder="+1234567891" />
                             </div>
-                        </div>
 
-                        <div class="flex flex-col gap-5" v-if="step == 2">
-                            <!-- Name Input -->
                             <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">Type</label>
+                                <label class="block w-20 font-bold text-gray-100 text-xl">Size</label>
 
                                 <USelectMenu
                                     :selectClass="`${errors.type ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
@@ -111,132 +109,47 @@
                                     placeholder="Select type" />
                             </div>
 
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">Moving: </label>
-                                <URadioGroup class="flex relative items-center" v-model="quoteForm.inOut" :options="[
-                                    'Moving In',
-                                    'Moving Out',
-                                ]" @update:model-value="errors.inOut = false" :ui="{
-                wrapper: 'relative items-center flex flex-row',
-                fieldset: `flex gap-5 ${errors.inOut ? 'border-2 !border-red-500 focus:ring-red-500' : ''}`,
-                legend: 'text-white',
-            }">
-
-                                    <template class="items-center" #label="{ option }">
-                                        <p class="text-gray-400 text-lg">
-                                            {{ option.label }}
-                                        </p>
-                                    </template>
-                                </URadioGroup>
-
-
-                            </div>
-
-
-
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">Floor</label>
-                                <div class="flex flex-1 gap-10 justify-between">
-
-                                    <UInput class="flex-1 relative" icon="i-carbon-character-whole-number"
-                                        :inputClass="`${errors.floor ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                        @update:model-value="errors.floor = false" v-model="quoteForm.floor" size="xl"
-                                        type="number" placeholder="Enter floor" />
-
-                                    <div class="flex md:flex-row flex-col gap-5  md:items-center ">
-                                        <UCheckbox
-                                            inputClass="flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-10 w-10"
-                                            v-model="quoteForm.elevator" name="Elevator" />
-                                        <label class="block w-20 font-bold text-gray-100 text-xl">Elevator</label>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">Date</label>
-
-
-
-                                <Date @update:modelValue="e => quoteForm.date = e" :model-value="quoteForm.date" />
-
-                            </div>
-
-
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">Note</label>
-                                <UTextarea v-model="quoteForm.note"
-                                    :textareaClass="`flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 `"
-                                    :placeholder="'Write a note'" :rows="5" class="flex-1 relative"
-                                    icon="i-carbon-earth-americas-filled" size="xl" />
-                            </div>
-
-
-
-                        </div>
-
-
-                        <div class="flex flex-col gap-5" v-if="step == 3">
-                            <!-- Name Input -->
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">Country</label>
-                                <USelectMenu
-                                    :selectClass="`flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                    :options="['United state']" :modelValue="'United state'" class="flex-1 relative"
-                                    icon="i-carbon-earth-americas-filled" size="xl" :disabled="true" />
-                            </div>
-
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">State</label>
-                                <USelectMenu
-                                    :selectClass="`${errors.state ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                    @update:model-value="errors.state = false" v-model="quoteForm.state"
-                                    :options="usStates" class="flex-1 relative" placeholder="Select your state"
-                                    icon="i-carbon-earth-americas-filled"
-                                    selectClass="flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14"
-                                    size="xl" />
-                            </div>
 
 
                             <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                                 <label class="block w-20 font-bold text-gray-100 text-xl">From</label>
-                                <div class="flex-col gap-5 flex-1 md:flex-row flex" >
+                                <div class="flex-col gap-5 flex-1 md:flex-row flex">
 
-                                <UInput type="text"
-                                    :inputClass="`${errors.fromZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                    @update:model-value="errors.fromZIP = false" v-model="quoteForm.fromZIP"
-                                    class=" relative" icon="i-carbon-location-heart-filled"
-                                    inputClass=" rounded-none bg-[#171820] text-slate-300 ring-0 h-14" size="xl"
-                                    placeholder="ZIP code" />
-                                <UInput type="text"
-                                    :inputClass="`${errors.from_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                    @update:model-value="errors.from_address = false" v-model="quoteForm.from_address"
-                                    class="flex-1 relative" icon="i-carbon-location-heart-filled"
-                                    inputClass="flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14" size="xl"
-                                    placeholder="Address" />
+                                    <UInput type="text"
+                                        :inputClass="`${errors.fromZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                        @update:model-value="errors.fromZIP = false" v-model="quoteForm.fromZIP"
+                                        class=" relative" icon="i-carbon-location-heart-filled"
+                                        inputClass=" rounded-none bg-[#171820] text-slate-300 ring-0 h-14" size="xl"
+                                        placeholder="ZIP code" />
+                                    <UInput type="text"
+                                        :inputClass="`${errors.from_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                        @update:model-value="errors.from_address = false"
+                                        v-model="quoteForm.from_address" class="flex-1 relative"
+                                        icon="i-carbon-location-heart-filled"
+                                        inputClass="flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14"
+                                        size="xl" placeholder="Address" />
                                 </div>
 
                             </div>
 
                             <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                                 <label class="block w-20 font-bold text-gray-100 text-xl">To</label>
-                                <div class="flex-col gap-5 flex-1 md:flex-row flex" >
-                                <UInput type="text"
-                                    :inputClass="`${errors.toZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                    @update:model-value="errors.toZIP = false" v-model="quoteForm.toZIP"
-                                    class="relative" icon="i-carbon-location-heart-filled" size="xl"
-                                    placeholder="ZIP code" />
-                                <UInput type="text"
-                                    :inputClass="`${errors.to_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                    @update:model-value="errors.to_address = false" v-model="quoteForm.to_address"
-                                    class="flex-1 relative" icon="i-carbon-location-heart-filled" size="xl"
-                                    placeholder="Address" />
+                                <div class="flex-col gap-5 flex-1 md:flex-row flex">
+                                    <UInput type="text"
+                                        :inputClass="`${errors.toZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                        @update:model-value="errors.toZIP = false" v-model="quoteForm.toZIP"
+                                        class="relative" icon="i-carbon-location-heart-filled" size="xl"
+                                        placeholder="ZIP code" />
+                                    <UInput type="text"
+                                        :inputClass="`${errors.to_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                        @update:model-value="errors.to_address = false" v-model="quoteForm.to_address"
+                                        class="flex-1 relative" icon="i-carbon-location-heart-filled" size="xl"
+                                        placeholder="Address" />
                                 </div>
 
                             </div>
-                        </div>
 
+                        </div>
 
 
                         <div class="flex flex-col bg-black lg:w-1/4 w-full rounded-lg justify-center items-center">
@@ -262,9 +175,7 @@
                             </div>
                             <div class="flex-1 flex justify-end">
 
-                                <UButton :loading="isLoading" @click="submit" size="xl" 
-                                :label="step < 3 ? 'Continue' : 'Submit'" 
-                                class=" px-3 md:px-7 rounded-sm border border-primary-500 hover:bg-black hover:text-slate-300 
+                                <UButton :loading="isLoading" @click="submit" size="xl" :label="'Submit'" class=" px-3 md:px-7 rounded-sm border border-primary-500 hover:bg-black hover:text-slate-300 
 flex justify-center items-center
             ml-auto
             lg:ml-0
@@ -438,135 +349,80 @@ const errors = reactive({
 
 const submit = async () => {
 
-    const isError = {
-        1: false,
-        2: false,
-        3: false,
-    };
+    let isError = false;
 
-    switch (step.value) {
-        case 1:
-
-            if (!quoteForm.value.firstName) {
-                errors.firstName = true
-                isError[1] = true
-            }
-            if (!quoteForm.value.lastName) {
-                errors.lastName = true
-                isError[1] = true
-            }
-
-            if (!quoteForm.value.email) {
-                errors.email = true
-                isError[1] = true
-            }
-            if (!quoteForm.value.mobile) {
-                errors.mobile = true
-                isError[1] = true
-            }
-
-            break;
-
-        case 2:
-
-            if (!quoteForm.value.type) {
-                errors.type = true
-                isError[2] = true
-            }
-
-
-            if (!quoteForm.value.floor) {
-                errors.floor = true
-                isError[2] = true
-            }
-            if (!quoteForm.value.inOut) {
-                errors.inOut = true
-                isError[2] = true
-            }
-
-            break;
-
-        case 3:
-
-            if (!quoteForm.value.state) {
-                errors.state = true
-                isError[3] = true
-            }
-
-
-            if (!quoteForm.value.fromZIP) {
-                errors.fromZIP = true
-                isError[3] = true
-            }
-            if (!quoteForm.value.toZIP) {
-                errors.toZIP = true
-                isError[3] = true
-            }
-
-            if (!quoteForm.value.from_address) {
-                errors.from_address = true
-                isError[3] = true
-            }
-            if (!quoteForm.value.to_address) {
-                errors.to_address = true
-                isError[3] = true
-            }
-
-
-            break;
-
-        default:
-            break;
+    if (!quoteForm.value.firstName) {
+        errors.firstName = true
+        isError = true
+    }
+    if (!quoteForm.value.lastName) {
+        errors.lastName = true
+        isError = true
     }
 
-    if (isError[step.value]) {
+    if (!quoteForm.value.email) {
+        errors.email = true
+        isError = true
+    }
+    if (!quoteForm.value.mobile) {
+        errors.mobile = true
+        isError = true
+    }
+
+    if (!quoteForm.value.type) {
+        errors.type = true
+        isError = true
+    }
+
+
+    if (!quoteForm.value.fromZIP) {
+        errors.fromZIP = true
+        isError = true
+    }
+    if (!quoteForm.value.toZIP) {
+        errors.toZIP = true
+        isError = true
+    }
+
+    if (!quoteForm.value.from_address) {
+        errors.from_address = true
+        isError = true
+    }
+    if (!quoteForm.value.to_address) {
+        errors.to_address = true
+        isError = true
+    }
+
+
+    if (isError) {
         return
     }
 
-    console.log(quoteForm.value)
 
-    switch (step.value) {
-        case 1:
-        case 2:
-            step.value < 3 ? step.value += 1 : null
-            break;
-        case 3:
-            isLoading.value = true
-            $fetch('https://api.goodview-moving.com/api/quote', {
-                method: 'POST',
-                body: {
-                    firstName: quoteForm.value.firstName,
-                    lastName: quoteForm.value.lastName,
-                    email: quoteForm.value.email,
-                    mobile: quoteForm.value.mobile,
-                    type: quoteForm.value.type,
-                    note: quoteForm.value.note,
-                    elevator: quoteForm.value.elevator,
-                    floor: quoteForm.value.floor,
-                    customer_id: quoteForm.value.customer_id,
-                    inOut: quoteForm.value.inOut,
-                    state: quoteForm.value.state,
-                    from_zip: quoteForm.value.fromZIP,
-                    to_zip: quoteForm.value.toZIP,
-                    from_address: quoteForm.value.from_address,
-                    to_address: quoteForm.value.to_address,
-                    date: quoteForm.value.date,
-                }
-            }).then(res => {
-                step.value < 3 ? step.value += 1 : (isDone.value = true)
-            })
-            break;
-
-        default:
-            break;
-    }
-
-
-
-
-
-
-
+    isLoading.value = true
+    $fetch('https://api.goodview-moving.com/api/quote', {
+        method: 'POST',
+        body: {
+            firstName: quoteForm.value.firstName,
+            lastName: quoteForm.value.lastName,
+            email: quoteForm.value.email,
+            mobile: quoteForm.value.mobile,
+            type: quoteForm.value.type,
+            note: quoteForm.value.note,
+            elevator: quoteForm.value.elevator,
+            floor: quoteForm.value.floor,
+            customer_id: quoteForm.value.customer_id,
+            inOut: quoteForm.value.inOut,
+            state: quoteForm.value.state,
+            from_zip: quoteForm.value.fromZIP,
+            to_zip: quoteForm.value.toZIP,
+            from_address: quoteForm.value.from_address,
+            to_address: quoteForm.value.to_address,
+            date: quoteForm.value.date,
+        }
+    }).then(res => {
+        isDone.value = true
+    })
 
 }
 
