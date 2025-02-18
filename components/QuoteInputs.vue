@@ -5,6 +5,7 @@
       'opacity-100 translate-y-0': props.isVisible,
       'opacity-0 translate-y-36': !props.isVisible,
     }" class="transition-all duration-1000 delay-150 ease-in-out flex flex-wrap flex-col md:flex-row gap-4 md:gap-2 w-full 
+    mb-5
         md:items-start
         justify-center items-center">
       <div class="flex flex-col">
@@ -30,23 +31,32 @@
         </UInput>
         <span v-if="errors.to" class="text-red-500 font-bold">Please enter a valid ZIP code</span>
       </div>
-      <UButton @click="getQuote" label="Get a free quote"
-        class="font-bold text-center justify-center  px-10 text-black border-1 border-gray-900 h-12 w-80 md:w-[40rem] lg:w-auto" />
+      <UButton @click="getQuote" 
+        class="font-bold text-center justify-center  px-10 text-black border-1 border-gray-900 h-12 w-80 md:w-[40rem] lg:w-auto" >
+        Get a free quote
+        <UIcon name="i-carbon-arrow-right" class="w-5 h-5 " />
 
+      </UButton>
+
+        
+        
+      </div>
       <div :class="{
         'opacity-100 translate-y-0': props.isVisible,
         'opacity-0 translate-y-36': !props.isVisible,
-      }" class="transition-all duration-1000 delay-150 ease-in-out flex flex-wrap flex-col md:flex-row gap-4 md:gap-2 w-full 
+      }" class="transition-all duration-1000 delay-150 ease-in-out flex flex-wrap flex-col md:flex-row gap-4 md:gap-2 
         md:items-start
         justify-center items-center">
 
-        <a class="text-gray-100 font-semibold underline" 
-        href="tel:+19737821339">Call us now +1 973-782-1339</a>
-
+        <ULink to="tel:+19737821339" 
+        class="font-bold text-center
+         justify-center  px-10  items-center flex rounded-lg  
+          border-1 text-black border-primary
+          h-12 w-full bg-gray-100"> 
+          <UIcon name="i-carbon-phone" class="w-5 h-5 mx-2" />
+          Or click to call us now +1 973-782-1339
+        </ULink>
       </div>
-
-      
-    </div>
 
   </div>
 </template>
