@@ -54,7 +54,7 @@
           border-1 text-black border-primary
           h-12 w-full bg-gray-100"> 
           <UIcon name="i-carbon-phone" class="w-5 h-5 mx-2" />
-          Or click to call us now +1 973-782-1339
+          Call us now +1 973-782-1339
         </ULink>
       </div>
 
