@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-
 import phone from './assets/UIHere.png'
 
 </script>
+

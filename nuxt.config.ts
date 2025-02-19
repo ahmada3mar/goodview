@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   ssr:false,
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+  plugins:['~/plugins/gtm.js'],
   modules: [
     '@nuxt/ui',
      '@nuxt/image',
@@ -39,11 +40,20 @@ export default defineNuxtConfig({
           htmlAttrs:{
             lang:'en-US'
           },
+          script : [
+            {
+              src:"/js/google.js"
+            },
+          ],
           
         },
+        
+        
+      
 
 
   },
+  
   // nitro: {
 
   //   output: {
