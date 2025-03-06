@@ -72,12 +72,12 @@
                                         :inputClass="`${errors.firstName ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
                                         @update:model-value="errors.firstName = false" v-model="quoteForm.firstName"
                                         class="flex-1 relative" icon="i-carbon-user" size="xl"
-                                        placeholder="Sure name" />
+                                        placeholder="First name" />
                                     <UInput
                                         :inputClass="`${errors.lastName ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
                                         @update:model-value="errors.lastName = false" v-model="quoteForm.lastName"
                                         class="flex-1 relative" icon="i-carbon-user" size="xl"
-                                        placeholder="Given name" />
+                                        placeholder="Last name" />
                                 </div>
                             </div>
 
@@ -110,41 +110,33 @@
                             </div>
 
 
+                            <div class="flex gap-10 justify-between">
 
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">From</label>
-                                <div class="flex-col gap-5 flex-1 md:flex-row flex">
+                                <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
+                                    <label class="block w-20 font-bold text-gray-100 text-xl">From</label>
+                                    <div class="flex-col gap-5 flex-1 md:flex-row flex">
 
-                                    <UInput type="text"
-                                        :inputClass="`${errors.fromZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                        @update:model-value="errors.fromZIP = false" v-model="quoteForm.fromZIP"
-                                        class=" relative" icon="i-carbon-location-heart-filled"
-                                        inputClass=" rounded-none bg-[#171820] text-slate-300 ring-0 h-14" size="xl"
-                                        placeholder="ZIP code" />
-                                    <UInput type="text"
-                                        :inputClass="`${errors.from_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                        @update:model-value="errors.from_address = false"
-                                        v-model="quoteForm.from_address" class="flex-1 relative"
-                                        icon="i-carbon-location-heart-filled"
-                                        inputClass="flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14"
-                                        size="xl" placeholder="Address" />
+                                        <UInput type="text"
+                                            :inputClass="`${errors.fromZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                            @update:model-value="errors.fromZIP = false" v-model="quoteForm.fromZIP"
+                                            class=" relative" icon="i-carbon-location-heart-filled"
+                                            inputClass=" rounded-none bg-[#171820] text-slate-300 ring-0 h-14" size="xl"
+                                            placeholder="ZIP code" />
+                                    </div>
+
                                 </div>
 
-                            </div>
+                                <div class="flex md:flex-row flex-col gap-2  md:items-center w-full justify-between">
+                                    <label class="block w-20 font-bold text-gray-100 text-xl">To</label>
+                                    <div class="flex-col gap-5 flex-1 md:flex-row flex">
+                                        <UInput type="text"
+                                            :inputClass="`${errors.toZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
+                                            @update:model-value="errors.toZIP = false" v-model="quoteForm.toZIP"
+                                            class="relative w-full" icon="i-carbon-location-heart-filled" size="xl"
+                                            placeholder="ZIP code" />
 
-                            <div class="flex md:flex-row flex-col gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
-                                <label class="block w-20 font-bold text-gray-100 text-xl">To</label>
-                                <div class="flex-col gap-5 flex-1 md:flex-row flex">
-                                    <UInput type="text"
-                                        :inputClass="`${errors.toZIP ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                        @update:model-value="errors.toZIP = false" v-model="quoteForm.toZIP"
-                                        class="relative" icon="i-carbon-location-heart-filled" size="xl"
-                                        placeholder="ZIP code" />
-                                    <UInput type="text"
-                                        :inputClass="`${errors.to_address ? 'border-2 !border-red-500 focus:ring-red-500' : ''} flex-1 rounded-none bg-[#171820] text-slate-300 ring-0 h-14`"
-                                        @update:model-value="errors.to_address = false" v-model="quoteForm.to_address"
-                                        class="flex-1 relative" icon="i-carbon-location-heart-filled" size="xl"
-                                        placeholder="Address" />
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -339,8 +331,6 @@ const errors = reactive({
     fromZIP: false,
     toZIP: false,
 
-    from_address: false,
-    to_address: false,
 
 
 });
@@ -384,14 +374,6 @@ const submit = async () => {
         isError = true
     }
 
-    if (!quoteForm.value.from_address) {
-        errors.from_address = true
-        isError = true
-    }
-    if (!quoteForm.value.to_address) {
-        errors.to_address = true
-        isError = true
-    }
 
 
     if (isError) {
