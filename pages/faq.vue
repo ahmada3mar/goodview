@@ -10,7 +10,7 @@ help you with your move." />
 
     </div>
 
-    <div class=" bg-primary-500 w-full p-3 md:p-10   rounded-sm">
+    <div class=" bg-primary-500 w-full p-3 md:p-10   rounded-none">
             <div class="border-b-2 border-black px-32 py-10">
     <h2 class="font-bold">Do you provide moving services in USA, and surrounding areas?</h2>
     <p>Yes, we offer moving services within USA, and nearby regions, ensuring a smooth and hassle-free experience.</p>
