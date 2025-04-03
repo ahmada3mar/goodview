@@ -25,7 +25,7 @@
             <!-- Dropdown Menu (Only Shows on Hover) -->
             <div v-if="showDropdown"
               class="absolute left-0   w-[250px] bg-primary-500 text-black  rounded-md shadow-lg z-50">
-              <ULink to="/services/commercial-service-page"
+              <ULink to="/services/commercial-service"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Commerical Moving
               </ULink>
               <ULink to="/services/long-distance-moving"
