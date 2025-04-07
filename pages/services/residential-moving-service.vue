@@ -1,18 +1,41 @@
 <template>
-    <Banner background="/assets/Residential.jpg" class=" md:h-[25rem]" title="Residential Moving"
+    <div>
+    <Banner background="/assets/Residential.jpg" class=" md:h-[35rem]" title="Residential Moving"
         text="Moving to a new home should be exciting—not overwhelming. At Good View Moving & Storage, we make residential moving effortless with expert planning, careful handling, and a commitment to affordable moving costs. "
-        subtext="Whether you're relocating to a new house, apartment, or condo, our residential moving company is here to make the process smooth and hassle-free." />
-    <Intro img="/assets/new_truck.png" title="Why Choose Our Residential Moving Services?"
-        text="With years of experience and thousands of successful moves, we know what it takes to provide a stress-free moving experience. Here’s why homeowners trust us:"
-        spantext2="Trusted Residential Movers Near You: "
-        subtext2=" Our team of professional home movers ensures every move is handled with care."
-        spantext3="Affordable & Transparent Pricing: "
-        subtext3="No hidden fees! Know your moving costs upfront with a free estimate."
-        spantext4="Local & Short-Distance Moves: "
-        subtext4="Whether you're moving across town or just down the block, our short distance movers are ready to help."
-        spantext5="Full-Service Apartment Moving: "
-        subtext5="We specialize in apartment moving services and can easily handle stairs, elevators, and tight spaces."
-        spantext6="Packing & Unpacking Available: " subtext6=" We offer packing services to protect your belongings." />
+      >
+      <template #body="isVisible">
+        <QuoteInputs :isVisible="isVisible.isVisible" />
+      </template>
+</Banner>
+<div class="container bg-white lg:mx-auto px-6 sm:px-10 py-10 mb-8 sm:mb-32">
+            <div class="flex flex-col md:flex-row items-center mx-auto gap-6">
+                <!-- Text Section -->
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Residential Moving Services?</h2>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                        With years of experience and thousands of successful moves, we know what it takes to provide a stress-free moving experience. Here’s why homeowners trust us:</p>
+                 <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Trusted Residential Movers Near You: </b> Our team of professional home movers ensures every move is handled with care.</p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Affordable & Transparent Pricing: </b> No hidden fees! Know your moving costs upfront with a free estimate.</p>
+    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Local & Short-Distance Moves: </b> Whether you're moving across town or just down the block, our short distance movers are ready to help.</p>
+                      <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Full-Service Apartment Moving: </b> We specialize in apartment moving services and can easily handle stairs, elevators, and tight spaces.</p>
+
+                      <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Packing & Unpacking Available: </b> We offer packing services to protect your belongings.</p>
+
+                </div>
+                <!-- Image Section -->
+                <div >
+                    <img alt="Residental Moving"
+                        class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
+                        v-lazy="'/assets/Residential-Moving-Services3.webp'" />
+                </div>
+            </div>
+        </div>
+
 
     <div class=" bg-primary-500 w-full p-3 md:p-10   rounded-none">
         <div class="container">
@@ -22,7 +45,7 @@
                 <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                     <!-- Text Section -->
                     <div class="flex-1 flex flex-col">
-                        <h2 class="text-3xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
+                        <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
                             Our Residential Moving Process – How We Make Moving Easy</h2>
                         <p class="text-lg md:text-xl mt-4 font-rubik  text-stone-300 ">
                             At Good View Moving, we take care of everything, so you don’t have to! Here’s what to
@@ -43,7 +66,7 @@
                         </ul>
                     </div>
                     <div class="flex-1 flex justify-center items-center">
-                        <img alt="Commercial Moving"
+                        <img alt="Residental Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
                             v-lazy="'/assets/Residental2.jpg'" />
                     </div>
@@ -54,7 +77,7 @@
                 <div
                     class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
 
-                    <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
+                    <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
                         Residential Moving Services?
                     </h2>
                     <p class="text-md md:text-lg text-black font-rubik">
@@ -83,7 +106,7 @@
 
                 <div class="flex flex-col  bg-white rounded-[10px] max-w-[1100px] p-3 md:p-8 ">
                     <!-- Text Section -->
-                    <h2 class="text-3xl md:text-4xl   font-extrabold font-jakarta text-black">
+                    <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
                         Residential Moving Costs – Get a Transparent Estimate</h2>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
                         We believe in honest pricing—no hidden fees or surprises! Your residential moving costs with us
@@ -113,7 +136,7 @@
                         last-minute surprises.</p>
 
                     <div
-                        class="py-[30px] px-[40px] mt-5 shadow-none bg-primary-500 text-[22px]   rounded-[10px] relative">
+                        class="py-[30px] px-[40px] mt-5 shadow-none bg-primary-500 text-[18px] sm:text-[22px]  rounded-[10px] relative">
                         <div class=" flex items-center did_you_know">
                             <div class="content_div">
                                 <strong>
@@ -124,7 +147,7 @@
                                         for a personalized quote.
                                     </span>
                                     <div class="w-fit mt-4 text-center sm:text-start  ">
-                                        <UButton size="xl" label="Book Your Residential Moving Service Today!"
+                                        <UButton size="xl" label="Free Moving Quote"
                                             type="free quote" to="/quote"
                                             class=" bg-black text-white px-7 py-2 transition-all  font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 " />
 
@@ -138,6 +161,6 @@
             </div>
         </div>
     </div>
-
+</div>
 
 </template>

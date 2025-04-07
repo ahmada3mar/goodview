@@ -24,17 +24,31 @@
 
             <!-- Dropdown Menu (Only Shows on Hover) -->
             <div v-if="showDropdown"
-              class="absolute left-0   w-[250px] bg-primary-500 text-black  rounded-md shadow-lg z-50">
-              <ULink to="/services/commercial-service"
+              class="absolute left-0  gap-2  w-[250px] bg-primary-500 text-black   shadow-lg z-50">
+              <ULink to="/services/commercial-moving-service"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Commerical Moving
               </ULink>
-              <ULink to="/services/long-distance-moving"
+              <ULink to="/services/long-distance-moving-service"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Long Distance Moving
               </ULink>
-              <ULink to="/services/residential-moving"
-                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Residential Moving
+             <ULink to="/services/residential-moving-service"
+    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+    Residential Moving
+</ULink>
+              <ULink to="/services/packing-and-unpacking-service"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Packing and Unpacking Service
               </ULink>
-
+              <ULink to="/services/furniture-assembly-and-disassembly-service"
+    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+    Furniture Assembly and Disassembly Service
+</ULink>
+<ULink to="/services/specialty-moving-service"
+    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+    Specialty Moving
+</ULink><ULink to="/services/storage-service"
+    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+    Storage Units
+</ULink>
             </div>
           </div>
 

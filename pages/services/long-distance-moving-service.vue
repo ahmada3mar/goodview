@@ -1,17 +1,42 @@
 <template>
-    <Banner background="/assets/Long-distance.jpg" class=" md:h-[25rem]" title="Long Distance Moving"
-        text="Long distance moving requires careful planning, professional handling, and a reliable long distance moving company you can trust. At Good View Moving & Storage, we specialize in smooth, hassle-free relocations—whether you're moving a few hundred miles away or across the country. " />
-    <Intro img="/assets/new_truck.png" title="Why Choose Our Long Distance Moving Services?"
-        text="Long-distance moves come with unique challenges, but we make the process easy. "
-        subtext="Here’s why homeowners and businesses choose us:" spantext2="Experienced Long Distance Movers: "
-        subtext2=" Our team has years of experience handling state to state moves with precision."
-        spantext3="Licensed & Insured: "
-        subtext3=" As a certified interstate moving company, we ensure your belongings are fully protected."
-        spantext4="Full-Service Movers: " subtext4=" From packing to unloading, we handle every step of your move."
-        spantext5="Safe & Efficient Transport: "
-        subtext5=" We use modern trucks and secure packing techniques to keep your items safe."
-        spantext6="Personalized Moving Plans: "
-        subtext6="No two moves are the same. We customize your relocation based on your needs." />
+    <div>    <Banner background="/assets/Long-distance.jpg" class=" md:h-[35rem]" title="Long Distance Moving"
+        text="Long distance moving requires careful planning, professional handling, and a reliable long distance moving company you can trust. At Good View Moving & Storage, we specialize in smooth, hassle-free relocations—whether you're moving a few hundred miles away or across the country. " >
+        <template #body="isVisible">
+        <QuoteInputs :isVisible="isVisible.isVisible" />
+      </template>
+</Banner>
+<div class="container bg-white lg:mx-auto px-6 sm:px-10 py-10 mb-8 sm:mb-32">
+            <div class="flex flex-col md:flex-row items-center mx-auto gap-6">
+                <!-- Text Section -->
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Long Distance Moving Services?</h2>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                        Long-distance moves come with unique challenges, but we make the process easy.</p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                        Here’s why homeowners and businesses choose us:</p>
+
+                   <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Experienced Long Distance Movers: </b>Our team has years of experience handling state to state moves with precision.</p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Licensed & Insured: </b> As a certified interstate moving company, we ensure your belongings are fully protected.</p>
+
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Full-Service Movers: </b> From packing to unloading, we handle every step of your move.</p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Safe & Efficient Transport: </b> We use modern trucks and secure packing techniques to keep your items safe.</p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Personalized Moving Plans: </b>No two moves are the same. We customize your relocation based on your needs.</p>
+
+                </div>
+                <!-- Image Section -->
+                <div >
+                    <img alt="Long Distance"
+                        class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
+                        v-lazy="'/assets/Long-Distance-Moving3.webp'" />
+                </div>
+            </div>
+        </div>
+
 
     <div class=" bg-primary-500 w-full p-3 md:p-10   rounded-none">
         <div class="container">
@@ -21,7 +46,7 @@
                 <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                     <!-- Text Section -->
                     <div class="flex-1 flex flex-col">
-                        <h2 class="text-3xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
+                        <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
                             Our Long Distance Moving Process – How We Make Moving Easy</h2>
                         <p class="text-lg md:text-xl mt-4 font-rubik  text-stone-300 ">
                             We follow a structured yet flexible process to make your long-distance relocation seamless:
@@ -44,7 +69,7 @@
                         </ul>
                     </div>
                     <div class="flex-1 flex justify-center items-center">
-                        <img alt="Commercial Moving"
+                        <img alt="Long Distance"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
                             v-lazy="'/assets/Longdistance2.jpg'" />
                     </div>
@@ -55,7 +80,7 @@
                 <div
                     class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
 
-                    <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our Long
+                    <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our Long
                         Distance Moving Services?
                     </h2>
                     <p class="text-md md:text-lg text-black font-rubik">
@@ -86,7 +111,7 @@
 
                 <div class="flex flex-col  bg-white rounded-[10px] max-w-[1100px] p-3 md:p-8 ">
                     <!-- Text Section -->
-                    <h2 class="text-3xl md:text-4xl   font-extrabold font-jakarta text-black">
+                    <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
                         Long Distance Moving Costs – Get a Transparent Estimate</h2>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
                         The cost of long distance moving depends on several factors, including:
@@ -115,7 +140,7 @@
                         $8,000.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>arge Homes or Cross-Country Moves (4+ bedrooms, 3,000+ miles):</b> These can start at $8,000
+                        <b>Large Homes or Cross-Country Moves (4+ bedrooms, 3,000+ miles):</b> These can start at $8,000
                         and go up to $15,000+.
                     </p>
 
@@ -125,7 +150,7 @@
                         last-minute surprises.</p>
 
                     <div
-                        class="py-[30px] px-[40px] mt-5 shadow-none bg-primary-500 text-[22px]   rounded-[10px] relative">
+                        class="py-[30px] px-[40px] mt-5 shadow-none bg-primary-500 text-[18px] sm:text-[22px]    rounded-[10px] relative">
                         <div class=" flex items-center did_you_know">
                             <div class="content_div">
                                 <strong>
@@ -135,7 +160,7 @@
                                         general reference, and contact us for a personalized quote.
                                     </span>
                                     <div class="w-fit mt-4 text-center sm:text-start  ">
-                                        <UButton size="xl" label="Book Your Long Distance Moving Service Today!"
+                                        <UButton size="xl" label="Free Moving Quote"
                                             type="free quote" to="/quote"
                                             class=" bg-black text-white px-7 py-2 transition-all  font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 " />
 
@@ -149,6 +174,7 @@
             </div>
         </div>
     </div>
+</div>
 
 
 </template>

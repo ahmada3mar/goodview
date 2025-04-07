@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col h-full">
-    <Banner background="/assets/banner-mini.webp" class="lg:h-[calc(71dvh-4rem)] "
+    <Banner background="/assets/banner-mini.webp" class="lg:h-[calc(71dvh-2rem)] "
       title="Reliable, Affordable, and Hassle-Free Moving Services!"
       text="At Good View Moving, we make every step seamless with professional moving services tailored to your needs. We offer affordable moving with transparent moving costs to fit your budget.">
 

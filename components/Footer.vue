@@ -24,11 +24,11 @@
                     <div class="flex flex-col  w-full  mx-auto  gap-5">
                         <h4 class="text-white font-jakarta  text-[24px] font-bold">Quick Links</h4>
                         <div class="flex w-full flex-col gap-2  ">
-                            <ULink to="/" class="text-start font-rubik text-[16px]" >Home</ULink>
-                            <ULink to="/about-us" class="text-start font-rubik text-[16px] " >About Us</ULink>
-                            <ULink to="/help" class="text-start font-rubik text-[16px]" >Help</ULink>
-                            <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/RightsandResponsibilitiesBooklet_2022Update.pdf" class="text-start font-rubik text-[16px]" >Customer rights</ULink>
-                            <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/ReadytoMoveBrochure_2022Update.pdf" class="text-start font-rubik text-[16px]" >Ready to move Brochure</ULink>
+                            <ULink to="/" class="text-start font-rubik text-[16px] hover:text-primary-500"  >Home</ULink>
+                            <ULink to="/about-us" class="text-start font-rubik text-[16px]  hover:text-primary-500" >About Us</ULink>
+                            <ULink to="/help" class="text-start font-rubik text-[16px] hover:text-primary-500" >Help</ULink>
+                            <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/RightsandResponsibilitiesBooklet_2022Update.pdf " class="text-start font-rubik text-[16px] hover:text-primary-500" >Customer rights</ULink>
+                            <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/ReadytoMoveBrochure_2022Update.pdf" class="text-start font-rubik text-[16px] hover:text-primary-500" >Ready to move Brochure</ULink>
                         </div>
                     </div>
 
@@ -36,11 +36,13 @@
                     <div class="flex flex-col w-full  mx-auto  gap-5">
                         <h4 class="text-white font-jakarta  text-[24px] font-bold">Services</h4>
                         <div class="flex w-full flex-col gap-2 ">
-                        <ULink to="/services" class="text-start font-rubik text-[16px]">Company relocation</ULink>
-                        <ULink to="/services" class="text-start font-rubik text-[16px]">Private relocation</ULink>
-                        <ULink to="/services" class="text-start font-rubik text-[16px]">Fragile goods</ULink>
-                        <ULink to="/services" class="text-start font-rubik text-[16px]">Storage</ULink>
-                            <ULink to="/services" class="text-start font-rubik text-[16px]">Furniture assembly</ULink>
+                        <ULink to="/services/residential-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Residential Moving</ULink>
+                        <ULink to="/services/commercial-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Commercial Moving</ULink>
+                        <ULink to="/services/packing-and-unpacking-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Packing and Unpacking</ULink>
+                        <ULink to="/services/furniture-assembly-and-disassembly-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Furniture Assembly and Disassembly</ULink>
+                            <ULink to="/services/long-distance-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Long Distance Moving</ULink>
+                            <ULink to="/services/specialty-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Specialty Moving</ULink>
+                            <ULink to="/services/storage-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Storage Units</ULink>
                         </div>
                     </div>
 
@@ -52,7 +54,7 @@
                             <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
                                 <UIcon name="i-material-symbols-call" class="w-5 h-5 text-primary-500" />
                             </div>
-                            <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex bg-opacity-35 rounded-full p-1 font-rubik text-[16px] text-white font-[400]">
+                            <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex bg-opacity-35 hover:text-primary-500 rounded-full p-1 font-rubik text-[16px] text-white font-[400]">
                                 <span itemprop="telephone"><a href="tel:+19737821339">+1 973-782-1339</a></span>
                             </div>
                         </div>
@@ -95,6 +97,7 @@
 
                     </div>
                 </div>
+                <div class="text-center py-4 font-jakarta text-[16px] font-[300] text-white"> Copyright © 2025 All Rights Reserved By Good View Moving &amp; Storage. </div>
             </div>
         </div>
     </template>

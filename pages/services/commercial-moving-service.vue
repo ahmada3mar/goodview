@@ -1,19 +1,45 @@
 <template>
-    <Banner background="/assets/Commercial.jpg" class=" md:h-[25rem]" title="Commercial Moving"
+    <div>
+    <Banner background="/assets/Commercial.jpg" class=" md:h-[35rem]" title="Commercial Moving"
         text="Commercial Moving
-Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. " />
-    <Intro img="/assets/new_truck.png" title="Why Choose Our Commercial Moving Services?"
-        text="When it comes to commercial moving, experience matters, we've helped countless businesses relocate with zero disruption to their workflow. "
-        subtext="Here’s why companies trust us:" spantext2="Trusted Commercial Movers Near You:"
-        subtext2=" Our skilled commercial movers and packers handle everything from office moving services to warehouse relocations."
-        spantext3="Minimal Downtime:"
-        subtext3=" We work around your schedule to ensure a smooth move with little to no business interruption."
-        spantext4="Customized Moving Plans:"
-        subtext4=" Every business is different. We create a personalized moving plan that fits your needs."
-        spantext5="Secure Packing & Transport:"
-        subtext5=" We use high-quality packing materials to protect office furniture, IT equipment, and sensitive documents."
-        spantext6="Full-Service Movers:"
-        subtext6=" From packing to setting up your new space, we offer end-to-end commercial moving solutions." />
+Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. " >
+<template #body="isVisible">
+        <QuoteInputs :isVisible="isVisible.isVisible" />
+      </template>
+</Banner>
+<div class="container bg-white lg:mx-auto  px-6 sm:px-10 py-10 mb-8 sm:mb-32">
+            <div class="flex flex-col md:flex-row items-center mx-auto gap-6">
+                <!-- Text Section -->
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Commercial Moving Services?</h2>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                        When it comes to commercial moving, experience matters, we've helped countless businesses relocate with zero disruption to their workflow.
+                    </p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                        Here’s why companies trust us:
+                    </p> <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>  Trusted Commercial Movers Near You: </b>Our skilled commercial movers and packers handle everything from office moving services to warehouse relocations.
+                    </p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b> Minimal Downtime: </b> We work around your schedule to ensure a smooth move with little to no business interruption. </p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b>Customized Moving Plans: </b>Every business is different. We create a personalized moving plan that fits your needs. </p>
+
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b> Secure Packing & Transport: </b> We use high-quality packing materials to protect office furniture, IT equipment, and sensitive documents.
+                    </p>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                      <b> Full-Service Movers: </b> From packing to setting up your new space, we offer end-to-end commercial moving solutions.
+                    </p>
+                </div>
+                <!-- Image Section -->
+                <div class="md:w-[50%]">
+                    <img alt="Commercial Moving"
+                        class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
+                        v-lazy="'/assets/Commercial-Moving3.webp'" />
+                </div>
+            </div>
+        </div>
 
     <div class=" bg-primary-500 w-full p-3 md:p-10   rounded-none">
         <div class="container">
@@ -23,7 +49,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                 <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                     <!-- Text Section -->
                     <div class="flex-1 flex flex-col">
-                        <h2 class="text-3xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
+                        <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
                             Our Commercial Moving Process – How We Make Moving Easy</h2>
                         <p class="text-lg md:text-xl mt-4 font-rubik  text-stone-300 ">
                             Moving your business should be simple, efficient, and stress-free.
@@ -37,16 +63,13 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                                 we’ll
                                 provide a clear, upfront estimate.
                             </li>
+                            <li><span class="font-semibold">Create a Custom Plan:</span>We assess your business needs and develop a tailored moving strategy.</li>
                             <li><span class="font-semibold">Packing & Preparation: </span>Our office movers carefully
                                 pack,
                                 label, and organize everything for a smooth transition.</li>
-                            <li><span class="font-semibold">Safe & Timely Transport: </span> Your office items are
-                                transported securely, ensuring nothing gets lost or damaged.</li>
-                            <li><span class="font-semibold">Unpacking & Setup:</span> Who handle your
-                                belongings with care.</li>
-                            <li><span class="font-semibold">Highly Rated Service:</span> Need help arranging furniture
-                                or
-                                setting up workstations? We’ve got you covered!</li>
+                            <li><span class="font-semibold">Safe & Timely Transport: </span> Your office items are transported securely, ensuring nothing gets lost or damaged.</li>
+                            <li><span class="font-semibold">Unpacking & Setup:</span> Need help arranging furniture or setting up workstations? We’ve got you covered!</li>
+
                         </ul>
                     </div>
                     <div class="flex-1 flex justify-center items-center">
@@ -61,7 +84,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                 <div
                     class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
 
-                    <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
+                    <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
                         Commercial Moving Services?
                     </h2>
                     <p class="text-md md:text-lg text-black font-rubik">
@@ -89,7 +112,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
 
                 <div class="flex flex-col  bg-white rounded-[10px] max-w-[1100px] p-3 md:p-8 ">
                     <!-- Text Section -->
-                    <h2 class="text-3xl md:text-4xl   font-extrabold font-jakarta text-black">
+                    <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
                         Commercial Moving Costs – Get a Transparent Estimate</h2>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
                         We believe in fair and upfront pricing. The cost of commercial moving depends on:
@@ -130,7 +153,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                         know what you're paying for without hidden fees or last-minute surprises.</p>
 
                     <div
-                        class="py-[30px] px-[40px] mt-5 shadow-none bg-primary-500 text-[22px]   rounded-[10px] relative">
+                        class="py-[30px] px-[40px] mt-5 shadow-none bg-primary-500 text-[18px] sm:text-[22px]    rounded-[10px] relative">
                         <div class=" flex items-center did_you_know">
                             <div class="content_div">
                                 <strong>
@@ -140,7 +163,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                                         general reference, and contact us for a personalized quote.
                                     </span>
                                     <div class="w-fit mt-4 text-center sm:text-start  ">
-                                        <UButton size="xl" label="Book Your Commercial Moving Service Today!"
+                                        <UButton size="xl" label="Free Moving Quote"
                                             type="free quote" to="/quote"
                                             class=" bg-black text-white px-7 py-2 transition-all  font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 " />
 
@@ -155,5 +178,5 @@ Relocating a business is more than just moving desks and chairs—it’s about m
         </div>
     </div>
 
-
+</div>
 </template>

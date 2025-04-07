@@ -237,7 +237,7 @@
 
 
                     <div class="flex flex-initial md:flex-1 flex-col bg-zinc-900   rounded-none p-3 md:p-10">
-                        <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-stone-300">Moving with Us –
+                        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-stone-300">Moving with Us –
                             What to Expect</h2>
                         <p class="text-md md:text-lg text-stone-300 font-rubik">
                             Moving with Good View Moving is easy!
@@ -263,7 +263,7 @@
 
                     <div
                         class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
-                        <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">Ready to Move? Let’s Get
+                        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">Ready to Move? Let’s Get
                             Started!
                         </h2>
                         <p class="text-md md:text-lg text-black font-rubik">

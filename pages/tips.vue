@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col h-full">
-        <Banner background="/assets/tips.jpg" class="h-[20rem] md:h-[30rem]" title="Tips" text="Moving can be a stressful and time- consuming process, but with some planning
+        <Banner background="/assets/tips.jpg" class=" md:h-[30rem]" title="Tips" text="Moving can be a stressful and time- consuming process, but with some planning
 and preparation, it can also be a smooth and hassle-free experience. Here are
 some tips and advice from GoodView, to
 help you with your move." />
@@ -38,27 +38,27 @@ help you with your move." />
             },
         }" :items="items">
             <template #moving="{ item }">
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Label Your Boxes</h2>
                     <p class="font-rubik">Clearly label each box with its contents and the room it belongs to. This helps with organization
                         and makes unpacking easier.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Follow Packing Instructions for Fragile Items</h2>
                     <p class="font-rubik"> For delicate items like glassware, always follow packing instructions, using proper materials
                         like bubble wrap or foam for protection.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Use Extended Instructions for Heavy Items</h2>
                     <p class="font-rubik">For large or heavy items, follow extended instructions on how to properly disassemble them. This
                         ensures safe transport and avoids damage.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Label Fragile Items as "Fragile"</h2>
                     <p class="font-rubik">Clearly mark fragile items as "Fragile" and provide additional instructions on how they should be
                         handled during the move to prevent accidents.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Create an Inventory List</h2>
                     <p class="font-rubik">Before you start packing, make a detailed inventory list of all items. This will help you track
                         your belongings and ensure everything arrives safely.</p>
@@ -66,27 +66,27 @@ help you with your move." />
             </template>
 
             <template #packing="{ item }">
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Use Sturdy Boxes</h2>
                     <p class="font-rubik">Choose strong, high-quality boxes that can handle the weight of your items and prevent crushing
                         during transport.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Wrap Fragile Items Carefully</h2>
                     <p class="font-rubik">Wrap delicate items like glassware and electronics in bubble wrap or packing paper to provide
                         extra protection from bumps and drops.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Pack Heavy Items in Small Boxes</h2>
                     <p class="font-rubik">Place heavier items, like books and tools, in smaller boxes to make them easier to carry and
                         avoid overloading larger boxes.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Fill Empty Spaces</h2>
                     <p class="font-rubik">Use packing peanuts, crumpled paper, or clothing to fill empty spaces in boxes, preventing items
                         from shifting during transit.</p>
                 </div>
-                <div class="border-b-2 border-black px-32 py-10">
+                <div class="border-b-2 border-black px-8 sm:px-32 py-10">
                     <h2 class="font-bold font-jakarta">Seal Boxes Securely</h2>
                     <p class="font-rubik">Use strong packing tape to seal all boxes, ensuring they stay closed during the move and protect
                         your belongings from dirt and moisture.</p>
