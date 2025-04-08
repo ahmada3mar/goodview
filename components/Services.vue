@@ -12,19 +12,18 @@
                             Your Needs</h3>
                         <p></p>
                         <div
-                            class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2  text-white  lg:grid-cols-3  gap-5  my-10 sm:my-14">
+                            class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2  text-white   gap-5  my-10 sm:my-14">
 
                             <div class="bg-[#171820] text-white  border-0 rounded-sm ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-
-                                    <div class="card-img h-64">
+                                <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                    <div class="card-img  h-72">
                                         <img alt="Commercial Moving"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
+                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-[5px]"
                                             v-lazy="'assets/card1.webp'" />
                                     </div>
-                                    <div class="flex flex-col p-4   text-start text-xl text-white">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Commercial Moving</h2>
+                                    <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
+                                        <div class=" lg:min-h-[135px] min-h-[200px]">
+                                            <h2 class="font-jakarta  font-[600] leading-[35px] text-[24px]">Commercial Moving</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
                                                 Relocate your business with minimal downtime. Our professional moving
@@ -32,7 +31,7 @@
                                             </p>
                                         </div>
                                         <ULink to="/services/commercial-moving-service"
-                                            class=" text-center text-sm font-jakarta mb-3 mt-[25px] rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all    px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
+                                        class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             READ MORE
                                         </ULink>
                                     </div>
@@ -41,22 +40,22 @@
                             </div>
 
                             <div class="bg-[#171820] text-white   border-0 rounded-none ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-                                    <div class="card-img h-64">
+                                <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                    <div class="card-img  h-72">
                                         <img alt="Furniture Disassembly"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
+                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-[5px]"
                                             v-lazy="'assets/card5.webp'" />
                                     </div>
-                                    <div class="flex flex-col  p-4  text-start text-xl text-white">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Furniture Disassembly</h2>
+                                    <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
+                                        <div class=" lg:min-h-[135px] min-h-[200px]">
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Furniture Disassembly</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
                                                 We carefully disassemble and reassemble your furniture for a hassle-free
                                                 move, providing safety and efficiency. </p>
                                         </div>
                                         <ULink to="/services/furniture-assembly-and-disassembly-service"
-                                            class=" text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all    px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
+                                        class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             READ MORE
                                         </ULink>
                                     </div>
@@ -69,22 +68,22 @@
 
 
                             <div class="bg-[#171820] text-white border-0 rounded-none ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-                                    <div class="card-img h-64">
+                                <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                    <div class="card-img  h-72">
                                         <img alt="Home Movers"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
+                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-[5px]"
                                             v-lazy="'assets/card3.webp'" />
                                     </div>
-                                    <div class="flex flex-col  p-4 text-start text-xl text-white">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Home Movers</h2>
+                                    <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
+                                        <div class=" lg:min-h-[135px] min-h-[200px]">
+                                            <h2 class="font-jakarta  font-[600] leading-[35px] text-[24px]">Home Movers</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
                                                 From packing to transport, our full-service moving company makes home
                                                 relocations easy and stress-free.</p>
                                         </div>
                                         <ULink to="/services"
-                                            class=" text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all    px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
+                                        class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             READ MORE
                                         </ULink>
                                     </div>
@@ -93,15 +92,15 @@
                             </div>
 
                             <div class="bg-[#171820] text-white border-0 rounded-none ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-                                    <div class="card-img h-64">
+                                <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                    <div class="card-img  h-72">
                                         <img alt="Long Term Storage"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
+                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-[5px]"
                                             v-lazy="'assets/card4.webp'" />
                                     </div>
-                                    <div class="flex flex-col   p-4  text-start text-xl text-white">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Long Term Storage</h2>
+                                    <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
+                                        <div class=" lg:min-h-[135px] min-h-[200px]">
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Long Term Storage</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
                                                 Need extra space? Our secure storage solutions keep your belongings safe
@@ -109,7 +108,7 @@
                                             </p>
                                         </div>
                                         <ULink to="/services"
-                                            class=" text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all   px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
+                                        class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             READ MORE
                                         </ULink>
                                     </div>
@@ -118,22 +117,22 @@
                             </div>
 
                             <div class="bg-[#171820] text-white  border-0 rounded-sm ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-                                    <div class="card-img h-64">
+                                <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                    <div class="card-img  h-72">
                                         <img alt="Office Moving"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
+                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-[5px]"
                                             v-lazy="'assets/card2.webp'" />
                                     </div>
-                                    <div class="flex flex-col   p-4  text-start text-xl text-white ">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Office Moving</h2>
+                                    <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
+                                        <div class=" lg:min-h-[135px] min-h-[200px]">
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Office Moving</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
                                                 We handle office relocations precisely, so your team can return to work
                                                 quickly and efficiently. </p>
                                         </div>
                                         <ULink to="/services"
-                                            class=" text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all   px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
+                                        class="text-center rounded-[10px] text-sm  font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             READ MORE
                                         </ULink>
                                     </div>
@@ -142,44 +141,38 @@
                             </div>
 
                             <div class="bg-[#171820] text-white  border-0 rounded-sm ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-                                    <div class="card-img h-64">
+                                <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                    <div class="card-img  h-72">
                                         <img alt="Packing"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
-                                            v-lazy="'assets/card8.webp'" />
+                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-[5px]"
+                                            v-lazy="'assets/card81.webp'" />
                                     </div>
-                                    <div class="flex flex-col  p-4   text-start text-xl text-white">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Packing</h2>
+                                    <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
+                                        <div class=" lg:min-h-[135px] min-h-[200px]">
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Packing</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
                                                 Leave the packing to us! Our experts use high-quality materials to
                                                 protect your belongings during the move. </p>
                                         </div>
                                         <ULink to="/services/packing-and-unpacking-service"
-                                            class=" text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all    px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
+                                           class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             READ MORE
                                         </ULink>
                                     </div>
 
                                 </div>
                             </div>
-
-
-
-                        </div>
-                        <div
-                            class="mx-auto max-w-[886.6px] items-center sm:px-5 gap-5 grid-cols-1 grid md:grid-cols-2 ">
                             <div class="bg-[#171820] text-white border-0 rounded-none ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-                                    <div class="card-img h-64">
+                                <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                    <div class="card-img  h-72">
                                         <img alt="Long Distance Moving"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
+                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-[5px]"
                                             v-lazy="'assets/card7.webp'" />
                                     </div>
-                                    <div class="flex flex-col  p-4   text-start text-xl text-white">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Long Distance Moving
+                                    <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
+                                        <div class=" lg:min-h-[135px] min-h-[200px]">
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Long Distance Moving
                                             </h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
@@ -187,42 +180,39 @@
                                                 delivery wherever you're headed.</p>
                                         </div>
                                         <ULink to="/services/long-distance-moving-service"
-                                            class=" text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all    px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
+                                        class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             READ MORE
                                         </ULink>
                                     </div>
 
                                 </div>
                             </div>
+                            <div class="bg-[#171820] text-white border-0 rounded-none ring-0">
+    <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+        <div class="card-img   h-72">
+            <img alt="Equipment Relocation"
+                class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover rounded-[5px]"
+                v-lazy="'assets/card92.webp'" />
+        </div>
+        <div class="flex flex-col  xl:w-1/2 p-4 text-start text-xl text-white ">
+            <div class="lg:min-h-[135px] min-h-[200px]">
+                <h2 class="font-jakarta font-[600] leading-[35px] text-[24px]">Equipment Relocation</h2>
+                <p class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5">
+                    We specialize in moving heavy and delicate equipment with precision and
+                    care to prevent damage.
+                </p>
+            </div>
+            <ULink to="/services"
+                class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
+                READ MORE
+            </ULink>
+        </div>
+    </div>
+</div>
 
 
-
-                            <div class="bg-[#171820] text-white  border-0 rounded-none ring-0">
-                                <div class="flex flex-col h-full gap-1     ">
-                                    <div class="card-img h-64">
-                                        <img alt="Equipment Relocation"
-                                            class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
-                                            v-lazy="'assets/card9.webp'" />
-                                    </div>
-                                    <div class="flex flex-col  p-4   text-start text-xl text-white">
-                                        <div class=" min-h-[135px]">
-                                            <h2 class="font-jakarta  font-[600]  text-[24px]">Equipment Relocation
-                                            </h2>
-                                            <p
-                                                class="text-[16px]   font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                We specialize in moving heavy and delicate equipment with precision
-                                                and
-                                                care to prevent damage.</p>
-                                        </div>
-                                        <ULink to="/services"
-                                            class=" text-center rounded-[10px]  text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all    px-12  md:px-20  lg:px-20  xl:px-28 py-3  font-bold">
-                                            READ MORE
-                                        </ULink>
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
+
 
                     </div>
                 </div>
@@ -261,7 +251,7 @@
                             Good View Moving reviews speak for themselves!</li>
                     </ul>
                     <UButton size="xl" label="Learn
-                        more about us" to="/about-us" type="about us"
+                        more " to="/about-us" type="about us"
                         class=" mt-6 bg-black text-white px-7 py-2 transition-all  font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 " />
 
 
@@ -270,7 +260,7 @@
             </div>
 
             <div class="sm:py-20 py-10">
-                <!-- <h2 class="md:px-20 px-5 md:text-5xl text-4xl text-start font-bold  font-jakarta text-black my-16 sm:my-20">Where to find
+                <!-- <h2 class="md:px-16 px-5 md:text-5xl text-4xl text-start font-bold  font-jakarta text-black my-16 sm:my-20">Where to find
                 us</h2> -->
                 <div class="flex flex-col-reverse lg:flex-row gap-16">
     <!-- <div> -->
@@ -360,7 +350,7 @@
     <div class="flex flex-col gap-5 flex-1 font-jakarta items-center">
         <div :class="{
             'bg-primary-500 text-white': step === 3,
-            'bg-primary-500 text-white': step !== 3,
+            'bg-primary-500 text-gray-100': step !== 3,
             'opacity-50': step < 3
         }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
             3
@@ -376,8 +366,8 @@
                   <div class="flex flex-col items-center justify-center gap-5 mt-5" v-if="isDone">
                       <DotLottieVue  class="w-full h-auto sm:w-[300px] sm:h-[300px]"  autoplay loop
                           src="https://lottie.host/5985b015-e571-4f7b-b9ac-212322831da2/vej1PvvYj0.json" />
-                      <h4 class="text-primary-500  text-[18px] sm:text-[32px]   font-jakarta sm:px-10 font-bold">Thank you for choosing us</h4>
-                      <p class="text-gray-400 text-xl pb-5  mb-16 font-jakarta font-bold">We will contact you shortly!</p>
+                      <h4 class="text-primary-500  text-[18px] sm:text-[32px] text-center  font-jakarta sm:px-10 font-bold">Thank you for choosing us</h4>
+                      <p class="text-gray-400 text-xl  font-jakarta text-center font-bold">We will contact you shortly!</p>
                   </div>
 
                   <!-- Step 1: Moving Info -->
@@ -458,30 +448,35 @@
                                   </div>
                               </div>
                               <div class="flex md:flex-row flex-col gap-2 md:items-center w-full">
-  <label class="block  w-16 font-bold text-gray-100  text-xl">Date</label>
-  <div class="flatpickr-wrapper flex-1 relative" :key="'date-input-'+step">
-    <div class="relative">
+    <label class="block w-16 font-bold text-gray-100 text-xl">Date</label>
+    <div class="flatpickr-wrapper flex-1 relative">
+      <div class="relative">
         <input
           ref="dateInput"
-          :class="[
-            showErrors && errors.date.status ? '!border-2 !border-red-500' : 'border border-gray-700',
-            'flex-1 rounded-[10px] placeholder:font-jakarta bg-[#171820] text-slate-300  py-3 pl-12',
-            'focus:ring-2 focus:ring-primary-500 focus:border-primary-500 focus:outline-none',
-            ' w-[100%] sm:min-w-[390px] md:min-w-[490px] lg:min-w-[360px] '
-          ]"
           type="text"
           placeholder="Select moving date"
-          data-input
+          :class="[
+            showErrors && errors.date.status ? '!border-2 !border-red-500' : 'border border-gray-700',
+            'flex-1 rounded-[10px] placeholder:font-jakarta bg-[#171820] text-slate-300 px-4 py-3 pl-12',
+            'focus:ring-2 focus:ring-primary-500 focus:border-primary-500 focus:outline-none',
+            'w-full '
+          ]"
         />
-      <div class="absolute left-3 top-[56%] transform -translate-y-1/2 text-gray-400">
-        <UIcon name="i-heroicons-calendar-days" class=" w-9 h-[27px]" />
+        <div
+          class="absolute left-3 top-[56%] transform -translate-y-1/2 text-gray-400 pointer-events-none"
+          tabindex="-1"
+        >
+          <UIcon name="i-heroicons-calendar-days" class="w-9 h-[27px]" />
+        </div>
       </div>
+      <span
+        v-if="showErrors && errors.date.status"
+        class="text-red-500 font-jakarta text-sm mt-1 block"
+      >
+        {{ errors.date.message }}
+      </span>
     </div>
-    <span v-if="showErrors && errors.date.status" class="text-red-500  font-jakarta text-sm mt-1 block">
-      {{ errors.date.message }}
-    </span>
   </div>
-</div>
                           <!-- Navigation Buttons -->
                           <div class="flex gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                               <div class="flex-1">
@@ -718,10 +713,10 @@
 //         // Add your form submission logic here
 //     }
 // };
-
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
-import { ref, reactive } from "vue";
+import Pikaday from 'pikaday';
+import 'pikaday/css/pikaday.css';
+import { ref, onMounted, onBeforeUnmount, watch, nextTick } from 'vue';
+import {  reactive } from "vue";
 import { useRoute } from "vue-router";
 import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 
@@ -796,36 +791,49 @@ const handleMobileInput = () => {
     quoteForm.value.mobile = quoteForm.value.mobile.replace(/\D/g, '');
   }
 };
+
 const dateInput = ref(null);
-let flatpickrInstance = null;
+let picker = null;
+
 onMounted(() => {
-  initFlatpickr();
+  // Initialize Pikaday when the component is mounted
+  initPikaday();
 });
 
-// Reinitialize Flatpickr when step changes back to 1
+onBeforeUnmount(() => {
+  // Destroy Pikaday instance before the component is unmounted
+  if (picker) {
+    picker.destroy();
+    picker = null;
+  }
+});
+
 watch(step, (newStep) => {
+  // Re-initialize Pikaday when step changes back to 1
   if (newStep === 1) {
     nextTick(() => {
-      if (flatpickrInstance) {
-        flatpickrInstance.destroy();
-      }
-      initFlatpickr();
+      if (picker) picker.destroy();
+      initPikaday();
     });
   }
 });
 
-function initFlatpickr() {
-  flatpickrInstance = flatpickr(dateInput.value, {
-    minDate: 'today',
-    dateFormat: 'm/d/Y',
-    static: true,
-    clickOpens: true,
-    defaultDate: quoteForm.value.date, // Set initial date from form
-    onChange: (selectedDates) => {
-      quoteForm.value.date = selectedDates[0] ? selectedDates[0] : null;
+// Initialize Pikaday
+function initPikaday() {
+  picker = new Pikaday({
+    field: dateInput.value, // Bind to the input field
+    format: 'MM/DD/YYYY',  // Date format (MM/DD/YYYY)
+    minDate: new Date(),    // Disable past dates
+    setDefaultDate: true,   // Set the default date as current or passed value
+    defaultDate: quoteForm.value.date || new Date(),
+    onSelect: function (date) {
+      // Update form with selected date
+      quoteForm.value.date = date;
+      quoteForm.value.day = false;
       errors.date.status = false;
     },
-    onClose: () => {
+    onClose: function () {
+      // Set error if no date is selected
       setTimeout(() => {
         if (!quoteForm.value.date) {
           errors.date.status = true;
@@ -835,12 +843,6 @@ function initFlatpickr() {
   });
 }
 
-// Clean up
-onBeforeUnmount(() => {
-  if (flatpickrInstance) {
-    flatpickrInstance.destroy();
-  }
-});
 const validateEmail = (email) => {
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 return emailRegex.test(email);

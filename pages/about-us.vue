@@ -24,10 +24,10 @@
                     </p>
                 </div>
                 <!-- Image Section -->
-                <div class="md:w-[50%]">
+                <div class=" card-img">
                     <img alt="Commercial Moving"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[300px] object-cover "
-                        v-lazy="'assets/movingServices.jpg'" />
+                        v-lazy="'assets/movingServices.png'" />
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
                     </div>
 
                     <!-- Image Section -->
-                    <div class="flex-1 flex justify-center items-center">
+                    <div class="flex-1 flex card-img justify-center items-center">
                         <img alt="Commercial Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
                             v-lazy="'assets/WhyChooseUS.jpg'" />
@@ -260,28 +260,32 @@
                         </ul>
 
                     </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 p-3 md:p-10 bg-primary-500 rounded-none">
+    <!-- Text Content (Left) -->
+    <div class="flex-1 flex flex-col gap-5">
+        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">
+            Ready to Move? Let's Get Started!
+        </h2>
+        <p class="text-md md:text-lg text-black font-rubik">
+            Wherever life is taking you, Good View Moving & Storage is here to make your move smooth and hassle-free.
+        </p>
+        <p class="text-md md:text-lg text-black font-rubik">
+            Get free moving estimates and see why we're the best moving company for your next move.
+        </p>
+    </div>
 
-                    <div
-                        class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
-                        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">Ready to Move? Let’s Get
-                            Started!
-                        </h2>
-                        <p class="text-md md:text-lg text-black font-rubik">
-                            Wherever life is taking you, Good View Moving & Storage is here to make your move smooth and
-                            hassle-free.
-                        </p>
-
-                        <p class="text-md md:text-lg text-black font-rubik">Get free moving estimates and see why we’re
-                            the best moving company for your next move.</p>
-                        <div class="w-fit  ">
-                            <UButton size="xl" label="Get a Free Quote" type="free quote" to="/quote"
-                                class=" bg-black text-white px-7 py-2 transition-all  font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 " />
-                        </div>
-                    </div>
-
-
-
-                </div>
+    <!-- Button (Right) -->
+    <div class="w-fit mt-4 md:mt-0">
+        <UButton
+            size="xl"
+            label="Get a Free Quote"
+            type="free quote"
+            to="/quote"
+            class="bg-black text-white px-7 py-2 transition-all font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 w-full md:w-auto"
+        />
+    </div>
+</div>
+</div>
 
 
                 <Trusted />

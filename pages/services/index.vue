@@ -16,10 +16,10 @@
 
 
                     <div class="flex  flex-col  bg-zinc-900 md:gap-5 gap-2 rounded-none ">
-                        <div class="card-img  h-40">
+                        <!-- <div class="card-img  h-40">
                                     <img alt="Commercial Moving" class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
                                         v-lazy="'assets/card1.webp'" />
-                                </div>
+                                </div> -->
                               <div
                                  class="flex flex-col p-4   text-start text-xl text-white">
                                  <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
@@ -39,10 +39,10 @@
                     </div>
 
                     <div class="flex  flex-col bg-primary-500 md:gap-5 gap-2 rounded-none ">
-                        <div class="card-img h-40">
+                        <!-- <div class="card-img h-40">
                                     <img alt="Furniture Disassembly" class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
                                         v-lazy="'assets/card5.webp'" />
-                                </div>
+                                </div> -->
                               <div
                                  class="flex flex-col p-4   text-start text-xl text-black">
                                  <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
@@ -63,10 +63,10 @@
                     </div>
 
                     <div class="flex  flex-col  bg-zinc-900 md:gap-5 gap-2 rounded-none">
-                        <div class="card-img  h-40">
+                        <!-- <div class="card-img  h-40">
                                     <img alt="Home Movers" class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
                                         v-lazy="'assets/card3.webp'" />
-                                </div>
+                                </div> -->
                               <div class="flex flex-col p-4   text-start text-xl text-white">
                                 <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
                         <h2 class="text-xl md:text-2xl font-extrabold font-jakarta text-stone-300">Packing and Unpacking</h2>
@@ -85,10 +85,10 @@
 
 
                     <div class="flex  flex-col bg-primary-500 lg:bg-zinc-900 md:gap-5 gap-2 rounded-none ">
-                        <div class="card-img h-40">
+                        <!-- <div class="card-img h-40">
                                     <img alt="Long Term Storage" class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
                                         v-lazy="'assets/card4.webp'" />
-                                </div>
+                                </div> -->
                                 <div class="flex flex-col p-4   text-start text-xl text-white">
                                     <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
                         <h2 class="text-xl md:text-2xl font-extrabold font-jakarta text-black lg:text-stone-300">Furniture Assembly
@@ -108,10 +108,10 @@
                     </div>
 
                     <div class="flex  flex-col bg-zinc-900 lg:bg-primary-500 md:gap-5 gap-2 rounded-none ">
-                        <div class="card-img h-40">
+                        <!-- <div class="card-img h-40">
                                     <img alt="Office Moving" class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
                                         v-lazy="'assets/card2.webp'" />
-                                </div>
+                                </div> -->
                                 <div
                                  class="flex flex-col   p-4  text-start text-xl text-white">
                                  <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
@@ -132,10 +132,10 @@
                     </div>
 
                     <div class="flex  flex-col  bg-primary-500 lg:bg-zinc-900 md:gap-5 gap-2 rounded-none ">
-                        <div class="card-img h-40">
+                        <!-- <div class="card-img h-40">
                                     <img alt="Home Movers" class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover  rounded-none"
                                         v-lazy="'assets/card3.webp'" />
-                                </div>
+                                </div> -->
                                 <div
                                  class="flex flex-col   p-4  text-start text-xl text-white">
                                  <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
@@ -158,7 +158,7 @@
 
                 </div>
 
-                <div class="bg-black flex flex-col justify-center items-center py-10 rounded-[10px] xl:h-[58%] ">
+                <div class="bg-black flex flex-col justify-center items-center py-10 rounded-[10px] ">
                     <h2 class="text-2xl md:text-3xl font-extrabold text-primary-500 font-jakarta ">Get free quote</h2>
 
                 <div class="p-8 flex flex-col bg-black max-w-full md:max-w-[650px] w-full">

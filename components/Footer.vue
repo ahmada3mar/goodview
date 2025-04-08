@@ -9,12 +9,17 @@
                             <p class="text-center md:text-left font-jakarta">We deliver
                                 <span class="italic font-bold font-jakarta " >Nationwide</span>.</p>
                                 <div class="flex gap-4 mt-2">
+                                    <a href="https://www.facebook.com/profile.php?id=61558800622379" target="_blank">
+                                    <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]7">
+    <UIcon name="i-mdi-facebook" class="w-[50px] h-[50px] text-primary-500" />
+</div>
+                                </a>
                                     <a href="https://www.instagram.com/Fast_transportation_" target="_blank">
-                                    <img class="  w-8 h-8" src="~/assets/social.png" alt="good view logo"  />
+     <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]">
+    <UIcon name="i-mdi-instagram" class="w-[50px] h-[50px] text-primary-500" />
+</div>
                                 </a>
-                                <a href="https://www.facebook.com/profile.php?id=61558800622379" target="_blank">
-                                    <img class=" w-8 h-8" src="~/assets/facebook.png" alt="good view logo" />
-                                </a>
+
                                 </div>
                         </div>
 
@@ -101,3 +106,5 @@
             </div>
         </div>
     </template>
+<script>
+</script>

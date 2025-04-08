@@ -28,7 +28,7 @@
 
                 </div>
                 <!-- Image Section -->
-                <div >
+                <div class="card-img" >
                     <img alt="Residental Moving"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
                         v-lazy="'/assets/Residential-Moving-Services3.webp'" />
@@ -65,7 +65,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="flex-1 flex justify-center items-center">
+                    <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Residental Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
                             v-lazy="'/assets/Residental2.jpg'" />
@@ -135,27 +135,28 @@
                         affordable and transparent. You'll always know what you're paying for without hidden fees or
                         last-minute surprises.</p>
 
-                    <div
-                        class="py-[30px] px-[40px] mt-5 shadow-none bg-primary-500 text-[18px] sm:text-[22px]  rounded-[10px] relative">
-                        <div class=" flex items-center did_you_know">
-                            <div class="content_div">
-                                <strong>
-                                    <span class="m-0 font-normal  font-jakarta">
-                                        The above costs are just average estimates, as every move is unique. Your actual
-                                        cost may vary based on specific factors such as distance, home size, and
-                                        additional services. Use these figures as a general reference, and contact us
-                                        for a personalized quote.
-                                    </span>
-                                    <div class="w-fit mt-4 text-center sm:text-start  ">
-                                        <UButton size="xl" label="Free Moving Quote"
-                                            type="free quote" to="/quote"
-                                            class=" bg-black text-white px-7 py-2 transition-all  font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 " />
+                        <div class="py-[30px] px-[30px] sm:px-[40px] mt-5 shadow-none bg-primary-500 rounded-[20px] relative">
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-6">
+        <div class="lg:max-w-[55%]">
+            <h2 class="text-[24px] font-bold font-jakarta text-left">
+                Book Your Moving Service Today!
+            </h2>
 
-                                    </div>
-                                </strong>
-                            </div>
-                        </div>
-                    </div>
+            <p class="text-[18px] font-normal font-jakarta text-left mt-2">
+                Get in touch with us for a personalized moving quote and experience a smooth relocation experience.
+            </p>
+        </div>
+
+        <div class="flex  lg:justify-end mt-4 lg:mt-0">
+            <UButton
+                size="xl"
+                label="Get Free Quote"
+                type="free quote"
+                to="/quote"
+                class="bg-black text-white px-7 py-3 transition-all font-jakarta rounded-[10px] text-lg font-[300] hover:text-black border border-black hover:bg-primary-500" />
+        </div>
+    </div>
+</div>
 
                 </div>
             </div>

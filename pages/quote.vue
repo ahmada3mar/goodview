@@ -57,8 +57,8 @@
                   <div class="flex flex-col items-center justify-center rouded-[10px] gap-5 mt-5" v-if="isDone">
                       <DotLottieVue  class="w-full h-auto sm:w-[300px] sm:h-[300px]"  autoplay loop
                           src="https://lottie.host/5985b015-e571-4f7b-b9ac-212322831da2/vej1PvvYj0.json" />
-                      <h4 class="text-primary-500  text-[18px] sm:text-4xl md:text-5xl  font-jakarta sm:px-10 font-bold">Thank you for choosing us</h4>
-                      <p class="text-gray-400 text-xl pb-5  mb-16 font-jakarta font-bold">We will contact you shortly!</p>
+                      <h4 class="text-primary-500  text-[18px] sm:text-4xl md:text-5xl text-center  font-jakarta sm:px-10 font-bold">Thank you for choosing us</h4>
+                      <p class="text-gray-400 text-xl sm:pb-5  sm:mb-16 font-jakarta font-bold">We will contact you shortly!</p>
                   </div>
 
                   <!-- Step 1: Moving Info -->
@@ -139,30 +139,35 @@
                                   </div>
                               </div>
                               <div class="flex md:flex-row flex-col gap-2 md:items-center w-full">
-  <label class="block  w-16 font-bold text-gray-100  text-xl">Date</label>
-  <div class="flatpickr-wrapper flex-1 relative" :key="'date-input-'+step">
-    <div class="relative">
+    <label class="block w-16 font-bold text-gray-100 text-xl">Date</label>
+    <div class="flatpickr-wrapper flex-1 relative">
+      <div class="relative">
         <input
           ref="dateInput"
+          type="text"
+          placeholder="Select moving date"
           :class="[
             showErrors && errors.date.status ? '!border-2 !border-red-500' : 'border border-gray-700',
             'flex-1 rounded-[10px] placeholder:font-jakarta bg-[#171820] text-slate-300 px-4 py-3 pl-12',
             'focus:ring-2 focus:ring-primary-500 focus:border-primary-500 focus:outline-none',
-            ' w-[100%] sm:min-w-[500px] md:min-w-[550px] lg:min-w-[740px]'
+            'w-full sm:min-w-[500px] md:min-w-[550px] lg:min-w-[740px]'
           ]"
-          type="text"
-          placeholder="Select moving date"
-          data-input
         />
-      <div class="absolute left-3 top-[56%] transform -translate-y-1/2 text-gray-400">
-        <UIcon name="i-heroicons-calendar-days" class=" w-9 h-[27px]" />
+        <div
+          class="absolute left-3 top-[56%] transform -translate-y-1/2 text-gray-400 pointer-events-none"
+          tabindex="-1"
+        >
+          <UIcon name="i-heroicons-calendar-days" class="w-9 h-[27px]" />
+        </div>
       </div>
+      <span
+        v-if="showErrors && errors.date.status"
+        class="text-red-500 font-jakarta text-sm mt-1 block"
+      >
+        {{ errors.date.message }}
+      </span>
     </div>
-    <span v-if="showErrors && errors.date.status" class="text-red-500  font-jakarta text-sm mt-1 block">
-      {{ errors.date.message }}
-    </span>
   </div>
-</div>
                           <!-- Navigation Buttons -->
                           <div class="flex gap-2 md:gap-10 lg:gap-28 md:items-center w-full">
                               <div class="flex-1">
@@ -290,9 +295,10 @@
 </template>
 
 <script setup>
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
-import { ref, reactive } from "vue";
+import Pikaday from 'pikaday';
+import 'pikaday/css/pikaday.css';
+import { ref, onMounted, onBeforeUnmount, watch, nextTick } from 'vue';
+import {  reactive } from "vue";
 import { useRoute } from "vue-router";
 import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 
@@ -368,35 +374,47 @@ const handleMobileInput = () => {
   }
 };
 const dateInput = ref(null);
-let flatpickrInstance = null;
+let picker = null;
+
 onMounted(() => {
-  initFlatpickr();
+  // Initialize Pikaday when the component is mounted
+  initPikaday();
 });
 
-// Reinitialize Flatpickr when step changes back to 1
+onBeforeUnmount(() => {
+  // Destroy Pikaday instance before the component is unmounted
+  if (picker) {
+    picker.destroy();
+    picker = null;
+  }
+});
+
 watch(step, (newStep) => {
+  // Re-initialize Pikaday when step changes back to 1
   if (newStep === 1) {
     nextTick(() => {
-      if (flatpickrInstance) {
-        flatpickrInstance.destroy();
-      }
-      initFlatpickr();
+      if (picker) picker.destroy();
+      initPikaday();
     });
   }
 });
 
-function initFlatpickr() {
-  flatpickrInstance = flatpickr(dateInput.value, {
-    minDate: 'today',
-    dateFormat: 'm/d/Y',
-    static: true,
-    clickOpens: true,
-    defaultDate: quoteForm.value.date, // Set initial date from form
-    onChange: (selectedDates) => {
-      quoteForm.value.date = selectedDates[0] ? selectedDates[0] : null;
+// Initialize Pikaday
+function initPikaday() {
+  picker = new Pikaday({
+    field: dateInput.value, // Bind to the input field
+    format: 'MM/DD/YYYY',  // Date format (MM/DD/YYYY)
+    minDate: new Date(),    // Disable past dates
+    setDefaultDate: true,   // Set the default date as current or passed value
+    defaultDate: quoteForm.value.date || new Date(),
+    onSelect: function (date) {
+      // Update form with selected date
+      quoteForm.value.date = date;
+      quoteForm.value.day = false;
       errors.date.status = false;
     },
-    onClose: () => {
+    onClose: function () {
+      // Set error if no date is selected
       setTimeout(() => {
         if (!quoteForm.value.date) {
           errors.date.status = true;
@@ -406,12 +424,6 @@ function initFlatpickr() {
   });
 }
 
-// Clean up
-onBeforeUnmount(() => {
-  if (flatpickrInstance) {
-    flatpickrInstance.destroy();
-  }
-});
 const validateEmail = (email) => {
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 return emailRegex.test(email);
@@ -539,7 +551,6 @@ watch(() => quoteForm.date, (newDate) => {
     flatpickrInstance.setDate(newDate, false);
   }
 });
+
 </script>
 
-<style lang="css" scoped>
-</style>
