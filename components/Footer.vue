@@ -1,82 +1,110 @@
-<template>
-    <div class="bg-black py-5 footer rounded-none text-white">
-        <div class="container mx-auto">
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-16 p-10">
-                <!-- Logo and Description -->
-                <div class="flex flex-col w-full  mx-auto   gap-5 items-start ">
-                    <img class="" src="~/assets/good-view-logo-white.png" alt="good view logo" />
-                    <div class="flex flex-col gap-2 it md:items-start">
-                        <p class="text-center md:text-left">We deliver 
-                            <span class="italic font-bold" >Nationwide</span>.</p>
+    <template>
+        <div class="bg-black py-5 footer rounded-none text-white">
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-12 p-10">
+                    <!-- Logo and Description -->
+                    <div class="flex flex-col w-full  mx-auto   gap-5 items-start ">
+                        <img class="" src="~/assets/good-view-logo-white.png" alt="good view logo" />
+                        <div class="flex flex-col gap-2 it md:items-start">
+                            <p class="text-center md:text-left font-jakarta">We deliver
+                                <span class="italic font-bold font-jakarta " >Nationwide</span>.</p>
+                                <div class="flex gap-4 mt-2">
+                                    <a href="https://www.facebook.com/profile.php?id=61558800622379" target="_blank">
+                                    <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]7">
+    <UIcon name="i-mdi-facebook" class="w-[50px] h-[50px] text-primary-500" />
+</div>
+                                </a>
+                                    <a href="https://www.instagram.com/Fast_transportation_" target="_blank">
+     <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]">
+    <UIcon name="i-mdi-instagram" class="w-[50px] h-[50px] text-primary-500" />
+</div>
+                                </a>
+
+                                </div>
+                        </div>
+
                     </div>
 
-                </div>
+                    <!-- Quick Links -->
+                    <div class="flex flex-col  w-full  mx-auto  gap-5">
+                        <h4 class="text-white font-jakarta  text-[24px] font-bold">Quick Links</h4>
+                        <div class="flex w-full flex-col gap-2  ">
+                            <ULink to="/" class="text-start font-rubik text-[16px] hover:text-primary-500"  >Home</ULink>
+                            <ULink to="/about-us" class="text-start font-rubik text-[16px]  hover:text-primary-500" >About Us</ULink>
+                            <ULink to="/help" class="text-start font-rubik text-[16px] hover:text-primary-500" >Help</ULink>
+                            <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/RightsandResponsibilitiesBooklet_2022Update.pdf " class="text-start font-rubik text-[16px] hover:text-primary-500" >Customer rights</ULink>
+                            <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/ReadytoMoveBrochure_2022Update.pdf" class="text-start font-rubik text-[16px] hover:text-primary-500" >Ready to move Brochure</ULink>
+                        </div>
+                    </div>
 
-                <!-- Quick Links -->
-                <div class="flex flex-col  w-full  mx-auto  gap-5">
-                    <h4 class="text-primary-500 text-lg font-bold">Quick Links</h4>
-                    <div class="flex w-full flex-col gap-2  ">
-                        <ULink to="/" class="text-start" >Home</ULink>
-                        <ULink to="/about-us" class="text-start" >About Us</ULink>
-                        <ULink to="/help" class="text-start" >Help</ULink>
-                        <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/RightsandResponsibilitiesBooklet_2022Update.pdf" class="text-start" >Customer rights</ULink>
-                        <ULink to="https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/ReadytoMoveBrochure_2022Update.pdf" class="text-start" >Ready to move Brochure</ULink>
+                    <!-- Services -->
+                    <div class="flex flex-col w-full  mx-auto  gap-5">
+                        <h4 class="text-white font-jakarta  text-[24px] font-bold">Services</h4>
+                        <div class="flex w-full flex-col gap-2 ">
+                        <ULink to="/services/residential-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Residential Moving</ULink>
+                        <ULink to="/services/commercial-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Commercial Moving</ULink>
+                        <ULink to="/services/packing-and-unpacking-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Packing and Unpacking</ULink>
+                        <ULink to="/services/furniture-assembly-and-disassembly-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Furniture Assembly and Disassembly</ULink>
+                            <ULink to="/services/long-distance-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Long Distance Moving</ULink>
+                            <ULink to="/services/specialty-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Specialty Moving</ULink>
+                            <ULink to="/services/storage-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Storage Units</ULink>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Services -->
-                <div class="flex flex-col w-full  mx-auto  gap-5">
-                    <h4 class="text-primary-500 text-lg font-bold">Services</h4>
-                    <div class="flex w-full flex-col gap-2 ">
-                       <ULink to="/services" class="text-start">Company relocation</ULink>
-                       <ULink to="/services" class="text-start">Private relocation</ULink>
-                       <ULink to="/services" class="text-start">Fragile goods</ULink>
-                       <ULink to="/services" class="text-start">Storage</ULink>
-                        <ULink to="/services" class="text-start">Furniture assembly</ULink>
-                    </div>
-                </div>
+                    <!-- Contacts -->
+                    <div class="flex flex-col w-full  mx-auto  gap-5">
+                        <h4 class="text-white font-jakarta  text-[24px] font-bold">Contacts</h4>
+                        <div class="justify-center">
+                        <div class="flex w-full gap-3">
+                            <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
+                                <UIcon name="i-material-symbols-call" class="w-5 h-5 text-primary-500" />
+                            </div>
+                            <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex bg-opacity-35 hover:text-primary-500 rounded-full p-1 font-rubik text-[16px] text-white font-[400]">
+                                <span itemprop="telephone"><a href="tel:+19737821339">+1 973-782-1339</a></span>
+                            </div>
+                        </div>
+                        <div class="flex w-full  gap-3">
+                            <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
+                                <UIcon name="i-material-symbols-mail" class="w-5 h-5 text-primary-500" />
+                            </div>
+                            <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex bg-opacity-35 rounded-full font-rubik text-[16px] p-1 text-white font-[400]">
+                                <span itemprop="email"><a href="mailto:info@goodview-moving.com">info@goodview-moving.com</a></span>
+                            </div>
+                        </div>
+                        <div class="flex w-full  gap-3">
+                            <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
+                                <UIcon name="i-material-symbols-location-on" class="w-5 h-5 text-primary-500" />
+                            </div>
+                            <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex font-[400] bg-opacity-35 font-rubik text-[16px] rounded-full p-1 text-white ">
+                                <span itemprop="email">490 riverview dr, Totowa NJ, 7512</span>
+                            </div>
+                        </div>
 
-                <!-- Contacts -->
-                <div class="flex flex-col w-full  mx-auto  gap-5">
-                    <h4 class="text-primary-500 text-lg font-bold">Contacts</h4>
-                    <div class="justify-center">
-                    <div class="flex w-full gap-3">
-                        <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
-                            <UIcon name="i-material-symbols-call" class="w-5 h-5 text-primary-500" />
-                        </div>
-                        <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex bg-opacity-35 rounded-full p-1 text-white font-bold">
-                            <span itemprop="telephone"><a href="tel:+19737821339">+1 973-782-1339</a></span>
-                        </div>
-                    </div>
-                    <div class="flex w-full  gap-3">
-                        <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
-                            <UIcon name="i-material-symbols-mail" class="w-5 h-5 text-primary-500" />
-                        </div>
-                        <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex bg-opacity-35 rounded-full p-1 text-white font-bold">
-                            <span itemprop="email"><a href="mailto:info@goodview-moving.com">info@goodview-moving.com</a></span>
-                        </div>
-                    </div>
-                    <div class="flex w-full  gap-3">
-                        <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
-                            <UIcon name="i-carbon-logo-facebook" class="w-5 h-5 text-primary-500" />
-                        </div>
-                        <div class="flex bg-opacity-35 rounded-full p-1 text-white font-bold">
-                            <a href="https://www.facebook.com/profile.php?id=61558800622379">Facebook</a>
-                        </div>
-                    </div>
-                    <div class="flex w-full  gap-3">
-                        <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
-                            <UIcon name="i-carbon-logo-instagram" class="w-5 h-5 text-primary-500" />
-                        </div>
-                        <div class="flex bg-opacity-35 rounded-full p-1 text-white font-bold">
-                          <a href="https://www.instagram.com/Fast_transportation_">Instagram</a>
-                        </div>
-                    </div>
-                    
-                </div>
+                        <!-- <div class="flex w-full  gap-3">
+                            <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
+                                <UIcon name="fa-solid fa-location-dot"" class="w-5 h-5 text-primary-500" />
+                            </div>
 
+                            <div class="flex bg-opacity-35 rounded-full p-1 text-white font-bold">
+                                <a href="https://www.facebook.com/profile.php?id=61558800622379">Facebook</a>
+                            </div>
+                        </div>
+                        <div class="flex w-full  gap-3">
+                            <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
+                                <UIcon name="i-carbon-logo-instagram" class="w-5 h-5 text-primary-500" />
+                            </div>
+                            <div class="flex bg-opacity-35 rounded-full p-1 text-white font-bold">
+                            <a href="https://www.instagram.com/Fast_transportation_">Instagram</a>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    </div>
                 </div>
+                <div class="text-center py-4 font-jakarta text-[16px] font-[300] text-white"> Copyright © 2025 All Rights Reserved By Good View Moving &amp; Storage. </div>
             </div>
         </div>
-    </div>
-</template>
+    </template>
+<script>
+</script>
