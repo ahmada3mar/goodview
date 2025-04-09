@@ -1,16 +1,16 @@
 <template>
     <div class="flex flex-col h-full">
-        <Banner background="/assets/services.jpg" class="  md:h-[25rem]" title="Services"
-            text="We have many services to help you with your move. We can move your things from one place to another with reliable nationwide moving services. We can also store your things, and assemble furniture for you." />
+        <Banner background="/assets/services.jpg" class="  md:h-[25rem]" title="Our Moving Services"
+            text="Whether you're moving across the street or across the state, our moving services are designed to take the stress out of your relocation." />
 
-        <Intro img="/assets/new_truck.png" title="Moving Services"
-            text="We can help you with moving your things for you, whether they are for your home or your business. We can pack and unpack your things, and transport them safely to your new place. We have boxes and materials to pack your things, and insurance to protect them. We can move any kind of things, like furniture, computers, documents, pianos, safes, machines, art objects, and antiques." />
+        <Intro img="/assets/new_truck.png" title="Moving Services for Every Need"
+            text="No two moves are the same, and that's why we offer a variety of moving services to fit every situation. Whether you're planning a residential move, a commercial relocation, or need help with packing and unpacking, we have you covered." />
 
         <div :ref="el => (scrollElements[0] = el)" :class="{
             'opacity-100 translate-y-0': isVisible[0],
             'opacity-0 translate-y-20': !isVisible[0],
         }" class="transition-all duration-1000 ease-in-out bg-primary-500 w-full p-3 md:p-10  rounded-none z-10">
-            <div class="grid grid-cols-1  container  xl:grid-cols-4  gap-5    lg:-mt-40 ">
+            <div class="grid grid-cols-1  container  xl:grid-cols-4  gap-5     lg:-mt-32 ">
                 <div
                     class="bg-black col-span-1 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-[10px]   p-5">
 
