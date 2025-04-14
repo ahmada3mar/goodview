@@ -16,7 +16,7 @@
                  <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>Experienced Movers: </b> Our professional team ensures your belongings are packed and unpacked safely.</p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Custom Solutions: </b>  We offer tailored packing services for both residential and commercial moves.</p>
+                      <b>Custom Solutions: </b>  We offer tailored packing services for both residential and <b><a href="https://goodview-moving.com/services/commercial-moving-service/"  target="_blank" class=" font-[500] underline "> commercial moves</a></b>.</p>
                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>High-Quality Materials: </b> We use the best packing supplies for moving, including materials for fragile item packing.</p>
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
@@ -128,7 +128,7 @@
                     </ul>
 
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note:</span> At Good View Moving & Storage, our moving costs are affordable and transparent. You'll always know what you're paying for without hidden fees or last-minute surprises.</p>
+                            class="italic font-bold">Note: </span> At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="  font-[500] underline "> Good View Moving & Storage</a></b>, our moving costs are affordable and transparent. You'll always know what you're paying for without hidden fees or last-minute surprises.</p>
                             <div class="py-[30px] px-[30px] sm:px-[40px] mt-5 shadow-none bg-primary-500 rounded-[20px] relative">
     <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-6">
         <div class="lg:max-w-[55%]">

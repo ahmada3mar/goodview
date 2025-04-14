@@ -26,15 +26,11 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Reliable Moving Services in USA | Home & Office Movers' },
         { property: 'og:description', content: 'Professional movers offering local, long-distance, and storage services in USA.' },
         { property: 'og:type', content: 'website' },
-        { name: 'google-site-verification', content: 'KHX4sDnJoZb_rNfP2U1PnX5AGleqkQbI_1c5XN3DNWc' }
       ],
       link: [
         { rel: 'canonical', href: 'https://www.goodview-moving.com' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
-        },
+
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'

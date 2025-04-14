@@ -9,16 +9,19 @@
                             <p class="text-center md:text-left font-jakarta">We deliver
                                 <span class="italic font-bold font-jakarta " >Nationwide</span>.</p>
                                 <div class="flex gap-4 mt-2">
-                                    <a href="https://www.facebook.com/profile.php?id=61558800622379" target="_blank">
-                                    <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]7">
-    <UIcon name="i-mdi-facebook" class="w-[50px] h-[50px] text-primary-500" />
-</div>
-                                </a>
-                                    <a href="https://www.instagram.com/Fast_transportation_" target="_blank">
-     <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]">
-    <UIcon name="i-mdi-instagram" class="w-[50px] h-[50px] text-primary-500" />
-</div>
-                                </a>
+                                    <a href="https://www.facebook.com/profile.php?id=61558800622379" target="_blank" aria-label="Visit Goodview Moving on Facebook">
+    <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]">
+        <UIcon name="i-mdi-facebook" class="w-[50px] h-[50px] text-primary-500" />
+    </div>
+</a>
+
+<a href="https://www.instagram.com/Fast_transportation_" target="_blank" aria-label="Follow Goodview Moving on Instagram">
+    <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]">
+        <UIcon name="i-mdi-instagram" class="w-[50px] h-[50px] text-primary-500" />
+    </div>
+</a>
+
+
 
                                 </div>
                         </div>
@@ -27,7 +30,7 @@
 
                     <!-- Quick Links -->
                     <div class="flex flex-col  w-full  mx-auto  gap-5">
-                        <h4 class="text-white font-jakarta  text-[24px] font-bold">Quick Links</h4>
+                        <h3 class="text-white font-jakarta  text-[24px] font-bold">Quick Links</h3>
                         <div class="flex w-full flex-col gap-2  ">
                             <ULink to="/" class="text-start font-rubik text-[16px] hover:text-primary-500"  >Home</ULink>
                             <ULink to="/about-us" class="text-start font-rubik text-[16px]  hover:text-primary-500" >About Us</ULink>
@@ -39,7 +42,7 @@
 
                     <!-- Services -->
                     <div class="flex flex-col w-full  mx-auto  gap-5">
-                        <h4 class="text-white font-jakarta  text-[24px] font-bold">Services</h4>
+                        <h3 class="text-white font-jakarta  text-[24px] font-bold">Services</h3>
                         <div class="flex w-full flex-col gap-2 ">
                         <ULink to="/services/residential-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Residential Moving</ULink>
                         <ULink to="/services/commercial-moving-service" class="text-start font-rubik text-[16px] hover:text-primary-500">Commercial Moving</ULink>
@@ -53,7 +56,7 @@
 
                     <!-- Contacts -->
                     <div class="flex flex-col w-full  mx-auto  gap-5">
-                        <h4 class="text-white font-jakarta  text-[24px] font-bold">Contacts</h4>
+                        <h3 class="text-white font-jakarta  text-[24px] font-bold">Contacts</h3>
                         <div class="justify-center">
                         <div class="flex w-full gap-3">
                             <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">

@@ -32,7 +32,7 @@
                                         </div>
                                         <ULink to="/services/commercial-moving-service"
                                         class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                                            READ MORE
+                                            View Details
                                         </ULink>
                                     </div>
 
@@ -56,7 +56,7 @@
                                         </div>
                                         <ULink to="/services/furniture-assembly-and-disassembly-service"
                                         class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                                            READ MORE
+                                            View Details
                                         </ULink>
                                     </div>
 
@@ -84,7 +84,7 @@
                                         </div>
                                         <ULink to="/services"
                                         class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                                            READ MORE
+                                            View Details
                                         </ULink>
                                     </div>
 
@@ -109,7 +109,7 @@
                                         </div>
                                         <ULink to="/services"
                                         class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                                            READ MORE
+                                            View Details
                                         </ULink>
                                     </div>
 
@@ -133,7 +133,7 @@
                                         </div>
                                         <ULink to="/services"
                                         class="text-center rounded-[10px] text-sm  font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                                            READ MORE
+                                            View Details
                                         </ULink>
                                     </div>
 
@@ -157,7 +157,7 @@
                                         </div>
                                         <ULink to="/services/packing-and-unpacking-service"
                                            class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                                            READ MORE
+                                            View Details
                                         </ULink>
                                     </div>
 
@@ -181,7 +181,7 @@
                                         </div>
                                         <ULink to="/services/long-distance-moving-service"
                                         class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                                            READ MORE
+                                            View Details
                                         </ULink>
                                     </div>
 
@@ -204,7 +204,7 @@
             </div>
             <ULink to="/services"
                 class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
-                READ MORE
+                View Details
             </ULink>
         </div>
     </div>
@@ -250,8 +250,8 @@
                         <li><span class="font-semibold">Highly Rated Service:</span> Don’t just take our word for it—our
                             Good View Moving reviews speak for themselves!</li>
                     </ul>
-                    <UButton size="xl" label="Learn
-                        more " to="/about-us" type="about us"
+                    <UButton size="xl" label="
+                        About us " to="/about-us" type="about us"
                         class=" mt-6 bg-black text-white px-7 py-2 transition-all  font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 " />
 
 
@@ -482,6 +482,7 @@
                               <div class="flex-1">
                                   <!-- Back button disabled on first step -->
                                   <UButton
+                                  aria-label="back"
                                       disabled
                                       class="h-12 w-12 rounded-[10px] border border-primary-500 font-jakarta hover:bg-black hover:text-slate-300 text-black font-bold flex justify-center items-center opacity-50"
                                       icon="i-carbon-arrow-left" />

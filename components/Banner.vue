@@ -1,5 +1,16 @@
 <template>
-  <div v-lazy:background-image="props.background" :class="`home-background bg-cover bg-center relative`">
+  <div :class="`home-background bg-cover bg-center relative`">
+    <img
+      :src="props.background"
+      :srcset="props.backgroundMobile ? `${props.backgroundMobile} 640w, ${props.background} 1280w` : null"
+      sizes="(max-width: 768px) 100vw, 1280px"
+      class="absolute inset-0 w-full h-full object-cover -z-10"
+      alt="banner"
+      fetchpriority="high"
+      decoding="async"
+      loading="eager"
+    />
+
     <div class="absolute inset-0 bg-gradient-to-t to-black from-primary-500/50"></div>
 
     <div class="relative flex flex-col max-w-[1360px] mx-auto items-center justify-center gap-10 px-5 py-10 h-full">
@@ -24,14 +35,14 @@
           'opacity-100': isVisible,
           'opacity-0': !isVisible,
         }"
-          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out text-xl  leading-[36px] md:text-[24px] font-[300] lg:text-[24px] text-white">
+          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out text-xl leading-[36px] md:text-[24px] font-[300] lg:text-[24px] text-white">
           {{ props.text }}
         </h2>
         <h2 :class="{
           'opacity-100': isVisible,
           'opacity-0': !isVisible,
         }"
-          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out text-xl  leading-[36px] md:text-[24px] font-[300] lg:text-[24px] text-white">
+          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out text-xl leading-[36px] md:text-[24px] font-[300] lg:text-[24px] text-white">
           {{ props.subtext }}
         </h2>
       </div>
@@ -58,11 +69,15 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  backgroundMobile: {
+    type: String,
+    default: "",
+  },
   title: {
     type: String,
     default: "",
   },
-  subtitle: { // New optional subtitle prop
+  subtitle: {
     type: String,
     default: "",
   },
@@ -74,6 +89,10 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  priority: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -82,5 +101,7 @@ const props = defineProps({
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 </style>

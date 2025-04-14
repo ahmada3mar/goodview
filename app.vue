@@ -10,9 +10,14 @@
           p-1
           group
           ">
-        <div class="transition-all overflow-hidden group-hover:w-auto whitespace-nowrap w-0 px-0 group-hover:px-5 ">Call
-          Us</div>
-        <img class="w-11 h-11 z-10" :src="phone" />
+          <div
+  class="transition-all overflow-hidden group-hover:w-auto whitespace-nowrap w-0 px-0 group-hover:px-5"
+  aria-hidden="true"
+>
+  Call Us
+</div>
+<img class="w-11 h-11 z-10" alt="Call Us" :src="phone" />
+
       </NuxtLink>
     </div>
     <USlideovers />

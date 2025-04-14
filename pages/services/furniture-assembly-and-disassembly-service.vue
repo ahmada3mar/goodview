@@ -48,7 +48,7 @@
 
                         <ul
                             class=" list-decimal list-inside   md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                            <li><span class="font-semibold">Consultation and Assessment: </span> 1.We begin by assessing the furniture that needs assembly or disassembly. We understand the importance of handling your items properly, and we'll plan accordingly.
+                            <li><span class="font-semibold">Consultation and Assessment: </span> We begin by assessing the furniture that needs assembly or disassembly. We understand the importance of handling your items properly, and we'll plan accordingly.
                             </li>
                             <li><span class="font-semibold">Furniture Disassembly: </span>Our furniture mover team carefully disassembles furniture, ensuring that no parts are lost or damaged during transport.</li>
                             <li><span class="font-semibold">Packing and Moving: </span> Once your furniture is disassembled, we pack it securely to prevent damage during the move.</li>
@@ -79,8 +79,9 @@
         After the move, we’ll assemble furniture back in your new home or office, ensuring that everything is put together correctly and securely.</li>
     <li><b>Furniture Mover Expertise: </b>
          Our team has extensive experience with all types of furniture, ensuring safe handling and efficient assembly.</li>
-    <li><b>Secure Packing: </b>
-        We offer packing services for the furniture pieces, ensuring that nothing gets scratched or broken during the move.</li>
+    <li>
+        <b>Secure Packing: </b>
+        We offer  <b><a href="https://goodview-moving.com/services/packing-and-unpacking-service/"  target="_blank" class="  font-[500] underline "> packing services</a></b> for the furniture pieces, ensuring that nothing gets scratched or broken during the move.</li>
 </ul>
 
 
@@ -121,7 +122,7 @@
                     </ul>
 
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note:</span>  At Good View Moving & Storage, our moving costs are affordable and transparent. You'll always know what you're paying for without hidden fees or last-minute surprises.</p>
+                            class="italic font-bold">Note: </span>  At <b><a href="https://www.goodview-moving.com/"  target="_blank" class=" hover:primary-500 font-[500] underline "> Good View Moving & Storage</a></b>, our moving costs are affordable and transparent. You'll always know what you're paying for without hidden fees or last-minute surprises.</p>
 
                             <div class="py-[30px] px-[30px] sm:px-[40px] mt-5 shadow-none bg-primary-500 rounded-[20px] relative">
     <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-6">
