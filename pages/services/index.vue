@@ -3,8 +3,32 @@
         <Banner background="/assets/services.jpg" class="  md:h-[25rem]" title="Our Moving Services"
             text="Whether you're moving across the street or across the state, our moving services are designed to take the stress out of your relocation." />
 
-        <Intro img="/assets/new_truck.png" title="Moving Services for Every Need"
-            text="No two moves are the same, and that's why we offer a variety of moving services to fit every situation. Whether you're planning a residential move, a commercial relocation, or need help with packing and unpacking, we have you covered." />
+
+            <div class="mx-auto container px-5 overflow-hidden bg-white">
+            <div class="flex flex-wrap p-0 gap-1 lg:gap-10 justify-between">
+                <!-- Text Section -->
+                <div class="transition-all delay-300 duration-1000 ease-in-out flex flex-col gap-2 md:pb-56 pb-12 pt-16 flex-1">
+                    <h2 class="text-3xl font-jakarta md:text-4xl mb-5 font-extrabold">Moving Services for Every Need</h2>
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                        No two moves are the same, and that's why we offer a variety of moving services to fit every situation. Whether you're planning a residential move, a commercial relocation, or need help with packing and unpacking, we have you covered.
+                    </p>
+<div class="mt-5">
+                    <ULink to="tel:+19737821339"
+            class="bg-primary-500 py-2 font-jakarta px-3 lg:px-3 xl:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold">
+           +1 973-782-1339 </ULink>
+        </div>
+        </div>
+                <!-- Image Section -->
+                <div class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 lg:w-1/2 flex pb-24 lg:pb-2 md:hidden flex-col justify-center lg:flex">
+                    <img alt="company Moving"
+                        class="lazy-image opacity-0 translate-x-36 transition-all duration-1000 ease-in-out w-full h-auto rounded-none"
+                        v-lazy="'assets/new_truck.png'" />
+                </div>
+            </div>
+        </div>
+
+
+
 
         <div :ref="el => (scrollElements[0] = el)" :class="{
             'opacity-100 translate-y-0': isVisible[0],
@@ -30,7 +54,7 @@
                         </p></div>
                         <ULink to="/services/residential-moving-service"
                                         class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12  xl:px-20 py-3  font-bold">
-                                        READ MORE
+                                        View Details
                                     </ULink>
 
                               </div>
@@ -55,7 +79,7 @@
                         </div>
                         <ULink to="/services/commercial-moving-service"
                                         class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all  px-12 xl:px-20 py-3  font-bold">
-                                        READ MORE
+                                        View Details
                                     </ULink>
                                     </div>
 
@@ -76,7 +100,7 @@
                         </p></div>
                         <ULink to="/services/packing-and-unpacking-service"
                                         class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
-                                        READ MORE
+                                        View Details
                                     </ULink>
                                     </div>
 
@@ -101,7 +125,7 @@
  </div>
                         <ULink to="/services/furniture-assembly-and-disassembly-service"
                                         class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
-                                        READ MORE
+                                        View Details
                                     </ULink>
                                     </div>
 
@@ -125,7 +149,7 @@
 </div>
                         <ULink  to="/services/long-distance-moving-service"
                                         class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
-                                        READ MORE
+                                        View Details
                                     </ULink>
                                     </div>
 
@@ -147,7 +171,7 @@
                         </p></div>
                         <ULink to="/services/specialty-moving-service"
                                         class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
-                                        READ MORE
+                                        View Details
                                     </ULink>
                                 </div>
 

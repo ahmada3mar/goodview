@@ -173,6 +173,7 @@
                               <div class="flex-1">
                                   <!-- Back button disabled on first step -->
                                   <UButton
+                                  aria-label="back"
                                       disabled
                                       class="h-12 w-12 rounded-[10px] border border-primary-500 font-jakarta hover:bg-black hover:text-slate-300 text-black font-bold flex justify-center items-center opacity-50"
                                       icon="i-carbon-arrow-left" />

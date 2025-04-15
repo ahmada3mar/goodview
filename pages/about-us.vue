@@ -25,7 +25,7 @@
                 </div>
                 <!-- Image Section -->
                 <div class=" card-img">
-                    <img alt="Commercial Moving"
+                    <img alt="About us"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[300px] object-cover "
                         v-lazy="'assets/movingServices.png'" />
                 </div>
@@ -193,7 +193,7 @@
 
                     <!-- Image Section -->
                     <div class="flex-1 flex card-img justify-center items-center">
-                        <img alt="Commercial Moving"
+                        <img alt="Why choose us"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
                             v-lazy="'assets/WhyChooseUS.jpg'" />
                     </div>
