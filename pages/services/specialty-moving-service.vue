@@ -18,7 +18,7 @@
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>Tailored Services: </b> Whether you're moving a grand piano or a delicate piece of art, we provide relocation services that are customized to meet your unique needs.</p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Experienced Movers: </b> Our team of professional <b><a href="https://goodview-moving.com/services/furniture-assembly-and-disassembly-service/"  target="_blank" class=" font-[500] underline "> furniture movers</a></b> is trained to handle the most challenging moves, making sure your items are treated with the care they deserve.</p>
+                      <b>Experienced Movers: </b> Our team of professional <b><a href="https://goodview-moving.com/services/furniture-assembly-and-disassembly-service/"  target="_blank" class=" font-[500] underline "> Furniture Movers</a></b> is trained to handle the most challenging moves, making sure your items are treated with the care they deserve.</p>
 
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>Comprehensive Moving Solutions: </b> From art shipping to antique movers, we offer a full range of specialty moving services to handle all kinds of valuable or heavy items.</p>

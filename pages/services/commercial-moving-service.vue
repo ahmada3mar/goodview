@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Commercial.jpg" class=" md:h-[35rem]" title="Commercial Moving"
+    <Banner background="/assets/Commercial.webp" class=" md:h-[35rem]" title="Commercial Moving"
         text="Commercial Moving
 Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. " >
 <template #body="isVisible">
@@ -75,7 +75,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Commercial Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/commerical1.jpg'" />
+                            v-lazy="'/assets/commerical1.webp'" />
                     </div>
 
 
@@ -146,7 +146,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                         $300 per hour, depending on the crew size and services needed.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note: </span>  At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="  font-[500] underline "> Good View Moving & Storage</a></b>, our moving costs are
+                            class="italic font-bold">Note: </span>  At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="  font-[500]  underline "> Good View Moving & Storage</a></b>, our moving costs are
                         affordable and transparent.
                         You'll always
                         know what you're paying for without hidden fees or last-minute surprises.</p>

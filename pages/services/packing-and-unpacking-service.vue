@@ -16,7 +16,7 @@
                  <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>Experienced Movers: </b> Our professional team ensures your belongings are packed and unpacked safely.</p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Custom Solutions: </b>  We offer tailored packing services for both residential and <b><a href="https://goodview-moving.com/services/commercial-moving-service/"  target="_blank" class=" font-[500] underline "> commercial moves</a></b>.</p>
+                      <b>Custom Solutions: </b>  We offer tailored packing services for both residential and <b><a href="https://goodview-moving.com/services/commercial-moving-service/"  target="_blank" class=" font-[500] underline "> Commercial Moves</a></b>.</p>
                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>High-Quality Materials: </b> We use the best packing supplies for moving, including materials for fragile item packing.</p>
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">

@@ -37,7 +37,7 @@
     }" class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 lg:w-1/2 flex pb-24 lg:pb-2 md:hidden flex-col justify-center lg:flex">
       <img alt="truck image"
            class="w-full h-auto rounded-none"
-           v-lazy="'/assets/new_truck.png'" />
+           v-lazy="'/assets/new_truck.webp'" />
     </div>
   </div>
 </div>
