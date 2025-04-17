@@ -55,6 +55,9 @@
           <ULink to="/tips"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             Tips for the move</ULink>
+          <ULink to="/blogs"
+            class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
+            Blogs</ULink>
           <ULink to="/help"
             class="flex items-center with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             <div class="flex items-center">Help
