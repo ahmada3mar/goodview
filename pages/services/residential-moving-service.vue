@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Residential.jpg" class=" md:h-[35rem]" title="Residential Moving"
+    <Banner background="/assets/Residential.webp" class=" md:h-[35rem]" title="Residential Moving"
         text="Moving to a new home should be exciting—not overwhelming. At Good View Moving & Storage, we make residential moving effortless with expert planning, careful handling, and a commitment to affordable moving costs. "
       >
       <template #body="isVisible">
@@ -68,7 +68,7 @@
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Residental Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/Residental2.jpg'" />
+                            v-lazy="'/assets/Residental2.webp'" />
                     </div>
 
 
@@ -131,7 +131,7 @@
                     </ul>
 
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note: </span> At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="font-[500] underline "> Good View Moving & Storage</a></b>, our moving costs are
+                            class="italic font-bold">Note: </span> At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="  font-[500] underline "> Good View Moving & Storage</a></b>, our moving costs are
                         affordable and transparent. You'll always know what you're paying for without hidden fees or
                         last-minute surprises.</p>
 

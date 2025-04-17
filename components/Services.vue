@@ -603,7 +603,7 @@
     <div class="rounded-[10px] md:block hidden card-img xl:min-w-[450px] sm:min-w-96 min-w-0 h-96 md:h-auto overflow-hidden border-4 border-gray-500 w-full">
         <img alt="goodview contact us"
             class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover rounded-none"
-            v-lazy="'/assets/contact_us.avif'" />
+            v-lazy="'/assets/contact_us.webp'" />
     </div>
 </div>
 
