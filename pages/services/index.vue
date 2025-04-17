@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col h-full">
-        <Banner background="/assets/services.jpg" class="  md:h-[25rem]" title="Our Moving Services"
+        <Banner background="/assets/services.webp" class="  md:h-[25rem]" title="Our Moving Services"
             text="Whether you're moving across the street or across the state, our moving services are designed to take the stress out of your relocation." />
 
 
@@ -22,7 +22,7 @@
                 <div class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 lg:w-1/2 flex pb-24 lg:pb-2 md:hidden flex-col justify-center lg:flex">
                     <img alt="company Moving"
                         class="lazy-image opacity-0 translate-x-36 transition-all duration-1000 ease-in-out w-full h-auto rounded-none"
-                        v-lazy="'assets/new_truck.png'" />
+                        v-lazy="'assets/new_truck.webp'" />
                 </div>
             </div>
         </div>
