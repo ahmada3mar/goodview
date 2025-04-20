@@ -1,0 +1,1 @@
+import{j as _,c as a,d as e,A as c,g as s,aU as r,aV as l}from"./BnJCYHM8.js";const d={};function f(o,m){const n=r,t=l;return s(),a("div",null,[e(n),c(o.$slots,"default"),e(t)])}const u=_(d,[["render",f]]);export{u as default};
