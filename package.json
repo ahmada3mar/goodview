@@ -23,6 +23,7 @@
     "nuxt": "^3.13.2",
     "nuxt-lazyimage": "^2.0.1",
     "pikaday": "^1.8.2",
+    "swiper": "^11.2.6",
     "v-calendar": "^3.1.2",
     "vue": "latest",
     "vue-datepicker-next": "^1.0.3",
