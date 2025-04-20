@@ -56,7 +56,7 @@
                 </aside>
             </div>
 
-            <div class=" bg-primary-500 w-full p-3 md:p-10   rounded-none">
+            <div v-if="blog.faqs?.length > 0" class=" bg-primary-500 w-full p-3 md:p-10   rounded-none">
                 <div class="container max-w-[1120px] mx-auto">
                     <div class="bg-black flex flex-col gap-5 justify-center -mt-36 rounded-[10px]   p-5">
                         <div class="flex flex-col bg-zinc-900 gap-5  rounded-[10px] p-3 md:p-10">
