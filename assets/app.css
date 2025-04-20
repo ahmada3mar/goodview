@@ -8,6 +8,33 @@ html{
 }
 
 
+.card-img-hover {
+  position: relative;
+  cursor: pointer;
+  filter: brightness(0.7);
+
+}
+
+.card-img-hover:hover::after {
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #FFD453 0%, #00000073 30%);
+  opacity:1;
+}
+
+.card-img-hover::after {
+  position: absolute;
+  transition: all 0.2s linear ;
+  inset: 0;
+  z-index: 0;
+  opacity:0;
+  top: 0px;
+  left: 0px;
+  content: '';
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  /* filter: brightness(0.7); */
+}
+
 
 .card-img {
   position: relative;

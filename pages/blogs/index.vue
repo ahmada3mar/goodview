@@ -31,22 +31,22 @@
 
                         <div>
                             <div class="bg-[#171820] text-white border-0 rounded-sm ring-0 w-full">
-                                <div class="flex flex-col gap-5 p-[10px] sm:p-4 xl:flex-row h-full ">
-                                    <div class="card-img h-full py-4 w-full ">
-                                        <div  class="lazy-image md:h-80 h-52 w-full  transition-opacity duration-500 ease-in-out  bg-center object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="featuredBlogs[0].image" >
+                                <div class="flex flex-col gap-5 p-[10px] sm:p-4 xl:flex-row h-full min-w-[50%] ">
+                                    <div  class="card-img-hover h-full  w-full">
+                                        <div  class="lazy-image md:h-60 h-36 w-full  transition-opacity duration-500 ease-in-out  bg-center object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="regularBlogs[0].image" >
 
                                         </div>
                                 
                                     </div>
                                     <div class="flex flex-col justify-between p-4 text-start text-xl text-white w-full">
                                         <div class="lg:min-h-[135px] min-h-[200px]">
-                                            <h2 class="font-jakarta font-[600] leading-[35px] text-[24px]">{{
-                                                featuredBlogs[0].title }}</h2>
-                                            <p class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5">
-                                                {{ featuredBlogs[0].excerpt }}
+                                            <h2 class="font-jakarta font-[600] leading-[35px] text-[24px] truncate">{{
+                                                regularBlogs[0].title }}</h2>
+                                            <p class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5 truncate">
+                                                {{ regularBlogs[0].shortDescription }}
                                             </p>
                                         </div>
-                                        <NuxtLink :to="`/blogs/${featuredBlogs[0].slug}`"
+                                        <NuxtLink :to="`/blogs/${regularBlogs[0].slug}`"
                                             class="text-center rounded-[10px] text-sm font-jakarta mb-0 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             Read More
                                         </NuxtLink>
@@ -58,11 +58,11 @@
                         <!-- Featured Blogs Section -->
                         <div class="mt-8">
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-                                <div v-for="blog in featuredBlogs.slice(1)" :key="blog.id"
+                                <div v-for="blog in regularBlogs.slice(1)" :key="blog.id"
                                     class="bg-[#171820] text-white border-0 rounded-sm ring-0">
-                                    <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
-                                        <div class="card-img h-full py-4  w-full">
-                                        <div  class="lazy-image md:h-80 h-52 w-full  transition-opacity duration-500 ease-in-out  bg-center  object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="blog.image" >
+                                    <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
+                                        <div class="card-img-hover h-full  w-full">
+                                        <div  class="lazy-image md:h-60 h-36 w-full  transition-opacity duration-500 ease-in-out  bg-center  object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="blog.image" >
 
                                         </div>
                                 
@@ -70,11 +70,11 @@
                                         <div
                                             class="flex flex-col xl:w-1/2 p-4 text-start text-xl text-white justify-between">
                                             <div class="lg:min-h-[135px] min-h-[200px]">
-                                                <h2 class="font-jakarta font-[600] leading-[35px] text-[24px]">{{
+                                                <h2 class="font-jakarta font-[600] leading-[35px] text-[24px] truncate">{{
                                                     blog.title }}</h2>
                                                 <p
-                                                    class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5">
-                                                    {{ blog.excerpt }}
+                                                    class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5 truncate">
+                                                    {{ blog.shortDescription }}
                                                 </p>
                                             </div>
                                             <NuxtLink :to="`/blogs/${blog.slug}`"
@@ -108,20 +108,20 @@
                                 class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2 lg:grid-cols-2 text-white gap-5 my-10 sm:my-14">
                                 <div v-for="blog in regularBlogs" :key="blog.id"
                                     class="bg-[#171820] text-white border-0 rounded-sm ring-0">
-                                    <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
-                                        <div class="card-img h-full py-4 w-full">
-                                            <div  class="lazy-image md:h-80 h-52 w-full  transition-opacity duration-500 ease-in-out  bg-center object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="blog.image" >
+                                    <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
+                                        <div class="card-img-hover h-full w-full">
+                                            <div  class="lazy-image md:h-60 h-36 w-full  transition-opacity duration-500 ease-in-out  bg-center object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="blog.image" >
 
                                             </div>
                                         </div>
                                         <div
                                             class="flex flex-col xl:w-1/2 p-4 text-start text-xl text-white justify-between">
                                             <div class="lg:min-h-[135px] min-h-[200px]">
-                                                <h2 class="font-jakarta font-[600] leading-[35px] text-[24px]">{{
+                                                <h2 class="font-jakarta font-[600] leading-[35px] text-[24px] truncate">{{
                                                     blog.title }}</h2>
                                                 <p
-                                                    class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5">
-                                                    {{ blog.excerpt }}
+                                                    class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5 truncate">
+                                                    {{ blog.shortDescription }}
                                                 </p>
                                             </div>
                                             <NuxtLink :to="`/blogs/${blog.slug}`"
@@ -136,6 +136,7 @@
                         </div>
 
                         <div
+                            v-if="moreBlogs.length > 0"
                             class="flex relative flex-initial md:flex-1 flex-col bg-primary-500 md:gap-10 gap-5 rounded-none p-3 md:p-5 justify-between">
                             <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">More Articles</h2>
 
@@ -144,16 +145,16 @@
                                     :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
                                     <div v-for="blog in moreBlogs" :key="blog.id"
                                         class="min-w-[calc(50%-10px)] bg-[#171820] text-white border-0 rounded-sm ring-0">
-                                        <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
+                                        <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
 
                                             <div
                                                 class="flex flex-col w-full p-4 text-start text-xl text-white justify-between">
                                                 <div class="lg:min-h-[135px] min-h-[200px]">
-                                                    <h2 class="font-jakarta font-[600] leading-[35px] text-[24px]">{{
+                                                    <h2 class="font-jakarta font-[600] leading-[35px] text-[24px] truncate">{{
                                                         blog.title }}</h2>
                                                     <p
-                                                        class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5">
-                                                        {{ blog.excerpt }}
+                                                        class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5 truncate">
+                                                        {{ blog.shortDescription }}
                                                     </p>
                                                 </div>
                                                 <NuxtLink :to="`/blogs/${blog.slug}`"
@@ -224,9 +225,8 @@
 <script setup>
 
 const blogs = ref([])
-const featuredBlogs = computed(() => blogs.value.filter(blog => blog.featured))
-const regularBlogs = computed(() => blogs.value.filter(blog => !blog.featured).slice(0, 4))
-const moreBlogs = computed(() => blogs.value.filter(blog => !blog.featured).slice(4))
+const regularBlogs = computed(() => blogs.value.slice(0, 4))
+const moreBlogs = computed(() => blogs.value.slice(4))
 
 const isVisible = ref([false, false, false])
 const scrollElements = ref([])
@@ -294,4 +294,31 @@ onUpdated(() => {
         })
     })
 })
+
+
+
+
+function updateGradients(e) {
+  const elements = document.querySelectorAll('.card-img-hover')
+
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect()
+    const x = ((e.clientX - rect.left) / rect.width) * 100
+    const y = ((e.clientY - rect.top) / rect.height) * 100
+
+    el.style.setProperty('--x', `${x}%`)
+    el.style.setProperty('--y', `${y}%`)
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('mousemove', updateGradients)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('mousemove', updateGradients)
+})
+
+
 </script>
+
