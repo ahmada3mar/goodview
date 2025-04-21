@@ -1,27 +1,16 @@
 <template>
     <div class="flex flex-col h-full">
         <Banner background="/assets/services.jpg" class="md:h-[25rem]" title="Our Blog"
-            text="Stay updated with the latest news, tips, and insights about moving and relocation services." />
+            text="Stay updated with the latest moving tips, guide, checklist and insights." />
 
-        <div class="container bg-white lg:mx-auto px-2 sm:px-10 py-10 mb-32">
-            <div class="flex flex-col md:flex-row items-center mx-auto gap-6">
-                <!-- Text Section -->
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-jakarta md:text-4xl mb-5 font-extrabold">Latest Articles and Insights</h2>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        Stay informed with our latest articles and insights about moving, storage, and relocation
-                        services. Our blog is your go-to resource for expert advice and industry updates.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <div v-if="blogs.length > 0" class="bg-primary-500 w-full p-3 md:p-10 rounded-none">
+
+        <div v-if="blogs.length > 0" class="bg-white w-full p-3 md:p-10 rounded-none">
             <div class="container">
                 <div :ref="el => (scrollElements[0] = el)" :class="{
                     'opacity-100 translate-y-0': isVisible[0],
                     'opacity-0 translate-y-20': !isVisible[0],
-                }" class="transition-all duration-1000 ease-in-out bg-primary-500 w-full -mt-36 rounded-none">
+                }" class="transition-all duration-1000 ease-in-out bg-white w-full -mt-36 rounded-none">
 
                 <!-- <div class="bg-black flex flex-col gap-5 justify-center  rounded-[10px] p-10">
 
@@ -108,7 +97,7 @@
                 <div v-if="regularBlogs.length > 0" :ref="el => (scrollElements[1] = el)" :class="{
                     'opacity-100 translate-y-0': isVisible[1],
                     'opacity-0 translate-y-20': !isVisible[1],
-                }" class="transition-all duration-1000 ease-in-out bg-primary-500 w-full  mt-48 rounded-none">
+                }" class="transition-all duration-1000 ease-in-out  w-full  mt-48 rounded-none">
 
                     <div class="bg-black container flex flex-wrap flex-col  gap-5 -mt-36 rounded-[10px]   p-4 lg:p-10">
 
@@ -119,7 +108,7 @@
                             <div
                                 class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2 lg:grid-cols-2 text-white gap-5  my-2 lg:my-10 sm:my-14">
                                 <div v-for="blog in regularBlogs" :key="blog.id"
-                                    class="bg-[#171820] text-white border-0 rounded-sm ring-0">
+                                    class="bg-[#171820] text-white border-0 rounded-[10px] ring-0">
                                     <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
                                         <div class="flex flex-col justify-center items-center" >
                                         <div class="card-img  ">
@@ -134,6 +123,7 @@
                                             <div class="lg:min-h-[135px] min-h-[160px]">
                                                 <h2 class="font-jakarta font-[600]  mt-3 lg:mt-0 leading-[30px] lg:leading-[35px]  text-[20px] lg:text-[24px] ">{{
                                                     blog.title }}</h2>
+                                                     <p class="text-sm font-jakarta mt-3 text-white">Published Date: {{ blog.date }}</p>
                                               <p class="text-[16px] font-[300] tracking-[.3px] font-rubik mt-[13px] lg:mt-5 line-clamp-3">
     {{ blog.shortDescription }}
 </p>
@@ -212,17 +202,6 @@
 
 
 
-                    <div :ref="el => (scrollElements[2] = el)" :class="{
-                        'opacity-100 translate-y-0': isVisible[2],
-                        'opacity-0 translate-y-20': !isVisible[2],
-                    }"
-                        class="transition-all duration-1000 ease-in-out bg-primary-500 w-full p-3 md:p-10  rounded-none">
-
-
-
-
-                        <Trusted />
-                    </div>
 
 
 
@@ -231,6 +210,7 @@
                 </div>
             </div>
         </div>
+        <Trusted />
     </div>
 </template>
 
