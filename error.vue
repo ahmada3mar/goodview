@@ -3,7 +3,7 @@
     <NavBar />
     <div class="flex flex-col min-h-screen bg-white">
       <div class="flex-1 flex items-center justify-center px-5">
-      <div v-if="error.statusCode == 404" class="text-center max-w-2xl mx-auto">
+      <div v-if="error && error.statusCode == 404" class="text-center max-w-2xl mx-auto">
         <img :src="error400" alt="404 Error" class="w-1/2 mx-auto mb-6">
         <h2  class="text-4xl font-jakarta font-extrabold text-gray-900 mb-6">Page Not Found</h2>
         <p  class="text-lg font-rubik text-gray-600 mb-8">
@@ -17,7 +17,7 @@
           Back to Home
         </div>
       </div>
-      <div v-else class="text-center max-w-2xl mx-auto">
+      <div v-else-if="error" class="text-center max-w-2xl mx-auto">
         <img :src="error500" alt="500 Error" class="w-1/2 mx-auto mb-6">
         <h2 class="text-4xl font-jakarta font-extrabold text-gray-900 mb-6">Internal Server Error</h2>
         <p class="text-lg font-rubik text-gray-600 mb-8">
@@ -38,18 +38,17 @@
 </template>
 
 <script setup>
-const error = useError();
+const error = useError() ;
 import error400 from 'assets/404.avif';
 import error500 from 'assets/500.avif';
-definePageMeta({
-  layout: 'default'
-})
+
 
 const clearErrors = () => {
   clearError({
     redirect: '/'
   })
 }
+
 
 </script>
 
