@@ -12,7 +12,7 @@
                 <div
                     class="relative z-10 flex flex-col justify-center text-left px-5 py-10 h-full max-w-[1100px] mx-auto gap-4 transition-all duration-700 ease-in-out">
                     <h1 class="text-white text-3xl md:text-4xl font-bold font-jakarta">
-                        Show Blog Page
+                        {{ blog.title }}
                     </h1>
 
                     <!-- Breadcrumb -->
@@ -34,8 +34,8 @@
         </div>
 
         <!-- Main Content -->
-        <div class=" py-10">
-            <div class="max-w-[1120px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div class=" py-10 ">
+            <div class="max-w-[1120px] px-6 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
 
                 <!-- Main Blog Content -->
                 <div class="lg:col-span-8 flex flex-col gap-8">
@@ -45,13 +45,12 @@
 
                     <!-- Blog Content -->
                     <div class="text-gray-800 mb-36 space-y-6">
-                        <h1 id="section1" class="text-3xl font-jakarta font-bold">{{ blog.title }}</h1>
                         <div v-html="blog.content"></div>
                     </div>
 
                     <!-- Sidebar -->
                 </div>
-                <aside class="lg:col-span-4">
+                <aside class="lg:col-span-4 hidden lg:block">
                     <QuoteInputs :is-visible="true" />
                 </aside>
             </div>
@@ -65,9 +64,9 @@
                             </h2>
 
                             <details v-for="faq in blog.faqs" :key="faq.id"
-                                class="group bg-primary text-black p-5 rounded-lg transition-all duration-300">
+                                class="group bg-primary text-black md:p-5 p-3 rounded-lg transition-all duration-300">
                                 <summary
-                                    class="cursor-pointer text-lg font-semibold group-open:text-black flex justify-between items-center">
+                                    class="cursor-pointer md:text-lg text-sm font-semibold group-open:text-black flex justify-between items-center">
                                     {{ faq.question }}
                                     <!-- Down Arrow (▼) when collapsed, Up Arrow (▲) when expanded -->
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
@@ -75,7 +74,7 @@
                                         <path d="M7 10l5 5 5-5H7z"></path> <!-- Down Arrow -->
                                     </svg>
                                 </summary>
-                                <p class="mt-3 text-black">
+                                <p class="mt-3 text-black text-sm md:text-lg">
                                     {{ faq.answer }}
                                 </p>
                             </details>
@@ -156,37 +155,48 @@ const route = useRoute()
 const id = route.params.id
 
 // Fetch blog data
-const { data: blog } = await useFetch(`https://api.goodview-moving.com/api/blogs/${id}`)
+const { data: blog, error } = await useFetch(`https://api.goodview-moving.com/api/blogs/${id}`, {
+  // Handle 404 errors
+  onResponseError({ response }) {
+    if (response.status === 404) {
+      throw showError({
+        statusCode: 404,
+        statusMessage: 'Blog post not found',
+      })
+    }
+  }
+})
 
 watchEffect(() => {
-  if (!blog.value) return
+    if (!blog.value) return;
 
-  const meta = [
-    { name: 'description', content: blog.value.shortDescription },
-    { property: 'og:image', content: blog.value.image },
-    { property: 'og:url', content: `https://www.goodview-moving.com/blogs/${id}` }
-  ]
 
-  blog.value.seo?.forEach(i => {
-    meta.push(
-      {
-        name: 'keywords',
-        content: i.keywords,
-      },
-      {
-        property: 'og:title',
-        content: i.title,
-      },
-      {
-        property: 'og:description',
-        content: i.description,
-      }
-    )
-  })
+    const meta = [
+        { name: 'description', content: blog.value.shortDescription },
+        { property: 'og:image', content: blog.value.image },
+        { property: 'og:url', content: `https://www.goodview-moving.com/blogs/${id}` }
+    ]
 
-  useHead({
-    title: blog.value.title,
-    meta
-  })
+    blog.value.seo?.forEach(i => {
+        meta.push(
+            {
+                name: 'keywords',
+                content: i.keywords,
+            },
+            {
+                property: 'og:title',
+                content: i.title,
+            },
+            {
+                property: 'og:description',
+                content: i.description,
+            }
+        )
+    })
+
+    useHead({
+        title: blog.value.title,
+        meta
+    })
 })
 </script>
