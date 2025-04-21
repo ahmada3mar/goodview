@@ -150,14 +150,43 @@
 </template>
 
 <script setup>
-const { id } = useRoute().params;
-const blog = ref({});
+import { useRoute, useFetch, useHead } from '#imports'
 
-onMounted(async () => {
-   // Fetch the blog data using the ID from the route parameters
-useFetch(`https://api.goodview-moving.com/api/blogs/${id}`).then(res=>{
-    blog.value = res.data.value;
-})
-})
+const route = useRoute()
+const id = route.params.id
 
+// Fetch blog data
+const { data: blog } = await useFetch(`https://api.goodview-moving.com/api/blogs/${id}`)
+
+watchEffect(() => {
+  if (!blog.value) return
+
+  const meta = [
+    { name: 'description', content: blog.value.shortDescription },
+    { property: 'og:image', content: blog.value.image },
+    { property: 'og:url', content: `https://www.goodview-moving.com/blogs/${id}` }
+  ]
+
+  blog.value.seo?.forEach(i => {
+    meta.push(
+      {
+        name: 'keywords',
+        content: i.keywords,
+      },
+      {
+        property: 'og:title',
+        content: i.title,
+      },
+      {
+        property: 'og:description',
+        content: i.description,
+      }
+    )
+  })
+
+  useHead({
+    title: blog.value.title,
+    meta
+  })
+})
 </script>
