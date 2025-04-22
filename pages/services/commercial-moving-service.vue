@@ -26,7 +26,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                       <b>Customized Moving Plans: </b>Every business is different. We create a personalized moving plan that fits your needs. </p>
 
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b> Secure Packing & Transport: </b> We use high-quality packing materials to protect office furniture, IT equipment, and sensitive documents.
+                      <b> Secure Packing & Transport: </b> We use high-quality <b><a href="https://goodview-moving.com/services/packing-and-unpacking-service"  target="_blank" class="  font-[500] underline ">packing materials</a></b> to protect office furniture, IT equipment, and sensitive documents.
                     </p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b> Full-Service Movers: </b> From packing to setting up your new space, we offer end-to-end commercial moving solutions.
@@ -96,7 +96,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                         Secure packing for electronics, furniture, and important files.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Warehouse & Industrial Moves: </b>
                         Large-scale moving solutions for factories, warehouses, and retail stores.</p>
-                    <p class="text-md md:text-lg text-black font-rubik"><b>Furniture Disassembly & Reassembly: </b>
+                    <p class="text-md md:text-lg text-black font-rubik"><b> <a href="https://goodview-moving.com/services/furniture-assembly-and-disassembly-service" target="_blank" rel="noopener noreferrer"> Furniture Disassembly & Reassembly: </a></b>
                         We easily handle office desks, conference tables, and cubicles.</p>
 
                 </div>

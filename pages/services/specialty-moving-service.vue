@@ -18,7 +18,7 @@
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>Tailored Services: </b> Whether you're moving a grand piano or a delicate piece of art, we provide relocation services that are customized to meet your unique needs.</p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Experienced Movers: </b> Our team of professional <b><a href="https://goodview-moving.com/services/furniture-assembly-and-disassembly-service/"  target="_blank" class=" font-[500] underline "> Furniture Movers</a></b> is trained to handle the most challenging moves, making sure your items are treated with the care they deserve.</p>
+                      <b>Experienced Movers: </b> Our team of professional <b><a href="https://goodview-moving.com/services/furniture-assembly-and-disassembly-service"  target="_blank" class=" font-[500] underline "> Furniture Movers</a></b> is trained to handle the most challenging moves, making sure your items are treated with the care they deserve.</p>
 
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b>Comprehensive Moving Solutions: </b> From art shipping to antique movers, we offer a full range of specialty moving services to handle all kinds of valuable or heavy items.</p>
@@ -48,7 +48,7 @@
                             class=" list-decimal  marker:none list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
                             <li><span class="font-semibold">Consultation and Assessment: </span>We start by understanding your move's unique needs, whether it's for a pool table, piano, or antique furniture. Our team then provides a detailed plan for safe transport.
                             </li>
-                            <li><span class="font-semibold">Packing & Preparation: </span> We use specialized packing materials for your delicate items, ensuring everything is protected throughout the moving process.</li>
+                            <li><span class="font-semibold">Packing & Preparation: </span> We use specialized <b><a href="https://goodview-moving.com/services/packing-and-unpacking-service" class="  font-[500] underline " target="_blank" rel="noopener noreferrer"> packing materials</a></b> for your delicate items, ensuring everything is protected throughout the moving process.</li>
                             <li><span class="font-semibold">Efficient Transport: </span>  Our team uses the right equipment to move heavy and large items like appliances and pool tables with care and efficiency.</li>
                             <li><span class="font-semibold">Reassembly and Setup: </span>Once we arrive at your new location, we provide reassembly services to ensure everything is properly set up.</li>
 </ul>

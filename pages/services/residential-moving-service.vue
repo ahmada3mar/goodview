@@ -24,7 +24,7 @@
                       <b>Full-Service Apartment Moving: </b> We specialize in apartment moving services and can easily handle stairs, elevators, and tight spaces.</p>
 
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Packing & Unpacking Available: </b> We offer packing services to protect your belongings.</p>
+                      <b>Packing & Unpacking Available: </b> We offer <b><a href="https://goodview-moving.com/services/packing-and-unpacking-service" class="  font-[500] underline " target="_blank" rel="noopener noreferrer"> packing services</a></b> to protect your belongings.</p>
 
                 </div>
                 <!-- Image Section -->
@@ -88,9 +88,9 @@
                     <p class="text-md md:text-lg text-black font-rubik"><b>Packing & Unpacking – </b>
                         Let our experts pack your items securely.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Furniture Disassembly & Reassembly – </b>
-                        We move bulky furniture with care.</p>
+                        We move <b><a href="https://goodview-moving.com/services/furniture-assembly-and-disassembly-service" class="  font-[500] underline " target="_blank" rel="noopener noreferrer"> bulky furniture</a></b> with care.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Storage Solutions –</b>
-                        Need extra space? Our secure storage options are available.</p>
+                        Need extra space? Our secure  <b><a href="https://goodview-moving.com/services/storage-service" class="  font-[500] underline " target="_blank" rel="noopener noreferrer"> storage options</a></b> are available.</p>
 
 
                 </div>

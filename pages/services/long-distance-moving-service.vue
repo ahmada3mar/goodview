@@ -91,9 +91,9 @@
                     <p class="text-md md:text-lg text-black font-rubik"><b>Corporate & Office Moves – </b>
                         Relocate your business without downtime.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Packing & Unpacking – </b>
-                        Professional movers and packers ensure safe transportation.</p>
+                        Professional  <b><a href="https://goodview-moving.com/services/packing-and-unpacking-service/"  target="_blank" class="  font-[500] underline "> movers and packers</a></b> ensure safe transportation.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Storage Solutions –</b>
-                        Need extra space? We offer secure storage options.</p>
+                        Need extra space? We offer secure  <b><a href="https://goodview-moving.com/services/storage-service/"  target="_blank" class="  font-[500] underline "> storage options</a></b>.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Furniture Disassembly & Reassembly – </b>
                         We take care of large and fragile items.</p>
 
@@ -126,7 +126,7 @@
                             Moving a studio apartment costs less than a five-bedroom home.
                         </li>
                         <li><b>Additional Services:</b>
-                            Packing, storage, and specialty item handling may affect pricing.
+                            Packing, storage, and  <b><a href="https://goodview-moving.com/services/specialty-moving-service"  target="_blank" class="  font-[500] underline ">specialty item</a></b> handling may affect pricing.
                         </li>
 
                     </ul>
