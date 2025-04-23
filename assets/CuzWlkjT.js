@@ -1,1 +1,0 @@
-import{p as _,c as a,d as e,C as c,i as s,aS as r,aT as l}from"./CmhZK0TA.js";const d={};function p(o,f){const n=r,t=l;return s(),a("div",null,[e(n),c(o.$slots,"default"),e(t)])}const u=_(d,[["render",p]]);export{u as default};
