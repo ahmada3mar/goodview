@@ -125,7 +125,9 @@ Storage Unit Cost – Get a Transparent Estimate</h2>
 
 
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note: </span>At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="  font-[500] underline "> Good View Moving & Storage</a></b>, our moving costs are affordable and transparent. You'll always know what you're paying for without hidden fees or last-minute surprises.</p>
+                            class="italic font-bold">Note: </span>At <b><ULink  target="_blank" to="/"
+            class="font-[500]  underline ">
+            Good View Moving & Storage</ULink></b>, our moving costs are affordable and transparent. You'll always know what you're paying for without hidden fees or last-minute surprises.</p>
                             <div class="py-[30px] px-[30px] sm:px-[40px] mt-5 shadow-none bg-primary-500 rounded-[20px] relative">
     <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-6">
         <div class="lg:max-w-[55%]">

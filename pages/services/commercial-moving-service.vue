@@ -26,7 +26,10 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                       <b>Customized Moving Plans: </b>Every business is different. We create a personalized moving plan that fits your needs. </p>
 
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b> Secure Packing & Transport: </b> We use high-quality <b><a href="https://goodview-moving.com/services/packing-and-unpacking-service"  target="_blank" class="  font-[500] underline ">packing materials</a></b> to protect office furniture, IT equipment, and sensitive documents.
+                      <b> Secure Packing & Transport: </b> We use high-quality <b>
+          <ULink target="_blank"  to="/services/packing-and-unpacking-service"
+            class="font-[500]  underline ">
+            packing materials</ULink></b> to protect office furniture, IT equipment, and sensitive documents.
                     </p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                       <b> Full-Service Movers: </b> From packing to setting up your new space, we offer end-to-end commercial moving solutions.
@@ -96,7 +99,10 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                         Secure packing for electronics, furniture, and important files.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Warehouse & Industrial Moves: </b>
                         Large-scale moving solutions for factories, warehouses, and retail stores.</p>
-                    <p class="text-md md:text-lg text-black font-rubik"><b> <a href="https://goodview-moving.com/services/furniture-assembly-and-disassembly-service" target="_blank" rel="noopener noreferrer"> Furniture Disassembly & Reassembly: </a></b>
+                    <p class="text-md md:text-lg text-black font-rubik"><b>
+                        <ULink target="_blank" class="underline"  to="/services/packing-and-unpacking-service"
+            >
+            Furniture Disassembly & Reassembly</ULink>: </b>
                         We easily handle office desks, conference tables, and cubicles.</p>
 
                 </div>
@@ -146,7 +152,9 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                         $300 per hour, depending on the crew size and services needed.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note: </span>  At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="  font-[500]  underline "> Good View Moving & Storage</a></b>, our moving costs are
+                            class="italic font-bold">Note: </span>  At <b><ULink  target="_blank" to="/"
+            class="font-[500]  underline ">
+            Good View Moving & Storage</ULink></b>, our moving costs are
                         affordable and transparent.
                         You'll always
                         know what you're paying for without hidden fees or last-minute surprises.</p>

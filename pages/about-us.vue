@@ -88,14 +88,22 @@
                         </p>
                         <p class="text-lg md:text-xl font-rubik  text-stone-300 ">Our services include:</p>
                         <ul
-                            class="list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-0 space-y-2">
-                            <li>✔ &nbsp;<span class="font-semibold"> <a href="https://goodview-moving.com/services/long-distance-moving-service/" target="_blank" rel="noopener noreferrer">Local & Long-Distance Moving</a>: </span>Whether you're
+                            class="list-inside  mx-auto text-left md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-0 space-y-2">
+                            <li> <span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/long-distance-moving-service"
+            class="font-[500]  underline ">
+            Local & Long-Distance Moving</ULink>: </span>Whether you're
                                 moving down the street or across the country, we handle it all.</li>
-                            <li>✔ &nbsp;<span class="font-semibold"> <a href="https://goodview-moving.com/services/packing-and-unpacking-service" target="_blank" rel="noopener noreferrer">Packing and Unpacking</a>:  </span>Don't lift a
+                            <li><span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/packing-and-unpacking-service"
+            class="font-[500]  underline ">
+            Packing and Unpacking</ULink>:  </span>Don't lift a
                                 finger—we'll handle everything from fragile items to bulky furniture.</li>
-                            <li>✔ &nbsp;<span class="font-semibold"> <a href="https://goodview-moving.com/services/storage-service" target="_blank" rel="noopener noreferrer">Moving and Storage</a>: </span>Need extra space? Our
+                            <li><span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/storage-service"
+            class="font-[500]  underline ">
+            Moving and Storage</ULink>: </span>Need extra space? Our
                                 secure storage solutions keep your belongings safe.</li>
-                            <li>✔ &nbsp;<span class="font-semibold"> <a href="https://goodview-moving.com/services/commercial-moving-service" target="_blank" rel="noopener noreferrer">Commercial Moving</a>: </span>Relocating your business?
+                            <li><span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/commercial-moving-service"
+            class="font-[500]  underline ">
+            Commercial Moving</ULink>: </span>Relocating your business?
                                 We minimize downtime and maximize efficiency.</li>
 
                         </ul>
@@ -267,7 +275,9 @@
             Ready to Move? Let's Get Started!
         </h2>
         <p class="text-md md:text-lg text-black font-rubik">
-            Wherever life is taking you,  <b><a href="https://goodview-moving.com/"  target="_blank" class=" font-[500] underline "> Good View Moving & Storage</a></b> is here to make your move smooth and hassle-free.
+            Wherever life is taking you,  <b><ULink  target="_blank" to="/"
+            class="font-[500]  underline ">
+            Good View Moving & Storage</ULink></b> is here to make your move smooth and hassle-free.
         </p>
         <p class="text-md md:text-lg text-black font-rubik">
             Get free moving estimates and see why we're the best moving company for your next move.

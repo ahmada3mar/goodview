@@ -91,9 +91,13 @@
                     <p class="text-md md:text-lg text-black font-rubik"><b>Corporate & Office Moves – </b>
                         Relocate your business without downtime.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Packing & Unpacking – </b>
-                        Professional  <b><a href="https://goodview-moving.com/services/packing-and-unpacking-service/"  target="_blank" class="  font-[500] underline "> movers and packers</a></b> ensure safe transportation.</p>
+                        Professional  <b><ULink  target="_blank" to="/services/packing-and-unpacking-service"
+            class="font-[500]  underline ">
+            movers and packers</ULink></b> ensure safe transportation.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Storage Solutions –</b>
-                        Need extra space? We offer secure  <b><a href="https://goodview-moving.com/services/storage-service/"  target="_blank" class="  font-[500] underline "> storage options</a></b>.</p>
+                        Need extra space? We offer secure    <b><ULink  target="_blank" to="/services/storage-service/"
+            class="font-[500]  underline ">
+            storage options</ULink></b>.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Furniture Disassembly & Reassembly – </b>
                         We take care of large and fragile items.</p>
 
@@ -126,7 +130,9 @@
                             Moving a studio apartment costs less than a five-bedroom home.
                         </li>
                         <li><b>Additional Services:</b>
-                            Packing, storage, and  <b><a href="https://goodview-moving.com/services/specialty-moving-service"  target="_blank" class="  font-[500] underline ">specialty item</a></b> handling may affect pricing.
+                            Packing, storage, and   <b><ULink  target="_blank" to="/services/specialty-moving-service"
+            class="font-[500]  underline ">
+            specialty item</ULink></b> handling may affect pricing.
                         </li>
 
                     </ul>
@@ -145,7 +151,9 @@
                     </p>
 
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note: </span> At <b><a href="https://www.goodview-moving.com/"  target="_blank" class="  font-[500] underline "> Good View Moving & Storage</a></b>, our moving costs are
+                            class="italic font-bold">Note: </span> At <b><ULink  target="_blank" to="/"
+            class="font-[500]  underline ">
+            Good View Moving & Storage</ULink></b>, our moving costs are
                         affordable and transparent. You'll always know what you're paying for without hidden fees or
                         last-minute surprises.</p>
                         <div class="py-[30px] px-[30px] sm:px-[40px] mt-5 shadow-none bg-primary-500 rounded-[20px] relative">
