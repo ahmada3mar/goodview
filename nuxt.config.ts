@@ -57,4 +57,9 @@ export default defineNuxtConfig({
     url: 'https://www.goodview-moving.com',
     name: 'GoodView Moving',
   },
+  router: {
+    options: {
+      strict: false // Adjusted configuration to avoid error
+    }
+  }
 })
