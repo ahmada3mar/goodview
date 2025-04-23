@@ -31,33 +31,56 @@
               <ULink to="/services/long-distance-moving-service"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Long Distance Moving
               </ULink>
-             <ULink to="/services/residential-moving-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Residential Moving
-</ULink>
+              <ULink to="/services/residential-moving-service"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Residential Moving
+              </ULink>
               <ULink to="/services/packing-and-unpacking-service"
-                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Packing and Unpacking Service
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Packing and Unpacking
+                Service
               </ULink>
               <ULink to="/services/furniture-assembly-and-disassembly-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Furniture Assembly and Disassembly Service
-</ULink>
-<ULink to="/services/specialty-moving-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Specialty Moving
-</ULink><ULink to="/services/storage-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Storage Units
-</ULink>
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Furniture Assembly and Disassembly Service
+              </ULink>
+              <ULink to="/services/specialty-moving-service"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Specialty Moving
+              </ULink>
+              <ULink to="/services/storage-service"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Storage Units
+              </ULink>
             </div>
           </div>
 
           <ULink to="/tips"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             Tips for the move</ULink>
-          <ULink to="/blogs"
-            class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
-            Blogs</ULink>
+
+
+
+          <div class="relative" @mouseenter="showDropdownBlog = true" @mouseleave="showDropdownBlog = false">
+            <ULink to="/blogs"
+              class="flex items-center font-jakarta with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
+              <div class="flex items-center">
+                Blogs
+                <UIcon role="button" name="i-carbon-add" class="w-5 h-5 text-primary-500" />
+              </div>
+            </ULink>
+
+            <!-- Dropdown Menu (Only Shows on Hover) -->
+            <div v-if="showDropdownBlog"
+              class="absolute left-0  gap-2  w-[250px] bg-primary-500 text-black   shadow-lg z-50">
+              <ULink v-for="category in categories" :key="category.id" :to="`/blogs/${category.slug}`"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                {{ category.name }}
+              </ULink>
+            </div>
+          </div>
+
+
+
           <ULink to="/help"
             class="flex items-center with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             <div class="flex items-center">Help
@@ -88,8 +111,32 @@ export default {
       expand: false,
       SideBar: markRaw(SideBar),
       showDropdown: false, // Dropdown visibility state
+      showDropdownBlog: false, // Dropdown visibility state
+      categories: [
+
+      ],
     };
-  }
+  },
+  mounted() {
+    this.fetchCategories();
+  },
+  methods: {
+    fetchCategories() {
+      useFetch('https://api.goodview-moving.com/api/categories', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+      }).then(res => {
+        this.categories = res.data
+      }).catch(err => {
+        console.error('Error fetching categories:', err)
+      })
+    },
+
+  },
+
 };
 </script>
 

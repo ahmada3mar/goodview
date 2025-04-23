@@ -41,7 +41,7 @@
           </div>
 
           <Transition name="slide">
-            <div v-if="servicesDropdownOpen" class="overflow-hidden">
+            <div v-if="servicesDropdownOpen" class="overflow-hidden pl-10">
               <ULink @click="handleLinkClick" to="/services/commercial-moving-service"
                 class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4  text-lg flex items-center gap-4">
 
@@ -88,6 +88,34 @@
           Tips for the move
         </ULink>
 
+        <div>
+          <div class="flex items-center hover:bg-primary-500 hover:text-black text-slate-300">
+            <!-- Blogs Link -->
+            <ULink @click="navigateToBlogs" to="/blogs"
+              class="flex-1 text-start p-5 text-xl flex items-center gap-4">
+              <UIcon name="i-carbon-delivery-truck" class="w-5 h-5 text-inherit" />
+              Blogs
+            </ULink>
+
+            <!-- Dropdown Toggle Button -->
+            <button @click.stop="toggleBlogsDropdown"
+                    class="p-5 pr-6 focus:outline-none">
+              <UIcon :name="blogsDropdownOpen ? 'i-carbon-chevron-up' : 'i-carbon-chevron-down'"
+                     class="w-5 h-5 text-inherit transition-transform duration-200" />
+            </button>
+          </div>
+
+          <Transition name="slide">
+            <div v-if="blogsDropdownOpen" class="overflow-hidden pl-10">
+              <ULink v-for="category in categories" :key="category.id"  @click="handleLinkClick" :to="`/blogs?category=${category.slug}`"
+                class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4  text-lg flex items-center gap-4">
+                {{ category.name }}
+              </ULink>
+
+            </div>
+          </Transition>
+        </div>
+
         <!-- Help -->
         <ULink @click="slideover.close()" to="/help"
           class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-5 text-xl flex items-center gap-4">
@@ -114,10 +142,40 @@
   <script setup>
   const slideover = useSlideover()
   const servicesDropdownOpen = ref(false)
+  const blogsDropdownOpen = ref(false)
+
+  const categories = ref([])
+
+  useFetch('https://api.goodview-moving.com/api/categories', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+  }).then(res=>{
+    categories.value = res.data.value
+  }).catch(err => {
+    console.error('Error fetching categories:', err)
+  })
 
   const toggleServicesDropdown = () => {
     servicesDropdownOpen.value = !servicesDropdownOpen.value
   }
+
+  const toggleBlogsDropdown = () => {
+    blogsDropdownOpen.value = !blogsDropdownOpen.value
+  }
+  const navigateToBlogs = (e) => {
+    // Only navigate if dropdown is closed
+    if (!blogsDropdownOpen.value) {
+      slideover.close()
+      return true // Allow default navigation
+    }
+    // If dropdown is open, prevent navigation and just close dropdown
+    e.preventDefault()
+    blogsDropdownOpen.value = false
+  }
+
 
   const navigateToServices = (e) => {
     // Only navigate if dropdown is closed
