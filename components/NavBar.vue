@@ -72,7 +72,7 @@
             <!-- Dropdown Menu (Only Shows on Hover) -->
             <div v-if="showDropdownBlog"
               class="absolute left-0  gap-2  w-[250px] bg-primary-500 text-black   shadow-lg z-50">
-              <ULink v-for="category in categories" :key="category.id" :to="`/blogs/${category.slug}`"
+              <ULink v-for="category in categories" :key="category.id" :to="`/blogs?category=${category.slug}`"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
                 {{ category.name }}
               </ULink>
