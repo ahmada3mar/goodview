@@ -51,7 +51,9 @@
                                             <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Furniture Disassembly</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                We carefully disassemble and reassemble your furniture for a hassle-free
+                                                We carefully disassemble and reassemble your <b><ULink  target="_blank" to="/services/furniture-assembly-and-disassembly-service"
+            class="font-[500]  underline ">
+            furniture</ULink></b> for a hassle-free
                                                 move, providing safety and efficiency. </p>
                                         </div>
                                         <ULink to="/services/furniture-assembly-and-disassembly-service"
@@ -103,7 +105,9 @@
                                             <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Long Term Storage</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                Need extra space? Our secure storage solutions keep your belongings safe
+                                                Need extra space? Our <b><ULink  target="_blank" to="/services/storage-service"
+            class="font-[500]  underline ">
+            secure storage solutions</ULink></b> keep your belongings safe
                                                 for as long as you need.
                                             </p>
                                         </div>
@@ -152,7 +156,9 @@
                                             <h2 class="font-jakarta  font-[600] leading-[35px]  text-[24px]">Packing</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                Leave the packing to us! Our experts use high-quality materials to
+                                                Leave the <b><ULink  target="_blank" to="/services/packing-and-unpacking-service"
+            class="font-[500]  underline ">
+            packing</ULink></b>  to us! Our experts use high-quality materials to
                                                 protect your belongings during the move. </p>
                                         </div>
                                         <ULink to="/services/packing-and-unpacking-service"
@@ -176,7 +182,9 @@
                                             </h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                Moving across states? Our professional staff ensures safe, on-time
+                                                Moving <b><ULink  target="_blank" to="/services/long-distance-moving-service"
+            class="font-[500]  underline ">
+            across states</ULink></b>? Our professional staff ensures safe, on-time
                                                 delivery wherever you're headed.</p>
                                         </div>
                                         <ULink to="/services/long-distance-moving-service"

@@ -26,7 +26,9 @@
         Our expert team ensures a smooth moving process, offering everything from packing to secure storage solutions. But don't just take our word for it—our Good View Moving reviews speak for themselves.
       </p>
       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-        <b>Need a stress-free move</b> ? <b><a href="https://goodview-moving.com/quote"  target="_blank" class="  font-[500] underline "> Get a free moving quote today!</a></b>
+        <b>Need a stress-free move</b> ?  <b><ULink  target="_blank" to="/quote"
+            class="font-[500]  underline ">
+            Get a free moving quote today!</ULink></b>
       </p>
     </div>
 
