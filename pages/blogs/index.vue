@@ -244,7 +244,7 @@ const query = useRoute()
 // Fetch blogs data
 const fetchBlogs = async () => {
     try {
-        const { data } = await useFetch(`https://api.goodview-moving.com/api${query.fullPath}`)
+        const { data } = await useFetch(`https://api.goodview-moving.com/api/blogs`)
         if (data.value) {
             blogs.value = data.value
         }
