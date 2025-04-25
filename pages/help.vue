@@ -6,7 +6,7 @@
         <div class="w-full flex flex-col bg-primary-500 justify-center p-5 sm:p-10">
 <div class="container">
             <div class="flex flex-col ">
-                <h2 class="md:px-16  px-5  text-start font-bold  text-black my-5 md:my-10">
+                <h2 class="md:px-16  px-5 lg:text-6xl text-4xl text-start font-bold  text-black my-5 md:my-10">
                     How can we help you?
                 </h2>
             </div>

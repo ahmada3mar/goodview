@@ -35,14 +35,14 @@
           'opacity-100': isVisible,
           'opacity-0': !isVisible,
         }"
-          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out  leading-[36px]  font-[300]  text-white">
+          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out text-xl leading-[36px] md:text-[24px] font-[300] lg:text-[24px] text-white">
           {{ props.text }}
         </h2>
         <h2 :class="{
           'opacity-100': isVisible,
           'opacity-0': !isVisible,
         }"
-          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out  leading-[36px] font-[300] text-white">
+          class="max-w-3xl transition-all duration-1000 delay-150 font-jakarta ease-in-out text-xl leading-[36px] md:text-[24px] font-[300] lg:text-[24px] text-white">
           {{ props.subtext }}
         </h2>
       </div>

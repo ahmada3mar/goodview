@@ -4,7 +4,7 @@
         <div class="flex flex-wrap-reverse gap-10">
           <!-- Form Section -->
           <UForm @submit="submit" class="p-5  lg:pr-16  w-full flex-none md:flex-1">
-            <h2 class="text-primary-500 font-bold">GET A QUOTE TODAY</h2>
+            <h2 class="text-primary-500 text-2xl font-bold">GET A QUOTE TODAY</h2>
             
             <!-- Name Input -->
             <UFormGroup :error="errors.name" :ui='{

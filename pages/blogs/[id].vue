@@ -174,7 +174,7 @@ watchEffect(() => {
     const meta = [
         { name: 'description', content: blog.value.shortDescription },
         { property: 'og:image', content: blog.value.image },
-        { property: 'og:url', content: `https://www.goodview-moving.com/blogs/${id}` }
+        { property: 'og:url', content: `https://goodview-moving.com/blogs/${id}` }
     ]
 
     blog.value.seo?.forEach(i => {

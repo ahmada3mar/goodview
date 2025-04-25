@@ -38,7 +38,7 @@ export default defineNuxtConfig(
         { property: 'og:type', content: 'website' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://www.goodview-moving.com' },
+        { rel: 'canonical', href: 'https://goodview-moving.com' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
         {
           rel: 'stylesheet',
@@ -64,7 +64,7 @@ export default defineNuxtConfig(
   },
 
   site: {
-    url: 'https://www.goodview-moving.com',
+    url: 'https://goodview-moving.com',
     name: 'GoodView Moving',
   },
 
