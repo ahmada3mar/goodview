@@ -1,6 +1,6 @@
 <template>
     <UForm class="flex flex-1 max-w-96 flex-col bg-gray-100 dark:bg-gray-900 p-5 rounded-none z-10">
-        <h2 class="text-primary-500 text-center font-bold">GET A QUOTE TODAY</h2>
+        <h2 class="text-primary-500 text-center font-bold text-lg">GET A QUOTE TODAY</h2>
         <UFormGroup :ui='{
             label: {
                 base: "block font-bold text-gray-700 dark:text-gray-200",

@@ -22,7 +22,7 @@
                             <div class="bg-[#171820] text-white border-0 rounded-sm ring-0 w-full">
                                 <div class="flex flex-col gap-5 p-[10px] sm:p-4 xl:flex-row h-full min-w-[50%] ">
                                     <div  class="card-img-hover h-full  w-full">
-                                        <div  class="lazy-image md:h-60 h-36 w-full  transition-opacity duration-500 ease-in-out  bg-center object-cover bg-cover bg-no-repeat rounded-[5px]" src:background-image="regularBlogs[0].image" >
+                                        <div  class="lazy-image md:h-60 h-36 w-full  transition-opacity duration-500 ease-in-out  bg-center object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="regularBlogs[0].image" >
 
                                         </div>
 
@@ -51,7 +51,7 @@
                                     class="bg-[#171820] text-white border-0 rounded-sm ring-0">
                                     <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
                                         <div class="card-img-hover h-full  w-full">
-                                        <div  class="lazy-image md:h-60 h-36 w-full  transition-opacity duration-500 ease-in-out  bg-center  object-cover bg-cover bg-no-repeat rounded-[5px]" src:background-image="blog.image" >
+                                        <div  class="lazy-image md:h-60 h-36 w-full  transition-opacity duration-500 ease-in-out  bg-center  object-cover bg-cover bg-no-repeat rounded-[5px]" v-lazy:background-image="blog.image" >
 
                                         </div>
 
@@ -112,16 +112,16 @@
                                     <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
                                         <div class="flex flex-col justify-center items-center" >
                                         <div class="card-img  ">
-                                            <img alt="coverimage" class="lazy-image  w-full  transition-opacity duration-500 ease-in-out   rounded-[5px]" :src="blog.image" >
+                                            <img alt="coverimage" class="lazy-image  w-full  transition-opacity duration-500 ease-in-out   rounded-[5px]" v-lazy="blog.image" >
 
-                                        
+                                        </img>
                                         </div>
 
                                     </div>
                                         <div
                                             class="flex flex-col lg:pl-[20px] text-start text-xl text-white justify-between">
                                             <div class="lg:min-h-[135px] min-h-[160px]">
-                                                <h2 class="font-jakarta font-[600]  mt-3 lg:mt-0 leading-[30px] lg:leading-[35px] ">{{
+                                                <h2 class="font-jakarta font-[600]  mt-3 lg:mt-0 leading-[30px] lg:leading-[35px]  text-[20px] lg:text-[24px] ">{{
                                                     blog.title }}</h2>
                                                      <p class="text-sm font-jakarta mt-3 text-white">Published Date: {{ blog.date }}</p>
                                               <p class="text-[16px] font-[300] tracking-[.3px] font-rubik mt-[13px] lg:mt-5 line-clamp-3">
@@ -142,7 +142,7 @@
                         <div
                             v-if="moreBlogs.length > 0"
                             class="flex relative flex-initial md:flex-1 flex-col bg-primary-500 md:gap-10 gap-5 rounded-none p-3 md:p-5 justify-between">
-                            <h2 class="font-jakarta font-extrabold text-black">More Articles</h2>
+                            <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">More Articles</h2>
 
                             <div class="relative w-full overflow-hidden">
                                 <div class="flex gap-5 transition-transform duration-300"
@@ -154,7 +154,7 @@
                                             <div
                                                 class="flex flex-col w-full p-4 text-start text-xl text-white justify-between">
                                                 <div class="lg:min-h-[135px] min-h-[200px]">
-                                                    <h2 class="font-jakarta font-[600] leading-[35px] truncate">{{
+                                                    <h2 class="font-jakarta font-[600] leading-[35px] text-[24px] truncate">{{
                                                         blog.title }}</h2>
                                                     <p
                                                         class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5 truncate">

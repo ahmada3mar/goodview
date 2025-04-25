@@ -5,7 +5,7 @@
       <div class="flex-1 flex items-center justify-center px-5">
       <div v-if="error && error.statusCode == 404" class="text-center max-w-2xl mx-auto">
         <img :src="error400" alt="404 Error" class="w-1/2 mx-auto mb-6">
-        <h2  class="font-jakarta font-extrabold text-gray-900 mb-6">Page Not Found</h2>
+        <h2  class="text-4xl font-jakarta font-extrabold text-gray-900 mb-6">Page Not Found</h2>
         <p  class="text-lg font-rubik text-gray-600 mb-8">
         Oops! Looks like this page took a wrong turn and got lost. Don't worry, our digital GPS is working on getting things back on track!
         </p>
@@ -19,7 +19,7 @@
       </div>
       <div v-else-if="error" class="text-center max-w-2xl mx-auto">
         <img :src="error500" alt="500 Error" class="w-1/2 mx-auto mb-6">
-        <h2 class="font-jakarta font-extrabold text-gray-900 mb-6">Internal Server Error</h2>
+        <h2 class="text-4xl font-jakarta font-extrabold text-gray-900 mb-6">Internal Server Error</h2>
         <p class="text-lg font-rubik text-gray-600 mb-8">
           Oops! Our servers are doing the digital equivalent of a face-plant right now. Our tech ninjas are already performing their debug-jutsu to get things back to normal!
         </p>

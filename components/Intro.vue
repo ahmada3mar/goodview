@@ -6,7 +6,7 @@
         'opacity-100 translate-x-0': isVisible,
         'opacity-0 -translate-x-36': !isVisible,
       }" class="transition-all delay-300 duration-1000 ease-in-out flex flex-col gap-2 md:pb-56 pb-8 pt-16 flex-1">
-        <h2 class="font-jakarta md:text-4xl mb-5 font-extrabold">
+        <h2 class="text-3xl font-jakarta md:text-4xl mb-5 font-extrabold">
           {{ props.title }}
         </h2>
         <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
@@ -65,7 +65,7 @@
         class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 lg:w-1/2 flex pb-24 lg:pb-2 md:hidden flex-col justify-center lg:flex">
         <img
           class="lazy-image opacity-0 translate-x-36 transition-all duration-1000 ease-in-out w-full h-auto rounded-none"
-          src="props.img" alt="Moving Company Image" />
+          v-lazy="props.img" alt="Moving Company Image" />
       </div>
     </div>
   </div>
