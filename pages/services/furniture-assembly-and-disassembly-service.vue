@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Furniture-Assembly-and-Disassemblybanner.webp" class=" md:h-[35rem]" title="Furniture Assembly and Disassembly"
+    <Banner background="/imgs/Furniture-Assembly-and-Disassemblybanner.webp" class=" md:h-[35rem]" title="Furniture Assembly and Disassembly"
         text="At Good View Moving, we specialize in Furniture Assembly and Disassembly to make your move easier. We handle everything from carefully disassembling furniture to ensuring a smooth reassembly.  ">
         <template #body="isVisible">
         <QuoteInputs :isVisible="isVisible.isVisible" />
@@ -29,7 +29,7 @@
                 <div class="card-img" >
                     <img alt="Furniture-assembly"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/Furniture-Assembly-and-Disassembly2.webp'" />
+                        v-lazy="'/imgs/Furniture-Assembly-and-Disassembly2.webp'" />
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Furniture-assembly"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/Furniture-Assembly-and-Disassembly.webp'" />
+                            v-lazy="'/imgs/Furniture-Assembly-and-Disassembly.webp'" />
                     </div>
 
 

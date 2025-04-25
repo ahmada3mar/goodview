@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Packing-and-Unpackingbanner.webp" class=" md:h-[35rem]" title="Packing and Unpacking"
+    <Banner background="/imgs/Packing-and-Unpackingbanner.webp" class=" md:h-[35rem]" title="Packing and Unpacking"
         text="At Good View Moving, we specialize in professional Packing and Unpacking services designed to save you time, effort, and stress. Whether you're looking for residential packing solutions, need help with commercial unpacking services, or require fragile item packing, our team is here to assist every step of the way. ">
         <template #body="isVisible">
         <QuoteInputs :isVisible="isVisible.isVisible" />
@@ -29,7 +29,7 @@
                 <div class="card-img" >
                     <img alt="PackingandUnpacking"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/Packing-and-Unpacking2.webp'" />
+                        v-lazy="'/imgs/Packing-and-Unpacking2.webp'" />
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="PackingandUnpacking"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/Packing-and-Unpacking.webp'" />
+                            v-lazy="'/imgs/Packing-and-Unpacking.webp'" />
                     </div>
 
 

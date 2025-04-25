@@ -59,7 +59,7 @@
                 <div class="container max-w-[1120px] mx-auto">
                     <div class="bg-black flex flex-col gap-5 justify-center -mt-36 rounded-[10px]   p-5">
                         <div class="flex flex-col bg-zinc-900 gap-5  rounded-[10px] p-3 md:p-10">
-                            <h2 class="text-3xl md:text-4xl border-b  font-extrabold font-jakarta text-stone-300">
+                            <h2 class="border-b  font-extrabold font-jakarta text-stone-300">
                                 FAQs
                             </h2>
 

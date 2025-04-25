@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Specialty-Movingbanner.webp" class=" md:h-[35rem]" title="Specialty Moving"
+    <Banner background="/imgs/Specialty-Movingbanner.webp" class=" md:h-[35rem]" title="Specialty Moving"
         text="When it comes to moving valuable, delicate, or heavy items, you need a team with the expertise and experience to handle it all. At Good View Moving, we specialize in Specialty Moving, offering services that cover everything from piano movers to heavy equipment movers." >
         <template #body="isVisible">
         <QuoteInputs :isVisible="isVisible.isVisible" />
@@ -28,7 +28,7 @@
                 <div class="card-img" >
                     <img alt="Specialty Moving Services"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/Specialty-Moving2.webp'" />
+                        v-lazy="'/imgs/Specialty-Moving2.webp'" />
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Specialty Moving Services"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/Specialty-Moving.webp'" />
+                            v-lazy="'/imgs/Specialty-Moving.webp'" />
                     </div>
 
 

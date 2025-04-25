@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Residential.webp" class=" md:h-[35rem]" title="Residential Moving"
+    <Banner background="/imgs/Residential.webp" class=" md:h-[35rem]" title="Residential Moving"
         text="Moving to a new home should be exciting—not overwhelming. At Good View Moving & Storage, we make residential moving effortless with expert planning, careful handling, and a commitment to affordable moving costs. "
       >
       <template #body="isVisible">
@@ -31,7 +31,7 @@
                 <div class="card-img" >
                     <img alt="Residental Moving"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/Residential-Moving-Services3.webp'" />
+                        v-lazy="'/imgs/Residential-Moving-Services3.webp'" />
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Residental Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/Residental2.webp'" />
+                            v-lazy="'/imgs/Residental2.webp'" />
                     </div>
 
 

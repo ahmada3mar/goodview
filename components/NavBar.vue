@@ -5,7 +5,7 @@
       <div class="container  flex flex-row md:flex-row h-20 justify-between items-center">
         <!-- Logo -->
         <ULink @click="expand = false" to="/" class="flex h-full  w-[224px] mx-0 md:mx-0 items-center">
-          <img class="my-5" src="~/assets/good-view-logo-white.png" alt="good view logo" />
+          <img class="my-5" src="/imgs/good-view-logo-white.png" alt="good view logo" />
         </ULink>
 
         <!-- Social Icons / Navigation Links -->

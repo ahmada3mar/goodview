@@ -1,7 +1,7 @@
 <template>
     <div class="h-full bg-black w-full overflow-y-auto">
       <div class="flex justify-between p-5 sticky top-0 bg-black z-10">
-        <img class="h-10" src="~/assets/good-view-logo-white.png" alt="good view logo">
+        <img class="h-10" src="/imgs/good-view-logo-white.png" alt="good view logo">
         <button @click="slideover.close()" class="text-white">
           <UIcon name="i-heroicons-x-mark-20-solid" class="w-6 h-6" />
         </button>

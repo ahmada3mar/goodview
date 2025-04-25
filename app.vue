@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import phone from './assets/UIHere.png'
+import phone from './public/imgs/UIHere.png'
 
 
 

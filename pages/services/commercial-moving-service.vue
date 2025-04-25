@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Commercial.webp" class=" md:h-[35rem]" title="Commercial Moving"
+    <Banner background="/imgs/Commercial.webp" class=" md:h-[35rem]" title="Commercial Moving"
         text="Commercial Moving
 Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. " >
 <template #body="isVisible">
@@ -11,7 +11,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
             <div class="flex flex-col md:flex-row items-center mx-auto gap-6">
                 <!-- Text Section -->
                 <div class="md:w-2/3">
-                    <h2 class="text-3xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Commercial Moving Services?</h2>
+                    <h2 class="t font-jakarta mb-5 font-extrabold">Why Choose Our Commercial Moving Services?</h2>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                         When it comes to commercial moving, experience matters, we've helped countless businesses relocate with zero disruption to their workflow.
                     </p>
@@ -36,7 +36,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                 <div class=" card-img">
                     <img alt="Commercial Moving"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/Commercial-Moving3.webp'" />
+                        v-lazy="'/imgs/Commercial-Moving3.webp'" />
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                 <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                     <!-- Text Section -->
                     <div class="flex-1 flex flex-col">
-                        <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
+                        <h2 class=" font-extrabold font-jakarta text-stone-300">
                             Our Commercial Moving Process – How We Make Moving Easy</h2>
                         <p class="text-lg md:text-xl mt-4 font-rubik  text-stone-300 ">
                             Moving your business should be simple, efficient, and stress-free.
@@ -75,7 +75,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Commercial Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/commerical1.webp'" />
+                            v-lazy="'/imgs/commerical1.webp'" />
                     </div>
 
 
@@ -84,7 +84,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                 <div
                     class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
 
-                    <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
+                    <h2 class="font-jakarta font-extrabold text-black">What’s Included in Our
                         Commercial Moving Services?
                     </h2>
                     <p class="text-md md:text-lg text-black font-rubik">
@@ -112,7 +112,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
 
                 <div class="flex flex-col  bg-white rounded-[10px] max-w-[1100px] p-3 md:p-8 ">
                     <!-- Text Section -->
-                    <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
+                    <h2 class=" font-extrabold font-jakarta text-black">
                         Commercial Moving Costs – Get a Transparent Estimate</h2>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
                         We believe in fair and upfront pricing. The cost of commercial moving depends on:
@@ -154,7 +154,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                         <div class="py-[30px] px-[30px] sm:px-[40px] mt-5 shadow-none bg-primary-500 rounded-[20px] relative">
     <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-6">
         <div class="lg:max-w-[55%]">
-            <h2 class="text-[24px] font-bold font-jakarta text-left">
+            <h2 class="font-bold font-jakarta text-left">
                 Book Your Moving Service Today!
             </h2>
 
