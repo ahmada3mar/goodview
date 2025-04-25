@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://www.goodview-moving.com/sitemap.xml
+Sitemap: https://goodview-moving.com/sitemap.xml
