@@ -4,7 +4,7 @@
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-12 p-10">
                     <!-- Logo and Description -->
                     <div class="flex flex-col w-full  mx-auto   gap-5 items-start ">
-                        <img class="" src="~/assets/good-view-logo-white.png" alt="good view logo" />
+                        <img class="" src="/imgs/good-view-logo-white.png" alt="good view logo" />
                         <div class="flex flex-col gap-2 it md:items-start">
                             <p class="text-center md:text-left font-jakarta">We deliver
                                 <span class="italic font-bold font-jakarta " >Nationwide</span>.</p>

@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/storage-service-02.webp" class=" md:h-[35rem]" title="Storage Units"
+    <Banner background="/imgs/storage-service-02.webp" class=" md:h-[35rem]" title="Storage Units"
         text="When you need a safe and convenient space to store your belongings, our storage unit services are designed to offer you peace of mind. At Good View Moving & Storage, we provide reliable storage units in a range of sizes and types, perfect for everything from short-term storage needs to long-term storage solutions. " >
         <template #body="isVisible">
         <QuoteInputs :isVisible="isVisible.isVisible" />
@@ -30,7 +30,7 @@
                 <div class="card-img" >
                     <img alt="Storage serivces"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/storage-service-01.webp'" />
+                        v-lazy="'/imgs/storage-service-01.webp'" />
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Storage serivces"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/storage-service-pg04.webp'" />
+                            v-lazy="'/imgs/storage-service-pg04.webp'" />
                     </div>
 
 
