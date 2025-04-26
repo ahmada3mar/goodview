@@ -1,7 +1,6 @@
 <template>
 
-    <div v-if="blog.id" class="bg-white">
-
+    <div v-if="blog.id" class="bg-white" id="blog-page">
         <div>
             <!-- Hero Section -->
             <div class="relative w-full h-[20rem] md:h-[20rem] overflow-hidden "
@@ -168,8 +167,17 @@ const { data: blog, error } = await useFetch(`https://api.goodview-moving.com/ap
 })
 
 watchEffect(() => {
-    if (!blog.value) return;
 
+    if (!blog.value) return;
+    const style = [];
+
+    if(blog.value.custom_css) {
+        style.push(
+            {
+                children: "#blog-page " + blog.value.custom_css
+            }
+        )
+    }
 
     const meta = [
         { name: 'description', content: blog.value.shortDescription },
@@ -196,7 +204,8 @@ watchEffect(() => {
 
     useHead({
         title: blog.value.title,
-        meta
+        meta,
+        style
     })
 })
 </script>
