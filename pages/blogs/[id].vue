@@ -39,7 +39,7 @@
                 <!-- Main Blog Content -->
                 <div class="lg:col-span-8 flex flex-col gap-8">
                     <!-- Blog Banner -->
-                    <img :src="blog.image" :alt="blog.alt" class="w-full h-[400px] rounded-lg shadow-md object-cover" />
+                    <img :src="blog.image" :alt="blog.image_alt" class="w-full h-[400px] rounded-lg shadow-md object-cover" />
 
 
                     <!-- Blog Content -->
