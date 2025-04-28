@@ -24,6 +24,7 @@
     "date-fns": "^4.1.0",
     "flatpickr": "^4.6.13",
     "nuxt": "^3.13.2",
+    "nuxt-lazyimage": "^2.0.1",
     "pikaday": "^1.8.2",
     "swiper": "^11.2.6",
     "v-calendar": "^3.1.2",

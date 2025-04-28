@@ -26,7 +26,7 @@
                 <!-- Image Section -->
                 <div class=" card-img">
                     <img alt="About us"
-                        class="lazy-image opacity-0   transition-opacity duration-500 ease-in-out w-full h-[300px] object-cover "
+                        class="lazy-image opacity-0   transition-opacity duration-500 ease-in-out w-[90%] lg:w-full  lg:h-[300px] object-cover "
                         v-lazy="'/imgs/movingServices.webp'" />
                 </div>
             </div>

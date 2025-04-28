@@ -14,19 +14,19 @@
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                         At Good View Moving, we make your move stress-free with expert Packing and Unpacking services. Here’s why you should choose us:</p>
                  <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Experienced Movers: </b> Our professional team ensures your belongings are packed and unpacked safely.</p>
+ <b class=" font-[500]">Experienced Movers: </b> Our professional team ensures your belongings are packed and unpacked safely.</p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Custom Solutions: </b>  We offer tailored packing services for both residential and <b><ULink  target="_blank" to="/services/commercial-moving-service"
+ <b class=" font-[500]">Custom Solutions: </b>  We offer tailored packing services for both residential and <b><ULink  target="_blank" to="/services/commercial-moving-service"
             class="font-[500]  underline ">
             Commercial Moves</ULink></b>.</p>
                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>High-Quality Materials: </b> We use the best packing supplies for moving, including materials for  <b><ULink  target="_blank" to="/services/specialty-moving-service"
+ <b class=" font-[500]">High-Quality Materials: </b> We use the best packing supplies for moving, including materials for  <b><ULink  target="_blank" to="/services/specialty-moving-service"
             class="font-[500]  underline ">
             fragile item packing</ULink></b>.</p>
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Efficient Unpacking: </b> Our unpacking assistance helps you quickly settle into your new space.</p>
+ <b class=" font-[500]">Efficient Unpacking: </b> Our unpacking assistance helps you quickly settle into your new space.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Reliable Service: </b> Transparent pricing with no hidden fees, so you know exactly what to expect.</p>
+ <b class=" font-[500]">Reliable Service: </b> Transparent pricing with no hidden fees, so you know exactly what to expect.</p>
 
                 </div>
                 <!-- Image Section -->
@@ -84,13 +84,13 @@
                     </p>
                     <ul
                     class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                    <li><b>Full-Service Packing and Unpacking: </b>
+                    <li> <b class=" font-[500]">Full-Service Packing and Unpacking: </b>
                         Our team will pack furniture, personal items, and even fragile possessions using professional-grade packing materials. We'll also carefully unpack everything once we arrive at your new location.</li>
-                    <li><b>Moving Box Packing: </b>
+                    <li> <b class=" font-[500]">Moving Box Packing: </b>
                         We will pack all your items in the appropriate moving boxes to ensure they are secure and easy to transport. We can also provide special boxes for items like artwork or electronics if needed.</li>
-                    <li><b>Fragile Item Packing: </b>
+                    <li> <b class=" font-[500]">Fragile Item Packing: </b>
                         We understand how important your delicate items are. That's why we take extra care with fragile belongings like glassware, antiques, and electronics.</li>
-                    <li><b>Unpacking Assistance: </b>
+                    <li> <b class=" font-[500]">Unpacking Assistance: </b>
                         Once we’ve transported your belongings to your new location, we’ll help unpack and organize your things efficiently, ensuring that your move-in process is as smooth as possible.</li>
 
 </ul>
@@ -116,16 +116,16 @@
 
                     <ul
                         class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                        <li><b>Packing Materials: </b>
+                        <li> <b class=" font-[500]">Packing Materials: </b>
                             We provide all the packing supplies for moving, including boxes, bubble wrap, and special materials for packing fragile items. The cost of packing materials ranges from $100 to $300 for a typical move.
                         </li>
-                        <li><b>Labor Costs: </b>
+                        <li> <b class=" font-[500]">Labor Costs: </b>
                             On average, packing services for a standard 2-3 bedroom home cost between $300 and $600. Prices can go up for larger homes or commercial moves.
                         </li>
-                        <li><b>Unpacking Assistance:</b>
+                        <li> <b class=" font-[500]">Unpacking Assistance:</b>
                              If you choose our unpacking assistance, this is usually priced at a flat rate of around $150 to $350, depending on how many rooms need to be unpacked and organized.
                         </li>
-                        <li><b>Full-Service Packing and Unpacking: </b>
+                        <li> <b class=" font-[500]">Full-Service Packing and Unpacking: </b>
                             If you need a complete packing and unpacking solution, including everything from moving box packing to organizing your new space, expect to pay between $500 and $1,200.
                         </li>
 

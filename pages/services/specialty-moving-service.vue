@@ -12,18 +12,18 @@
                 <div class="md:w-2/3">
                     <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Specialty Moving Services?</h2>
                  <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Expert Handling of Delicate Items: </b> Our team is skilled in moving fragile and valuable items like pianos, artwork, and antiques, ensuring they are safely packed, moved, and reassembled.</p>
+                     <b class=" font-[500]">Expert Handling of Delicate Items: </b> Our team is skilled in moving fragile and valuable items like pianos, artwork, and antiques, ensuring they are safely packed, moved, and reassembled.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Specialized Equipment: </b> We use the right equipment to move large or heavy items, such as pool tables, appliances, and heavy machinery, ensuring safe transport.</p>
+                     <b class=" font-[500]">Specialized Equipment: </b> We use the right equipment to move large or heavy items, such as pool tables, appliances, and heavy machinery, ensuring safe transport.</p>
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Tailored Services: </b> Whether you're moving a grand piano or a delicate piece of art, we provide relocation services that are customized to meet your unique needs.</p>
+                     <b class=" font-[500]">Tailored Services: </b> Whether you're moving a grand piano or a delicate piece of art, we provide relocation services that are customized to meet your unique needs.</p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Experienced Movers: </b> Our team of professional <b><ULink  target="_blank" to="/services/furniture-assembly-and-disassembly-service"
+                     <b class=" font-[500]">Experienced Movers: </b> Our team of professional <b><ULink  target="_blank" to="/services/furniture-assembly-and-disassembly-service"
             class="font-[500]  underline ">
             Furniture Movers</ULink></b> is trained to handle the most challenging moves, making sure your items are treated with the care they deserve.</p>
 
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Comprehensive Moving Solutions: </b> From art shipping to antique movers, we offer a full range of specialty moving services to handle all kinds of valuable or heavy items.</p>
+                     <b class=" font-[500]">Comprehensive Moving Solutions: </b> From art shipping to antique movers, we offer a full range of specialty moving services to handle all kinds of valuable or heavy items.</p>
 
                 </div>
                 <!-- Image Section -->
@@ -73,15 +73,15 @@
                     </h2>
                     <ul
                     class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                    <li><b>Pool Table Movers: </b>
+                    <li> <b class=" font-[500]">Pool Table Movers: </b>
                         We offer expert services for moving and assembling pool tables, ensuring they’re properly packed and set up in your new space.</li>
-                    <li> <b>Piano Movers: </b>
+                    <li>  <b class=" font-[500]">Piano Movers: </b>
                         Whether you have a small upright or a grand piano, we specialize in carefully and efficiently moving pianos.</li>
-                    <li><b>Heavy Equipment Movers: </b>
+                    <li> <b class=" font-[500]">Heavy Equipment Movers: </b>
                         Our team is equipped to move large machinery or heavy equipment, ensuring they are transported safely and securely.</li>
-                    <li> <b>Appliance Movers: </b>
+                    <li>  <b class=" font-[500]">Appliance Movers: </b>
                         From refrigerators to washing machines, our appliance moving services ensure your bulky items are moved without damage.</li>
-                        <li> <b>Art Shipping and Antique Movers: </b>
+                        <li>  <b class=" font-[500]">Art Shipping and Antique Movers: </b>
                             We provide expert packing and transportation for delicate artwork and valuable antiques, giving them the special care they require.</li>
 </ul>
                 </div>
@@ -108,19 +108,19 @@
 
                     <ul
                         class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                        <li><b>Appliance Moving: </b>
+                        <li> <b class=" font-[500]">Appliance Moving: </b>
                             Costs typically range from $100 to $300, depending on the item’s size and distance.
                         </li>
-                        <li><b>Pool Table Moving: </b>
+                        <li> <b class=" font-[500]">Pool Table Moving: </b>
                             Moving a pool table generally costs between $300 and $600, depending on size and disassembly needs.
                         </li>
-                        <li><b>Piano Moving: </b>
+                        <li> <b class=" font-[500]">Piano Moving: </b>
                             Prices start at $200 for small pianos and can go up to $800 or more for grand pianos.
                         </li>
-                        <li><b>Heavy Equipment Moving: </b>
+                        <li> <b class=" font-[500]">Heavy Equipment Moving: </b>
                              Moving large equipment costs around $500, depending on size and weight.
                         </li>
-                        <li><b>Art and Antique Moving: </b>
+                        <li> <b class=" font-[500]">Art and Antique Moving: </b>
                             The cost for art shipping and antique movers ranges from $200 to $600, based on the item’s value and fragility.
                         </li>
 

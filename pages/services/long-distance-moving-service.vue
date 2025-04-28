@@ -16,16 +16,16 @@
                         Here’s why homeowners and businesses choose us:</p>
 
                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Experienced Long Distance Movers: </b>Our team has years of experience handling state to state moves with precision.</p>
+                      <b class=" font-[500]">Experienced Long Distance Movers: </b>Our team has years of experience handling state to state moves with precision.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Licensed & Insured: </b> As a certified interstate moving company, we ensure your belongings are fully protected.</p>
+                      <b class=" font-[500]">Licensed & Insured: </b> As a certified interstate moving company, we ensure your belongings are fully protected.</p>
 
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Full-Service Movers: </b> From packing to unloading, we handle every step of your move.</p>
+                      <b class=" font-[500]">Full-Service Movers: </b> From packing to unloading, we handle every step of your move.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Safe & Efficient Transport: </b> We use modern trucks and secure packing techniques to keep your items safe.</p>
+                      <b class=" font-[500]">Safe & Efficient Transport: </b> We use modern trucks and secure packing techniques to keep your items safe.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Personalized Moving Plans: </b>No two moves are the same. We customize your relocation based on your needs.</p>
+                      <b class=" font-[500]">Personalized Moving Plans: </b>No two moves are the same. We customize your relocation based on your needs.</p>
 
                 </div>
                 <!-- Image Section -->
@@ -99,7 +99,7 @@
             class="font-[500]  underline ">
             storage options</ULink></b>.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>Furniture Disassembly & Reassembly – </b>
-                        We take care of large and fragile items.</p>
+                        We expertly handle large, bulky, and delicate furniture with care.</p>
 
 
                 </div>
@@ -123,13 +123,13 @@
 
                     <ul
                         class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                        <li><b>Distance: </b>
+                        <li> <b class=" font-[500]">Distance: </b>
                             The farther you move, the higher the cost.
                         </li>
-                        <li><b>Home Size: </b>
+                        <li> <b class=" font-[500]">Home Size: </b>
                             Moving a studio apartment costs less than a five-bedroom home.
                         </li>
-                        <li><b>Additional Services:</b>
+                        <li> <b class=" font-[500]">Additional Services:</b>
                             Packing, storage, and   <b><ULink  target="_blank" to="/services/specialty-moving-service"
             class="font-[500]  underline ">
             specialty item</ULink></b> handling may affect pricing.
@@ -139,14 +139,14 @@
                     <p class="text-2xl md:text-3xl  mt-5  font-bold font-jakarta text-black">
                         How Much Does Long Distance Moving Cost on Average?</p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>Small Moves (1-bedroom, 500–1,500 miles): </b>Typically range from $1,500 to $4,000.
+                        <b class=" font-[500]">Small Moves (1-bedroom, 500–1,500 miles): </b>Typically range from $1,500 to $4,000.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>Medium-Sized Moves (2–3 bedrooms, 1,500–3,000 miles): </b>Expect costs between $4,000 and
+                        <b class=" font-[500]">Medium-Sized Moves (2–3 bedrooms, 1,500–3,000 miles): </b>Expect costs between $4,000 and
                         $8,000.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>Large Homes or Cross-Country Moves (4+ bedrooms, 3,000+ miles):</b> These can start at $8,000
+                        <b class=" font-[500]">Large Homes or Cross-Country Moves (4+ bedrooms, 3,000+ miles):</b> These can start at $8,000
                         and go up to $15,000+.
                     </p>
 

@@ -13,16 +13,16 @@
                     <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Furniture Assembly and Disassembly Services?</h2>
 
                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Expert Furniture Handling: </b> Our team specializes in moving furniture and expertly handles furniture assembly and disassembly to ensure your items are transported safely.</p>
+                    <b class=" font-[500]">Expert Furniture Handling: </b> Our team specializes in moving furniture and expertly handles furniture assembly and disassembly to ensure your items are transported safely.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Smooth Transitions: </b> Whether you’re moving heavy furniture or need help setting up new pieces, we make your move easy and stress-free by providing professional furniture assembly services.</p>
+                        <b class=" font-[500]">Smooth Transitions: </b> Whether you’re moving heavy furniture or need help setting up new pieces, we make your move easy and stress-free by providing professional furniture assembly services.</p>
 
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Time-Saving Service: </b> We save you time by efficiently disassembling furniture for transport and reassembling it quickly at your new location so you can focus on settling in.</p>
+                        <b class=" font-[500]">Time-Saving Service: </b> We save you time by efficiently disassembling furniture for transport and reassembling it quickly at your new location so you can focus on settling in.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Care and Efficiency: </b> We treat your furniture with care, ensuring it’s safely packed, moved, and set up in your new home or office without any hassle.</p>
+                        <b class=" font-[500]">Care and Efficiency: </b> We treat your furniture with care, ensuring it’s safely packed, moved, and set up in your new home or office without any hassle.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Customized Solutions: </b>Our services are tailored to meet your specific needs—whether you have large furniture pieces that need disassembly or just require furniture assembly near me for smaller items. </p>
+                        <b class=" font-[500]">Customized Solutions: </b>Our services are tailored to meet your specific needs—whether you have large furniture pieces that need disassembly or just require furniture assembly near me for smaller items. </p>
 
                 </div>
                 <!-- Image Section -->
@@ -73,14 +73,14 @@
                         Our Furniture Assembly and Disassembly service covers everything from start to finish:
                     </p>
                     <ul class="list-disc marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2 nmb">
-    <li><b>Disassembling Furniture: </b>
+    <li> <b class=" font-[500]">Disassembling Furniture: </b>
         We carefully disassemble your furniture, including beds, tables, desks, and other large items, to make it easier to move and avoid damage.</li>
-    <li><b>Reassembling at Your New Location: </b>
+    <li> <b class=" font-[500]">Reassembling at Your New Location: </b>
         After the move, we’ll assemble furniture back in your new home or office, ensuring that everything is put together correctly and securely.</li>
-    <li><b>Furniture Mover Expertise: </b>
+    <li> <b class=" font-[500]">Furniture Mover Expertise: </b>
          Our team has extensive experience with all types of furniture, ensuring safe handling and efficient assembly.</li>
     <li>
-        <b>Secure Packing: </b>
+         <b class=" font-[500]">Secure Packing: </b>
         We offer  <b><ULink  target="_blank" to="/services/packing-and-unpacking-service"
             class="font-[500]  underline ">
             Packing Services</ULink></b>for the furniture pieces, ensuring that nothing gets scratched or broken during the move.</li>
@@ -111,20 +111,20 @@
 
                     <ul
                         class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                        <li><b>Basic Furniture Assembly: </b>
+                        <li> <b class=" font-[500]">Basic Furniture Assembly: </b>
                             Expect costs starting from $100 to $200 for a standard assembly or disassembly of small furniture items.
                         </li>
-                        <li><b>Larger Furniture or Complex Assembly: </b>
+                        <li> <b class=" font-[500]">Larger Furniture or Complex Assembly: </b>
                             The cost for larger items like beds, dining tables, or office furniture typically ranges from $200 to $500.  </li>
 
-                        <li><b>Labor and Moving Costs: </b>
+                        <li> <b class=" font-[500]">Labor and Moving Costs: </b>
                             If you're also booking a moving service, the cost of moving furniture is usually factored into your total quote. We provide moving quotes based on the distance, size of the move, and the time needed for furniture assembly and disassembly.
                         </li>
 
                     </ul>
 
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
-                            class="italic font-bold">Note: </span>  At <b><ULink  target="_blank" to="/"
+                            class="italic font-bold">Note: </span>  At  <b class=" font-[500]"><ULink  target="_blank" to="/"
             class="font-[500]  underline ">
             Good View Moving & Storage</ULink></b>, our moving costs are affordable and transparent. You'll always know what you're paying for without hidden fees or last-minute surprises.</p>
 

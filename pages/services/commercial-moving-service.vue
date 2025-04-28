@@ -18,21 +18,21 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                         Here’s why companies trust us:
                     </p> <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>  Trusted Commercial Movers Near You: </b>Our skilled commercial movers and packers handle everything from office moving services to warehouse relocations.
+                      <b class=" font-[500]">  Trusted Commercial Movers Near You: </b>Our skilled commercial movers and packers handle everything from office moving services to warehouse relocations.
                     </p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b> Minimal Downtime: </b> We work around your schedule to ensure a smooth move with little to no business interruption. </p>
+                        <b class=" font-[500]"> Minimal Downtime: </b> We work around your schedule to ensure a smooth move with little to no business interruption. </p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Customized Moving Plans: </b>Every business is different. We create a personalized moving plan that fits your needs. </p>
+                        <b class=" font-[500]">Customized Moving Plans: </b>Every business is different. We create a personalized moving plan that fits your needs. </p>
 
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b> Secure Packing & Transport: </b> We use high-quality <b>
+                        <b class=" font-[500]"> Secure Packing & Transport: </b> We use high-quality <b>
           <ULink target="_blank"  to="/services/packing-and-unpacking-service"
             class="font-[500]  underline ">
             packing materials</ULink></b> to protect office furniture, IT equipment, and sensitive documents.
                     </p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b> Full-Service Movers: </b> From packing to setting up your new space, we offer end-to-end commercial moving solutions.
+                       <b class=" font-[500]"> Full-Service Movers: </b> From packing to setting up your new space, we offer end-to-end commercial moving solutions.
                     </p>
                 </div>
                 <!-- Image Section -->
@@ -100,9 +100,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                     <p class="text-md md:text-lg text-black font-rubik"><b>Warehouse & Industrial Moves: </b>
                         Large-scale moving solutions for factories, warehouses, and retail stores.</p>
                     <p class="text-md md:text-lg text-black font-rubik"><b>
-                        <ULink target="_blank" class="underline"  to="/services/packing-and-unpacking-service"
-            >
-            Furniture Disassembly & Reassembly</ULink>: </b>
+                         Furniture Disassembly & Reassembly: </b>
                         We easily handle office desks, conference tables, and cubicles.</p>
 
                 </div>
@@ -136,19 +134,19 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                     <p class="text-2xl md:text-3xl  mt-5  font-bold font-jakarta text-black">
                         How Much Does Our Commercial Moving Cost on Average?</p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>Small Office Moves (1,000 – 5,000 sq. ft.): </b>These typically cost between $1,500 and
+                        <b class="font-[500]">Small Office Moves (1,000 – 5,000 sq. ft.): </b>These typically cost between $1,500 and
                         $5,000, depending on the number of workstations and equipment.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>Medium-Sized Office Moves (5,000 – 10,000 sq. ft.):</b> Expect to pay $5,000 to $10,000 for
+                        <b class="font-[500]">Medium-Sized Office Moves (5,000 – 10,000 sq. ft.):</b> Expect to pay $5,000 to $10,000 for
                         a full relocation, including packing and setup.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>Large Corporate or Industrial Moves (10,000+ sq. ft.): </b>Depending on complexity and
+                        <b class="font-[500]">Large Corporate or Industrial Moves (10,000+ sq. ft.): </b>Depending on complexity and
                         logistics, costs can start at $10,000 and go up to $30,000+.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black ">
-                        <b>Hourly Rates for Office Movers: </b> Many commercial moving companies charge between $150 and
+                        <b class="font-[500]">Hourly Rates for Office Movers: </b> Many commercial moving companies charge between $150 and
                         $300 per hour, depending on the crew size and services needed.
                     </p>
                     <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span
