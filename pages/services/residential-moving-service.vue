@@ -173,3 +173,13 @@
 </div>
 
 </template>
+<script>
+useHead({
+    title: 'Residential Moving Services - Good View Moving ',
+    meta: [
+
+        { property: 'og:title', content: 'Residential Moving Services - Good View Moving' },
+        { property: 'og:description', content: ' Trust Good View Moving for expert residential moving services. We handle your home relocation with care and efficiency at competitive prices.  ' }
+    ]
+})
+</script>

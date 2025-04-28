@@ -165,3 +165,13 @@
 </div>
 
 </template>
+<script>
+useHead({
+    title: 'Packing & Unpacking Services - Good View Moving ',
+    meta: [
+
+        { property: 'og:title', content: 'Packing & Unpacking Services - Good View Moving' },
+        { property: 'og:description', content: ' Let Good View Moving handle your packing and unpacking needs. Our expert team ensures your items are packed securely for the move.  ' }
+    ]
+})
+</script>

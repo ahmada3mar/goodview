@@ -158,3 +158,13 @@ Storage Unit Cost – Get a Transparent Estimate</h2>
 </div>
 
 </template>
+<script>
+useHead({
+    title: 'Storage Solutions - Good View Moving ',
+    meta: [
+
+        { property: 'og:title', content: 'Storage Solutions - Good View Moving' },
+        { property: 'og:description', content: '  Secure and reliable storage services by Good View Moving. We offer safe solutions for short and long-term storage of your belongings. ' }
+    ]
+})
+</script>
