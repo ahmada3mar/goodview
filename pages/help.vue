@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col h-full">
-        <Banner background="/assets/help.avif" class=" md:h-[35rem]" title="Help Center"
+        <Banner background="/imgs/help.avif" class=" md:h-[35rem]" title="Help Center"
             text="Our Help section provides answers to common questions and offers guidance for a smooth moving and storage experience. Whether you need assistance with booking, packing tips, or understanding our services, you'll find helpful resources to make your process easier. We're here to support you every step of the way!" />
 
         <div class="w-full flex flex-col bg-primary-500 justify-center p-5 sm:p-10">

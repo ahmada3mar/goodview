@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Home Page -->
     <url>
-        <loc>https://www.goodview-moving.com/</loc>
+        <loc>https://goodview-moving.com/</loc>
         <lastmod>2024-12-01</lastmod>
         <priority>1.0</priority>
     </url>
 
     <!-- Services Page -->
     <url>
-        <loc>https://www.goodview-moving.com/services/</loc>
+        <loc>https://goodview-moving.com/services/</loc>
         <lastmod>2024-12-01</lastmod>
         <priority>0.8</priority>
     </url>
 
     <!-- Individual Service Pages -->
     <url>
-        <loc>https://www.goodview-moving.com/about-us/</loc>
+        <loc>https://goodview-moving.com/about-us/</loc>
         <lastmod>2024-12-01</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.goodview-moving.com/faq/</loc>
+        <loc>https://goodview-moving.com/faq/</loc>
         <lastmod>2024-12-01</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.goodview-moving.com/help/</loc>
+        <loc>https://goodview-moving.com/help/</loc>
         <lastmod>2024-12-01</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.goodview-moving.com/quote/</loc>
+        <loc>https://goodview-moving.com/quote/</loc>
         <lastmod>2024-12-01</lastmod>
         <priority>0.7</priority>
     </url>
 
     <!-- About Page -->
     <url>
-        <loc>https://www.goodview-moving.com/tips/</loc>
+        <loc>https://goodview-moving.com/tips/</loc>
         <lastmod>2024-12-01</lastmod>
         <priority>0.6</priority>
     </url>

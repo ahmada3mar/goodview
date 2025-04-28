@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col h-full">
 
-        <Banner background="/assets/aboutus.webp" class="h-[20rem] md:h-[25rem]" title="About Us"
+        <Banner background="/imgs/aboutus.webp" class="h-[20rem] md:h-[25rem]" title="About Us"
             text="We are a moving company based in New Jersey, services all North/South East Coast excluding Florida." />
 
         <div class="container bg-white lg:mx-auto px-2 sm:px-10 py-10 mb-32">
@@ -27,7 +27,7 @@
                 <div class=" card-img">
                     <img alt="About us"
                         class="lazy-image opacity-0   transition-opacity duration-500 ease-in-out w-[90%] lg:w-full  lg:h-[300px] object-cover "
-                        v-lazy="'assets/movingServices.webp'" />
+                        v-lazy="'/imgs/movingServices.webp'" />
                 </div>
             </div>
         </div>
@@ -203,7 +203,7 @@
                     <div class="flex-1 flex card-img justify-center items-center">
                         <img alt="Why choose us"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'assets/WhyChooseUS.webp'" />
+                            v-lazy="'/imgs/WhyChooseUS.webp'" />
                     </div>
                 </div>
 

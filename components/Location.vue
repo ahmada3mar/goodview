@@ -49,7 +49,7 @@
           <!-- Map Section -->
           <div class="rounded-2xl overflow-hidden   w-full flex-none md:flex-1">
               
-              <NuxtImg src="/assets/contact_us.avif" />
+              <NuxtImg src="/imgs/contact_us.avif" />
           </div>
         </div>
       </UCard>

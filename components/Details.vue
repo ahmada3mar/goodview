@@ -12,7 +12,7 @@
       <!-- First Section: A Full Range Of Moving Services -->
       <div class="flex flex-wrap gap-10 lg:gap-20 items-center py-10 md:py-20">
         <div class="img1 relative bg-primary-500 rounded-2xl p-2 w-full lg:w-1/2">
-          <img class="w-full h-auto rounded-none" src="~/assets/details1.png" alt="Details Image 1 goodview">
+          <img class="w-full h-auto rounded-none" src="/imgs/details1.png" alt="Details Image 1 goodview">
           <div class="dot"></div>
           <div class="dot"></div>
         </div>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="img1 relative bg-primary-500 rounded-2xl p-2 w-full lg:w-1/2">
-          <img class="w-full h-auto rounded-none" src="~/assets/details2.png" alt="Details Image goodview">
+          <img class="w-full h-auto rounded-none" src="/imgs/details2.png" alt="Details Image goodview">
           <div class="dot"></div>
           <div class="dot"></div>
         </div>

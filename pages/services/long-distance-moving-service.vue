@@ -1,5 +1,5 @@
 <template>
-    <div>    <Banner background="/assets/Long-distance .webp" class=" md:h-[35rem]" title="Long Distance Moving"
+    <div>    <Banner background="/imgs/Long-distance .webp" class=" md:h-[35rem]" title="Long Distance Moving"
         text="Long distance moving requires careful planning, professional handling, and a reliable long distance moving company you can trust. At Good View Moving & Storage, we specialize in smooth, hassle-free relocations—whether you're moving a few hundred miles away or across the country. " >
         <template #body="isVisible">
         <QuoteInputs :isVisible="isVisible.isVisible" />
@@ -32,7 +32,7 @@
                 <div class="card-img" >
                     <img alt="Long Distance"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/Long-Distance-Moving3.webp'" />
+                        v-lazy="'/imgs/Long-Distance-Moving3.webp'" />
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Long Distance"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/Longdistance2.webp'" />
+                            v-lazy="'/imgs/Longdistance2.webp'" />
                     </div>
 
 

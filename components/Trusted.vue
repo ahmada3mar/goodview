@@ -6,10 +6,10 @@
         </h2>
 
             <div class="flex flex-wrap justify-around gap-10 my-16">
-                <img class="sm:h-28 h-16 invert" src="~/assets/ha-eliteservice.webp" alt="www.goodview-moving.com">
-                <img class="sm:h-28 h-16 invert" src="~/assets/ha-screened.webp" alt="www.goodview-moving.com">
-                <img class="sm:h-28 h-16 invert" src="~/assets/ha-toprated.webp" alt="www.goodview-moving.com">
-                <img class="sm:h-28 h-16" src="~/assets/bbb2.png" alt="www.goodview-moving.com">
+                <img class="sm:h-28 h-16 invert" src="/imgs/ha-eliteservice.webp" alt="goodview-moving.com">
+                <img class="sm:h-28 h-16 invert" src="/imgs/ha-screened.webp" alt="goodview-moving.com">
+                <img class="sm:h-28 h-16 invert" src="/imgs/ha-toprated.webp" alt="goodview-moving.com">
+                <img class="sm:h-28 h-16" src="/imgs/bbb2.png" alt="goodview-moving.com">
             </div>
         </div>
     </div>

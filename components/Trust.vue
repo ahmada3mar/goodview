@@ -6,10 +6,10 @@
             Trusted by 
         </h2>
         <div class="flex flex-wrap justify-center gap-4">
-            <img class="h-24" src="~/assets/banner1.png" alt="www.goodview-moving.com">
-            <img class="h-24" src="~/assets/banner2.jpeg" alt="www.goodview-moving.com">
-            <img class="h-24" src="~/assets/banner3.png" alt="www.goodview-moving.com">
-            <img class="h-24" src="~/assets/banner4.png" alt="www.goodview-moving.com">
+            <img class="h-24" src="/imgs/banner1.png" alt="goodview-moving.com">
+            <img class="h-24" src="/imgs/banner2.jpeg" alt="goodview-moving.com">
+            <img class="h-24" src="/imgs/banner3.png" alt="goodview-moving.com">
+            <img class="h-24" src="/imgs/banner4.png" alt="goodview-moving.com">
         </div>
     </div>
 </template>

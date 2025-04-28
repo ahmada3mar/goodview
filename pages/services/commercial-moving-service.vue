@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Banner background="/assets/Commercial.webp" class=" md:h-[35rem]" title="Commercial Moving"
+    <Banner background="/imgs/Commercial.webp" class=" md:h-[35rem]" title="Commercial Moving"
         text="Commercial Moving
 Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. " >
 <template #body="isVisible">
@@ -39,7 +39,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                 <div class=" card-img">
                     <img alt="Commercial Moving"
                         class="lazy-image opacity-0  rounded-[20px] transition-opacity duration-500 ease-in-out w-full h-[auto] object-cover "
-                        v-lazy="'/assets/Commercial-Moving3.webp'" />
+                        v-lazy="'/imgs/Commercial-Moving3.webp'" />
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
                     <div class="flex-1 card-img flex justify-center items-center">
                         <img alt="Commercial Moving"
                             class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-[auto] lg:h-[400px] object-cover "
-                            v-lazy="'/assets/commerical1.webp'" />
+                            v-lazy="'/imgs/commerical1.webp'" />
                     </div>
 
 
