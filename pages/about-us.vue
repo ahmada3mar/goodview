@@ -5,7 +5,7 @@
             text="We are a moving company based in New Jersey, services all North/South East Coast excluding Florida." />
 
         <div class="container bg-white lg:mx-auto px-2 sm:px-10 py-10 mb-32">
-            <div class="flex flex-col lg:flex-row items-center mx-auto gap-6">
+            <div class="flex flex-col md:flex-row items-center mx-auto gap-6">
                 <!-- Text Section -->
                 <div class="md:w-2/3">
                     <h2 class="text-3xl font-jakarta md:text-4xl mb-5 font-extrabold">Our Story – How It All Began</h2>
