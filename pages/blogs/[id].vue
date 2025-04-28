@@ -15,7 +15,7 @@
                     </h1>
 
                     <!-- Breadcrumb -->
-                    <nav class="text-white text-[22px] font-rubik space-x-1 mt-2">
+                    <nav class="text-white  text-[18px] lg:text-[22px] font-rubik space-x-1 mt-2">
                         <span>
                             <NuxtLink to="/" class="hover:underline">Home</NuxtLink>
                         </span> /
@@ -24,9 +24,9 @@
                         </span> /
                         <span class="text-white">{{ blog.title }}</span>
                     </nav>
-                    <div class="flex items-start flex-col">
-                        <p class="font-semibold text-white">{{ blog.author }}</p>
-                        <p class="text-sm text-white">Published Date: {{ blog.date }}</p>
+                    <div class="flex items-start  flex-col">
+                        <p class="font-semibold font-rubik text-white">{{ blog.author }}</p>
+                        <p class="text-sm text-white font-rubik">Published Date: {{ blog.date }}</p>
                     </div>
                 </div>
             </div>
@@ -39,12 +39,13 @@
                 <!-- Main Blog Content -->
                 <div class="lg:col-span-8 flex flex-col gap-8">
                     <!-- Blog Banner -->
-                    <img :src="blog.image" :alt="blog.image_alt" class="w-full h-[400px] rounded-lg shadow-md object-cover" />
+                    <img :src="blog.image" :alt="blog.image_alt"
+                        class="w-full lg:h-[400px] rounded-lg shadow-md object-cover" />
 
 
                     <!-- Blog Content -->
                     <div class="text-gray-800 mb-36 space-y-6">
-                        <div v-html="blog.content"></div>
+                        <div v-html="blog.content" class="blog-content"></div>
                     </div>
 
                     <!-- Sidebar -->
@@ -73,7 +74,7 @@
                                         <path d="M7 10l5 5 5-5H7z"></path> <!-- Down Arrow -->
                                     </svg>
                                 </summary>
-                                <p class="mt-3 text-black text-sm md:text-lg">
+                                <p class="mt-3 text-black font-[400] font-rubik text-sm md:text-lg">
                                     {{ faq.answer }}
                                 </p>
                             </details>
@@ -155,15 +156,15 @@ const id = route.params.id
 
 // Fetch blog data
 const { data: blog, error } = await useFetch(`https://api.goodview-moving.com/api/blogs/${id}`, {
-  // Handle 404 errors
-  onResponseError({ response }) {
-    if (response.status === 404) {
-      throw showError({
-        statusCode: 404,
-        statusMessage: 'Blog post not found',
-      })
+    // Handle 404 errors
+    onResponseError({ response }) {
+        if (response.status === 404) {
+            throw showError({
+                statusCode: 404,
+                statusMessage: 'Blog post not found',
+            })
+        }
     }
-  }
 })
 
 watchEffect(() => {
@@ -171,13 +172,13 @@ watchEffect(() => {
     if (!blog.value) return;
     const style = [];
 
-    if(blog.value.custom_css) {
-        style.push(
-            {
-                children: "#blog-page " + blog.value.custom_css
-            }
-        )
-    }
+    // if (blog.value.custom_css) {
+    //     style.push(
+    //         {
+    //             children: "#blog-page " + blog.value.custom_css
+    //         }
+    //     )
+    // }
 
     const meta = [
         { name: 'description', content: blog.value.shortDescription },
@@ -209,3 +210,103 @@ watchEffect(() => {
     })
 })
 </script>
+<style scoped>
+:deep(.blog-content p) {
+    font-weight: 400 !important;
+    margin-top: 15px !important;
+    line-height: 34px !important;
+    color: black !important;
+    font-size: 18px !important;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+:deep(.blog-content h2) {
+    font-size: 32px !important;
+    margin-top: 15px !important;
+    font-weight: 600 !important;
+    line-height: 34px !important;
+    color: black !important;
+    font-family: 'Rubik', 'sans-serif' !important;
+}
+
+:deep(.blog-content h3) {
+    font-size: 24px !important;
+    margin-top: 15px !important;
+    font-weight: 600 !important;
+    line-height: 30px !important;
+    color: black !important;
+    font-family: 'Rubik', 'sans-serif' v;
+}
+
+:deep(.blog-content table) {
+    margin: 30px 0;
+    font-size: 18px;
+    font-family: 'Rubik', 'sans-serif';
+}
+
+:deep(.blog-content th) {
+    padding: 12px;
+}
+
+:deep(.blog-content td) {
+    padding: 12px;
+}
+
+:deep(.blog-content ul) {
+    font-family: 'Rubik', 'sans-serif';
+    margin: 10px 5px;
+}
+
+:deep(.blog-content li) {
+    margin-top: 15px !important;
+    line-height: 34px !important;
+    color: black !important;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+@media (max-width: 575px) {
+    :deep(.blog-content p) {
+        font-weight: 400 !important;
+        margin-top: 15px !important;
+        line-height: 30px !important;
+        color: black !important;
+        font-size: 18px !important;
+        font-family: 'Rubik', sans-serif !important;
+    }
+
+    :deep(.blog-content h2) {
+        font-size: 28px !important;
+        margin-top: 15px !important;
+        font-weight: 600 !important;
+        line-height: 30px !important;
+        color: black !important;
+        font-family: 'Rubik', 'sans-serif' !important;
+    }
+
+    :deep(.blog-content h3) {
+        font-size: 22px !important;
+        margin-top: 15px !important;
+        font-weight: 600 !important;
+        line-height: 30px !important;
+        color: black !important;
+        font-family: 'Rubik', 'sans-serif' v;
+    }
+
+    :deep(.blog-content table) {
+        margin: 30px 0;
+        font-size: 16px;
+        font-family: 'Rubik', 'sans-serif';
+    }
+
+    :deep(.blog-content li) {
+        margin-top: 15px !important;
+        line-height: 30px !important;
+        color: black !important;
+        font-size: 18px;
+        font-family: 'Rubik', sans-serif !important;
+    }
+
+
+}
+</style>
