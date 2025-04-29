@@ -1,0 +1,1 @@
+import{_,c,o as a,d as e,r,b5 as s,b6 as l}from"./BbQcBd-9.js";const d={};function f(o,m){const n=s,t=l;return a(),c("div",null,[e(n),r(o.$slots,"default"),e(t)])}const u=_(d,[["render",f]]);export{u as default};
