@@ -14,6 +14,7 @@ export default defineNuxtConfig(
     '@nuxt/image',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
+    'nuxt-seo-utils',
   ],
 
   css: ['~/public/css/app.css'],
@@ -38,7 +39,6 @@ export default defineNuxtConfig(
         { property: 'og:type', content: 'website' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://goodview-moving.com' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
         {
           rel: 'stylesheet',
@@ -63,12 +63,18 @@ export default defineNuxtConfig(
     },
   },
 
+  seo: {
+    canonical: true,
+    canonicalLowercase: false
+  },
   site: {
     url: 'https://goodview-moving.com',
     name: 'GoodView Moving',
   },
 
   router: {
+    base: '/',
+    trailingSlash: true,
     options: {
       strict: false
     }
