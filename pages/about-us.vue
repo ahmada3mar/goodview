@@ -1,6 +1,5 @@
 <template>
     <div class="flex flex-col h-full">
-
         <Banner background="/imgs/aboutus.webp" class="h-[20rem] md:h-[25rem]" title="About Us"
             text="We are a moving company based in New Jersey, services all North/South East Coast excluding Florida." />
 
@@ -19,15 +18,15 @@
                         moving company trusted by thousands.
                     </p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        Today, with decades of experience and a dedicated team, we’ve handled countless moves across the
+                        Today, with decades of experience and a dedicated team, we've handled countless moves across the
                         country.
                     </p>
                 </div>
                 <!-- Image Section -->
                 <div class=" card-img">
                     <img alt="About us"
-                        class="lazy-image opacity-0   transition-opacity duration-500 ease-in-out w-full h-[300px] object-cover "
-                        v-lazy="'/imgs/movingServices.webp'" />
+                        class="lazy-image opacity-0 rounded-[10px]   transition-opacity duration-500 ease-in-out  w-full  lg:h-[300px] object-cover "
+                        v-lazy="'/imgs/about-us.webp'" />
                 </div>
             </div>
         </div>
@@ -89,21 +88,29 @@
                         <p class="text-lg md:text-xl font-rubik  text-stone-300 ">Our services include:</p>
                         <ul
                             class="list-inside  mx-auto text-left md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-0 space-y-2">
-                            <li> <span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/long-distance-moving-service"
-            class="font-[500]  underline ">
-            Local & Long-Distance Moving</ULink>: </span>Whether you're
+                            <li> <span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                                    <ULink target="_blank" to="/services/long-distance-moving-service"
+                                        class="font-[500]  underline ">
+                                        Local & Long-Distance Moving</ULink>:
+                                </span>Whether you're
                                 moving down the street or across the country, we handle it all.</li>
-                            <li><span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/packing-and-unpacking-service"
-            class="font-[500]  underline ">
-            Packing and Unpacking</ULink>:  </span>Don't lift a
+                            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                                    <ULink target="_blank" to="/services/packing-and-unpacking-service"
+                                        class="font-[500]  underline ">
+                                        Packing and Unpacking</ULink>:
+                                </span>Don't lift a
                                 finger—we'll handle everything from fragile items to bulky furniture.</li>
-                            <li><span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/storage-service"
-            class="font-[500]  underline ">
-            Moving and Storage</ULink>: </span>Need extra space? Our
+                            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                                    <ULink target="_blank" to="/services/storage-service"
+                                        class="font-[500]  underline ">
+                                        Moving and Storage</ULink>:
+                                </span>Need extra space? Our
                                 secure storage solutions keep your belongings safe.</li>
-                            <li><span  class="text-primary-500">✔ &nbsp;</span><span class="font-semibold"> <ULink  target="_blank" to="/services/commercial-moving-service"
-            class="font-[500]  underline ">
-            Commercial Moving</ULink>: </span>Relocating your business?
+                            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                                    <ULink target="_blank" to="/services/commercial-moving-service"
+                                        class="font-[500]  underline ">
+                                        Commercial Moving</ULink>:
+                                </span>Relocating your business?
                                 We minimize downtime and maximize efficiency.</li>
 
                         </ul>
@@ -239,7 +246,7 @@
             <div :ref="el => (scrollElements[0] = el)" :class="{
                 'opacity-100 translate-y-0': isVisible[0],
                 'opacity-0 translate-y-20': !isVisible[0],
-            }" class="transition-all duration-1000 ease-in-out bg-primary-500 w-full p-3 md:p-10  mt-48 rounded-none">
+            }" class="transition-all duration-1000 ease-in-out bg-primary-500 w-full p-1 md:p-10  mt-48 rounded-none">
 
                 <div class="bg-black container flex flex-wrap flex-col  gap-5 -mt-36 rounded-[10px]   p-5">
 
@@ -250,15 +257,15 @@
                         <p class="text-md md:text-lg text-stone-300 font-rubik">
                             Moving with Good View Moving is easy!
                         </p>
-                        <p class="text-md md:text-lg text-stone-300 font-rubik">Here’s how it works:</p>
+                        <p class="text-md md:text-lg text-stone-300 font-rubik">Here's how it works:</p>
                         <ul
                             class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8  font-rubik mt-4 space-y-2">
-                            <li><span class="font-semibold">Get a moving quote:</span> Tell us what you need, and we’ll
+                            <li><span class="font-semibold">Get a moving quote:</span> Tell us what you need, and we'll
                                 give you a fair, transparent estimate.
                             </li>
 
                             <li><span class="font-semibold">Book a moving service: </span>
-                                Pick your date, and we’ll handle the rest.</li>
+                                Pick your date, and we'll handle the rest.</li>
 
                             <li><span class="font-semibold">We do the heavy lifting:</span>
                                 Our expert movers pack, load, and transport everything safely.</li>
@@ -268,34 +275,31 @@
                         </ul>
 
                     </div>
-                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 p-3 md:p-10 bg-primary-500 rounded-none">
-    <!-- Text Content (Left) -->
-    <div class="flex-1 flex flex-col gap-5">
-        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">
-            Ready to Move? Let's Get Started!
-        </h2>
-        <p class="text-md md:text-lg text-black font-rubik">
-            Wherever life is taking you,  <b><ULink  target="_blank" to="/"
-            class="font-[500]  underline ">
-            Good View Moving & Storage</ULink></b> is here to make your move smooth and hassle-free.
-        </p>
-        <p class="text-md md:text-lg text-black font-rubik">
-            Get free moving estimates and see why we're the best moving company for your next move.
-        </p>
-    </div>
+                    <div
+                        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 p-3 md:p-10 bg-primary-500 rounded-none">
+                        <!-- Text Content (Left) -->
+                        <div class="flex-1 flex flex-col gap-5">
+                            <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">
+                                Ready to Move? Let's Get Started!
+                            </h2>
+                            <p class="text-md md:text-lg text-black font-rubik">
+                                Wherever life is taking you, <b>
+                                    <ULink target="_blank" to="/" class="font-[500]  underline ">
+                                        Good View Moving & Storage</ULink>
+                                </b> is here to make your move smooth and hassle-free.
+                            </p>
+                            <p class="text-md md:text-lg text-black font-rubik">
+                                Get free moving estimates and see why we're the best moving company for your next move.
+                            </p>
+                        </div>
 
-    <!-- Button (Right) -->
-    <div class="w-fit mt-4 md:mt-0">
-        <UButton
-            size="xl"
-            label="Get a Free Quote"
-            type="free quote"
-            to="/quote"
-            class="bg-black text-white px-7 py-2 transition-all font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 w-full md:w-auto"
-        />
-    </div>
-</div>
-</div>
+                        <!-- Button (Right) -->
+                        <div class="w-fit mt-4 md:mt-0">
+                            <UButton size="xl" label="Get a Free Quote" type="free quote" to="/quote"
+                                class="bg-black text-white px-7 py-2 transition-all font-jakarta rounded-[10px] text-lg font-bold hover:text-black border border-black hover:bg-primary-500 w-full md:w-auto" />
+                        </div>
+                    </div>
+                </div>
 
 
                 <Trusted />
@@ -311,7 +315,14 @@
 </template>
 
 <script setup>
+useHead({
+    title: 'About Us - Good View Moving ',
+    meta: [
 
+        { property: 'og:title', content: 'About Us - Good View Moving ' },
+        { property: 'og:description', content: ' Learn about Good View Moving and our commitment to providing reliable, efficient, and affordable moving solutions for all your needs.  ' }
+    ]
+})
 
 const isVisible = ref([false, false, false])
 const scrollElements = ref([])

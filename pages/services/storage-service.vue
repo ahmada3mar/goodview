@@ -12,18 +12,18 @@
                 <div class="md:w-2/3">
                     <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Storage Units?</h2>
                  <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Variety of Storage Unit Sizes: </b>Whether you’re looking for a 5x5 storage unit for a few boxes or a 10x10 storage unit to store furniture, we offer various storage unit sizes to accommodate all your needs.</p>
+                      <b class=" font-[500]">   Variety of Storage Unit Sizes: </b>Whether you’re looking for a 5x5 storage unit for a few boxes or a 10x10 storage unit to store furniture, we offer various storage unit sizes to accommodate all your needs.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Climate-Controlled Storage: </b>  Our climate-controlled storage units protect sensitive items like electronics, artwork, and antiques from extreme temperatures and humidity.</p>
+                      <b class=" font-[500]">   Climate-Controlled Storage: </b>  Our climate-controlled storage units protect sensitive items like electronics, artwork, and antiques from extreme temperatures and humidity.</p>
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Affordable Storage Options: </b>We offer affordable storage solutions without compromising on security or convenience. We believe storing your belongings should be cost-effective, and we provide transparent pricing. </p>
+                      <b class=" font-[500]">   Affordable Storage Options: </b>We offer affordable storage solutions without compromising on security or convenience. We believe storing your belongings should be cost-effective, and we provide transparent pricing. </p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Flexible Terms: </b>Whether you need short-term storage during a move or long-term storage for an indefinite period, our terms are designed to be flexible and fit your needs.</p>
+                      <b class=" font-[500]">   Flexible Terms: </b>Whether you need short-term storage during a move or long-term storage for an indefinite period, our terms are designed to be flexible and fit your needs.</p>
 
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Top-Notch Security: </b> Our storage units are equipped with 24/7 surveillance, gated access, and secure locks, so you can rest easy knowing your belongings are safe. </p>
+                      <b class=" font-[500]">   Top-Notch Security: </b> Our storage units are equipped with 24/7 surveillance, gated access, and secure locks, so you can rest easy knowing your belongings are safe. </p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Easy Access and Convenience: </b>Our units are designed for easy access, so you can come and go as you please, whenever it's most convenient for you.</p>
+                      <b class=" font-[500]">   Easy Access and Convenience: </b>Our units are designed for easy access, so you can come and go as you please, whenever it's most convenient for you.</p>
 
                 </div>
                 <!-- Image Section -->
@@ -108,16 +108,16 @@ Storage Unit Cost – Get a Transparent Estimate</h2>
 
                     <ul
                         class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                        <li><b>5x5 Storage Unit:</b>
+                        <li> <b class=" font-[500]">5x5 Storage Unit:</b>
                             These smaller units typically cost between $50 and $100 per month, depending on location and facility.
                         </li>
-                        <li><b>10x10 Storage Unit:  </b>
+                        <li> <b class=" font-[500]">10x10 Storage Unit:  </b>
                             A 10x10 storage unit is ideal for a larger load and usually costs between $100 and $200 per month.
                         </li>
-                        <li><b>Climate-Controlled Storage Units: </b>
+                        <li> <b class=" font-[500]">Climate-Controlled Storage Units: </b>
                             These units cost a little more, with prices ranging from $150 to $300 per month based on size and location.
                         </li>
-                        <li><b>Long-Term Storage: </b>
+                        <li> <b class=" font-[500]">Long-Term Storage: </b>
                             We offer discounts on extended rentals for those looking for long-term storage, so you won't have to worry about high costs over time.
                         </li>
 
@@ -158,3 +158,13 @@ Storage Unit Cost – Get a Transparent Estimate</h2>
 </div>
 
 </template>
+<script setup>
+useHead({
+    title: 'Storage Solutions - Good View Moving ',
+    meta: [
+
+        { property: 'og:title', content: 'Storage Solutions - Good View Moving' },
+        { property: 'og:description', content: '  Secure and reliable storage services by Good View Moving. We offer safe solutions for short and long-term storage of your belongings. ' }
+    ]
+})
+</script>

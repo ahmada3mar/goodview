@@ -15,16 +15,16 @@
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                         With years of experience and thousands of successful moves, we know what it takes to provide a stress-free moving experience. Here’s why homeowners trust us:</p>
                  <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Trusted Residential Movers Near You: </b> Our team of professional home movers ensures every move is handled with care.</p>
+                      <b class=" font-[500]">Trusted Residential Movers Near You: </b> Our team of professional home movers ensures every move is handled with care.</p>
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Affordable & Transparent Pricing: </b> No hidden fees! Know your moving costs upfront with a free estimate.</p>
+                      <b class=" font-[500]">Affordable & Transparent Pricing: </b> No hidden fees! Know your moving costs upfront with a free estimate.</p>
     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Local & Short-Distance Moves: </b> Whether you're moving across town or just down the block, our short distance movers are ready to help.</p>
+                      <b class=" font-[500]">Local & Short-Distance Moves: </b> Whether you're moving across town or just down the block, our short distance movers are ready to help.</p>
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Full-Service Apartment Moving: </b> We specialize in apartment moving services and can easily handle stairs, elevators, and tight spaces.</p>
+                      <b class=" font-[500]">Full-Service Apartment Moving: </b> We specialize in apartment moving services and can easily handle stairs, elevators, and tight spaces.</p>
 
                       <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                      <b>Packing & Unpacking Available: </b> We offer <b><ULink  target="_blank" to="/services/packing-and-unpacking-service"
+                      <b class=" font-[500]">Packing & Unpacking Available: </b> We offer <b><ULink  target="_blank" to="/services/packing-and-unpacking-service"
             class="font-[500]  underline ">
             packing services</ULink></b> to protect your belongings.</p>
 
@@ -121,15 +121,15 @@
 
                     <ul
                         class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                        <li><b>Local Moves: </b>
+                        <li> <b class=" font-[500]">Local Moves: </b>
                             On average, a short-distance move with us (within the same city or nearby areas) can cost
                             between $300 and $2,500.
                         </li>
-                        <li><b>Longer Residential Moves: </b>
+                        <li> <b class=" font-[500]">Longer Residential Moves: </b>
                             If you are moving to a different state or across the country, the costs typically range from
                             $2,000 to $7,500, depending on the distance and moving requirements.
                         </li>
-                        <li><b>Hourly Rates: </b>
+                        <li> <b class=" font-[500]">Hourly Rates: </b>
                             We charge many moves hourly. For a standard residential moving company, our hourly rates
                             range from $100 to $200 per hour for a team of movers.
                         </li>
@@ -173,3 +173,13 @@
 </div>
 
 </template>
+<script setup>
+useHead({
+    title: 'Residential Moving Services - Good View Moving ',
+    meta: [
+
+        { property: 'og:title', content: 'Residential Moving Services - Good View Moving' },
+        { property: 'og:description', content: ' Trust Good View Moving for expert residential moving services. We handle your home relocation with care and efficiency at competitive prices.  ' }
+    ]
+})
+</script>
