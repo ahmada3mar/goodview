@@ -158,7 +158,7 @@
 
 </div>
 </template>
-<script>
+<script setup >
 useHead({
     title: 'Furniture Assembly & Disassembly - Good View Moving   ',
     meta: [

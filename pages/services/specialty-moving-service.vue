@@ -217,7 +217,7 @@
 </template>
 
 
-<script>
+<script setup>
 useHead({
     title: 'Specialty Moving Services - Good View Moving ',
     meta: [

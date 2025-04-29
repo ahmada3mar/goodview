@@ -220,7 +220,7 @@
 
 </template>
 
-<script>
+<script setup>
 useHead({
     title: 'Long Distance Moving - Good View Moving ',
     meta: [

@@ -173,7 +173,7 @@
 </div>
 
 </template>
-<script>
+<script setup>
 useHead({
     title: 'Residential Moving Services - Good View Moving ',
     meta: [

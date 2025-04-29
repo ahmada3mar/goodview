@@ -158,7 +158,7 @@ Storage Unit Cost – Get a Transparent Estimate</h2>
 </div>
 
 </template>
-<script>
+<script setup>
 useHead({
     title: 'Storage Solutions - Good View Moving ',
     meta: [

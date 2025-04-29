@@ -165,7 +165,7 @@
 </div>
 
 </template>
-<script>
+<script setup>
 useHead({
     title: 'Packing & Unpacking Services - Good View Moving ',
     meta: [

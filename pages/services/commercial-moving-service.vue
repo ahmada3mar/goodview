@@ -216,7 +216,7 @@ Relocating a business is more than just moving desks and chairs—it’s about m
         </div>
     </div>
 </template>
-<script>
+<script setup>
 
 useHead({
     title: 'Commercial Moving Services - Good View Moving ',
