@@ -16,12 +16,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
             node-version: 20
-
+      
+      - name: Remove node_module
+        run: rm -rf node_modules
+      
+      - name: Install yarn
+        run: npm install yarn -g
+        
       - name: Install all dependencies
-        run: npm install
+        run: yarn
 
       - name: Build
-        run: npm run generate # The build command of your project
+        run: yarn generate # The build command of your project
 
 
     
