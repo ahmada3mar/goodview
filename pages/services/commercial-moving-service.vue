@@ -1,8 +1,7 @@
 <template>
     <div>
         <Banner background="/imgs/Commercial.webp" class=" md:h-[35rem]" title="Commercial Moving"
-            text="Commercial Moving
-Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. ">
+            text="Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. ">
             <template #body="isVisible">
                 <QuoteInputs :isVisible="isVisible.isVisible" />
             </template>

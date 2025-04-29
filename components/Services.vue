@@ -55,9 +55,9 @@
                                                 Disassembly</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                We carefully disassemble and reassemble your <b><ULink  target="_blank" to="/services/furniture-assembly-and-disassembly-service"
-            class="font-[500]  underline ">
-            furniture</ULink></b> for a hassle-free
+                                                We carefully disassemble and reassemble your
+
+                                                furniture for a hassle-free
                                                 move, providing safety and efficiency. </p>
                                         </div>
                                         <ULink to="/services/furniture-assembly-and-disassembly-service"
@@ -89,7 +89,7 @@
                                                 From packing to transport, our full-service moving company makes home
                                                 relocations easy and stress-free.</p>
                                         </div>
-                                        <ULink to="/services"
+                                        <ULink to="/services/residential-moving-service"
                                             class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             View Details
                                         </ULink>
@@ -111,13 +111,12 @@
                                                 Storage</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                Need extra space? Our <b><ULink  target="_blank" to="/services/storage-service"
-            class="font-[500]  underline ">
-            secure storage solutions</ULink></b> keep your belongings safe
+                                                Need extra space ? Our secure storage solutions
+                                                keep your belongings safe
                                                 for as long as you need.
                                             </p>
                                         </div>
-                                        <ULink to="/services"
+                                        <ULink to="/services/storage-service"
                                             class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             View Details
                                         </ULink>
@@ -142,7 +141,7 @@
                                                 We handle office relocations precisely, so your team can return to work
                                                 quickly and efficiently. </p>
                                         </div>
-                                        <ULink to="/services"
+                                        <ULink to="/services/commercial-moving-service"
                                             class="text-center rounded-[10px] text-sm  font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             View Details
                                         </ULink>
@@ -164,9 +163,8 @@
                                             </h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                Leave the <b><ULink  target="_blank" to="/services/packing-and-unpacking-service"
-            class="font-[500]  underline ">
-            packing</ULink></b>  to us! Our experts use high-quality materials to
+                                                Leave the
+                                                packing to us! Our experts use high-quality materials to
                                                 protect your belongings during the move. </p>
                                         </div>
                                         <ULink to="/services/packing-and-unpacking-service"
@@ -191,9 +189,7 @@
                                             </h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
-                                                Moving <b><ULink  target="_blank" to="/services/long-distance-moving-service"
-            class="font-[500]  underline ">
-            across states</ULink></b>? Our professional staff ensures safe, on-time
+                                                Moving across states ? Our professional staff ensures safe, on-time
                                                 delivery wherever you're headed.</p>
                                         </div>
                                         <ULink to="/services/long-distance-moving-service"
@@ -213,14 +209,14 @@
                                     </div>
                                     <div class="flex flex-col  xl:w-1/2 p-4 text-start text-xl text-white ">
                                         <div class="lg:min-h-[135px] min-h-[200px]">
-                                                <h2 class="font-jakarta font-[600] leading-[35px]">Equipment
+                                            <h2 class="font-jakarta font-[600] leading-[35px]">Equipment
                                                 Relocation</h2>
                                             <p class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5">
                                                 We specialize in moving heavy and delicate equipment with precision and
                                                 care to prevent damage.
                                             </p>
                                         </div>
-                                        <ULink to="/services"
+                                        <ULink to="/services/specialty-moving-service"
                                             class="text-center rounded-[10px] text-sm font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             View Details
                                         </ULink>
@@ -338,7 +334,8 @@
                                     <div :class="{
                                         'bg-primary-500 text-black': step === 1,
                                         'bg-primary-500 text-white': step !== 1
-                                    }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
+                                    }"
+                                        class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
                                         1
                                     </div>
                                     <h2 class="text-[14px]  text-center font-jakarta font-bold text-white">
@@ -356,7 +353,8 @@
                                         'bg-primary-500 text-black': step === 2,
                                         'bg-primary-500 text-white': step !== 2,
                                         'opacity-50': step < 2
-                                    }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
+                                    }"
+                                        class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
                                         2
                                     </div>
                                     <h2 class=" font-jakarta text-center  font-bold text-white">
@@ -374,7 +372,8 @@
                                         'bg-primary-500 text-white': step === 3,
                                         'bg-primary-500 text-gray-100': step !== 3,
                                         'opacity-50': step < 3
-                                    }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
+                                    }"
+                                        class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
                                         3
                                     </div>
                                     <h2 class="font-jakarta text-center font-bold text-white">
