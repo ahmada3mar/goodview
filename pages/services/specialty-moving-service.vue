@@ -221,9 +221,7 @@
 useHead({
     title: 'Specialty Moving Services - Good View Moving ',
     meta: [
-
-        { property: 'og:title', content: 'Specialty Moving Services - Good View Moving' },
-        { property: 'og:description', content: '  Good View Moving specializes in handling delicate or unique items. Trust us for safe and careful specialty moving services tailored to your needs. ' }
+        { name: 'description', content: "Good View Moving specializes in handling delicate or unique items. Trust us for safe and careful specialty moving services tailored to your needs." },
     ]
 })
 </script>

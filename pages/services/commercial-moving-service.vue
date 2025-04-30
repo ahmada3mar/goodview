@@ -220,9 +220,7 @@
 useHead({
     title: 'Commercial Moving Services - Good View Moving ',
     meta: [
-
-        { property: 'og:title', content: 'Commercial Moving Services - Good View Moving ' },
-        { property: 'og:description', content: ' Discover Good View Moving’s professional commercial moving services, designed to ensure your business relocation is smooth and hassle-free.   ' }
+        { name: 'description', content: "Discover Good View Moving’s professional commercial moving services, designed to ensure your business relocation is smooth and hassle-free. " },
     ]
 })
 </script>

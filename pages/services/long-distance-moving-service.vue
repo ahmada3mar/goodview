@@ -224,9 +224,7 @@
 useHead({
     title: 'Long Distance Moving - Good View Moving ',
     meta: [
-
-        { property: 'og:title', content: 'Long Distance Moving - Good View Moving' },
-        { property: 'og:description', content: ' Good View Moving offers reliable long distance moving services. Move your belongings safely and efficiently across states with us. ' }
+        { name: 'description', content: "Good View Moving offers reliable long distance moving services. Move your belongings safely and efficiently across states with us." },
     ]
 })
 </script>

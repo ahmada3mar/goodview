@@ -82,7 +82,7 @@
                                     </div>
                                     <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
                                         <div class=" lg:min-h-[135px] min-h-[200px]">
-                                            <h2 class="font-jakarta  font-[600] leading-[35px]">Home Movers
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]">Residential Moving
                                             </h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
@@ -107,8 +107,7 @@
                                     </div>
                                     <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
                                         <div class=" lg:min-h-[135px] min-h-[200px]">
-                                            <h2 class="font-jakarta  font-[600] leading-[35px]">Long Term
-                                                Storage</h2>
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]">Storage Units</h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
                                                 Need extra space ? Our secure storage solutions
@@ -141,7 +140,7 @@
                                                 We handle office relocations precisely, so your team can return to work
                                                 quickly and efficiently. </p>
                                         </div>
-                                        <ULink to="/services/commercial-moving-service"
+                                        <ULink to="/quote"
                                             class="text-center rounded-[10px] text-sm  font-jakarta mb-3 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                             View Details
                                         </ULink>
@@ -149,7 +148,6 @@
 
                                 </div>
                             </div>
-
                             <div class="bg-[#171820] text-white  border-0 rounded-sm ring-0">
                                 <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1">
                                     <div class="card-img  h-72">
@@ -159,7 +157,7 @@
                                     </div>
                                     <div class="flex flex-col   xl:w-1/2 p-4   text-start text-xl text-white">
                                         <div class=" lg:min-h-[135px] min-h-[200px]">
-                                            <h2 class="font-jakarta  font-[600] leading-[35px]">Packing
+                                            <h2 class="font-jakarta  font-[600] leading-[35px]">Packing and Unpacking
                                             </h2>
                                             <p
                                                 class="text-[16px]  font-[300] tracking-[.3px]  text-wrap font-rubik mt-5">
@@ -209,8 +207,7 @@
                                     </div>
                                     <div class="flex flex-col  xl:w-1/2 p-4 text-start text-xl text-white ">
                                         <div class="lg:min-h-[135px] min-h-[200px]">
-                                            <h2 class="font-jakarta font-[600] leading-[35px]">Equipment
-                                                Relocation</h2>
+                                            <h2 class="font-jakarta font-[600] leading-[35px]">Specialty Moving</h2>
                                             <p class="text-[16px] font-[300] tracking-[.3px] text-wrap font-rubik mt-5">
                                                 We specialize in moving heavy and delicate equipment with precision and
                                                 care to prevent damage.
