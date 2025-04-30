@@ -29,7 +29,9 @@ jobs:
       - name: Build
         run: yarn generate # The build command of your project
 
-
+      - name: Add trailing slashes to sitemap links
+        run: |
+          sed -i 's#<loc>\(.*[^/]\)</loc>#<loc>\1/</loc>#g' ./dist/sitemap.xml
     
       - name: Push
         uses: s0/git-publish-subdir-action@develop
