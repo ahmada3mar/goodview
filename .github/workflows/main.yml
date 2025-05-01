@@ -46,9 +46,11 @@ jobs:
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
 
       - name: Upload to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          server-dir: /public_html/
+        run: sudo apt-get install sshpass
+
+      - name: SSH into the server and pull the build branch
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" \
+          ssh -o StrictHostKeyChecking=no \
+          ${{ secrets.SSH_LOGIN }} \
+          "cd ${{ secrets.SSH_PATH }} && git pull origin build"
