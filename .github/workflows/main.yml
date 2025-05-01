@@ -48,7 +48,7 @@ jobs:
       - name: Upload to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.HOST }}
+          server: 88.223.84.194
           username: ${{ secrets.USER_NAME }}
           password: ${{ secrets.PASSWORD }}
           server-dir: /public_html/
