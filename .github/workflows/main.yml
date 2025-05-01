@@ -8,10 +8,10 @@ on:
     types:
       - blog-update
 jobs:
-  # build:
-  #   runs-on: ubuntu-latest
-  #   name: Build and Push
-  #   steps:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Push
+    steps:
   #     - name: git-checkout
   #       uses: actions/checkout@v2
         
