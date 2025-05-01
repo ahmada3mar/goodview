@@ -7,6 +7,10 @@ on:
   repository_dispatch:
     types:
       - blog-update
+    inputs:
+      blog_id:
+        description: 'Blog ID'
+        required: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,7 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
 
-      - name: Upload to Hostinger via FTP
+      - name: Install sshpass
         run: sudo apt-get install sshpass
 
       - name: SSH into the server and pull the build branch
@@ -54,3 +58,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no \
           ${{ secrets.SSH_LOGIN }} \
           "cd ${{ secrets.SSH_PATH }} && git pull origin build"
+
+      - name: Notify webhook
+        if: ${{ github.event.inputs.blog_id != '' }}
+        run: |
+          curl -I "${{ secrets.NOTIFY_URL }}/${{ github.event.inputs.blog_id }}"
