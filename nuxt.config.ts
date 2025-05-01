@@ -95,7 +95,9 @@ export default defineNuxtConfig(async () => {
 
     nitro: {
       prerender: {
-        routes: await getBlogRoutes()
+        routes: await getBlogRoutes(),
+        crawlLinks: true,
+        fallback: '404.html'
       }
     }
   };
