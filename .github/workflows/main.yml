@@ -22,7 +22,7 @@ jobs:
             node-version: 20
       
       - name: Remove node_module
-        run: rm -rf node_modules
+        run: rm -rf node_modules yarn.lock package-lock.json
       
       - name: Install yarn
         run: npm install yarn -g
