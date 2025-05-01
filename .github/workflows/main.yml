@@ -7,10 +7,7 @@ on:
   repository_dispatch:
     types:
       - blog-update
-    inputs:
-      blog_id:
-        description: 'Blog ID'
-        required: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -60,6 +57,6 @@ jobs:
           "cd ${{ secrets.SSH_PATH }} && git pull origin build"
 
       - name: Notify webhook
-        if: ${{ github.event.inputs.blog_id != '' }}
+        if: ${{ github.event.client_payload.blog_id != '' }}
         run: |
-          curl -I "${{ secrets.NOTIFY_URL }}/${{ github.event.inputs.blog_id }}"
+          curl -I "${{ secrets.NOTIFY_URL }}/${{ github.event.client_payload.blog_id }}"
