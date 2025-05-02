@@ -335,7 +335,8 @@
                                         class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
                                         1
                                     </div>
-                                    <h2 class="text-[14px]  text-center font-jakarta font-bold text-white">
+                                    <h2
+                                        class="text-[16px] lg:text-[24px]   text-center font-jakarta font-bold text-white">
                                         Moving info
                                     </h2>
                                 </div>
@@ -354,7 +355,8 @@
                                         class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
                                         2
                                     </div>
-                                    <h2 class=" font-jakarta text-center  font-bold text-white">
+                                    <h2
+                                        class=" text-[16px] lg:text-[24px]  font-jakarta text-center  font-bold text-white">
                                         Personal Detail
                                     </h2>
                                 </div>
@@ -373,7 +375,8 @@
                                         class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl rounded-[10px]">
                                         3
                                     </div>
-                                    <h2 class="font-jakarta text-center font-bold text-white">
+                                    <h2
+                                        class=" text-[16px] lg:text-[24px] font-jakarta text-center font-bold text-white">
                                         Job done
                                     </h2>
                                 </div>

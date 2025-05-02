@@ -3,7 +3,7 @@
     <div v-if="blog.id" class="bg-white" id="blog-page">
         <div>
             <!-- Hero Section -->
-            <div class="relative w-full h-[20rem] md:h-[20rem] overflow-hidden "
+            <div class="relative w-full h-auto md:h-[20rem] overflow-hidden "
                 style="background: linear-gradient(26deg, rgb(2 2 2), rgb(0 0 0), rgb(255 211 78));">
                 <div class="absolute inset-0 bg-black/20"></div>
 
@@ -28,6 +28,45 @@
                         <p class="font-semibold font-rubik text-white">{{ blog.author }}</p>
                         <p class="text-sm text-white font-rubik">Published Date: {{ blog.date }}</p>
                     </div>
+                    <div class="flex items-center lg:gap-4  gap-2 mt-4">
+                        <p class="lg:text-[22px] text-[18px] text-white font-rubik font-normal">Share:</p>
+                        <div class="flex items-center gap-1 lg:gap-3">
+                            <ULink
+                                :to="`https://www.facebook.com/sharer/sharer.php?u=https://goodview-moving.com/blogs/${id}`"
+                                target="_blank" class="text-white hover:underline">
+                                <UIcon name="i-mdi-facebook" class="w-[30px] h-[30px] text-primary-500" />
+                            </ULink>
+
+                            <ULink
+                                :to="`https://twitter.com/intent/tweet?url=https://goodview-moving.com/blogs/${id}&text=${encodeURIComponent(blog.title)}`"
+                                target="_blank" class="text-white hover:underline">
+                                <UIcon name="i-mdi-twitter" class="w-[30px] h-[30px] text-primary-500" />
+                            </ULink>
+
+                            <ULink
+                                :to="`https://api.whatsapp.com/send?text=${encodeURIComponent(blog.title)} https://goodview-moving.com/blogs/${id}`"
+                                target="_blank" class="text-white hover:underline">
+                                <UIcon name="i-mdi-whatsapp" class="w-[30px] h-[30px] text-primary-500" />
+                            </ULink>
+
+                            <ULink
+                                :to="`https://pinterest.com/pin/create/button/?url=https://goodview-moving.com/blogs/${id}&media=${blog.image}&description=${encodeURIComponent(blog.title)}`"
+                                target="_blank" class="text-white hover:underline">
+                                <UIcon name="i-mdi-pinterest" class="w-[30px] h-[30px] text-primary-500" />
+                            </ULink>
+
+                            <ULink
+                                :to="`https://reddit.com/submit?url=https://goodview-moving.com/blogs/${id}&title=${encodeURIComponent(blog.title)}`"
+                                target="_blank" class="text-white hover:underline">
+                                <UIcon name="i-mdi-reddit" class="w-[30px] h-[30px] text-primary-500" />
+                            </ULink>
+                            <ULink
+                                :to="`https://www.linkedin.com/sharing/share-offsite/?url=https://goodview-moving.com/blogs/${id}`"
+                                target="_blank" class="text-white hover:underline">
+                                <UIcon name="i-mdi-linkedin" class="w-[30px] h-[30px] text-primary-500" />
+                            </ULink>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,21 +74,21 @@
         <!-- Main Content -->
         <div class=" py-10 ">
             <div class="max-w-[1120px] px-6 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
-
                 <!-- Main Blog Content -->
                 <div class="lg:col-span-8 flex flex-col gap-8">
                     <!-- Blog Banner -->
                     <img :src="blog.image" :alt="blog.image_alt"
                         class="w-full lg:h-[400px] rounded-lg shadow-md object-cover" />
 
-
                     <!-- Blog Content -->
-                    <div class="text-gray-800 mb-36 space-y-6">
+                    <div class="text-gray-800 space-y-6">
                         <div v-html="blog.content" class="blog-content"></div>
                     </div>
 
-                    <!-- Sidebar -->
+
                 </div>
+
+                <!-- Sidebar -->
                 <aside class="lg:col-span-4 hidden lg:block">
                     <QuoteInputs :is-visible="true" />
                 </aside>
@@ -57,7 +96,7 @@
 
             <div v-if="blog.faqs?.length > 0" class=" bg-primary-500 w-full p-3 md:p-10   rounded-none">
                 <div class="container max-w-[1120px] mx-auto">
-                    <div class="bg-black flex flex-col gap-5 justify-center -mt-36 rounded-[10px]   p-5">
+                    <div class="bg-black flex flex-col gap-5 justify-center  -mt-[125px] rounded-[10px]   p-5">
                         <div class="flex flex-col bg-zinc-900 gap-5  rounded-[10px] p-3 md:p-10">
                             <h2 class="border-b  font-extrabold font-jakarta text-stone-300">
                                 FAQs
@@ -85,7 +124,18 @@
                     </div>
                 </div>
             </div>
+            <!-- 🔽 Next/Previous Navigation Buttons -->
+            <div class="flex justify-between mx-auto max-w-[1100px]  mt-10">
+                <NuxtLink
+                    class="bg-primary-500 hover:bg-black text-black hover:text-white font-medium py-2 px-4 rounded-lg">
+                    Previous
+                </NuxtLink>
 
+                <NuxtLink
+                    class="bg-primary-500 hover:bg-black text-black hover:text-white font-medium py-2 px-4 rounded-lg">
+                    Next
+                </NuxtLink>
+            </div>
         </div>
     </div>
 
@@ -308,5 +358,11 @@ watchEffect(() => {
     }
 
 
+}
+
+:deep(.blog-content a) {
+    text-decoration: underline !important;
+    font-family: 'Plus Jakarta Sans' !important;
+    color: #836b23 !important;
 }
 </style>
