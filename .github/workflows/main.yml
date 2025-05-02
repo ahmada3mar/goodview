@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master # Remove this line if your primary branch is "main"
+  repository_dispatch:
+    types:
+      - blog-update
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,14 +20,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
             node-version: 20
-
+      
+      - name: Remove node_module
+        run: rm -rf node_modules yarn.lock package-lock.json
+      
+      - name: Install yarn
+        run: npm install yarn -g
+        
       - name: Install all dependencies
-        run: npm install
+        run: yarn
 
       - name: Build
-        run: npm run generate # The build command of your project
+        run: yarn generate # The build command of your project
 
-
+      - name: Add trailing slashes to sitemap links
+        run: |
+          sed -i 's#<loc>\(.*[^/]\)</loc>#<loc>\1/</loc>#g' ./dist/sitemap.xml
     
       - name: Push
         uses: s0/git-publish-subdir-action@develop
@@ -33,3 +45,17 @@ jobs:
           FOLDER: dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
+
+      - name: Install sshpass
+        run: sudo apt-get install sshpass
+
+      - name: SSH into the server and pull the build branch
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" \
+          ssh -o StrictHostKeyChecking=no \
+          ${{ secrets.SSH_LOGIN }} \
+          "cd ${{ secrets.SSH_PATH }} && git pull origin build"
+
+      - name: Notify webhook
+        run: |
+          curl -I "${{ secrets.NOTIFY_URL }}"
