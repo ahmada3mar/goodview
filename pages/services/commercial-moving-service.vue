@@ -218,9 +218,9 @@
 <script setup>
 
 useHead({
-    title: 'Commercial Moving Services - Good View Moving ',
+    title: "Commercial Moving Services - Good View Moving ",
     meta: [
-        { name: 'description', content: "Discover Good View Moving’s professional commercial moving services, designed to ensure your business relocation is smooth and hassle-free. " },
+        { name: "description", content: "Discover Good View Moving’s professional commercial moving services, designed to ensure your business relocation is smooth and hassle-free. " },
     ]
 })
 </script>

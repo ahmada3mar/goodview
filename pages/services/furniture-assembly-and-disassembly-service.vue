@@ -216,9 +216,9 @@
 </template>
 <script setup>
 useHead({
-    title: 'Furniture Assembly & Disassembly - Good View Moving   ',
+    title: "Furniture Assembly & Disassembly - Good View Moving ",
     meta: [
-        { name: 'description', content: " Good View Moving provides professional furniture assembly and disassembly services, ensuring safe and efficient relocation of your items. " },
+        { name: "description", content: " Good View Moving provides professional furniture assembly and disassembly services, ensuring safe and efficient relocation of your items. " },
     ]
 })
 </script>

@@ -237,9 +237,9 @@
 </template>
 <script setup>
 useHead({
-    title: 'Packing & Unpacking Services - Good View Moving ',
+    title: "Packing & Unpacking Services - Good View Moving ",
     meta: [
-        { name: 'description', content: " Let Good View Moving handle your packing and unpacking needs. Our expert team ensures your items are packed securely for the move. " },
+        { name: "description", content: " Let Good View Moving handle your packing and unpacking needs. Our expert team ensures your items are packed securely for the move. " },
     ]
 })
 </script>

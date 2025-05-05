@@ -210,9 +210,9 @@
 </template>
 <script setup>
 useHead({
-    title: 'Storage Solutions - Good View Moving ',
+    title: "Storage Solutions - Good View Moving ",
     meta: [
-        { name: 'description', content: "Secure and reliable storage services by Good View Moving. We offer safe solutions for short and long-term storage of your belongings." },
+        { name: "description", content: "Secure and reliable storage services by Good View Moving. We offer safe solutions for short and long-term storage of your belongings." },
     ]
 })
 </script>

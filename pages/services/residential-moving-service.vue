@@ -200,9 +200,9 @@
 </template>
 <script setup>
 useHead({
-    title: 'Residential Moving Services - Good View Moving ',
+    title: "Residential Moving Services - Good View Moving ",
     meta: [
-        { name: 'description', content: " Trust Good View Moving for expert residential moving services. We handle your home relocation with care and efficiency at competitive prices. " },
+        { name: "description", content: " Trust Good View Moving for expert residential moving services. We handle your home relocation with care and efficiency at competitive prices. " },
     ]
 })
 </script>

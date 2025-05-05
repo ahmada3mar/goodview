@@ -222,9 +222,9 @@
 
 <script setup>
 useHead({
-    title: 'Long Distance Moving - Good View Moving ',
+    title: "Long Distance Moving - Good View Moving ",
     meta: [
-        { name: 'description', content: "Good View Moving offers reliable long distance moving services. Move your belongings safely and efficiently across states with us." },
+        { name: "description", content: "Good View Moving offers reliable long distance moving services. Move your belongings safely and efficiently across states with us." },
     ]
 })
 </script>
