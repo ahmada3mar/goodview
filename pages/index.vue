@@ -48,44 +48,51 @@
 
   </div>
 </template>
-<script>
-import { ref, onMounted, onUnmounted } from 'vue';
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 
-export default {
-  setup() {
-    const isVisible = ref(false);
-    const scrollElement = ref(null);
-    let observer = null;
+useHead({
+  title: "Good View Moving - Reliable and Efficient Moving Services",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Good View Moving offers reliable and efficient moving services for every type of move. Trust our experienced team to ensure a smooth move. "
+    }
+  ]
+})
 
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          isVisible.value = true;
-          // Optional: Unobserve after first appearance
-          observer.unobserve(entry.target);
-        }
-      });
-    };
+const isVisible = ref(false)
+const scrollElement = ref(null)
+let observer = null
 
-    onMounted(() => {
-      observer = new IntersectionObserver(handleIntersection, {
-        threshold: 0.1,
-      });
-      if (scrollElement.value) {
-        observer.observe(scrollElement.value);
-      }
-    });
+const handleIntersection = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      isVisible.value = true
+      // Optional: Unobserve after first appearance
+      observer.unobserve(entry.target)
+    }
+  })
+}
 
-    onUnmounted(() => {
-      if (observer) {
-        observer.disconnect();
-      }
-    });
+onMounted(() => {
+  observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.1
+  })
+  if (scrollElement.value) {
+    observer.observe(scrollElement.value)
+  }
+})
 
-    return {
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect()
+  }
+
+return {
       isVisible,
       scrollElement
     };
-  }
-};
+  })
 </script>

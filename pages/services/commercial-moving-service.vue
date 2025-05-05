@@ -1,8 +1,7 @@
 <template>
     <div>
         <Banner background="/imgs/Commercial.webp" class=" md:h-[35rem]" title="Commercial Moving"
-            text="Commercial Moving
-Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. ">
+            text="Relocating a business is more than just moving desks and chairs—it’s about minimizing downtime and keeping operations running smoothly. At Good View Moving & Storage, our expert commercial movers ensure a stress-free transition so you can focus on what matters—your business. ">
             <template #body="isVisible">
                 <QuoteInputs :isVisible="isVisible.isVisible" />
             </template>
@@ -219,11 +218,9 @@ Relocating a business is more than just moving desks and chairs—it’s about m
 <script setup>
 
 useHead({
-    title: 'Commercial Moving Services - Good View Moving ',
+    title: "Commercial Moving Services - Good View Moving ",
     meta: [
-
-        { property: 'og:title', content: 'Commercial Moving Services - Good View Moving ' },
-        { property: 'og:description', content: ' Discover Good View Moving’s professional commercial moving services, designed to ensure your business relocation is smooth and hassle-free.   ' }
+        { name: "description", content: "Discover Good View Moving’s professional commercial moving services, designed to ensure your business relocation is smooth and hassle-free. " },
     ]
 })
 </script>
