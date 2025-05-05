@@ -35,7 +35,7 @@ export function canonical() {
 
   useHead({
     htmlAttrs: { lang: "en" },
-    titleTemplate: "",
+    titleTemplate: "%s %separator %siteName",
     link: [() => canonicalUrl.value]
   }, minimalPriority);
 
