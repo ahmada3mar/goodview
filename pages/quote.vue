@@ -16,8 +16,7 @@
               <div :class="{
                 'text-primary-500 bg-black': step === 1,
                 'bg-black text-primary-500': step !== 1
-              }"
-                class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
+              }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                 1</div>
               <h2 class=" text-start font-jakarta font-bold text-black">
                 Moving info
@@ -31,8 +30,7 @@
                 'text-primary-500 bg-black': step === 2,
                 'bg-black text-primary-500': step !== 2,
                 'opacity-50': step < 2
-              }"
-                class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
+              }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                 2</div>
               <h2 class="font-jakarta text-start font-bold text-black">
                 Personal Detail
@@ -46,8 +44,7 @@
                 'text-primary-500 bg-black': step === 3,
                 'bg-black   text-primary-500': step !== 3,
                 'opacity-50': step < 3
-              }"
-                class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
+              }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                 3</div>
               <h2 class=" font-jakarta text-start font-bold text-black">
                 Job done
@@ -56,8 +53,7 @@
           </div>
         </div>
 
-        <div
-          class="bg-black w-full  lg:max-w-[880px] mx-auto rounded-md min-h-96 flex justify-center items-center">
+        <div class="bg-black w-full  lg:max-w-[880px] mx-auto rounded-md min-h-96 flex justify-center items-center">
           <!-- Step 3: Success Message -->
           <div class="flex flex-col items-center justify-center  gap-5 mt-5" v-if="isDone">
             <DotLottieVue class="w-full h-auto sm:w-[300px] sm:h-[300px]" autoplay loop
@@ -227,6 +223,13 @@
 </template>
 
 <script setup>
+useHead({
+  title: "Get a Free Moving Quote - Instant Estimates for Your Move",
+  meta: [
+    { name: "description", content: " Request a free moving quote online in minutes. Get fast, accurate estimates for local or long-distance moves. No obligation. Start your move today. " },
+  ]
+})
+
 
 import { ref, onMounted, onBeforeUnmount, watch, nextTick } from 'vue';
 import { reactive } from "vue";

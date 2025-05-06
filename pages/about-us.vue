@@ -316,7 +316,7 @@
 
 <script setup>
 useHead({
-    title: "About Us - Good View Moving",
+    title: "About Us ",
     meta: [
         { name: "description", content: "Learn about Good View Moving and our commitment to providing reliable, efficient, and affordable moving solutions for all your needs. " },
     ]
