@@ -10,20 +10,25 @@
                                 <span class="italic font-bold font-jakarta ">Nationwide</span>.
                             </p>
                             <div class="flex gap-4 mt-2">
-                                <a href="https://www.facebook.com/profile.php?id=61558800622379" target="_blank"
+                                <ULink to="https://www.facebook.com/profile.php?id=61558800622379" target="_blank"
                                     aria-label="Visit Goodview Moving on Facebook">
-                                    <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]">
-                                        <UIcon name="i-mdi-facebook" class="w-[50px] h-[50px] text-primary-500" />
-                                    </div>
-                                </a>
 
-                                <a href="https://www.instagram.com/Fast_transportation_" target="_blank"
+                                    <UIcon name="i-mdi-facebook" class="w-[45px] h-[45px] text-primary-500" />
+
+                                </ULink>
+
+                                <ULink to="https://www.instagram.com/Fast_transportation_" target="_blank"
                                     aria-label="Follow Goodview Moving on Instagram">
-                                    <div class="flex bg-opacity-35 rounded-full p-1 w-[50px] h-[50px]">
-                                        <UIcon name="i-mdi-instagram" class="w-[50px] h-[50px] text-primary-500" />
-                                    </div>
-                                </a>
 
+                                    <UIcon name="i-mdi-instagram" class="w-[45px] h-[45px] text-primary-500" />
+
+                                </ULink>
+                                <ULink to="https://www.pinterest.com/goodviewmoving/" target="_blank"
+                                    aria-label="Follow Goodview Moving on printerest">
+
+                                    <UIcon name="i-mdi-pinterest" class="w-[45px] h-[45px] text-primary-500" />
+
+                                </ULink>
 
 
                             </div>
@@ -138,4 +143,5 @@
         </div>
     </template>
 <script>
+
 </script>

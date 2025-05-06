@@ -29,8 +29,8 @@
                                 class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2 lg:grid-cols-2 text-white gap-5  my-2 lg:my-10 sm:my-14">
                                 <div v-for="blog in regularBlogs" :key="blog.id"
                                     class="bg-[#171820] text-white border-0 rounded-[10px] ring-0">
-                                    <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
-                                        <div class="flex flex-col justify-center items-center">
+                                    <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 max-w-[100%]">
+                                        <div class="flex flex-col justify-center xl:max-w-[50%] items-center">
                                             <div class="card-img  ">
                                                 <img alt="coverimage"
                                                     class="lazy-image  w-full  transition-opacity duration-500 ease-in-out   rounded-[5px]"
@@ -41,7 +41,7 @@
 
                                         </div>
                                         <div
-                                            class="flex flex-col lg:pl-[20px] text-start text-xl text-white justify-between">
+                                            class="flex flex-col lg:pl-[20px] xl:max-w-[50%] text-start text-xl text-white justify-between">
                                             <div class="lg:min-h-[135px] min-h-[160px]">
                                                 <h2
                                                     class="font-jakarta font-[600]  mt-3 lg:mt-0 leading-[30px] lg:leading-[35px]  text-[20px] lg:text-[24px] ">
@@ -142,36 +142,45 @@
                 <div class="transition-all duration-1000 ease-in-out w-full mt-48 rounded-none">
                     <div class="bg-black container flex flex-wrap flex-col gap-5 -mt-36 rounded-[10px] p-4 lg:p-10">
                         <div class="flex-1 flex flex-col">
-                            <div class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2 lg:grid-cols-2 gap-5 my-2 lg:my-10 sm:my-14">
+                            <div
+                                class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2 lg:grid-cols-2 gap-5 my-2 lg:my-10 sm:my-14">
                                 <div v-for="n in 2" :key="n" class="bg-[#171820] border-0 rounded-[10px] ring-0">
                                     <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
                                         <div class="flex flex-col justify-center items-center">
-                                            <div class="card-img w-full h-40 bg-gray-300 animate-pulse rounded-[5px]"></div>
+                                            <div class="card-img w-full h-40 bg-gray-300 animate-pulse rounded-[5px]">
+                                            </div>
                                         </div>
                                         <div class="flex flex-col lg:pl-[20px] text-start text-xl justify-between">
                                             <div class="lg:min-h-[135px] min-h-[160px]">
-                                                <div class="h-6 bg-gray-400 animate-pulse rounded w-3/4 mt-3 mb-2"></div>
+                                                <div class="h-6 bg-gray-400 animate-pulse rounded w-3/4 mt-3 mb-2">
+                                                </div>
                                                 <div class="h-4 bg-gray-400 animate-pulse rounded w-1/2 mb-2"></div>
                                                 <div class="h-4 bg-gray-400 animate-pulse rounded w-full mt-3"></div>
                                             </div>
-                                            <div class="h-10 bg-gray-500 animate-pulse rounded mt-6 w-full lg:w-1/2"></div>
+                                            <div class="h-10 bg-gray-500 animate-pulse rounded mt-6 w-full lg:w-1/2">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex relative flex-initial md:flex-1 flex-col bg-primary-500 md:gap-10 gap-5 rounded-none p-3 md:p-5 justify-between">
+                        <div
+                            class="flex relative flex-initial md:flex-1 flex-col bg-primary-500 md:gap-10 gap-5 rounded-none p-3 md:p-5 justify-between">
                             <div class="h-10 bg-gray-300 animate-pulse rounded w-1/3 mb-4"></div>
                             <div class="relative w-full overflow-hidden">
                                 <div class="flex gap-5">
-                                    <div v-for="n in 2" :key="n" class="min-w-[calc(50%-10px)] bg-[#171820] border-0 rounded-sm ring-0">
+                                    <div v-for="n in 2" :key="n"
+                                        class="min-w-[calc(50%-10px)] bg-[#171820] border-0 rounded-sm ring-0">
                                         <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 min-w-[50%]">
                                             <div class="flex flex-col w-full p-4 text-start text-xl justify-between">
                                                 <div class="lg:min-h-[135px] min-h-[200px]">
                                                     <div class="h-6 bg-gray-400 animate-pulse rounded w-3/4 mb-2"></div>
-                                                    <div class="h-4 bg-gray-400 animate-pulse rounded w-full mt-3"></div>
+                                                    <div class="h-4 bg-gray-400 animate-pulse rounded w-full mt-3">
+                                                    </div>
                                                 </div>
-                                                <div class="h-10 bg-gray-500 animate-pulse rounded mt-6 w-full lg:w-1/2"></div>
+                                                <div
+                                                    class="h-10 bg-gray-500 animate-pulse rounded mt-6 w-full lg:w-1/2">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -218,10 +227,10 @@ const nextSlide = () => {
 
 const query = useRoute()
 // Fetch blogs data
-const fetchBlogs =  () => {
+const fetchBlogs = () => {
     $fetch(`https://api.goodview-moving.com/api/blogs`).then(res => {
-    blogs.value = res
-  })
+        blogs.value = res
+    })
 
 }
 
@@ -244,7 +253,7 @@ const setupIntersectionObserver = () => {
 }
 
 // Lifecycle hooks
-onMounted(  () => {
+onMounted(() => {
     fetchBlogs()
 })
 
