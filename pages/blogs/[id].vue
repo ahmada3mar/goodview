@@ -33,36 +33,42 @@
                         <div class="flex items-center gap-1 lg:gap-3">
                             <ULink
                                 :to="`https://www.facebook.com/sharer/sharer.php?u=https://goodview-moving.com/blogs/${id}`"
-                                target="_blank" class="text-white hover:underline">
+                                aria-label="share Goodview Moving on Facebook" target="_blank"
+                                class="text-white hover:underline">
                                 <UIcon name="i-mdi-facebook" class="w-[30px] h-[30px] text-primary-500" />
                             </ULink>
 
                             <ULink
                                 :to="`https://twitter.com/intent/tweet?url=https://goodview-moving.com/blogs/${id}&text=${encodeURIComponent(blog.title)}`"
-                                target="_blank" class="text-white hover:underline">
+                                aria-label="share Goodview Moving on Twitter" target="_blank"
+                                class="text-white hover:underline">
                                 <UIcon name="i-mdi-twitter" class="w-[30px] h-[30px] text-primary-500" />
                             </ULink>
 
                             <ULink
                                 :to="`https://api.whatsapp.com/send?text=${encodeURIComponent(blog.title)} https://goodview-moving.com/blogs/${id}`"
-                                target="_blank" class="text-white hover:underline">
+                                aria-label="share Goodview Moving on WhatsApp" target="_blank"
+                                class="text-white hover:underline">
                                 <UIcon name="i-mdi-whatsapp" class="w-[30px] h-[30px] text-primary-500" />
                             </ULink>
 
                             <ULink
                                 :to="`https://pinterest.com/pin/create/button/?url=https://goodview-moving.com/blogs/${id}&media=${blog.image}&description=${encodeURIComponent(blog.title)}`"
-                                target="_blank" class="text-white hover:underline">
+                                target="_blank" class="text-white hover:underline"
+                                aria-label="share Goodview Moving on Pinterest">
                                 <UIcon name="i-mdi-pinterest" class="w-[30px] h-[30px] text-primary-500" />
                             </ULink>
 
                             <ULink
                                 :to="`https://reddit.com/submit?url=https://goodview-moving.com/blogs/${id}&title=${encodeURIComponent(blog.title)}`"
-                                target="_blank" class="text-white hover:underline">
+                                aria-label="share Goodview Moving on Reddit" target="_blank"
+                                class="text-white hover:underline">
                                 <UIcon name="i-mdi-reddit" class="w-[30px] h-[30px] text-primary-500" />
                             </ULink>
                             <ULink
                                 :to="`https://www.linkedin.com/sharing/share-offsite/?url=https://goodview-moving.com/blogs/${id}`"
-                                target="_blank" class="text-white hover:underline">
+                                aria-label="share Goodview Moving on LinkedIn" target="_blank"
+                                class="text-white hover:underline">
                                 <UIcon name="i-mdi-linkedin" class="w-[30px] h-[30px] text-primary-500" />
                             </ULink>
                         </div>
