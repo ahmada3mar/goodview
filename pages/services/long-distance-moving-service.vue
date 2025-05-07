@@ -113,12 +113,13 @@
                         <p class="text-md md:text-lg text-black font-rubik"><b>Packing & Unpacking – </b>
                             Professional <b>
                                 <ULink target="_blank" to="/services/packing-and-unpacking-service"
-                                    class="font-[500]  underline ">
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                     movers and packers</ULink>
                             </b> ensure safe transportation.</p>
                         <p class="text-md md:text-lg text-black font-rubik"><b>Storage Solutions –</b>
                             Need extra space? We offer secure <b>
-                                <ULink target="_blank" to="/services/storage-service/" class="font-[500]  underline ">
+                                <ULink target="_blank" to="/services/storage-service/"
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                     storage options</ULink>
                             </b>.</p>
                         <p class="text-md md:text-lg text-black font-rubik"><b>Furniture Disassembly & Reassembly – </b>
@@ -155,7 +156,7 @@
                             <li> <b class=" font-[500]">Additional Services:</b>
                                 Packing, storage, and <b>
                                     <ULink target="_blank" to="/services/specialty-moving-service"
-                                        class="font-[500]  underline ">
+                                        class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                         specialty item</ULink>
                                 </b> handling may affect pricing.
                             </li>
@@ -181,10 +182,12 @@
                             and go up to $15,000+.
                         </p>
 
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span class="italic font-bold">Note:
+                        <p class="text-lg md:text-xl mt-4 font-rubik italic   text-black "> <span
+                                class="font-bold">Note:
                             </span>
                             At <b>
-                                <ULink target="_blank" to="/" class="font-[500]  underline ">
+                                <ULink target="_blank" to="/"
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                     Good View Moving & Storage</ULink>
                             </b>, our moving costs are
                             affordable and transparent. You'll always know what you're paying for without hidden fees or

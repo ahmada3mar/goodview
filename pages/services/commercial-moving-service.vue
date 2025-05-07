@@ -39,7 +39,7 @@
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                         <b class=" font-[500]"> Secure Packing & Transport: </b> We use high-quality <b>
                             <ULink target="_blank" to="/services/packing-and-unpacking-service"
-                                class="font-[500]  underline ">
+                                class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                 packing materials</ULink>
                         </b> to protect office furniture, IT equipment, and sensitive documents.
                     </p>
@@ -178,10 +178,12 @@
                             between $150 and
                             $300 per hour, depending on the crew size and services needed.
                         </p>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span class="italic font-bold">Note:
+                        <p class="text-lg  italic md:text-xl mt-4 font-rubik  text-black "> <span
+                                class=" font-bold">Note:
                             </span>
                             At <b>
-                                <ULink target="_blank" to="/" class="font-[500]  underline ">
+                                <ULink target="_blank" to="/"
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500 underline ">
                                     Good View Moving & Storage</ULink>
                             </b>, our moving costs are
                             affordable and transparent.

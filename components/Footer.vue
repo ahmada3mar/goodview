@@ -10,14 +10,15 @@
                                 <span class="italic font-bold font-jakarta ">Nationwide</span>.
                             </p>
                             <div class="flex gap-4 mt-2">
-                                <ULink to="https://www.facebook.com/profile.php?id=61558800622379" target="_blank"
-                                    aria-label="Visit Goodview Moving on Facebook">
+                                <ULink
+                                    to="https://www.facebook.com/people/GOOD-VIEW-moving-and-storage/61573989512689/#"
+                                    target="_blank" aria-label="Visit Goodview Moving on Facebook">
 
                                     <UIcon name="i-mdi-facebook" class="w-[45px] h-[45px] text-primary-500" />
 
                                 </ULink>
 
-                                <ULink to="https://www.instagram.com/Fast_transportation_" target="_blank"
+                                <ULink to="https://www.instagram.com/goodview.movingus/#" target="_blank"
                                     aria-label="Follow Goodview Moving on Instagram">
 
                                     <UIcon name="i-mdi-instagram" class="w-[45px] h-[45px] text-primary-500" />
@@ -96,11 +97,11 @@
                                 </div>
                             </div>
                             <div class="flex w-full  gap-3">
-                                <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
+                                <div class="flex bg-opacity-35  rounded-full p-1 w-7 h-7">
                                     <UIcon name="i-material-symbols-mail" class="w-5 h-5 text-primary-500" />
                                 </div>
                                 <div itemscope itemtype="http://schema.org/LocalBusiness"
-                                    class="flex bg-opacity-35 rounded-full font-rubik text-[16px] p-1 text-white font-[400]">
+                                    class="flex bg-opacity-35 rounded-full hover:text-primary-500   font-rubik text-[16px] p-1 text-white font-[400]">
                                     <span itemprop="email"><a
                                             href="mailto:info@goodview-moving.com">info@goodview-moving.com</a></span>
                                 </div>

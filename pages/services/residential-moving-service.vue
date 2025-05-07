@@ -39,7 +39,7 @@
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                         <b class=" font-[500]">Packing & Unpacking Available: </b> We offer <b>
                             <ULink target="_blank" to="/services/packing-and-unpacking-service"
-                                class="font-[500]  underline ">
+                                class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                 packing services</ULink>
                         </b> to protect your belongings.
                     </p>
@@ -110,12 +110,13 @@
                         <p class="text-md md:text-lg text-black font-rubik"><b>Furniture Disassembly & Reassembly – </b>
                             We move <b>
                                 <ULink target="_blank" to="/services/furniture-assembly-and-disassembly-service"
-                                    class="font-[500]  underline ">
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                     bulky furniture</ULink>
                             </b> with care.</p>
                         <p class="text-md md:text-lg text-black font-rubik"><b>Storage Solutions –</b>
                             Need extra space? Our secure <b>
-                                <ULink target="_blank" to="/services/storage-service" class="font-[500]  underline ">
+                                <ULink target="_blank" to="/services/storage-service"
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                     storage options</ULink>
                             </b> are available.</p>
 
@@ -160,10 +161,12 @@
 
                         </ul>
 
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span class="italic font-bold">Note:
+                        <p class="text-lg md:text-xl mt-4 font-rubik italic  text-black "> <span
+                                class=" font-bold">Note:
                             </span>
                             At <b>
-                                <ULink target="_blank" to="/" class="font-[500]  underline ">
+                                <ULink target="_blank" to="/"
+                                    class="font-[500]  hover:font-[700] hover:decoration-primary-500 underline ">
                                     Good View Moving & Storage</ULink>
                             </b>, our moving costs are
                             affordable and transparent. You'll always know what you're paying for without hidden fees or

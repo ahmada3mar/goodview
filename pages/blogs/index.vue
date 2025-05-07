@@ -65,7 +65,7 @@
 
                         </div>
 
-                        <div v-if="moreBlogs.length > 0"
+                        <!-- <div v-if="moreBlogs.length > 0"
                             class="flex relative flex-initial md:flex-1 flex-col bg-primary-500 md:gap-10 gap-5 rounded-none p-3 md:p-5 justify-between">
                             <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">More Articles</h2>
 
@@ -97,7 +97,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Navigation Buttons -->
 
                             </div>
                             <div class="flex gap-5 justify-center">
@@ -121,7 +120,7 @@
                                     </div>
                                 </button>
                             </div>
-                        </div>
+                        </div> -->
 
 
 

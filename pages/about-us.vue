@@ -90,25 +90,25 @@
                             class="list-inside  mx-auto text-left md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-0 space-y-2">
                             <li> <span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
                                     <ULink target="_blank" to="/services/long-distance-moving-service"
-                                        class="font-[500]  underline ">
+                                        class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                         Local & Long-Distance Moving</ULink>:
                                 </span>Whether you're
                                 moving down the street or across the country, we handle it all.</li>
                             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
                                     <ULink target="_blank" to="/services/packing-and-unpacking-service"
-                                        class="font-[500]  underline ">
+                                        class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                         Packing and Unpacking</ULink>:
                                 </span>Don't lift a
                                 finger—we'll handle everything from fragile items to bulky furniture.</li>
                             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
                                     <ULink target="_blank" to="/services/storage-service"
-                                        class="font-[500]  underline ">
+                                        class="font-[500]  hover:font-[700] hover:decoration-primary-500 underline ">
                                         Moving and Storage</ULink>:
                                 </span>Need extra space? Our
                                 secure storage solutions keep your belongings safe.</li>
                             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
                                     <ULink target="_blank" to="/services/commercial-moving-service"
-                                        class="font-[500]  underline ">
+                                        class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                         Commercial Moving</ULink>:
                                 </span>Relocating your business?
                                 We minimize downtime and maximize efficiency.</li>
@@ -284,7 +284,8 @@
                             </h2>
                             <p class="text-md md:text-lg text-black font-rubik">
                                 Wherever life is taking you, <b>
-                                    <ULink target="_blank" to="/" class="font-[500]  underline ">
+                                    <ULink target="_blank" to="/"
+                                        class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                         Good View Moving & Storage</ULink>
                                 </b> is here to make your move smooth and hassle-free.
                             </p>

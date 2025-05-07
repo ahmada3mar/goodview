@@ -388,5 +388,11 @@ watchEffect(() => {
     text-decoration: underline !important;
     font-family: 'Plus Jakarta Sans' !important;
     color: #836b23 !important;
+    transition: all 0.3s ease !important;
+}
+
+:deep(.blog-content a:hover) {
+    font-weight: 700 !important;
+    text-decoration-color: #ffd34e !important;
 }
 </style>
