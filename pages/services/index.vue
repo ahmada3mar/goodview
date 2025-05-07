@@ -1,11 +1,7 @@
 <template>
   <div class="flex flex-col h-full">
-    <Banner
-      background="/imgs/services.webp"
-      class="  md:h-[25rem]"
-      title="Our Moving Services"
-      text="Whether you're moving across the street or across the state, our moving services are designed to take the stress out of your relocation."
-    />
+    <Banner background="/imgs/services.webp" class="  md:h-[25rem]" title="Our Moving Services"
+      text="Whether you're moving across the street or across the state, our moving services are designed to take the stress out of your relocation." />
 
     <div class="mx-auto container px-5 overflow-hidden bg-white">
       <div class="flex flex-wrap p-0 gap-1 lg:gap-10 justify-between">
@@ -13,37 +9,33 @@
         <div class="transition-all delay-300 duration-1000 ease-in-out flex flex-col gap-2 md:pb-56 pb-12 pt-16 flex-1">
           <h2 class="text-3xl font-jakarta md:text-4xl mb-5 font-extrabold">Moving Services for Every Need</h2>
           <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-            No two moves are the same, and that's why we offer a variety of moving services to fit every situation. Whether you're planning a residential move, a commercial relocation, or need help with packing and unpacking, we have you covered.
+            No two moves are the same, and that's why we offer a variety of moving services to fit every situation.
+            Whether you're planning a residential move, a commercial relocation, or need help with packing and
+            unpacking, we have you covered.
           </p>
           <div class="mt-5">
-            <ULink
-              to="tel:+19737821339"
-              class="bg-primary-500 py-2 font-jakarta px-3 lg:px-3 xl:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold"
-            >
+            <ULink to="tel:+19737821339"
+              class="bg-primary-500 py-2 font-jakarta px-3 lg:px-3 xl:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold">
               +1 973-782-1339 </ULink>
           </div>
         </div>
         <!-- Image Section -->
-        <div class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 lg:w-1/2 flex pb-24 lg:pb-2 md:hidden flex-col justify-center lg:flex">
-          <img
-            alt="company Moving"
+        <div
+          class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 lg:w-1/2 flex pb-24 lg:pb-2 md:hidden flex-col justify-center lg:flex">
+          <img alt="company Moving"
             class="lazy-image opacity-0 translate-x-36 transition-all duration-1000 ease-in-out w-full h-auto rounded-none"
-            v-lazy="'/imgs/new_truck.webp'"
-          />
+            v-lazy="'/imgs/new_truck.webp'" />
         </div>
       </div>
     </div>
 
-    <div
-      :ref="el => (scrollElements[0] = el)"
-      :class="{
-            'opacity-100 translate-y-0': isVisible[0],
-            'opacity-0 translate-y-20': !isVisible[0],
-        }"
-      class="transition-all duration-1000 ease-in-out bg-primary-500 w-full p-3 md:p-10  rounded-none z-10"
-    >
+    <div :ref="el => (scrollElements[0] = el)" :class="{
+      'opacity-100 translate-y-0': isVisible[0],
+      'opacity-0 translate-y-20': !isVisible[0],
+    }" class="transition-all duration-1000 ease-in-out bg-primary-500 w-full p-3 md:p-10  rounded-none z-10">
       <div class="grid grid-cols-1  container  xl:grid-cols-4  gap-5     lg:-mt-32 ">
-        <div class="bg-black col-span-1 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-[10px]   p-5">
+        <div
+          class="bg-black col-span-1 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-[10px]   p-5">
 
           <div class="flex  flex-col  bg-zinc-900 md:gap-5 gap-2 rounded-none ">
             <!-- <div class="card-img  h-40">
@@ -58,10 +50,8 @@
                   safely transported to your new home.
                 </p>
               </div>
-              <ULink
-                to="/services/residential-moving-service"
-                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12  xl:px-20 py-3  font-bold"
-              >
+              <ULink to="/services/residential-moving-service"
+                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12  xl:px-20 py-3  font-bold">
                 View Details
               </ULink>
 
@@ -83,10 +73,8 @@
                   running smoothly.
                 </p>
               </div>
-              <ULink
-                to="/services/commercial-moving-service"
-                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all  px-12 xl:px-20 py-3  font-bold"
-              >
+              <ULink to="/services/commercial-moving-service"
+                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all  px-12 xl:px-20 py-3  font-bold">
                 View Details
               </ULink>
             </div>
@@ -106,10 +94,8 @@
                   every step of the way.
                 </p>
               </div>
-              <ULink
-                to="/services/packing-and-unpacking-service"
-                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold"
-              >
+              <ULink to="/services/packing-and-unpacking-service"
+                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
                 View Details
               </ULink>
             </div>
@@ -123,7 +109,8 @@
                                 </div> -->
             <div class="flex flex-col p-4   text-start text-xl text-white">
               <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
-                <h2 class="text-xl md:text-2xl font-extrabold font-jakarta text-black lg:text-stone-300">Furniture Assembly
+                <h2 class="text-xl md:text-2xl font-extrabold font-jakarta text-black lg:text-stone-300">Furniture
+                  Assembly
                   and Disassembly</h2>
                 <p class="text-sm md:text-md mt-[10px] text-black lg:text-stone-300 font-rubik">
                   Skilled technicians handle the disassembly and reassembly of your furniture to ensure a
@@ -131,10 +118,8 @@
                 </p>
 
               </div>
-              <ULink
-                to="/services/furniture-assembly-and-disassembly-service"
-                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold"
-              >
+              <ULink to="/services/furniture-assembly-and-disassembly-service"
+                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
                 View Details
               </ULink>
             </div>
@@ -148,7 +133,8 @@
                                 </div> -->
             <div class="flex flex-col   p-4  text-start text-xl text-white">
               <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
-                <h2 class="text-xl md:text-2xl font-extrabold lg:text-black text-stone-300 font-jakarta ">Long Distance Moving
+                <h2 class="text-xl md:text-2xl font-extrabold lg:text-black text-stone-300 font-jakarta ">Long Distance
+                  Moving
                 </h2>
 
                 <p class="text-sm mt-[10px] md:text-md lg:text-black text-stone-300 font-rubik">
@@ -156,10 +142,8 @@
                   your new location.
                 </p>
               </div>
-              <ULink
-                to="/services/long-distance-moving-service"
-                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold"
-              >
+              <ULink to="/services/long-distance-moving-service"
+                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
                 View Details
               </ULink>
             </div>
@@ -173,17 +157,16 @@
                                 </div> -->
             <div class="flex flex-col   p-4  text-start text-xl text-white">
               <div class=" h-[135px]  sm:h-[87px] md:h-[135px] lg:h-[170px] xl:h-[135px]">
-                <h2 class="text-xl md:text-2xl font-extrabold text-black font-jakarta lg:text-stone-300">Specialty Moving
+                <h2 class="text-xl md:text-2xl font-extrabold text-black font-jakarta lg:text-stone-300">Specialty
+                  Moving
                 </h2>
                 <p class="text-sm mt-[10px] md:text-md text-black lg:text-stone-300 font-rubik">
                   Customized solutions for moving delicate, oversized, or specialty items like pianos,
                   antiques, and artwork with precision and care.
                 </p>
               </div>
-              <ULink
-                to="/services/specialty-moving-service"
-                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold"
-              >
+              <ULink to="/services/specialty-moving-service"
+                class=" text-center text-sm mb-3 mt-[25px] text-white rounded-[10px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 xl:px-20 py-3  font-bold">
                 View Details
               </ULink>
             </div>
@@ -197,72 +180,40 @@
 
           <div class="p-8 flex flex-col bg-black max-w-full md:max-w-[650px] w-full">
             <!-- Mobile Number Input -->
-            <UFormGroup
-              :ui="{
-        label: {
-            base: 'block font-bold text-gray-100 text-xl dark:text-gray-200',
-        },
-        error: 'text-red-500 text-sm mt-1'
-                }"
-              class="my-2"
-              label="Your mobile number"
-              :error="errorMessages.mobile"
-            >
-              <UInput
-                @update:modelValue="errors.mobile = false; errorMessages.mobile = ''"
+            <UFormGroup :ui="{
+              label: {
+                base: 'block font-bold text-gray-100 text-xl dark:text-gray-200',
+              },
+              error: 'text-red-500 text-sm mt-1'
+            }" class="my-2" label="Your mobile number" :error="errorMessages.mobile">
+              <UInput @update:modelValue="errors.mobile = false; errorMessages.mobile = ''"
                 :inputClass="`rounded-[10px] bg-[#171820] text-slate-300 ring-gray-800 h-14 ${errors.mobile ? '!ring-red-500 focus:ring-red-500' : ''}`"
-                v-model="data.mobile"
-                icon="i-carbon-phone"
-                size="xl"
-                placeholder="Your mobile number"
-              />
+                v-model="data.mobile" icon="i-carbon-phone" size="xl" placeholder="Your mobile number" />
             </UFormGroup>
 
             <!-- Zip Code Input -->
-            <UFormGroup
-              :ui='{
-        label: {
-            base: "block font-bold text-gray-100 text-xl dark:text-gray-200",
-        },
-        error: "text-red-500 text-sm mt-1"
-    }'
-              class="my-2"
-              label="Current zip code"
-              :error="errorMessages.to"
-            >
-              <UInput
-                type="text"
-                @update:modelValue="errors.to = false; errorMessages.to = ''"
+            <UFormGroup :ui='{
+              label: {
+                base: "block font-bold text-gray-100 text-xl dark:text-gray-200",
+              },
+              error: "text-red-500 text-sm mt-1"
+            }' class="my-2" label="Current zip code" :error="errorMessages.to">
+              <UInput type="text" @update:modelValue="errors.to = false; errorMessages.to = ''"
                 :inputClass="`rounded-[10px] bg-[#171820] text-slate-300 ring-gray-800 h-14 ${errors.to ? '!ring-red-500 focus:ring-red-500' : ''}`"
-                v-model="data.to"
-                icon="i-carbon-location"
-                size="xl"
-                placeholder="Enter your zip code"
-                maxlength="5"
-              />
+                v-model="data.to" icon="i-carbon-location" size="xl" placeholder="Enter your zip code" maxlength="5" />
             </UFormGroup>
 
             <!-- Submit Button -->
-            <UButton
-              @click="getQuote"
-              size="xl"
-              label="Continue"
-              class="px-3 md:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-slate-300 mt-10 mx-auto text-black font-bold"
-            />
+            <UButton @click="getQuote" size="xl" label="Continue"
+              class="px-3 md:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-slate-300 mt-10 mx-auto text-black font-bold" />
           </div>
           <div class="flex justify-center items-center gap-2">
-            <UIcon
-              name="i-carbon-question-answering"
-              class="w-10 h-10 text-slate-300"
-            />
+            <UIcon name="i-carbon-question-answering" class="w-10 h-10 text-slate-300" />
             <div>
               <h3 class="text-slate-300 font-jakarta font-bold">
                 Questions about the quote?
               </h3>
-              <ULink
-                to="/faq"
-                class="text-slate-300 font-rubik underline underline-offset-2"
-              >
+              <ULink to="/faq" class="text-slate-300 font-rubik underline underline-offset-2">
                 Check out our FAQ section
               </ULink>
             </div>
@@ -282,6 +233,18 @@
   </div>
 </template>
 <script setup>
+
+
+useHead({
+  title: " Professional Moving Services ",
+  meta: [
+    { name: "description", content: "Explore expert moving services for local and long-distance relocations. We offer packing, storage, and furniture handling. Request your free quote today. " },
+  ]
+})
+
+
+
+
 const data = ref({
   mobile: "",
   to: "",

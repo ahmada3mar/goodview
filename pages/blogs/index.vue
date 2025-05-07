@@ -202,6 +202,13 @@
 
 
 <script setup>
+useHead({
+    title: "Moving Blog - Expert Advice, Tips, and Resources  ",
+    meta: [
+        { name: "description", content: " Read our moving blog for expert advice, helpful tips, and resources to make your move easier. Stay informed with the latest moving industry insights. " },
+    ]
+})
+
 
 const blogs = ref([])
 const regularBlogs = computed(() => blogs.value.slice(0, 4))

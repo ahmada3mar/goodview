@@ -219,7 +219,7 @@
 
 <script setup>
 useHead({
-    title: "Specialty Moving Services - Good View Moving ",
+    title: "Specialty Moving Services  ",
     meta: [
         { name: "description", content: "Good View Moving specializes in handling delicate or unique items. Trust us for safe and careful specialty moving services tailored to your needs." },
     ]
