@@ -123,7 +123,7 @@
                                 <b class=" font-[500]">Secure Packing: </b>
                                 We offer <b>
                                     <ULink target="_blank" to="/services/packing-and-unpacking-service"
-                                        class="font-[500]  underline ">
+                                        class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                         Packing Services</ULink>
                                 </b>for the furniture pieces, ensuring that nothing gets scratched or broken during the
                                 move.
@@ -176,10 +176,12 @@
 
                         </ul>
 
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span class="italic font-bold">Note:
+                        <p class="text-lg md:text-xl mt-4 font-rubik  italic text-black "> <span
+                                class=" font-bold">Note:
                             </span>
                             At <b class=" font-[500]">
-                                <ULink target="_blank" to="/" class="font-[500]  underline ">
+                                <ULink target="_blank" to="/"
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                     Good View Moving & Storage</ULink>
                             </b>, our moving costs are affordable and transparent. You'll always know what you're paying
                             for

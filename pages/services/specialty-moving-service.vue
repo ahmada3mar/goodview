@@ -32,7 +32,7 @@
                     <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
                         <b class=" font-[500]">Experienced Movers: </b> Our team of professional <b>
                             <ULink target="_blank" to="/services/furniture-assembly-and-disassembly-service"
-                                class="font-[500]  underline ">
+                                class="font-[500]  hover:font-[700] hover:decoration-primary-500 underline ">
                                 Furniture Movers</ULink>
                         </b> is trained to handle the most challenging moves, making sure your items are treated with
                         the care
@@ -76,7 +76,7 @@
                                 </li>
                                 <li><span class="font-semibold">Packing & Preparation: </span> We use specialized <b>
                                         <ULink target="_blank" to="/services/packing-and-unpacking-service"
-                                            class="font-[500]  underline ">
+                                            class="font-[500]  hover:font-[700] hover:decoration-primary-500 underline ">
                                             packing materials</ULink>
                                     </b> for your delicate items, ensuring everything is protected throughout the moving
                                     process.</li>
@@ -178,9 +178,11 @@
                         </ul>
 
 
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black "> <span class="italic font-bold">Note:
+                        <p class="text-lg md:text-xl mt-4 font-rubik italic  text-black "> <span
+                                class=" font-bold">Note:
                             </span>At <b>
-                                <ULink target="_blank" to="/" class="font-[500]  underline ">
+                                <ULink target="_blank" to="/"
+                                    class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
                                     Good View Moving & Storage</ULink>
                             </b>, our moving costs are affordable and transparent. You'll always know what you're paying
                             for
