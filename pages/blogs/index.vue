@@ -210,8 +210,8 @@ useHead({
 
 
 const blogs = ref([])
-const regularBlogs = computed(() => blogs.value.slice(0, 4))
-const moreBlogs = computed(() => blogs.value.slice(4))
+const regularBlogs = computed(() => blogs.value.slice(0, 10))
+const moreBlogs = computed(() => blogs.value.slice(10))
 
 const isVisible = ref([false, false, false])
 const scrollElements = ref([])
