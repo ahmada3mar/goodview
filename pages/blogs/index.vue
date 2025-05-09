@@ -14,7 +14,7 @@
 
                 </div>
 
-                <div v-if="regularBlogs.length > 0" :ref="el => (scrollElements[1] = el)" :class="{
+                <div :ref="el => (scrollElements[1] = el)" :class="{
                     'opacity-100 translate-y-0': isVisible[1],
                     'opacity-0 translate-y-20': !isVisible[1],
                 }" class="transition-all duration-1000 ease-in-out  w-full  mt-48 rounded-none">
@@ -27,7 +27,7 @@
                             <!-- <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-stone-300">Articles</h2> -->
                             <div
                                 class="grid grid-cols-1 px-0 sm:px-5 md:px-0 md:grid-cols-2 lg:grid-cols-2 text-white gap-5  my-2 lg:my-10 sm:my-14">
-                                <div v-for="blog in regularBlogs" :key="blog.id"
+                                <div v-for="blog in paginatedBlogs" :key="blog.id"
                                     class="bg-[#171820] text-white border-0 rounded-[10px] ring-0">
                                     <div class="flex flex-col p-[10px] sm:p-4 xl:flex-row h-full gap-1 max-w-[100%]">
                                         <div class="flex flex-col justify-center xl:max-w-[50%] items-center">
@@ -64,8 +64,20 @@
                             </div>
 
                         </div>
+                        <div class="flex justify-between mt-10 w-full">
+                            <button v-if="hasPrevPage" @click="prevPage"
+                                class="bg-primary-500 border border-primary-500 font-jakarta text-black hover:bg-black hover:text-white px-6 py-2 rounded-lg">
+                                Previous
+                            </button>
+                            <div class="flex-1"></div>
+                            <button v-if="hasNextPage" @click="nextPage"
+                                class="bg-primary-500 border border-primary-500 font-jakarta text-black hover:bg-black hover:text-white px-6 py-2 rounded-lg">
+                                Next
+                            </button>
+                        </div>
+                    </div>
 
-                        <!-- <div v-if="moreBlogs.length > 0"
+                    <!-- <div v-if="moreBlogs.length > 0"
                             class="flex relative flex-initial md:flex-1 flex-col bg-primary-500 md:gap-10 gap-5 rounded-none p-3 md:p-5 justify-between">
                             <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-black">More Articles</h2>
 
@@ -121,16 +133,6 @@
                                 </button>
                             </div>
                         </div> -->
-
-
-
-                    </div>
-
-
-
-
-
-
 
 
                 </div>
@@ -210,35 +212,55 @@ useHead({
 
 
 const blogs = ref([])
-const regularBlogs = computed(() => blogs.value.slice(0, 4))
-const moreBlogs = computed(() => blogs.value.slice(4))
+const pageSize = 10     // Set page size to 10
+const currentPage = ref(1)
 
-const isVisible = ref([false, false, false])
-const scrollElements = ref([])
-const currentSlide = ref(0)
-const slidesPerView = 2
-
-const prevSlide = () => {
-    if (currentSlide.value > 0) {
-        currentSlide.value--
-    }
-}
-
-const nextSlide = () => {
-    const maxSlides = Math.ceil(regularBlogs.value.length / slidesPerView) - 1
-    if (currentSlide.value < maxSlides) {
-        currentSlide.value++
-    }
-}
-
-const query = useRoute()
-// Fetch blogs data
+// Single fetchBlogs function
 const fetchBlogs = () => {
     $fetch(`https://api.goodview-moving.com/api/blogs`).then(res => {
         blogs.value = res
+        console.log('Fetched blogs:', res.length)
     })
-
 }
+
+// Computed properties for pagination
+const paginatedBlogs = computed(() => {
+    const start = (currentPage.value - 1) * pageSize
+    const end = start + pageSize
+    return blogs.value.slice(start, end)
+})
+
+const hasNextPage = computed(() => {
+    const nextSlice = blogs.value.slice(currentPage.value * pageSize)
+    return nextSlice.length > 0
+})
+
+const hasPrevPage = computed(() => currentPage.value > 1)
+
+// Navigation methods
+const nextPage = () => {
+    if (hasNextPage.value) {
+        currentPage.value++
+    }
+}
+
+const prevPage = () => {
+    if (hasPrevPage.value) {
+        currentPage.value--
+    }
+}
+
+const isVisible = ref([false, false, false])
+const scrollElements = ref([])
+
+const query = useRoute()
+
+// const fetchBlogs = () => {
+//     $fetch(`https://api.goodview-moving.com/api/blogs`).then(res => {
+//         blogs.value = res
+//     })
+
+// }
 
 // Intersection Observer setup
 const setupIntersectionObserver = () => {
@@ -301,5 +323,26 @@ onBeforeUnmount(() => {
     window.removeEventListener('mousemove', updateGradients)
 })
 
+// const regularBlogs = computed(() => blogs.value.slice(0, 10))
+// const moreBlogs = computed(() => blogs.value.slice(10))
 
+// const isVisible = ref([false, false, false])
+// const scrollElements = ref([])
+// const currentSlide = ref(0)
+// const slidesPerView = 2
+
+// const prevSlide = () => {
+//     if (currentSlide.value > 0) {
+//         currentSlide.value--
+//     }
+// }
+
+// const nextSlide = () => {
+//     const maxSlides = Math.ceil(regularBlogs.value.length / slidesPerView) - 1
+//     if (currentSlide.value < maxSlides) {
+//         currentSlide.value++
+//     }
+// }
+
+// const query = useRoute()
 </script>

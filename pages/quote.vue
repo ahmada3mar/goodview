@@ -224,7 +224,7 @@
 
 <script setup>
 useHead({
-  title: "Get a Free Moving Quote - Instant Estimates for Your Move",
+  title: "Get a Free Moving Quote ",
   meta: [
     { name: "description", content: " Request a free moving quote online in minutes. Get fast, accurate estimates for local or long-distance moves. No obligation. Start your move today. " },
   ]
