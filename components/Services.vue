@@ -460,7 +460,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex md:flex-row flex-col gap-2 md:items-center w-full">
+                                <div
+                                    class="flex md:flex-row flex-col gap-2 md:items-center font-jakarta h-[88px] w-full">
                                     <label class="block w-16 font-bold text-gray-100 text-xl">Date</label>
                                     <div class="flatpickr-wrapper flex-1 relative h-14">
                                         <Date v-model="quoteForm.date" class="w-full h-full" />

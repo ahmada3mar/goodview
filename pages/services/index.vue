@@ -210,7 +210,7 @@
           <div class="flex justify-center items-center gap-2">
             <UIcon name="i-carbon-question-answering" class="w-10 h-10 text-slate-300" />
             <div>
-              <h3 class="text-slate-300 font-jakarta font-bold">
+              <h3 class="text-slate-300 text-[18px] font-jakarta font-bold">
                 Questions about the quote?
               </h3>
               <ULink to="/faq" class="text-slate-300 font-rubik underline underline-offset-2">

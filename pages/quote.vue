@@ -18,7 +18,7 @@
                 'bg-black text-primary-500': step !== 1
               }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                 1</div>
-              <h2 class=" text-start font-jakarta font-bold text-black">
+              <h2 class=" text-start sm:text-[34px] text-[21px] font-jakarta font-bold text-black">
                 Moving info
               </h2>
             </div>
@@ -32,7 +32,7 @@
                 'opacity-50': step < 2
               }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                 2</div>
-              <h2 class="font-jakarta text-start font-bold text-black">
+              <h2 class="font-jakarta sm:text-[34px] text-[21px] text-start font-bold text-black">
                 Personal Detail
               </h2>
             </div>
@@ -46,7 +46,7 @@
                 'opacity-50': step < 3
               }" class="lg:h-20 lg:w-20 md:h-18 md:w-18 h-16 w-16 flex justify-center items-center font-bold text-3xl">
                 3</div>
-              <h2 class=" font-jakarta text-start font-bold text-black">
+              <h2 class=" font-jakarta text-start sm:text-[34px] text-[21px] font-bold text-black">
                 Job done
               </h2>
             </div>
@@ -121,7 +121,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex md:flex-row flex-col gap-2 md:items-center w-full h-14">
+              <div class="flex md:flex-row flex-col gap-2  md:items-center w-full font-jakarta lg:h-[56px] h-[88px]">
                 <label class="block w-16 font-bold text-gray-100 text-xl">Date</label>
                 <Date v-model="quoteForm.date" class="w-full h-full" />
 

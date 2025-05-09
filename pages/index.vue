@@ -58,12 +58,12 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
-  title: "Good View Moving - Reliable and Efficient Moving Services",
+  title: " Reliable and Efficient Moving Services",
   meta: [
     {
       name: "description",
       content:
-        "Reliable and Efficient Moving Services "
+        "Good View Moving offers reliable and efficient moving services for every type of move. Trust our experienced team to ensure a smooth move. "
     }
   ]
 })
