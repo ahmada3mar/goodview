@@ -204,7 +204,7 @@
 
 <script setup>
 useHead({
-    title: "Moving Blog - Expert Advice, Tips, and Resources  ",
+    title: "Moving Blog - Expert Advice ",
     meta: [
         { name: "description", content: " Read our moving blog for expert advice, helpful tips, and resources to make your move easier. Stay informed with the latest moving industry insights. " },
     ]
