@@ -63,7 +63,7 @@ useHead({
     {
       name: "description",
       content:
-        "Good View Moving offers reliable and efficient moving services for every type of move. Trust our experienced team to ensure a smooth move. "
+        "Reliable and Efficient Moving Services "
     }
   ]
 })

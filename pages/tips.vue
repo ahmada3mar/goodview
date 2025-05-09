@@ -112,7 +112,7 @@ help you with your move." />
 <script setup>
 
 useHead({
-    title: "Moving Tips & Advice - Helpful Tips for Stress-Free Moves ",
+    title: "Moving Tips & Advice",
     meta: [
         { name: "description", content: " Discover expert moving tips to simplify your relocation. Learn packing hacks and smart strategies for a smooth moving experience. " },
     ]
