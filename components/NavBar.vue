@@ -10,11 +10,11 @@
 
         <!-- Social Icons / Navigation Links -->
         <div class="hidden h-full lg:flex items-center gap-1 lg:gap-[10px] xl:gap-10 text-sm font-bold text-white">
-          <ULink to="/about-us"
+          <ULink to="/about-us/"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             About us</ULink>
           <div class="relative" @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
-            <ULink to="/services"
+            <ULink to="/services/"
               class="flex items-center font-jakarta with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
               <div class="flex items-center">
                 Services
@@ -25,47 +25,49 @@
             <!-- Dropdown Menu (Only Shows on Hover) -->
             <div v-if="showDropdown"
               class="absolute left-0  gap-2  w-[250px] bg-primary-500 text-black   shadow-lg z-50">
-              <ULink to="/services/commercial-moving-service"
+              <ULink to="/services/commercial-moving-service/"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Commerical Moving
               </ULink>
-              <ULink to="/services/long-distance-moving-service"
+              <ULink to="/services/long-distance-moving-service/"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Long Distance Moving
               </ULink>
-             <ULink to="/services/residential-moving-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Residential Moving
-</ULink>
-              <ULink to="/services/packing-and-unpacking-service"
-                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Packing and Unpacking Service
+              <ULink to="/services/residential-moving-service/"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Residential Moving
               </ULink>
-              <ULink to="/services/furniture-assembly-and-disassembly-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Furniture Assembly and Disassembly Service
-</ULink>
-<ULink to="/services/specialty-moving-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Specialty Moving
-</ULink><ULink to="/services/storage-service"
-    class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
-    Storage Units
-</ULink>
+              <ULink to="/services/packing-and-unpacking-service/"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Packing and Unpacking
+                Service
+              </ULink>
+              <ULink to="/services/furniture-assembly-and-disassembly-service/"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Furniture Assembly and Disassembly Service
+              </ULink>
+              <ULink to="/services/specialty-moving-service/"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Specialty Moving
+              </ULink>
+              <ULink to="/services/storage-service/"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                Storage Units
+              </ULink>
             </div>
           </div>
 
-          <ULink to="/tips"
+          <ULink to="/tips/"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             Tips for the move</ULink>
-          <ULink to="/blogs"
+          <ULink to="/blogs/"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             Blogs</ULink>
-          <ULink to="/help"
+          <ULink to="/help/"
             class="flex items-center with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             <div class="flex items-center">Help
               <UIcon role="button" name="i-carbon-add" class="w-5 h-5 text-primary-500" />
             </div>
           </ULink>
           <a class="text-gray-100 font-jakarta font-semibold" href="tel:+19737821339">+1 973-782-1339</a>
-          <ULink to="/quote"
+          <ULink to="/quote/"
             class="bg-primary-500 py-2 font-jakarta px-3 lg:px-3 xl:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold">
             Get a free quote</ULink>
         </div>
