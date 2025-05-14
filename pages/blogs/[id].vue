@@ -313,16 +313,19 @@ watchEffect(() => {
 }
 
 :deep(.blog-content table) {
+    color: black !important;
     margin: 30px 0;
     font-size: 18px;
     font-family: 'Rubik', 'sans-serif';
 }
 
 :deep(.blog-content th) {
+
     padding: 12px;
 }
 
 :deep(.blog-content td) {
+    border: 1px solid #f2f2f2 !important;
     padding: 12px;
 }
 
@@ -367,11 +370,8 @@ watchEffect(() => {
         font-family: 'Rubik', 'sans-serif' v;
     }
 
-    :deep(.blog-content table) {
-        margin: 30px 0;
-        font-size: 16px;
-        font-family: 'Rubik', 'sans-serif';
-    }
+
+
 
     :deep(.blog-content li) {
         margin-top: 15px !important;
@@ -384,6 +384,24 @@ watchEffect(() => {
 
 }
 
+@media (max-width: 800px) {
+
+    :deep(.blog-content table) {
+
+        overflow: auto;
+        /* or the minimum width your table needs */
+        display: block;
+    }
+
+    :deep(.blog-content thead),
+    :deep(.blog-content tbody),
+    :deep(.blog-content tr),
+    :deep(.blog-content td),
+    :deep(.blog-content th) {
+        white-space: nowrap;
+    }
+}
+
 :deep(.blog-content a) {
     text-decoration: underline !important;
     font-family: 'Plus Jakarta Sans' !important;
@@ -394,5 +412,21 @@ watchEffect(() => {
 :deep(.blog-content a:hover) {
     font-weight: 700 !important;
     text-decoration-color: #ffd34e !important;
+}
+
+
+:deep(.blog-content thead) {
+    background-color: #ffd34e !important;
+}
+
+:deep(.blog-content tbody tr:nth-child(odd)) {
+
+    background-color: #ffffff;
+    /* white for odd rows */
+}
+
+:deep(.blog-content tbody tr:nth-child(even)) {
+    background-color: #f5f5f5;
+    /* light gray for even rows */
 }
 </style>
