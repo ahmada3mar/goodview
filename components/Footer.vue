@@ -10,15 +10,14 @@
                                 <span class="italic font-bold font-jakarta ">Nationwide</span>.
                             </p>
                             <div class="flex gap-4 mt-2">
-                                <ULink
-                                    to="https://www.facebook.com/people/GOOD-VIEW-moving-and-storage/61573989512689/#"
+                                <ULink to="https://www.facebook.com/people/Goodview-Moving-And-Storage/61576011192616/"
                                     target="_blank" aria-label="Visit Goodview Moving on Facebook">
 
                                     <UIcon name="i-mdi-facebook" class="w-[45px] h-[45px] text-primary-500" />
 
                                 </ULink>
 
-                                <ULink to="https://www.instagram.com/goodview.movingus/#" target="_blank"
+                                <ULink to="https://www.instagram.com/goodviewmoving/" target="_blank"
                                     aria-label="Follow Goodview Moving on Instagram">
 
                                     <UIcon name="i-mdi-instagram" class="w-[45px] h-[45px] text-primary-500" />
