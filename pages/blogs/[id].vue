@@ -280,7 +280,8 @@ watchEffect(() => {
     useHead({
         title: blog.value.title,
         meta,
-        style
+        style,
+        titleTemplate: '%s'
     })
 })
 </script>
