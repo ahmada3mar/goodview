@@ -11,7 +11,7 @@ export default defineNuxtConfig(async () => {
     modules: [
       "@nuxt/ui",
       "@nuxt/image",
-      "@nuxtjs/sitemap", 
+      "@nuxtjs/sitemap",
       "@nuxtjs/robots",
     ],
 
@@ -42,6 +42,10 @@ export default defineNuxtConfig(async () => {
           },
           { name: "author", content: "USA Movers" },
           {
+            name: "p:domain_verify",
+            content: "41be8be5f35839c1dccaeb8d21c0e8ef"
+          },
+          {
             property: "og:title",
             content: "Reliable Moving Services in USA | Home & Office Movers",
           },
@@ -50,6 +54,7 @@ export default defineNuxtConfig(async () => {
             content:
               "Professional movers offering local, long-distance, and storage services in USA.",
           },
+
           { property: "og:type", content: "website" },
         ],
         link: [
