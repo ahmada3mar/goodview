@@ -64,7 +64,7 @@
                             </div>
 
                         </div>
-                        <div class="flex justify-between mt-10 w-full">
+                        <div class="flex justify-between  w-full">
                             <button v-if="hasPrevPage" @click="prevPage"
                                 class="bg-primary-500 border border-primary-500 font-jakarta text-black hover:bg-black hover:text-white px-6 py-2 rounded-lg">
                                 Previous
