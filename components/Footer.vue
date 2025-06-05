@@ -29,6 +29,11 @@
                                     <UIcon name="i-mdi-pinterest" class="w-[45px] h-[45px] text-primary-500" />
 
                                 </ULink>
+                                <ULink to="https://www.linkedin.com/company/goodview-moving-storage/"
+                                    aria-label="Follow Goodview Moving on LinkedIn" target="_blank"
+                                    class="text-white hover:underline">
+                                    <UIcon name="i-mdi-linkedin" class="w-[45px] h-[45px] text-primary-500" />
+                                </ULink>
 
 
                             </div>

@@ -273,6 +273,10 @@ watchEffect(() => {
             {
                 name: 'description',
                 content: i.description,
+            },
+            {
+                name: 'robots',
+                content: 'Not Specified',
             }
         )
     })
