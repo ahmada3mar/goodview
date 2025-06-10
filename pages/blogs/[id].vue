@@ -282,7 +282,7 @@ watchEffect(() => {
     })
 
     useHead({
-        title: blog.value.title,
+        title: blog.value.seo?.[0]?.title,
         meta,
         style,
         titleTemplate: '%s'
