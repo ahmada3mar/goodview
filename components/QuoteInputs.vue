@@ -1,13 +1,16 @@
 <template>
   <div :class="{
-      'opacity-100 translate-y-0': props.isVisible,
-      'opacity-0 translate-y-36': !props.isVisible,
-    }"  class= " bg-[#f2f2f2] transition-all duration-1000 delay-150 ease-in-out  px-[20px] sm:px-[40px] rounded-[10px] py-[20px]">
+    'opacity-100 translate-y-0': props.isVisible,
+    'opacity-0 translate-y-36': !props.isVisible,
+  }"
+    class=" bg-[#f2f2f2] transition-all duration-1000 delay-150 ease-in-out  px-[20px] sm:px-[40px] rounded-[10px] py-[20px]">
 
     <h2 :class="{
       'opacity-100 translate-y-0': props.isVisible,
       'opacity-0 translate-y-36': !props.isVisible,
-    }" class="font-jakarta font-[600] transition-all duration-1000 delay-150 ease-in-out  text-center sm:text-start  text-[28px]  mb-[10px] text-black">Free Moving
+    }"
+      class="font-jakarta font-[600] transition-all duration-1000 delay-150 ease-in-out  text-center   text-[28px]  mb-[10px] text-black">
+      Free Moving
       Estimate</h2>
     <div :class="{
       'opacity-100 translate-y-0': props.isVisible,
