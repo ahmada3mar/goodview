@@ -14,35 +14,36 @@
                     <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Furniture Assembly
                         and
                         Disassembly Services?</h2>
+                    <p class="text-lg font-rubik md:text-[18px]  mb-5  md:font-[300] md:leading-8">
+                        We make furniture moving and setup simple, efficient, and stress-free.
+                    </p>
+                    <h3 class="text-lg font-rubik md:text-[18px]   mb-5 text-center  font-bold md:leading-8">
+                        Here’s What Sets Us Apart:
+                    </h3>
 
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
                         <b class=" font-[500]">Expert Furniture Handling: </b> Our team specializes in moving furniture
                         and
-                        expertly handles furniture assembly and disassembly to ensure your items are transported safely.
+                        expertly handles furniture assembly and disassembly.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
                         <b class=" font-[500]">Smooth Transitions: </b> Whether you’re moving heavy furniture or need
                         help
-                        setting up new pieces, we make your move easy and stress-free by providing professional
-                        furniture
-                        assembly services.
+                        setting up new pieces, we make your move easy and stress-free.
                     </p>
 
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
                         <b class=" font-[500]">Time-Saving Service: </b> We save you time by efficiently disassembling
-                        furniture
-                        for transport and reassembling it quickly at your new location so you can focus on settling in.
+                        furniture for transport and reassembling it quickly at your new location.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
                         <b class=" font-[500]">Care and Efficiency: </b> We treat your furniture with care, ensuring
-                        it’s safely
-                        packed, moved, and set up in your new home or office without any hassle.
+                        it’s
+                        safely packed, moved, and set up.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        <b class=" font-[500]">Customized Solutions: </b>Our services are tailored to meet your specific
-                        needs—whether you have large furniture pieces that need disassembly or just require furniture
-                        assembly
-                        near me for smaller items.
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
+                        <b class=" font-[500]">Customized Solutions: </b>We tailor our services to your needs, from
+                        disassembling large furniture to assembling smaller items.
                     </p>
 
                 </div>
@@ -63,28 +64,29 @@
                     <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                         <!-- Text Section -->
                         <div class="flex-1 flex flex-col">
-                            <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
+                            <h2 class="text-2xl md:text-[25px] font-extrabold font-jakarta text-stone-300">
                                 Our Furniture Assembly and Disassembly Process</h2>
-
+                            <p class="text-lg  md:text-[18px] mt-4 font-rubik  text-stone-300">At Good View Moving, we
+                                follow a
+                                simple process to give you a seamless furniture assembly
+                                and
+                                disassembly experience. </p>
 
                             <ul
                                 class=" list-decimal list-inside   md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
                                 <li><span class="font-semibold">Consultation and Assessment: </span> We begin by
                                     assessing the
-                                    furniture that needs assembly or disassembly. We understand the importance of
-                                    handling your
-                                    items properly, and we'll plan accordingly.
+                                    furniture that needs assembly or disassembly.
                                 </li>
-                                <li><span class="font-semibold">Furniture Disassembly: </span>Our furniture mover team
-                                    carefully
-                                    disassembles furniture, ensuring that no parts are lost or damaged during transport.
+                                <li><span class="font-semibold">Furniture Disassembly: </span> Our team carefully
+                                    disassembles
+                                    furniture, ensuring that no parts are lost or damaged.
                                 </li>
                                 <li><span class="font-semibold">Packing and Moving: </span> Once your furniture is
-                                    disassembled,
-                                    we pack it securely to prevent damage during the move.</li>
+                                    disassembled, we pack it securely and transport it to your new place. </li>
                                 <li><span class="font-semibold">Furniture Assembly: </span> Upon arrival at your new
                                     space, we
-                                    will reassemble your furniture quickly and efficiently so you can enjoy it.</li>
+                                    reassemble your furniture quickly and efficiently. </li>
                             </ul>
                         </div>
                         <div class="flex-1 card-img flex justify-center items-center">
@@ -96,41 +98,50 @@
 
 
                     </div>
-                    <div
-                        class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
-
-                        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
-                            Furniture
-                            Assembly and Disassembly Service?
+                    <div class="bg-primary-500 gap-2 rounded-none p-3 md:p-10 ">
+                        <h2 class="text-2xl w-full lg:w-[65%] md:text-4xl font-jakarta font-extrabold text-black">What’s
+                            Included
+                            in
+                            Our
+                            Furniture Assembly and Disassembly Service?
                         </h2>
-                        <p class="text-md md:text-lg text-black font-rubik">
-                            Our Furniture Assembly and Disassembly service covers everything from start to finish:
-                        </p>
-                        <ul
-                            class="list-disc marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2 nmb">
-                            <li> <b class=" font-[500]">Disassembling Furniture: </b>
-                                We carefully disassemble your furniture, including beds, tables, desks, and other large
-                                items,
-                                to make it easier to move and avoid damage.</li>
-                            <li> <b class=" font-[500]">Reassembling at Your New Location: </b>
-                                After the move, we’ll assemble furniture back in your new home or office, ensuring that
-                                everything is put together correctly and securely.</li>
-                            <li> <b class=" font-[500]">Furniture Mover Expertise: </b>
-                                Our team has extensive experience with all types of furniture, ensuring safe handling
-                                and
-                                efficient assembly.</li>
-                            <li>
-                                <b class=" font-[500]">Secure Packing: </b>
-                                We offer <b>
-                                    <ULink target="_blank" to="/services/packing-and-unpacking-service"
-                                        class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
-                                        Packing Services</ULink>
-                                </b>for the furniture pieces, ensuring that nothing gets scratched or broken during the
-                                move.
-                            </li>
-                        </ul>
+                        <div class="flex flex-col lg:flex-row justify-between pt-5">
+                            <div class=" mb-5 w-full lg:w-[65%]">
 
+                                <p class="text-md md:text-lg mt-4 text-black font-rubik">
+                                    Our Furniture Assembly and Disassembly service covers everything from start to
+                                    finish:
+                                </p>
 
+                                <ul
+                                    class="list-disc ml-2  marker:none list-inside md:text-[18px] text-black md:font-[400] md:leading-8 font-rubik mt-4 space-y-2">
+                                    <li><b>Disassembling Furniture:</b> We carefully disassemble your furniture to make
+                                        it
+                                        easier
+                                        to move. </li>
+                                    <li><b>Reassembling at Your New Location:</b> After the move, we’ll assemble
+                                        furniture
+                                        back in
+                                        your new place.</li>
+                                    <li><b>Furniture Mover Expertise:</b> Our team has extensive experience with all
+                                        types
+                                        of
+                                        furniture. </li>
+                                    <li><b> Protective Packing: </b>We carefully pack furniture pieces to prevent
+                                        scratches
+                                        or
+                                        damage during the move</li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="flex-1 card-img flex justify-center lg:justify-end w-full lg:w-[35%] items-end">
+                                <img alt="Commercial Moving"
+                                    class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-[340px] h-[auto] lg:h-[332px] object-cover "
+                                    v-lazy="'/imgs/Furniture-2.webp'" />
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -146,37 +157,36 @@
                         <!-- Text Section -->
                         <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
                             Furniture Assembly and Disassembly Costs – Get a Transparent Estimate</h2>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  text-black">
                             Wondering how much our Furniture Assembly and Disassembly service costs? The price varies
                             based on
                             the complexity of the job and the amount of furniture involved.
                         </p>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  text-black">
                             Here’s a breakdown of what you can expect: </p>
 
 
                         <ul
-                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                            <li> <b class=" font-[500]">Basic Furniture Assembly: </b>
-                                Expect costs starting from $100 to $200 for a standard assembly or disassembly of small
+                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[400] md:leading-8 font-rubik mt-4 space-y-2">
+                            <li> <b class=" font-[500]">Basic Furniture Assembly:</b>
+                                Expect costs starting from $100 to $200 for a standard assembly or disassembly of
+                                small
                                 furniture items.
                             </li>
                             <li> <b class=" font-[500]">Larger Furniture or Complex Assembly: </b>
-                                The cost for larger items like beds, dining tables, or office furniture typically ranges
-                                from
-                                $200 to $500. </li>
+                                The cost for larger items like beds, dining tables, or office furniture typically
+                                ranges from
+                                $200 to $500.</li>
 
                             <li> <b class=" font-[500]">Labor and Moving Costs: </b>
-                                If you're also booking a moving service, the cost of moving furniture is usually
-                                factored into
-                                your total quote. We provide moving quotes based on the distance, size of the move, and
-                                the time
-                                needed for furniture assembly and disassembly.
+                                If you're also booking a moving service, the cost of moving furniture is included in
+                                your total
+                                quote.
                             </li>
 
                         </ul>
 
-                        <p class="text-lg md:text-xl mt-4 font-rubik  italic text-black "> <span
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  italic text-black "> <span
                                 class=" font-bold">Note:
                             </span>
                             At <b class=" font-[500]">

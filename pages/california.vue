@@ -7,24 +7,23 @@
         <!-- Left side: Title/Description -->
         <div
           class="relative flex flex-col items-baseline justify-center text-center gap-6 px-5 py-10 container  h-full">
-          <h1 class="text-white text-4xl lg:text-[74px] font-extrabold leading-normal text-left font-jakarta">
-            Moving Services in <br> New Jersey
+          <h1
+            class="text-white text-[30px] sm:text-[40px] lg:text-[74px] font-extrabold leading-normal text-left font-jakarta">
+            Moving Services in <br> California
           </h1>
           <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-[2rem]">
-            If you are looking for a moving company in New Jersey, then Good View Moving and Storage is here for you!
+            Searching for trusted moving services in California? Good View Moving and Storage is ready to help! </p>
+          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
+            We know that moving anywhere in California — whether it's across town or across the state — can be a
+            stressful experience. That's why our team is committed to making your move simple, smooth, and worry-free.
           </p>
           <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
-            With years of experience, we understand the challenges of relocating through the tight and busy streets of
-            New
-            Jersey. That's why we are here to make your move easy from start to finish.
+            Our trained, professional movers handle your belongings with care, making sure everything arrives safely at
+            your new home or office.
           </p>
           <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
-            Our team of trained, professional movers takes great care of your belongings, ensuring everything arrives
-            safely at your new place.
-          </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
-            When you choose Good View Moving and Storage, you can trust that your move is in good hands.
-          </p>
+            When you choose Good View Moving and Storage, you can relax knowing your move is in experienced, trustworthy
+            hands. </p>
           <ULink to="/quote/"
             class="bg-primary-500 py-2 font-jakarta px-3 lg:px-3 xl:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold">
             Free quote
@@ -41,20 +40,17 @@
           <!-- Text Section -->
           <div>
             <h2 class="text-3xl text-center font-jakarta md:text-[60px]  leading-normal text-white mb-5 font-extrabold">
-              Moving
-              Experts You Can Count
-              On</h2>
+              Local Moving Experts You Can Count On</h2>
             <div class="w-[126px] h-[2px] my-5 mx-auto bg-primary-500"></div>
             <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-              At Good View Moving and Storage, we know that every move is a big step — and we're here to make it easier
-              for you. Based right here in New Jersey, our team offers dependable, affordable moving services with a
-              personal touch.
+              At Good View Moving and Storage, we understand that every move is a big moment — and we’re here to make it
+              as easy as possible for you. We offer reliable and affordable moving services in California, with a focus
+              on care and customer satisfaction.
             </p>
             <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-              Whether you're relocating your home, apartment, or office, we handle every detail with care. Our movers
-              are
-              familiar with the local streets and neighborhoods, and they know how to move your belongings safely and
-              efficiently.</p>
+              Whether you're moving your home, apartment, or office, our experienced team takes care of every detail. We
+              are familiar with the ins and outs of California's cities and neighborhoods, and we work diligently to
+              move your belongings safely and efficiently.</p>
             <div class="mt-[40px] !text-center">
               <QuoteInputs :is-visible="true" />
             </div>
@@ -170,7 +166,7 @@
 
     <div class="bg-black">
 
-      <div class="flex flex-col px-5 lg:px-0 container md:flex-row items-center py-[80px] mx-auto gap-[4.5rem]">
+      <div class="flex flex-col px-5 lg:px-0 container md:flex-row items-center pt-[80px] mx-auto gap-[4.5rem]">
 
         <!-- Image Section (Left - 40%) -->
         <div class="w-full md:w-[40%] card-img">
@@ -182,122 +178,80 @@
         <!-- Text Section (Right - 60%) -->
         <div class="w-full md:w-[60%]">
           <h2 class="text-3xl font-jakarta md:text-[48px] leading-normal text-white mb-5 font-extrabold">
-            Why Choose Good View Moving and Storage in New Jersey?
-          </h2>
+            Why Choose Good View Moving and Storage For Your California Moves? </h2>
           <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-            When customers ask, "Who are the best movers in New Jersey?" Good View Moving and Storage is always the
-            name that stands out.
+            When people ask, “Who are the trusted movers in California?” — Good View Moving and Storage is a name they
+            remember.
           </p>
           <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8 mt-4">
-            We've built our reputation by making every move smooth, affordable, and stress-free. Here's why so many
-            families and businesses trust us with their move:
+            We’ve earned that reputation by making every move smooth, affordable, and stress-free. Here’s why so many
+            families and businesses across California choose us:
           </p>
           <ul
             class="list-inside text-[16px] md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-            <li class="flex"> <img alt="About us" class="w-6 h-6 " v-lazy="'/imgs/check (1).png'" /><b
-                class="font-semibold ml-[10px]">Experienced Local Team</b> –
-              Movers who know New Jersey inside and out.
-            </li>
-            <li class="flex"> <img alt="About us" class="w-6 h-6 " v-lazy="'/imgs/check (1).png'" /><b
-                class="font-semibold ml-[10px]">Fair, Transparent Pricing</b> – No hidden fees, just honest quotes.
-            </li>
-            <li class="flex"> <img alt="About us" class="w-6 h-6 " v-lazy="'/imgs/check (1).png'" /><b
-                class="font-semibold ml-[10px]">Full-Service Moving</b> – From packing to storage, we handle it
-              all.
-            </li>
-            <li class="flex"> <img alt="About us" class="w-6 h-6 " v-lazy="'/imgs/check (1).png'" /><b
-                class="font-semibold ml-[10px]">Local & Long-Distance Experts</b> – Whether it's down the block or
-              across
-              state lines.</li>
-            <li class="flex"> <img alt="About us" class="w-6 h-6 " v-lazy="'/imgs/check (1).png'" /><b
-                class="font-semibold ml-[10px]">Licensed & Insured</b> – Your belongings are always in safe hands.
-            </li>
+            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                Experienced Local Team</span> – Our movers are familiar with California's cities and streets.</li>
+            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                Fair, Transparent Pricing</span> – We offer upfront and honest quotes — no hidden fees.</li>
+            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                Complete Moving Services</span> – We handle every aspect of your move</li>
+            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                Local & Long-Distance Moves</span> – Whether you’re moving within the city or across the state.</li>
+            <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
+                Licensed & Insured</span> – Your belongings are safe with us — fully licensed and insured.</li>
           </ul>
         </div>
 
       </div>
-      <!-- <div class="flex items-center justify-around flex-wrap py-10 gap-5 container mx-auto px-5 lg:px-0">
-     <img src="../images/brand_logos (6).png" alt="">
-      </div> -->
+      <div
+        class="flex items-center card-img  w-full lg:w-[900px] justify-around flex-wrap py-2 gap-5 container mx-auto px-5 lg:px-0">
+        <img alt="company logo" class="lazy-image opacity-0  " v-lazy="'/imgs/Logos-Banner (1).png'" />
+      </div>
       <div class="max-w-[1020px] px-5 lg:px-0 mx-auto ">
         <h2 class="text-3xl  font-jakarta md:text-[48px]  leading-normal text-white mb-5 font-extrabold">
-          Long Distance Moving Areas We Cover in New Jersey</h2>
+          Full-Service Moving in California</h2>
         <div class="w-[126px] h-[2px] my-5  bg-primary-500"></div>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          Good View Moving and Storage provides reliable long distance moving services across New Jersey, helping
-          residents and businesses relocate with ease. Whether you're moving to another part of the state or across
-          state lines, our experienced team is here to make the process simple.
+          At Good View Moving and Storage, we offer a full range of moving services designed to make your move simple,
+          smooth, and stress-free.
         </p>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          We cover, but are not limited to, the following routes:</p>
+          Here’s what you can count on when you move with us:
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-2 my-5  gap-6 mt-6 mb-10">
           <ul
             class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-            <span class="font-semibold font-jakarta text-[28px] underline underline-offset-2">Jersey City</span>
 
-            <li>Jersey City to New York City </li>
-            <li>Jersey City to Kiryas Joel</li>
-            <li>Jersey City to New Rochelle</li>
-            <li>Jersey City to Harrison</li>
-            <li>Jersey City to Albany</li>
-
-            <li>Jersey City to Buffalo</li>
-
-          </ul>
-          <ul
-            class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-            <span class="font-semibold font-jakarta text-[28px] underline underline-offset-2">
-              Montclair</span>
-
-            <li>Montclair to New York City </li>
-            <li>Montclair to Kiryas Joel</li>
-            <li>Montclair to New Rochelle</li>
-            <li>Montclair to Harrison</li>
-            <li>Montclair to Albany</li>
-
-            <li>Montclair to Buffalo </li>
+            <li>Residential Moving </li>
+            <li>Commercial & Office Moves </li>
+            <li>Long-Distance Moving</li>
+            <li>Packing & Unpacking Services</li>
+            <li>Furniture Disassembly & Assembly</li>
+            <li>Specialty Moving</li>
+            <li>Short- & Long-Term Storage</li>
 
           </ul>
+
         </div>
       </div>
       <div class="max-w-[1020px] px-5 lg:px-0 mx-auto">
         <h2 class="text-3xl  font-jakarta md:text-[48px]  leading-normal text-white mb-5 font-extrabold">
-          Local Moving Areas We Cover in New Jersey </h2>
+          Moving Areas We Cover in California</h2>
         <div class="w-[126px] h-[2px] my-5  bg-primary-500"></div>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          Whether you're moving to a new home, apartment, or office nearby, our experienced local movers are ready to
-          help.
+          Good View Moving and Storage offers dependable long-distance moving services across California. Whether you're
+          moving to another part of the state or across state lines, our experienced team is here to make the process
+          smooth and stress-free.
         </p>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          We proudly serve, but are not limited to, the following routes:</p>
+          We cover, but are not limited to, the following popular cities:</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <ul
             class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mb-7 mt-4 space-y-2">
-            <span class="font-semibold font-jakarta text-[28px] underline underline-offset-2">Jersey City</span>
 
-            <li>Jersey City to Montclair </li>
-            <li>Jersey City to Princeton</li>
-            <li>Jersey City to Ridgewood</li>
-            <li>Jersey City to Hoboken </li>
-            <li>Jersey City to Newark </li>
-
-
-
+            <li>Los Angeles </li>
           </ul>
-          <ul
-            class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-            <span class="font-semibold font-jakarta text-[28px] underline underline-offset-2">
-              Montclair</span>
 
-            <li>Montclair to Jersey City </li>
-            <li>Montclair to Princeton </li>
-            <li>Montclair to Ridgewood </li>
-            <li>Montclair to Hoboken </li>
-            <li>Montclair to Newark </li>
-
-
-
-          </ul>
         </div>
       </div>
       <div class=" py-4">
@@ -339,7 +293,7 @@
               </div>
             </div>
             <button
-              class="absolute left-[1px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:bg-[#0F3A4A] hover:scale-110 transition disabled:opacity-40 z-10"
+              class="absolute left-[1px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition disabled:opacity-40 z-10"
               @click="prevSlide">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -347,7 +301,7 @@
               </svg>
             </button>
             <button
-              class="absolute right-[3px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:bg-[#0F3A4A] hover:scale-110 transition z-10"
+              class="absolute right-[3px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition z-10"
               @click="nextSlide">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -375,20 +329,18 @@
         <!-- Text Section (Right - 60%) -->
         <div class="w-full md:w-[60%]">
           <h2 class="text-3xl font-jakarta md:text-[48px] leading-normal text-white mb-5 font-extrabold">
-            Get Your Free Moving Estimate Today
-          </h2>
+            Get Your Free Moving Quote Today </h2>
           <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-            Ready to move with a trusted New Jersey moving company? Contact Good View Moving and Storage today for
+            Planning a move in California? Let Good View Moving and Storage take the stress out of your relocation.
+            Contact us today for a free, no-obligation estimate and see how easy moving can be with a trusted team by
             your
-            free quote, and let our team make your move simple and stress-free.
+            side.
           </p>
           <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8 mt-4">
-            We're here to answer your questions, help you plan your move, and provide the reliable, professional
-            service
-            you deserve.
+            We’re here to answer your questions, help plan the details and provide reliable services you deserve
           </p>
           <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-bold md:leading-8 mt-4">
-            Call us or request your free estimate online — let Good View Moving and Storage handle the heavy lifting!
+            Call us or request your free quote online — let Good View Moving and Storage do the heavy lifting for you!
           </p>
           <div class="mt-4">
             <ULink to="/quote/"
@@ -399,6 +351,29 @@
         </div>
       </div>
     </div>
+    <div class="bg-black">
+      <div class=" max-w-[1360px] mx-auto py-6 ">
+        <h2 class="text-4xl font-bold mb-4 mt-12 pb-4 text-white font-jakarta">Frequently Aks Questions</h2>
+        <div class="space-y-6 text-primary-500">
+          <div v-for="(faq, index) in faqs" :key="index" class="bg-[#1e1e1e] rounded-lg">
+            <div
+              class="border border-[#ffd343] bg-zinc-900 rounded-lg p-5 flex justify-between items-center cursor-pointer"
+              @click="toggleFaq(index)">
+              <h3 class="font-semibold text-base md:text-lg font-jakarta">{{ faq.question }}</h3>
+              <svg
+                :class="`w-6 h-6 transition-transform duration-300 transform ${openFaq === index ? 'rotate-180' : ''}`"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" :stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div v-if="openFaq === index" class="p-6">
+              <p class="leading-[26px] md:leading-[32px] font-[300] font-rubik">{{ faq.answer }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
@@ -409,12 +384,35 @@
 export default {
   data() {
     return {
+      openFaq: null,
       currentSlide: 0,
       testimonials: [
         { id: 1, name: "Thomas _.", rating: 5, review: "In my opinion, Goodview Moving and Storage is the best. Everyone on staff was punctual and worked well. Despite being cautious, they wasted no time. My belongings arrived in pristine condition, and I could not be happier with their service." },
         { id: 2, name: "Robert M.", rating: 5, review: "I had to move my furniture into storage for a few months before my new home was ready. I reached out to this company and they came through for me. Their movers labeled and packed everything so well that unpacking later was a breeze. So grateful for their attention to detail!" },
         { id: 3, name: "Melvin C.", rating: 5, review: "Thanks to Goodview Moving and Storage for making our moving experience a breeze. The team worked efficiently. The staff is friendly and easy working with. Clean, fast, with reasonable price. I highly recommend their service!" },
         { id: 4, name: "Thomas R.", rating: 5, review: "Goodview Moving and Storage was so easy to work with. Quotations were received promptly via phone call and text messages and there were no surprise charges like you may have with other movers during final billing. They also helped with assembling furniture. Thanks for a smooth move!" }
+      ],
+      faqs: [
+        {
+          question: "What is the best way to find reliable movers in California?",
+          answer: "The best way to find reliable movers in California is to look for licensed, insured companies with positive customer reviews. We are fully licensed and experienced, providing trusted moving services across the state."
+        },
+        {
+          question: "How much does it cost to hire movers in California?",
+          answer: "The cost of hiring movers in California depends on factors such as distance, move size, and the services required. We offer transparent, no-obligation quotes so you know exactly what to expect with no hidden fees."
+        },
+        {
+          question: "Do moving companies in California offer packing services?",
+          answer: "Yes, many professional moving companies, including Good View Moving and Storage, offer full or partial packing services to make your move easier and protect your belongings."
+        },
+        {
+          question: "Can I book a same-day or last-minute move in California?",
+          answer: "Yes, depending on availability, same-day or last-minute moves are possible. We recommend contacting us as soon as possible to secure your preferred time."
+        },
+        {
+          question: "Do movers provide long-distance relocation services within California?",
+          answer: "Yes, Good View Moving and Storage offers both local and long-distance moving services throughout California, helping residents and businesses relocate anywhere across the state or beyond."
+        }
       ],
       windowWidth: typeof window !== "undefined" ? window.innerWidth : 1024,
     };
@@ -437,6 +435,9 @@ export default {
     window.removeEventListener("resize", this.handleResize);
   },
   methods: {
+    toggleFaq(index) {
+      this.openFaq = this.openFaq === index ? null : index;
+    },
     handleResize() {
       this.windowWidth = window.innerWidth;
     },
