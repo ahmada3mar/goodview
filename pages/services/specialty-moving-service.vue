@@ -13,23 +13,23 @@
                     <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Specialty Moving
                         Services?
                     </h2>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px]  mb-5  md:font-[300] md:leading-8">
                         <b class=" font-[500]">Expert Handling of Delicate Items: </b> Our team is skilled in moving
                         fragile and
                         valuable items like pianos, artwork, and antiques, ensuring they are safely packed, moved, and
                         reassembled.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px]  mb-5  md:font-[300] md:leading-8">
                         <b class=" font-[500]">Specialized Equipment: </b> We use the right equipment to move large or
                         heavy
                         items, such as pool tables, appliances, and heavy machinery, ensuring safe transport.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5  md:font-[300] md:leading-8">
                         <b class=" font-[500]">Tailored Services: </b> Whether you're moving a grand piano or a delicate
                         piece
                         of art, we provide relocation services that are customized to meet your unique needs.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5  md:font-[300] md:leading-8">
                         <b class=" font-[500]">Experienced Movers: </b> Our team of professional <b>
                             <ULink target="_blank" to="/services/furniture-assembly-and-disassembly-service"
                                 class="font-[500]  hover:font-[700] hover:decoration-primary-500 underline ">
@@ -39,7 +39,7 @@
                         they deserve.
                     </p>
 
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px]  mb-5  md:font-[300] md:leading-8">
                         <b class=" font-[500]">Comprehensive Moving Solutions: </b> From art shipping to antique movers,
                         we
                         offer a full range of specialty moving services to handle all kinds of valuable or heavy items.
@@ -63,28 +63,33 @@
                     <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                         <!-- Text Section -->
                         <div class="flex-1 flex flex-col">
-                            <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
+                            <h2 class="text-2xl md:text-[25px] font-extrabold font-jakarta text-stone-300">
                                 Our Specialty Moving Process – How We Make It Easy for You</h2>
 
                             <ul
-                                class=" list-decimal  marker:none list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                                <li><span class="font-semibold">Consultation and Assessment: </span>We start by
+                                class=" list-decimal  marker:none list-inside md:text-[18px] text-white md:font-[400] leading-[36px] font-rubik mt-4 space-y-2">
+                                <li class="mb-3"><span class="font-semibold">Consultation and Assessment: </span>We
+                                    start by
                                     understanding
                                     your move's unique needs, whether it's for a pool table, piano, or antique
-                                    furniture. Our
-                                    team then provides a detailed plan for safe transport.
+                                    furniture.
                                 </li>
-                                <li><span class="font-semibold">Packing & Preparation: </span> We use specialized <b>
+                                <li class="mb-3"><span class="font-semibold">Packing & Preparation: </span> We use
+                                    specialized
+                                    <b>
                                         <ULink target="_blank" to="/services/packing-and-unpacking-service"
                                             class="font-[500]  hover:font-[700] hover:decoration-primary-500 underline ">
                                             packing materials</ULink>
-                                    </b> for your delicate items, ensuring everything is protected throughout the moving
-                                    process.</li>
-                                <li><span class="font-semibold">Efficient Transport: </span> Our team uses the right
+                                    </b> for your delicate items, ensuring everything is protected throughout the move.
+                                </li>
+                                <li class="mb-3"><span class="font-semibold">Efficient Transport: </span> Our team uses
+                                    the
+                                    right
                                     equipment
-                                    to move heavy and large items like appliances and pool tables with care and
-                                    efficiency.</li>
-                                <li><span class="font-semibold">Reassembly and Setup: </span>Once we arrive at your new
+                                    to move heavy and large items like appliances and pool tables with care.</li>
+                                <li class="mb-3"><span class="font-semibold">Reassembly and Setup: </span>Once we arrive
+                                    at your
+                                    new
                                     location, we provide reassembly services to ensure everything is properly set up.
                                 </li>
                             </ul>
@@ -98,36 +103,51 @@
 
 
                     </div>
-                    <div
-                        class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
 
-                        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
+                    <div class="bg-primary-500 gap-2 rounded-none p-3 md:p-10">
+                        <h2 class="text-2xl w-full lg:w-[65%] md:text-4xl font-jakarta font-extrabold text-black">
+                            What’s
+                            Included in
+                            Our
                             Specialty
                             Moving Service?
                         </h2>
-                        <ul
-                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                            <li> <b class=" font-[500]">Pool Table Movers: </b>
-                                We offer expert services for moving and assembling pool tables, ensuring they’re
-                                properly packed
-                                and set up in your new space.</li>
-                            <li> <b class=" font-[500]">Piano Movers: </b>
-                                Whether you have a small upright or a grand piano, we specialize in carefully and
-                                efficiently
-                                moving pianos.</li>
-                            <li> <b class=" font-[500]">Heavy Equipment Movers: </b>
-                                Our team is equipped to move large machinery or heavy equipment, ensuring they are
-                                transported
-                                safely and securely.</li>
-                            <li> <b class=" font-[500]">Appliance Movers: </b>
-                                From refrigerators to washing machines, our appliance moving services ensure your bulky
-                                items
-                                are moved without damage.</li>
-                            <li> <b class=" font-[500]">Art Shipping and Antique Movers: </b>
-                                We provide expert packing and transportation for delicate artwork and valuable antiques,
-                                giving
-                                them the special care they require.</li>
-                        </ul>
+                        <div class="flex flex-col lg:flex-row justify-between pt-5">
+                            <div class=" mb-5 w-full lg:w-[65%]">
+
+                                <ul
+                                    class="list-disc ml-2  marker:none list-inside md:text-[18px] text-black md:font-[400] leading-[36px] font-rubik mt-4 space-y-2">
+                                    <li> <b class=" font-[500]">Pool Table Movers: </b>
+                                        We offer expert services for moving and assembling pool tables, ensuring they’re
+                                        properly packed.
+                                    </li>
+                                    <li> <b class=" font-[500]">Piano Movers: </b>
+                                        Whether you have a small upright or a grand piano, we specialize in carefully
+                                        and
+                                        efficiently
+                                        moving pianos.</li>
+                                    <li> <b class=" font-[500]">Heavy Equipment Movers: </b>
+                                        Our team is equipped to move large machinery or heavy equipment.</li>
+                                    <li> <b class=" font-[500]">Appliance Movers: </b>
+                                        From refrigerators to washing machines, our appliance moving services ensure
+                                        your
+                                        bulky
+                                        items
+                                        are moved without damage.</li>
+                                    <li> <b class=" font-[500]">Art Shipping and Antique Movers: </b>
+                                        We provide expert packing and transportation for delicate artwork and valuable
+                                        antiques.
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="flex-1 card-img flex   justify-center lg:justify-end w-full lg:w-[35%] items-end">
+                                <img alt="Specialty Moving"
+                                    class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-[340px] h-[auto] lg:h-[332px] object-cover "
+                                    v-lazy="'/imgs/Specialty-Moving-2.webp'" />
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -143,17 +163,17 @@
                         <!-- Text Section -->
                         <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
                             Specialty Moving Costs – Get a Transparent Estimate</h2>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  text-black">
                             The cost of Specialty Moving services depends on the type of items being moved and the
                             complexity of
                             the move.
                         </p>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  text-black">
                             Here’s a rough idea of the costs you can expect:
                         </p>
 
                         <ul
-                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
+                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[400] md:leading-[36px] font-rubik mt-4 space-y-2">
                             <li> <b class=" font-[500]">Appliance Moving: </b>
                                 Costs typically range from $100 to $300, depending on the item’s size and distance.
                             </li>
@@ -178,7 +198,7 @@
                         </ul>
 
 
-                        <p class="text-lg md:text-xl mt-4 font-rubik italic  text-black "> <span
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik italic  text-black "> <span
                                 class=" font-bold">Note:
                             </span>At <b>
                                 <ULink target="_blank" to="/"

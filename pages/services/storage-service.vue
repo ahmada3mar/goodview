@@ -11,39 +11,34 @@
                 <!-- Text Section -->
                 <div class="md:w-2/3">
                     <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Storage Units?</h2>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        <b class=" font-[500]"> Variety of Storage Unit Sizes: </b>Whether you’re looking for a 5x5
-                        storage unit
-                        for a few boxes or a 10x10 storage unit to store furniture, we offer various storage unit sizes
-                        to
-                        accommodate all your needs.
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300]  mb-5  md:leading-8">
+                        <b class=" font-[500]"> Variety of Storage Unit Sizes: </b>We offer various storage unit sizes
+                        from 5x5
+                        storage unit to a 10x10 storage unit.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] mb-5  md:leading-8">
                         <b class=" font-[500]"> Climate-Controlled Storage: </b> Our climate-controlled storage units
                         protect
-                        sensitive items like electronics, artwork, and antiques from extreme temperatures and humidity.
+                        sensitive items like electronics, artwork, and antiques.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] mb-5  md:leading-8">
                         <b class=" font-[500]"> Affordable Storage Options: </b>We offer affordable storage solutions
                         without
-                        compromising on security or convenience. We believe storing your belongings should be
-                        cost-effective,
-                        and we provide transparent pricing.
+                        compromising on security or convenience.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] mb-5  md:leading-8">
                         <b class=" font-[500]"> Flexible Terms: </b>Whether you need short-term storage during a move or
-                        long-term storage for an indefinite period, our terms are designed to be flexible and fit your
-                        needs.
+                        long-term storage for an indefinite period, our terms are designed to be flexible.
                     </p>
 
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] mb-5  md:leading-8">
                         <b class=" font-[500]"> Top-Notch Security: </b> Our storage units are equipped with 24/7
                         surveillance,
-                        gated access, and secure locks, so you can rest easy knowing your belongings are safe.
+                        gated access, and secure locks.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        <b class=" font-[500]"> Easy Access and Convenience: </b>Our units are designed for easy access,
-                        so you
+                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] mb-5  md:leading-8">
+                        <b class=" font-[500]"> Easy Access and Convenience: </b>Our units are designed for easy
+                        access, so you
                         can come and go as you please, whenever it's most convenient for you.
                     </p>
 
@@ -65,32 +60,28 @@
                     <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                         <!-- Text Section -->
                         <div class="flex-1 flex flex-col">
-                            <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
-                                Storage Unit Options We Offer</h2>
+                            <h2 class="text-2xl md:text-[25px] font-extrabold font-jakarta text-stone-300">
+                                Our Storage Service Process</h2>
+                            <p class="text-lg  md:text-[18px] mt-4 font-rubik  text-stone-300 ">
+                                We follow a simple, secure process to ensure your belongings are protected and easily
+                                accessible:
+                            </p>
 
                             <ul
                                 class="  list-disc  marker:none list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                                <li><span class="font-semibold">Standard Storage Units: </span>Our standard units come
-                                    in
-                                    various sizes to accommodate your needs. From a 5x5 storage unit for a small
-                                    apartment’s
-                                    worth of belongings to a 10x10 storage unit for larger spaces.
+                                <li><span class="font-semibold">Consultation & Assessment: </span> We evaluate your
+                                    storage
+                                    needs and recommend the right unit size.
                                 </li>
-                                <li><span class="font-semibold">Climate-Controlled Storage: </span> We offer
-                                    climate-controlled
-                                    storage for temperature-sensitive items such as electronics, fine art, documents, or
-                                    delicate antiques. This type of storage guarantees that your belongings are
-                                    protected from
-                                    fluctuations in temperature and humidity. </li>
-                                <li><span class="font-semibold">Long-Term Storage: </span> Our long-term storage units
-                                    are the
-                                    perfect solution if you're looking for a place to store items for an extended
-                                    period. Our
-                                    flexible pricing and contracts allow you to store your items for as long as you
-                                    need. </li>
-                                <li><span class="font-semibold">Moving and Storage Services: </span>We provide storage
-                                    units and
-                                    moving and storage services to make your move reliable. </li>
+                                <li><span class="font-semibold">Packing & Preparation:</span> If needed, we assist with
+                                    packing
+                                    items to ensure they’re storage-ready.</li>
+                                <li><span class="font-semibold">Secure Transport: </span> We safely move your
+                                    belongings to the
+                                    storage unit. </li>
+                                <li><span class="font-semibold">Organized Storage:</span> Items are placed in the unit
+                                    with care
+                                    for easy access and maximum space efficiency. </li>
                             </ul>
                         </div>
                         <div class="flex-1 card-img flex justify-center items-center">
@@ -102,27 +93,41 @@
 
 
                     </div>
-                    <!-- <div
-                    class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
+                    <div class="bg-primary-500 gap-2 rounded-none p-3 md:p-10">
+                        <h2 class="text-2xl w-full lg:w-[65%] md:text-4xl font-jakarta font-extrabold text-black">
+                            Storage Unit Options We Offer
+                        </h2>
+                        <div class="flex flex-col lg:flex-row justify-between pt-5">
+                            <div class=" mb-5 w-full lg:w-[65%]">
 
-                    <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">
-                        Storage Unit Cost – Get a Transparent Estimate
-                    </h2>
-                    <ul
-                    class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                    <li><b>Pool Table Movers: </b>
-                        We offer expert services for moving and assembling pool tables, ensuring they’re properly packed and set up in your new space.</li>
-                    <li> <b>Piano Movers: </b>
-                        Whether you have a small upright or a grand piano, we specialize in carefully and efficiently moving pianos.</li>
-                    <li><b>Heavy Equipment Movers: </b>
-                        Our team is equipped to move large machinery or heavy equipment, ensuring they are transported safely and securely.</li>
-                    <li> <b>Appliance Movers: </b>
-                        From refrigerators to washing machines, our appliance moving services ensure your bulky items are moved without damage.</li>
-                        <li> <b>Art Shipping and Antique Movers: </b>
-                            We provide expert packing and transportation for delicate artwork and valuable antiques, giving them the special care they require.</li>
-</ul>
-                </div> -->
+                                <ul
+                                    class="list-disc ml-2  marker:none list-inside md:text-[18px] text-black md:font-[400] md:leading-8 font-rubik mt-4 space-y-2">
+                                    <li><b>Standard Storage Units:</b> Our standard units come in various sizes from a
+                                        5x5
+                                        storage
+                                        unit to a 10x10 storage unit to accommodate your needs. </li>
+                                    <li><b>Climate-Controlled Storage:</b> We offer climate-controlled storage for
+                                        temperature-sensitive items.</li>
+                                    <li><b>Long-Term Storage:</b> Our long-term storage units are the perfect solution
+                                        if
+                                        you're
+                                        looking for a place to store items for an extended period. </li>
+                                    <li><b>Moving and Storage Services: </b> We provide storage units and moving and
+                                        storage
+                                        services to make your move reliable. </li>
 
+                                </ul>
+
+                            </div>
+
+                            <div
+                                class="flex-1 card-img flex  justify-center lg:justify-end w-full lg:w-[35%] items-end">
+                                <img alt="Storage serivces"
+                                    class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-[340px] h-[auto] lg:h-[300px] object-cover "
+                                    v-lazy="'/imgs/Storage-Units-2.webp'" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -137,17 +142,17 @@
                         <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
 
                             Storage Unit Cost – Get a Transparent Estimate</h2>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  text-black">
                             The cost of a storage unit depends on several factors, such as size, type of storage, and
                             duration
                             of rental.
                         </p>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  text-black">
                             Here’s a general idea of what you can expect:
                         </p>
 
                         <ul
-                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
+                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[400] leading-[36px] font-rubik mt-4 space-y-2">
                             <li> <b class=" font-[500]">5x5 Storage Unit:</b>
                                 These smaller units typically cost between $50 and $100 per month, depending on location
                                 and
@@ -172,7 +177,7 @@
                         </ul>
 
 
-                        <p class="text-lg md:text-xl mt-4 italic font-rubik  text-black "> <span
+                        <p class="text-lg md:text-[18px] mt-4 italic font-rubik  text-black "> <span
                                 class=" font-bold">Note:
                             </span>At <b>
                                 <ULink target="_blank" to="/"

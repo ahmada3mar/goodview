@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col  h-20 text-lg z-50">
     <!-- Top Contact Bar -->
-    <div class="w-full bg-black fixed py-0 top-0 z-50 px-5 md:px-10">
+    <div class="w-full bg-black fixed py-0 top-0 z-50 px-5 md:px-[1.5rem]">
       <div class="container  flex flex-row md:flex-row h-20 justify-between items-center">
         <!-- Logo -->
         <ULink @click="expand = false" to="/" class="flex h-full  w-[224px] mx-0 md:mx-0 items-center">
@@ -9,7 +9,7 @@
         </ULink>
 
         <!-- Social Icons / Navigation Links -->
-        <div class="hidden h-full lg:flex items-center gap-1 lg:gap-[10px] xl:gap-10 text-sm font-bold text-white">
+        <div class="hidden h-full lg:flex items-center gap-1 lg:gap-[6px] xl:gap-10 text-sm font-bold text-white">
           <ULink to="/about-us/"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             About us</ULink>

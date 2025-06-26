@@ -1,7 +1,7 @@
 <template>
     <div>
         <Banner background="/imgs/Packing-and-Unpackingbanner.webp" class=" md:h-[35rem]" title="Packing and Unpacking"
-            text="At Good View Moving, we specialize in professional Packing and Unpacking services designed to save you time, effort, and stress. Whether you're looking for residential packing solutions, need help with commercial unpacking services, or require fragile item packing, our team is here to assist every step of the way. ">
+            text="At Good View Moving, we specialize in professional packing and unpacking services designed to save you time, effort, and stress. Whether you're looking for residential packing solutions, need help with commercial unpacking services, or require fragile item packing, our team is here to assist every step of the way. ">
             <template #body="isVisible">
                 <QuoteInputs :isVisible="isVisible.isVisible" />
             </template>
@@ -13,38 +13,33 @@
                     <h2 class="text-2xl font-jakarta md:text-4xl mb-5 font-extrabold">Why Choose Our Packing and
                         Unpacking
                         Services?</h2>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        At Good View Moving, we make your move stress-free with expert Packing and Unpacking services.
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
+                        At Good View Moving, we make your move stress-free with expert packing and unpacking services.
+                    </p>
+                    <h3 class="text-lg font-rubik md:text-[18px]   mb-5 text-center  font-bold md:leading-8">
                         Here’s
-                        why you should choose us:</p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                        why you should Choose Us:
+                    </h3>
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
                         <b class=" font-[500]">Experienced Movers: </b> Our professional team ensures your belongings
-                        are packed
-                        and unpacked safely.
+                        are
+                        packed and unpacked safely.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        <b class=" font-[500]">Custom Solutions: </b> We offer tailored packing services for both
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
+                        <b class=" font-[500]">Custom Solutions: </b>We offer tailored packing services for both
                         residential
-                        and <b>
-                            <ULink target="_blank" to="/services/commercial-moving-service"
-                                class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
-                                Commercial Moves</ULink>
-                        </b>.
+                        and commercial moves.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-                        <b class=" font-[500]">High-Quality Materials: </b> We use the best packing supplies for moving,
-                        including materials for <b>
-                            <ULink target="_blank" to="/services/specialty-moving-service"
-                                class="font-[500] hover:font-[700] hover:decoration-primary-500 underline ">
-                                fragile item packing</ULink>
-                        </b>.
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
+                        <b class=" font-[500]">High-Quality Materials: </b> We use the best packing supplies, including
+                        materials for fragile item packing.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
                         <b class=" font-[500]">Efficient Unpacking: </b> Our unpacking assistance helps you quickly
                         settle into
                         your new space.
                     </p>
-                    <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+                    <p class="text-lg font-rubik md:text-[18px] mb-5 md:font-[300] md:leading-8">
                         <b class=" font-[500]">Reliable Service: </b> Transparent pricing with no hidden fees, so you
                         know
                         exactly what to expect.
@@ -68,43 +63,36 @@
                     <div class="flex flex-col lg:flex-row bg-zinc-900 rounded-none p-3 md:p-10 gap-5 md:gap-10">
                         <!-- Text Section -->
                         <div class="flex-1 flex flex-col">
-                            <h2 class="text-3xl md:text-4xl   font-extrabold font-jakarta text-stone-300">
+                            <h2 class="text-2xl md:text-[25px] font-extrabold font-jakarta text-stone-300">
                                 Our Packing and Unpacking Process</h2>
-                            <p class="text-lg md:text-xl mt-4 font-rubik  text-stone-300 ">
-                                At Good View Moving, we follow a simple, efficient process to ensure your Packing and
-                                Unpacking
-                                experience is seamless.
+                            <p class="text-lg md:text-[18px] mt-4 font-rubik  text-stone-300 ">
+                                At Good View Moving, we follow a simple and efficient process to give you a smooth
+                                experience.
                             </p>
 
                             <ul
-                                class="list-disc  marker:none list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                                <li><span class="font-semibold">Consultation and Assessment: </span> We start by
-                                    discussing your
-                                    needs and understanding the scope of your move. We'll then walk you through the
-                                    different
-                                    packing supplies and help you decide on the best approach.
+                                class="list-disc  marker:none list-inside md:text-[18px] text-white md:font-[400] leading-[36px] font-rubik mt-4 space-y-2">
+                                <li><span class="font-semibold">Consultation and Assessment: </span>We begin by
+                                    understanding
+                                    your needs and explaining the best packing options for your move.
 
                                 </li>
-                                <li><span class="font-semibold">Packing: </span>Our team arrives with all the necessary
-                                    packing
-                                    supplies for moving, including sturdy boxes, bubble wrap, packing tape, and special
-                                    materials for packing fragile items.</li>
+                                <li><span class="font-semibold">Packing: </span>Our team arrives fully equipped with
+                                    boxes,
+                                    bubble wrap, packing tape, and materials for fragile items. </li>
                                 <li><span class="font-semibold">Packing & Loading:</span> Our movers and packers
                                     carefully
                                     handle your belongings for a secure move.</li>
-                                <li><span class="font-semibold">Transporting:</span> Once everything is packed securely,
-                                    we
-                                    handle the transport, making sure your items are safely moved to your new home or
-                                    office.
+                                <li><span class="font-semibold">Transporting:</span> Once packed, we safely transport
+                                    your
+                                    belongings to your new home or office.
                                 </li>
                                 <li><span class="font-semibold">Unpacking Assistance: </span>Upon arrival, we offer
                                     unpacking
-                                    assistance to get you settled in quickly. Whether you need help organizing your
-                                    kitchen or
-                                    arranging your office space, we’ll do it all!</li>
-                                <li><span class="font-semibold">Final Touch: </span>We offer tips for efficient
-                                    unpacking to
-                                    help you get started in your new space without any stress.</li>
+                                    assistance to get you settled in quickly. </li>
+                                <li><span class="font-semibold">Final Touch: </span>We share tips and are available for
+                                    any
+                                    follow-up support. </li>
                             </ul>
                         </div>
                         <div class="flex-1 card-img flex justify-center items-center">
@@ -116,42 +104,45 @@
 
 
                     </div>
-                    <div
-                        class="flex flex-initial md:flex-1 flex-col bg-primary-500  gap-5 rounded-none p-3 md:p-10  justify-between">
-
-                        <h2 class="text-2xl md:text-4xl font-jakarta font-extrabold text-black">What’s Included in Our
-                            Packing
-                            and Unpacking Services?
+                    <div class="bg-primary-500 gap-2 rounded-none p-3 md:p-10">
+                        <h2 class="text-2xl w-full lg:w-[65%] md:text-4xl font-jakarta font-extrabold text-black">
+                            What’s
+                            Included in
+                            Our
+                            Packing and Unpacking Services?
                         </h2>
-                        <p class="text-md md:text-lg text-black font-rubik">
-                            Our Packing and Unpacking service includes everything you need to make your move effortless:
-                        </p>
-                        <ul
-                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-                            <li> <b class=" font-[500]">Full-Service Packing and Unpacking: </b>
-                                Our team will pack furniture, personal items, and even fragile possessions using
-                                professional-grade packing materials. We'll also carefully unpack everything once we
-                                arrive at
-                                your new location.</li>
-                            <li> <b class=" font-[500]">Moving Box Packing: </b>
-                                We will pack all your items in the appropriate moving boxes to ensure they are secure
-                                and easy
-                                to transport. We can also provide special boxes for items like artwork or electronics if
-                                needed.
-                            </li>
-                            <li> <b class=" font-[500]">Fragile Item Packing: </b>
-                                We understand how important your delicate items are. That's why we take extra care with
-                                fragile
-                                belongings like glassware, antiques, and electronics.</li>
-                            <li> <b class=" font-[500]">Unpacking Assistance: </b>
-                                Once we’ve transported your belongings to your new location, we’ll help unpack and
-                                organize your
-                                things efficiently, ensuring that your move-in process is as smooth as possible.</li>
+                        <div class="flex flex-col lg:flex-row justify-between pt-5">
+                            <div class=" mb-5 w-full lg:w-[65%]">
 
-                        </ul>
+                                <p class="text-md md:text-lg mt-4 text-black font-rubik">
+                                    Our Packing and Unpacking service includes everything you need to make your move
+                                    effortless:
+                                </p>
 
+                                <ul
+                                    class="list-disc ml-2  marker:none list-inside md:text-[18px] text-black md:font-[400] md:leading-8 font-rubik mt-4 space-y-2">
+                                    <li><b>Full-Service Packing & Unpacking</b> We professionally pack and unpack
+                                        furniture.</li>
+                                    <li><b>Box Packing:</b>We securely pack your items in the right boxes.</li>
+                                    <li><b>Fragile Item Packing:</b>Extra care for delicate items like glassware and
+                                        antiques.</li>
+                                    <li><b> Unpacking Support: </b> We help unpack and organize your space so you can
+                                        settle
+                                        in
+                                        quickly and stress-free.</li>
+
+                                </ul>
+
+                            </div>
+
+                            <div
+                                class="flex-1 card-img flex  justify-center lg:justify-end w-full lg:w-[35%] items-end">
+                                <img alt="packing and unpacking Moving"
+                                    class="lazy-image opacity-0  rounded-[10px] transition-opacity duration-500 ease-in-out w-[340px] h-[auto] lg:h-[332px] object-cover "
+                                    v-lazy="'/imgs/Packing-and-Unpacking-2.webp'" />
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
             </div>
@@ -165,40 +156,40 @@
                         <!-- Text Section -->
                         <h2 class="text-2xl md:text-4xl   font-extrabold font-jakarta text-black">
                             Packing and Unpacking Costs – Get a Transparent Estimate</h2>
-                        <p class="text-lg md:text-xl mt-4 font-rubik  text-black">
-                            One of our customers' most common questions is about the packing and unpacking costs. Here's
-                            an idea
-                            of what you can expect when you choose our Packing and Unpacking services:
+                        <p class="text-lg md:text-[18px] font-[400] mt-4 font-rubik  text-black">
+                            One of our customers' most common questions is about the packing and unpacking costs.
+                        </p>
+                        <p class="text-lg md:text-[18px] font-[400] mt-4 font-rubik  text-black">
+                            Here's an idea of what you can expect:
                         </p>
 
+
                         <ul
-                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
+                            class="list-disc  marker:none list-inside md:text-[18px] text-black md:font-[400] md:leading-8 font-rubik mt-4 space-y-2">
                             <li> <b class=" font-[500]">Packing Materials: </b>
-                                We provide all the packing supplies for moving, including boxes, bubble wrap, and
-                                special
-                                materials for packing fragile items. The cost of packing materials ranges from $100 to
-                                $300 for
-                                a typical move.
+                                We provide all the packing supplies, including boxes, bubble wrap, and special
+                                materials. The
+                                cost of packing materials ranges from $100 to $300 for a typical move.
                             </li>
                             <li> <b class=" font-[500]">Labor Costs: </b>
-                                On average, packing services for a standard 2-3 bedroom home cost between $300 and $600.
-                                Prices
+                                On average, packing services for a standard 2-3 bedroom home cost between $300 and
+                                $600. Prices
                                 can go up for larger homes or commercial moves.
                             </li>
                             <li> <b class=" font-[500]">Unpacking Assistance:</b>
                                 If you choose our unpacking assistance, this is usually priced at a flat rate of around
                                 $150 to
-                                $350, depending on how many rooms need to be unpacked and organized.
+                                $350.
                             </li>
                             <li> <b class=" font-[500]">Full-Service Packing and Unpacking: </b>
-                                If you need a complete packing and unpacking solution, including everything from moving
-                                box
-                                packing to organizing your new space, expect to pay between $500 and $1,200.
+                                If you need a complete packing and unpacking package, including everything from
+                                packing to
+                                organizing, expect to pay between $500 and $1,200.
                             </li>
 
                         </ul>
 
-                        <p class="text-lg md:text-xl mt-4 font-rubik  italic text-black "> <span
+                        <p class="text-lg md:text-[18px] mt-4 font-rubik  italic text-black "> <span
                                 class=" font-bold">Note:
                             </span>
                             At <b>
