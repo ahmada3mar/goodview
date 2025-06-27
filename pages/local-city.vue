@@ -120,11 +120,11 @@
                 <tbody>
 
                   <tr class="hover:bg-zinc-700">
-                    <td class="px-4 font-rubik py-3">Studio / 1 Bedroom</td>
+                    <td class="px-4 font-rubik py-3"> Few Items</td>
                     <td class="px-4 font-rubik py-3 text-center">$100 - $200</td>
                   </tr>
                   <tr class="bg-zinc-800 hover:bg-zinc-700">
-                    <td class="px-4 font-rubik py-3">Few Items</td>
+                    <td class="px-4 font-rubik py-3">Studio / 1 Bedroom</td>
                     <td class="px-4 font-rubik py-3 text-center">$200 - $300</td>
                   </tr>
                   <tr class="hover:bg-zinc-700 ">
@@ -361,7 +361,7 @@
                     </div>
                     <div class="relative">
 
-                      <p class="text-black font-[300] text-[18px] font-rubik leading-relaxed">{{ testimonial.review }}
+                      <p class="text-black font-[300] text-[16px] font-rubik leading-relaxed">{{ testimonial.review }}
                       </p>
                     </div>
                   </div>
@@ -463,76 +463,26 @@
                 Moving Blogs
               </h3>
 
-              <div class="space-y-4">
-                <!-- Blog 1 -->
-                <div class="flex gap-3 group cursor-pointer">
-                  <div class="flex-shrink-0">
-                    <!-- <img :src="blogs[0].image" alt="Top 10 Moving Tips for First-Time Movers"
-                      class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" /> -->
-                  </div>
-                  <div class="flex-1">
-                    <p
-                      class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
-                      Top 10 Moving Tips for First-Time Movers
-                    </p>
-                  </div>
+              <div class="space-y-4 mb-4">
+                <div v-for="blog in blogs.slice(0, 5)" :key="blog.id">
+                  <NuxtLink :to="`/blogs/${blog.slug}`">
+                    <div class="flex gap-3 group cursor-pointer">
+                      <div class="flex-shrink-0">
+                        <img :src="blog.image" :alt="blog.title"
+                          class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" />
+                      </div>
+                      <div class="flex-1">
+                        <h2
+                          class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
+                          {{ blog.title }}
+                        </h2>
+
+                      </div>
+                    </div>
+
+                  </NuxtLink>
                 </div>
 
-                <!-- Blog 2 -->
-                <div class="flex gap-3 group cursor-pointer">
-                  <div class="flex-shrink-0">
-                    <!-- <img :src="blogs[1].image" alt="How to Pack Fragile Items Safely"
-                      class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" /> -->
-                  </div>
-                  <div class="flex-1">
-                    <p
-                      class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
-                      How to Pack Fragile Items Safely
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog 3 -->
-                <div class="flex gap-3 group cursor-pointer">
-                  <div class="flex-shrink-0">
-                    <!-- <img :src="blogs[2].image" alt="Moving During Winter: Essential Guide"
-                      class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" /> -->
-                  </div>
-                  <div class="flex-1">
-                    <p
-                      class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
-                      Moving During Winter: Essential Guide
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog 4 -->
-                <div class="flex gap-3 group cursor-pointer">
-                  <div class="flex-shrink-0">
-                    <!-- <img :src="blogs[3].image" alt="Office Relocation Best Practices"
-                      class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" /> -->
-                  </div>
-                  <div class="flex-1">
-                    <p
-                      class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
-                      Office Relocation Best Practices
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog 5 -->
-                <div class="flex gap-3 group cursor-pointer">
-                  <div class="flex-shrink-0">
-                    <!-- <img :src="blogs[4].image" alt="Storage Solutions for Your Move"
-                      class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" /> -->
-                  </div>
-                  <div class="flex-1">
-                    <p
-                      class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
-                      Storage Solutions for Your Move
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -560,6 +510,7 @@ export default {
         from: null,
         to: null
       },
+      blogs: [],
       currentSlide: 0,
       windowWidth: typeof window !== "undefined" ? window.innerWidth : 1024,
       faqs: [
@@ -584,28 +535,7 @@ export default {
           answer: "You will need sturdy boxes in various sizes, packing tape, bubble wrap or packing paper, markers for labeling, and a box cutter. Consider specialty boxes for fragile items like dishes or wardrobe boxes for clothes."
         }
       ],
-      blogs: [
-        {
-          title: "Top 10 Moving Tips for First-Time Movers",
-          image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "How to Pack Fragile Items Safely",
-          image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "Moving During Winter: Essential Guide",
-          image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "Office Relocation Best Practices",
-          image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "Storage Solutions for Your Move",
-          image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=100&fit=crop&crop=center"
-        }
-      ],
+
       testimonials: [
         { id: 1, name: "Thomas _.", rating: 5, review: "In my opinion, Goodview Moving and Storage is the best. Everyone on staff was punctual and worked well. Despite being cautious, they wasted no time. My belongings arrived in pristine condition, and I could not be happier with their service." },
         { id: 2, name: "Robert M.", rating: 5, review: "I had to move my furniture into storage for a few months before my new home was ready. I reached out to this company and they came through for me. Their movers labeled and packed everything so well that unpacking later was a breeze. So grateful for their attention to detail!" },
@@ -626,6 +556,7 @@ export default {
   },
   mounted() {
     window.addEventListener("resize", this.handleResize);
+    this.fetchBlogs();
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.handleResize);
@@ -648,6 +579,11 @@ export default {
       this.errors.to = !this.toZIP;
       if (this.errors.from || this.errors.to) return;
       this.$router.push({ path: '/quote', query: { from: this.fromZIP, to: this.toZIP } });
+    },
+    fetchBlogs() {
+      $fetch(`https://api.goodview-moving.com/api/blogs`).then(res => {
+        this.blogs = res;
+      });
     }
   }
 };

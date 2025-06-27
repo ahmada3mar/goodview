@@ -1,27 +1,27 @@
 <template>
   <div>
-    <div class="relative bg-cover bg-center overflow-hidden  lg:h-[765px] flex items-center justify-center"
-      style="background-image: url('/imgs/topbannerimage (1).png')">
+    <div class="relative bg-cover bg-center overflow-hidden  lg:h-[650px] flex items-center justify-center"
+      style="background-image: url('/imgs/California.webp')">
       <div class="absolute inset-0 !bg-gradient-to-t !from-black/80 !to-black/80"></div>
       <div class="flex flex-row max-w-[1360px] w-full  mx-auto justify-between items-center">
         <!-- Left side: Title/Description -->
         <div
           class="relative flex flex-col items-baseline justify-center text-center gap-6 px-5 py-10 container  h-full">
           <h1
-            class="text-white text-[30px] sm:text-[40px] lg:text-[74px] font-extrabold leading-normal text-left font-jakarta">
+            class="text-white text-[30px] sm:text-[40px] lg:text-[52px] font-extrabold leading-normal text-left font-jakarta">
             Moving Services in <br> California
           </h1>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-[2rem]">
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
             Searching for trusted moving services in California? Good View Moving and Storage is ready to help! </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
             We know that moving anywhere in California — whether it's across town or across the state — can be a
             stressful experience. That's why our team is committed to making your move simple, smooth, and worry-free.
           </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
             Our trained, professional movers handle your belongings with care, making sure everything arrives safely at
             your new home or office.
           </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
             When you choose Good View Moving and Storage, you can relax knowing your move is in experienced, trustworthy
             hands. </p>
           <ULink to="/quote/"
@@ -39,7 +39,7 @@
         <div class="flex flex-col   text-center max-w-[1020px] md:flex-row items-center py-[80px] mx-auto gap-6">
           <!-- Text Section -->
           <div>
-            <h2 class="text-3xl text-center font-jakarta md:text-[60px]  leading-normal text-white mb-5 font-extrabold">
+            <h2 class="text-3xl text-center font-jakarta md:text-[38px]  leading-normal text-white mb-5 font-extrabold">
               Local Moving Experts You Can Count On</h2>
             <div class="w-[126px] h-[2px] my-5 mx-auto bg-primary-500"></div>
             <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
@@ -172,7 +172,7 @@
         <div class="w-full md:w-[40%] card-img">
           <img alt="About us"
             class="lazy-image opacity-0 rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-full object-cover"
-            v-lazy="'/imgs/whychoosenew (1).jpg'" />
+            v-lazy="'/imgs/california2.webp'" />
         </div>
 
         <!-- Text Section (Right - 60%) -->
@@ -288,7 +288,7 @@
                 </div>
                 <div class="relative">
 
-                  <p class="text-black font-[300] text-[18px] leading-relaxed">{{ testimonial.review }} </p>
+                  <p class="text-black font-[300] text-[16px] leading-relaxed">{{ testimonial.review }} </p>
                 </div>
               </div>
             </div>
@@ -352,9 +352,9 @@
       </div>
     </div>
     <div class="bg-black">
-      <div class=" max-w-[1360px] mx-auto py-6 ">
+      <div class=" max-w-[1020px] mx-auto py-6 ">
         <h2 class="text-4xl font-bold mb-4 mt-12 pb-4 text-white font-jakarta">Frequently Aks Questions</h2>
-        <div class="space-y-6 text-primary-500">
+        <div class="space-y-6 text-white">
           <div v-for="(faq, index) in faqs" :key="index" class="bg-[#1e1e1e] rounded-lg">
             <div
               class="border border-[#ffd343] bg-zinc-900 rounded-lg p-5 flex justify-between items-center cursor-pointer"

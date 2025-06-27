@@ -335,6 +335,8 @@ watchEffect(() => {
 }
 
 :deep(.blog-content ul) {
+    margin-left: 30px;
+    list-style-type: disc;
     font-family: 'Rubik', 'sans-serif';
     margin: 10px 5px;
 }
@@ -410,7 +412,7 @@ watchEffect(() => {
 :deep(.blog-content a) {
     text-decoration: underline !important;
     font-family: 'Plus Jakarta Sans' !important;
-    color: #836b23 !important;
+    color: #18181b !important;
     transition: all 0.3s ease !important;
 }
 
