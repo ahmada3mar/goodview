@@ -1,1 +1,0 @@
-import{_,c,o as a,d as e,p as s,b7 as r,b8 as l}from"./i8cB6y-4.js";const d={};function p(o,f){const n=r,t=l;return a(),c("div",null,[e(n),s(o.$slots,"default"),e(t)])}const u=_(d,[["render",p]]);export{u as default};
