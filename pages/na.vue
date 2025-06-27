@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative bg-cover bg-center overflow-hidden  lg:h-[765px] flex items-center justify-center"
+    <div class="relative bg-cover bg-center overflow-hidden  lg:h-[650px] flex items-center justify-center"
       style="background-image: url('/imgs/topbannerimage (1).png')">
       <div class="absolute inset-0 !bg-gradient-to-t !from-black/80 !to-black/80"></div>
       <div class="flex flex-row max-w-[1360px] w-full  mx-auto justify-between items-center">
@@ -8,22 +8,24 @@
         <div
           class="relative flex flex-col items-baseline justify-center text-center gap-6 px-5 py-10 container  h-full">
           <h1
-            class="text-white text-[30px] sm:text-[40px] lg:text-[74px] font-extrabold leading-normal text-left font-jakarta">
-            Moving Services in <br> New York
+            class="text-white text-[30px] sm:text-[40px] lg:text-[52px] font-extrabold leading-normal text-left font-jakarta">
+            Moving Services in <br> North Carolina
           </h1>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-[2rem]">
-            Planning a move in New York? Good View Moving and Storage is here to help make the process easy,
-            stress-free, and efficient.
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
+            Looking for reliable movers in North Carolina? Good View Moving and Storage is here to make your next move
+            safe and stress-free.
           </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
-            We understand the challenges of moving in busy New York neighborhoods — from navigating narrow streets to
-            handling high-rise buildings. That's why our experienced team is dedicated to providing reliable and
-            affordable moving services tailored to your specific needs.
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
+            We understand that moving — whether it’s across the street or across the state — can feel overwhelming.
+            That’s why our experienced team is ready to handle every detail of your North Carolina move, making sure
+            your belongings arrive safely and on time.
           </p>
 
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
-            Whether you’re relocating your home, apartment, or business, we take care of every detail to ensure your
-            move is smooth from start to finish. </p>
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
+            From homes to apartments to offices, we offer professional moving services you can trust across North
+            Carolina. </p>
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
+            With Good View Moving and Storage, you can relax knowing your move is in expert hands.</p>
           <ULink to="/quote/"
             class="bg-primary-500 py-2 font-jakarta px-3 lg:px-3 xl:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold">
             Free quote
@@ -39,18 +41,18 @@
         <div class="flex flex-col   text-center max-w-[1020px] md:flex-row items-center py-[80px] mx-auto gap-6">
           <!-- Text Section -->
           <div>
-            <h2 class="text-3xl text-center font-jakarta md:text-[60px]  leading-normal text-white mb-5 font-extrabold">
-              Full-Service Movers, You Can Count On</h2>
+            <h2 class="text-3xl text-center font-jakarta md:text-[38px]  leading-normal text-white mb-5 font-extrabold">
+              Trusted North Carolina Movers You Can Count on</h2>
             <div class="w-[126px] h-[2px] my-5 mx-auto bg-primary-500"></div>
             <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-              At Good View Moving and Storage, we understand that every move is an important step — and we're here to
-              make it easier for you. Serving customers across New York, our team offers reliable and affordable moving
-              services with a personal touch.
+              At Good View Moving and Storage, we understand that moving is more than just transporting boxes — it’s
+              about starting a new chapter. That’s why our team is committed to making your move in North Carolina
+              smooth, affordable, and stress-free.
             </p>
             <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-              Whether you're moving your home, apartment, or office, we handle every detail with care. Our movers are
-              familiar with the streets, neighborhoods, and unique challenges of New York, and they work diligently to
-              ensure your belongings arrive safely and on time.</p>
+              Whether you're relocating your home, apartment, or business, we handle your belongings with care and
+              precision. Our experienced movers are familiar with the ins and outs of North Carolina's cities, towns,
+              and neighborhoods, ensuring your move is safe and on schedule.</p>
             <div class="mt-[40px] !text-center">
               <QuoteInputs :is-visible="true" />
             </div>
@@ -172,33 +174,35 @@
         <div class="w-full md:w-[40%] card-img">
           <img alt="About us"
             class="lazy-image opacity-0 rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-full object-cover"
-            v-lazy="'/imgs/whychoosenew (1).jpg'" />
+            v-lazy="'/imgs/north-carolina2.webp'" />
         </div>
 
         <!-- Text Section (Right - 60%) -->
         <div class="w-full md:w-[60%]">
           <h2 class="text-3xl font-jakarta md:text-[48px] leading-normal text-white mb-5 font-extrabold">
-            Why New York Clients Choose Good View Moving ?</h2>
+            Why Choose Good View Moving and Storage in North Carolina? </h2>
           <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-            When it comes to finding trusted movers in New York, Good View Moving and Storage is the name people rely
-            on.
+            When it comes to finding reliable movers in North Carolina, Good View Moving and Storage is a name you can
+            trust. We’ve built our reputation by providing safe, affordable, and stress-free moves for families and
+            businesses across the state.
           </p>
           <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8 mt-4">
-            We’ve earned our reputation by delivering smooth, efficient, and stress-free moves for homes and businesses
-            across the state. Here’s what sets us apart:
+            Here’s what makes us the right choice for your next move:
           </p>
           <ul
             class="list-inside text-[16px] md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
-                Skilled New York Movers </span> – A team that understands the challenges of moving in New York.</li>
+                Local Knowledge</span> – Our team has in-depth knowledge of North Carolina's cities, towns, and
+              communities. </li>
             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
-                Clear, Upfront Pricing </span> – Honest, competitive rates with no hidden costs.</li>
+                Affordable, Transparent Pricing</span> – We provide honest, upfront quotes with no hidden costs. </li>
             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
-                Complete Moving Services </span> – We handle everything from packing to storage</li>
+                Complete Moving Solutions</span> – From packing to long-distance, we handle every detail with care.</li>
             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
-                Local & Interstate Moving</span> – Whether you're moving within New York or across state lines. </li>
+                Licensed, Insured, and Experienced</span> – Your belongings are in safe hands with our trained movers.
+            </li>
             <li><span class="text-primary-500">✔ &nbsp;</span><span class="font-semibold">
-                Fully Licensed & Insured</span> – Giving you peace of mind with every move.</li>
+                Stress-Free Service from Start to Finish</span> – We take the hassle out of moving.</li>
           </ul>
         </div>
 
@@ -209,12 +213,12 @@
       </div>
       <div class="max-w-[1020px] px-5 lg:px-0 mx-auto">
         <h2 class="text-3xl  font-jakarta md:text-[48px]  leading-normal text-white mb-5 font-extrabold">
-          Services We Provide in New York</h2>
+          What Good View Moving Offers?</h2>
         <div class="w-[126px] h-[2px] my-5  bg-primary-500"></div>
 
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          At Good View Moving and Storage, we offer a full range of professional moving services to make your relocation
-          smooth and hassle-free. Here’s what we can help you with:
+          We provide a wide range of professional moving solutions designed to make your relocation simple and
+          stress-free:
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <ul
@@ -233,34 +237,38 @@
       </div>
       <div class="max-w-[1020px] px-5 lg:px-0 mx-auto ">
         <h2 class="text-3xl  font-jakarta md:text-[48px]  leading-normal text-white mb-5 font-extrabold">
-          Moving Areas We Cover in New York</h2>
+          Moving Areas We Cover in North Carolina</h2>
         <div class="w-[126px] h-[2px] my-5  bg-primary-500"></div>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          Good View Moving and Storage proudly offers trusted moving services throughout New York. Whether you’re moving
-          within the city, across the state, or beyond, our skilled team is ready to make your move smooth and
-          hassle-free.
+          Good View Moving and Storage proudly provides dependable moving services throughout North Carolina, making it
+          easy for residents to relocate without stress. Whether you're moving within your city, across the state, or
+          beyond, our team is ready to make your move smooth and efficient.
         </p>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          We serve, but are not limited to, the following areas: </p>
+          We serve, but are not limited to, the following areas:</p>
         < <div class="grid grid-cols-1 md:grid-cols-2 my-5  gap-6 mt-6 mb-10">
           <ul
             class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
 
-            <li>New York City</li>
-            <li>Kiryas Joel </li>
-            <li>New Rochelle</li>
-            <li>Harrison</li>
-            <li>Albany</li>
-            <li>Buffalo</li>
+            <li>Charlotte</li>
+            <li>Durham</li>
+            <li>Wilmington</li>
+            <li>Greensboro</li>
+            <li>Apex</li>
+            <li>Fuquay-Varina</li>
+            <li>Leland</li>
+            <li>Waxhaw</li>
+            <li>Holly Springs</li>
           </ul>
           <ul
             class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-            <li>Rochester</li>
-            <li>Syracuse</li>
-            <li>Schenectady</li>
-            <li>Ithaca</li>
-            <li>Massapequa Park</li>
-            <li>Greece</li>
+            <li>Clayton</li>
+            <li>Kannapolis</li>
+            <li>Cary</li>
+            <li>Winston-Salem</li>
+            <li>Asheville</li>
+            <li>Hickory</li>
+            <li>Fayetteville</li>
           </ul>
 
       </div>
@@ -300,7 +308,7 @@
               </div>
               <div class="relative">
 
-                <p class="text-black font-[300] text-[18px] leading-relaxed">{{ testimonial.review }} </p>
+                <p class="text-black font-[300] text-[16px] leading-relaxed">{{ testimonial.review }} </p>
               </div>
             </div>
           </div>
@@ -341,17 +349,16 @@
       <!-- Text Section (Right - 60%) -->
       <div class="w-full md:w-[60%]">
         <h2 class="text-3xl font-jakarta md:text-[48px] leading-normal text-white mb-5 font-extrabold">
-          Get Your Free Moving Estimate Today </h2>
+          Get Your Free Moving Estimate Today</h2>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
-          Moving in New York? Let Good View Moving and Storage take the stress out of the process. Contact us today for
-          a free, no-obligation quote and see how easy moving can be with experienced professionals by your side.
+          Planning a move in North Carolina? Let Good View Moving and Storage take the stress off your shoulders.
         </p>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8 mt-4">
-          Our team is here to answer your questions and guide you through every step of your move.
+          We’re here to answer your questions, guide you through the moving process, and provide the dependable service
+          you can count on.
         </p>
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-bold md:leading-8 mt-4">
-          Call us or request your free estimate online — let Good View Moving and Storage make your next move simple
-          and worry-free!
+          Contact us today for a free moving estimate — and let us handle the heavy lifting for you.
         </p>
         <div class="mt-4">
           <ULink to="/quote/"
@@ -363,9 +370,9 @@
     </div>
   </div>
   <div class="bg-black">
-    <div class=" max-w-[1360px] mx-auto py-6 ">
+    <div class=" max-w-[1020px] mx-auto py-6 ">
       <h2 class="text-4xl font-bold mb-4 mt-12 pb-4 text-white font-jakarta">Frequently Aks Questions</h2>
-      <div class="space-y-6 text-primary-500">
+      <div class="space-y-6 text-white">
         <div v-for="(faq, index) in faqs" :key="index" class="bg-[#1e1e1e] rounded-lg">
           <div
             class="border border-[#ffd343] bg-zinc-900 rounded-lg p-5 flex justify-between items-center cursor-pointer"
@@ -404,24 +411,24 @@ export default {
       ],
       faqs: [
         {
-          question: "How much does it cost to hire movers in New York?",
-          answer: "To choose a reliable moving company in New York, look for licensed and insured movers with positive customer reviews and transparent pricing. We provide trusted and professional services in New York and across the state."
+          question: "What should I know before moving to North Carolina?",
+          answer: "Before moving to North Carolina, consider factors like traffic patterns, weather conditions, and building access, especially in cities like Charlotte, Raleigh, and Durham. "
         },
         {
-          question: "How much does it cost to hire movers in New York?",
-          answer: "Moving costs in New York depends on factors such as distance, the size of your move, and additional services like packing or storage. We offer free, upfront estimates so you know exactly what to expect."
+          question: "Are there affordable moving services available in North Carolina?",
+          answer: "Yes, many professional movers, including Good View Moving and Storage, offer reliable services at competitive rates, with options to fit your budget without sacrificing quality."
         },
         {
-          question: "Do moving companies in New York offer packing services?",
-          answer: "Yes, many professional moving companies, including Good View Moving and Storage, offer both full and partial packing services to help protect your belongings during the move."
+          question: "How early should I book movers in North Carolina?",
+          answer: "It's best to book your movers at least 2–4 weeks in advance, especially during peak moving seasons, such as summer or the end of the month. Early booking ensures availability and the best rates."
         },
         {
-          question: "Can I hire movers for a same-day or last-minute move in New York?",
-          answer: "Same-day or last-minute moves may be available, depending on scheduling. We recommend contacting movers as early as possible to check availability."
+          question: "Do movers in North Carolina handle moves in both urban and rural areas?",
+          answer: "Yes, we provide services for both urban moves in cities like Charlotte and Greensboro, as well as rural relocations across the state."
         },
         {
-          question: "Do movers in New York handle both local and long-distance moves?",
-          answer: "Yes, we offer both local moves within New York and long-distance relocations across state lines, providing reliable service for both homes and businesses."
+          question: "Can movers in North Carolina help with long-distance relocations to other states?",
+          answer: "Absolutely. We offer both local and long-distance moving services, making it easy to relocate within North Carolina or across state lines."
         }
       ],
       windowWidth: typeof window !== "undefined" ? window.innerWidth : 1024,

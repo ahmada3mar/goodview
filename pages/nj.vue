@@ -1,28 +1,28 @@
 <template>
   <div>
-    <div class="relative bg-cover bg-center overflow-hidden  lg:h-[765px] flex items-center justify-center"
-      style="background-image: url('/imgs/topbannerimage (1).png')">
+    <div class="relative bg-cover bg-center overflow-hidden  lg:h-[650px] flex items-center justify-center"
+      style="background-image: url('/imgs/New-Jersey.webp')">
       <div class="absolute inset-0 !bg-gradient-to-t !from-black/80 !to-black/80"></div>
       <div class="flex flex-row max-w-[1360px] w-full  mx-auto justify-between items-center">
         <!-- Left side: Title/Description -->
         <div
           class="relative flex flex-col items-baseline justify-center text-center gap-6 px-5 py-10 container  h-full">
           <h1
-            class="text-white text-[30px] sm:text-[40px] lg:text-[74px] font-extrabold leading-normal text-left font-jakarta">
+            class="text-white text-[30px] sm:text-[40px] lg:text-[52px] font-extrabold leading-normal text-left font-jakarta">
             Moving Services in <br> New Jersey
           </h1>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-[2rem]">
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
             If you are looking for a moving company in New Jersey, then Good View Moving and Storage is here for you!
           </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
+          <p class="text-white text-left text-[16px] md:text-[18px]l font-light max-w-3xl font-jakarta leading-[2rem]">
             With years of experience, we understand the challenges of relocating through the tight and busy streets of
             New Jersey. That’s why we are here to make your move easy from start to finish.
           </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
             Our team of trained, professional movers takes great care of your belongings, ensuring everything arrives
             safely at your new place.
           </p>
-          <p class="text-white text-left text-[16px] md:text-xl font-light max-w-3xl font-jakarta leading-relaxed">
+          <p class="text-white text-left text-[16px] md:text-[18px] font-light max-w-3xl font-jakarta leading-[2rem]">
             When you choose Good View Moving and Storage, you can trust that your move is in good hands. </p>
           <ULink to="/quote/"
             class="bg-primary-500 py-2 font-jakarta px-3 lg:px-3 xl:px-7 rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold">
@@ -39,7 +39,7 @@
         <div class="flex flex-col   text-center max-w-[1020px] md:flex-row items-center py-[80px] mx-auto gap-6">
           <!-- Text Section -->
           <div>
-            <h2 class="text-3xl text-center font-jakarta md:text-[60px]  leading-normal text-white mb-5 font-extrabold">
+            <h2 class="text-3xl text-center font-jakarta md:text-[38px]  leading-normal text-white mb-5 font-extrabold">
               Moving
               Experts You Can Count
               On</h2>
@@ -174,7 +174,7 @@
         <div class="w-full md:w-[40%] card-img">
           <img alt="About us"
             class="lazy-image opacity-0 rounded-[10px] transition-opacity duration-500 ease-in-out w-full h-full object-cover"
-            v-lazy="'/imgs/whychoosenew (1).jpg'" />
+            v-lazy="'/imgs/new-jersey2.webp '" />
         </div>
 
         <!-- Text Section (Right - 60%) -->
@@ -278,7 +278,7 @@
                 </div>
                 <div class="relative">
 
-                  <p class="text-black font-[300] text-[18px] leading-relaxed">{{ testimonial.review }} </p>
+                  <p class="text-black font-[300] text-[16px] leading-relaxed">{{ testimonial.review }} </p>
                 </div>
               </div>
             </div>
@@ -342,9 +342,9 @@
       </div>
     </div>
     <div class="bg-black">
-      <div class=" max-w-[1360px] mx-auto py-6 ">
+      <div class=" max-w-[1020px] mx-auto py-6 ">
         <h2 class="text-4xl font-bold mb-4 mt-12 pb-4 text-white font-jakarta">Frequently Aks Questions</h2>
-        <div class="space-y-6 text-primary-500">
+        <div class="space-y-6 text-white">
           <div v-for="(faq, index) in faqs" :key="index" class="bg-[#1e1e1e] rounded-lg">
             <div
               class="border border-[#ffd343] bg-zinc-900 rounded-lg p-5 flex justify-between items-center cursor-pointer"

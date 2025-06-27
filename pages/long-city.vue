@@ -121,11 +121,11 @@
                 <tbody>
 
                   <tr class="hover:bg-zinc-700">
-                    <td class="px-4 font-rubik py-3">Studio / 1 Bedroom</td>
+                    <td class="px-4 font-rubik py-3"> Few Items</td>
                     <td class="px-4 font-rubik py-3 text-center">$100 - $200</td>
                   </tr>
                   <tr class="bg-zinc-800 hover:bg-zinc-700">
-                    <td class="px-4 font-rubik py-3">Few Items</td>
+                    <td class="px-4 font-rubik py-3">Studio / 1 Bedroom</td>
                     <td class="px-4 font-rubik py-3 text-center">$200 - $300</td>
                   </tr>
                   <tr class="hover:bg-zinc-700 ">
@@ -307,7 +307,7 @@
                     </div>
                     <div class="relative">
 
-                      <p class="text-black font-[300] text-[18px] font-rukik leading-relaxed">{{ testimonial.review }}
+                      <p class="text-black font-[300] text-[16px] font-rukik leading-relaxed">{{ testimonial.review }}
                       </p>
                     </div>
                   </div>
@@ -408,19 +408,26 @@
                 Moving Blogs
               </h3>
 
-              <div class="space-y-4">
-                <div v-for="(blog, index) in blogs" :key="index" class="flex gap-3 group cursor-pointer">
-                  <div class="flex-shrink-0">
-                    <img :src="blog.image" :alt="blog.title"
-                      class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" />
-                  </div>
-                  <div class="flex-1">
-                    <p
-                      class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
-                      {{ blog.title }}
-                    </p>
-                  </div>
+              <div class="space-y-4 mb-4">
+                <div v-for="blog in blogs.slice(0, 5)" :key="blog.id">
+                  <NuxtLink :to="`/blogs/${blog.slug}`">
+                    <div class="flex gap-3 group cursor-pointer">
+                      <div class="flex-shrink-0">
+                        <img :src="blog.image" :alt="blog.title"
+                          class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" />
+                      </div>
+                      <div class="flex-1">
+                        <h2
+                          class="text-sm group-hover:text-[#FFD343] font-rubik transition-colors duration-200 leading-tight">
+                          {{ blog.title }}
+                        </h2>
+
+                      </div>
+                    </div>
+
+                  </NuxtLink>
                 </div>
+
               </div>
             </div>
           </div>
@@ -447,6 +454,7 @@ export default {
         from: null,
         to: null
       },
+      blogs: [],
       currentSlide: 0,
       windowWidth: typeof window !== "undefined" ? window.innerWidth : 1024,
       faqs: [
@@ -483,28 +491,28 @@ export default {
           answer: "To choose the right local moving company, compare reviews, verify licensing and insurance, request clear estimates, and look for reliable, experienced movers. Many customers consider Good View Moving and Storage among the best local movers for affordable and trusted service."
         }
       ],
-      blogs: [
-        {
-          title: "Top 10 Moving Tips for First-Time Movers",
-          image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "How to Pack Fragile Items Safely",
-          image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "Moving During Winter: Essential Guide",
-          image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "Office Relocation Best Practices",
-          image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=150&h=100&fit=crop&crop=center"
-        },
-        {
-          title: "Storage Solutions for Your Move",
-          image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=100&fit=crop&crop=center"
-        }
-      ],
+      // blogs: [
+      //   {
+      //     title: "Top 10 Moving Tips for First-Time Movers",
+      //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=100&fit=crop&crop=center"
+      //   },
+      //   {
+      //     title: "How to Pack Fragile Items Safely",
+      //     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=100&fit=crop&crop=center"
+      //   },
+      //   {
+      //     title: "Moving During Winter: Essential Guide",
+      //     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=150&h=100&fit=crop&crop=center"
+      //   },
+      //   {
+      //     title: "Office Relocation Best Practices",
+      //     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=150&h=100&fit=crop&crop=center"
+      //   },
+      //   {
+      //     title: "Storage Solutions for Your Move",
+      //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=100&fit=crop&crop=center"
+      //   }
+      // ],
       currentSlide: 0,
       testimonials: [
         { id: 1, name: "Thomas _.", rating: 5, review: "In my opinion, Goodview Moving and Storage is the best. Everyone on staff was punctual and worked well. Despite being cautious, they wasted no time. My belongings arrived in pristine condition, and I could not be happier with their service." },
@@ -528,6 +536,7 @@ export default {
   },
   mounted() {
     window.addEventListener("resize", this.handleResize);
+    this.fetchblogs();
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.handleResize);
@@ -550,6 +559,13 @@ export default {
       this.errors.to = !this.toZIP;
       if (this.errors.from || this.errors.to) return;
       this.$router.push({ path: '/quote', query: { from: this.fromZIP, to: this.toZIP } });
+    },
+    fetchblogs() {
+      $fetch(`https://api.goodview-moving.com/api/blogs`).then(res => {
+        this.blogs = res;
+
+      }
+      )
     }
   }
 }
