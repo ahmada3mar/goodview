@@ -141,25 +141,14 @@
         <p class="text-[16px] font-rubik text-white md:text-[18px] md:font-[300] md:leading-8">
           We serve, but are not limited to, the following areas: </p>
         < <div class="grid grid-cols-1 md:grid-cols-2 my-5  gap-6 mt-6 mb-10">
-          <ul
-            class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-
-            <li>New York City</li>
-            <li>Kiryas Joel </li>
-            <li>New Rochelle</li>
-            <li>Harrison</li>
-            <li>Albany</li>
-            <li>Buffalo</li>
-          </ul>
-          <ul
-            class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mt-4 space-y-2">
-            <li>Rochester</li>
-            <li>Syracuse</li>
-            <li>Schenectady</li>
-            <li>Ithaca</li>
-            <li>Massapequa Park</li>
-            <li>Greece</li>
-          </ul>
+                 <ul
+                        class="list-disc list-inside underline md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mb-7 mt-4 space-y-2">
+                        <li>
+                            <ULink to="/ny/city-page" class="hover:text-primary-500 text-white transition-colors">
+                                Durham
+                            </ULink>
+                        </li>
+                    </ul>
 
       </div>
     </div>

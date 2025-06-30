@@ -247,11 +247,13 @@
           We cover, but are not limited to, the following popular cities:</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <ul
-            class="list-disc list-inside md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mb-7 mt-4 space-y-2">
-
-            <li>Los Angeles </li>
-          </ul>
-
+                        class="list-disc list-inside underline md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mb-7 mt-4 space-y-2">
+                        <li>
+                            <ULink to="/ca/city-page" class="hover:text-primary-500 text-white transition-colors">
+                                Durham
+                            </ULink>
+                        </li>
+                    </ul>
         </div>
       </div>
       <div class=" py-4">
