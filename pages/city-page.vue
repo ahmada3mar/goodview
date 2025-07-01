@@ -6,7 +6,7 @@
         <nav class="flex items-center space-x-2 text-sm text-gray-400 mb-8">
           <NuxtLink to="/" class="hover:text-white transition-colors">Home</NuxtLink>
           <span>/</span>
-          <NuxtLink to="/ca" class="hover:text-white transition-colors">ca</NuxtLink>
+          <NuxtLink to="/" class="hover:text-white transition-colors">ca</NuxtLink>
           <span>/</span>
           <span v-if="city" class="text-white">Durham</span>
         </nav>
