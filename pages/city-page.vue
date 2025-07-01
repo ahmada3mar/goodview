@@ -6,7 +6,7 @@
         <nav class="flex items-center space-x-2 text-sm text-gray-400 mb-8">
           <NuxtLink to="/" class="hover:text-white transition-colors">Home</NuxtLink>
           <span>/</span>
-          <NuxtLink to="" class="hover:text-white transition-colors">ny</NuxtLink>
+          <NuxtLink to="/" class="hover:text-white transition-colors">ca</NuxtLink>
           <span>/</span>
           <span v-if="city" class="text-white">Durham</span>
         </nav>
@@ -44,7 +44,7 @@
             <!-- Routes List -->
             <div class="space-y-0">
               <div v-for="route in losAngelesRoutes" :key="route.slug" class="group">
-                <NuxtLink :to="`/ny/${route.slug}`"
+                <NuxtLink
                   class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-900 transition-colors duration-200">
                   <div class="w-5 h-5 mr-4 flex-shrink-0">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@
                     </svg>
                   </div>
                   <span class="group-hover:text-white transition-colors duration-200">
-                    {{ route.label }}
+                    Dhram
                   </span>
                 </NuxtLink>
               </div>
@@ -68,9 +68,5 @@
 </template>
 
 <script setup>
-const losAngelesRoutes = [
-  { slug: 'durham-to-ithaca', label: 'durham to ithaca' },
-  { slug: 'durham-to-schenectady', label: 'durham to schenectady' },
-  { slug: 'durham-to-syracuse', label: 'durham to syracuse' },
-];
+
 </script>
