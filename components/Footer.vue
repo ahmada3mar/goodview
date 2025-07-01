@@ -106,8 +106,8 @@
                                 </div>
                                 <div itemscope itemtype="http://schema.org/LocalBusiness"
                                     class="flex bg-opacity-35 rounded-full hover:text-primary-500   font-rubik text-[16px] p-1 text-white font-[400]">
-                                    <span itemprop="email"><a
-                                            href="mailto:Service@fasttransportation.info">Service@fasttransportation.info</a></span>
+                                    <span itemprop="email"><ULink
+                                            to="mailto:Service@fasttransportation.info">Service@fasttransportation.info</ULink></span>
                                 </div>
                             </div>
                             <div class="flex w-full  gap-3">
@@ -148,5 +148,7 @@
         </div>
     </template>
 <script>
+import { ULink } from '#components';
+
 
 </script>

@@ -111,6 +111,9 @@
                             </div>
                             <div class="flex justify-between text-white mt-2 mb-4 px-2">
                                 <p class="font-bold">From: <span class="font-normal">{{ fromCity }}</span></p>
+                                <p class="font-bold text-center">
+                                    <span v-if="distance">Distance: <span class="font-normal">{{ distance }}</span></span>
+                                </p>
                                 <p class="font-bold text-right">To: <span class="font-normal">{{ toCity }}</span></p>
                             </div>
                         </div>
@@ -615,6 +618,7 @@ export default {
                 { id: 4, name: "Thomas R.", rating: 5, review: "Goodview Moving and Storage was so easy to work with. Quotations were received promptly via phone call and text messages and there were no surprise charges like you may have with other movers during final billing. They also helped with assembling furniture. Thanks for a smooth move!" }
             ],
             windowWidth: typeof window !== "undefined" ? window.innerWidth : 1024,
+            distance: null,
         };
     },
     watch: {
@@ -705,11 +709,24 @@ export default {
                 origin: cityA,
                 destination: cityB,
                 travelMode: google.maps.TravelMode.DRIVING
-            }, function (response, status) {
+            }, (response, status) => {
                 if (status === "OK") {
                     directionsRenderer.setDirections(response);
+                    // Get distance from response
+                    if (
+                        response.routes &&
+                        response.routes[0] &&
+                        response.routes[0].legs &&
+                        response.routes[0].legs[0] &&
+                        response.routes[0].legs[0].distance
+                    ) {
+                        this.distance = response.routes[0].legs[0].distance.text;
+                    } else {
+                        this.distance = null;
+                    }
                 } else {
                     console.error('Directions request failed due to ' + status);
+                    this.distance = null;
                 }
             });
         },
