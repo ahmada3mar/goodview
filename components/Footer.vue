@@ -91,7 +91,7 @@
                     <div class="flex flex-col w-full  mx-auto  gap-5">
                         <h3 class="text-white font-jakarta  text-[24px] font-bold">Contacts</h3>
                         <div class="justify-center">
-                            <div class="flex w-full gap-3">
+                            <div class="flex w-full gap-1 sm:gap-3">
                                 <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
                                     <UIcon name="i-material-symbols-call" class="w-5 h-5 text-primary-500" />
                                 </div>
@@ -100,7 +100,7 @@
                                     <span itemprop="telephone"><a href="tel:+19737821339">+1 973-782-1339</a></span>
                                 </div>
                             </div>
-                            <div class="flex w-full  gap-3">
+                            <div class="flex w-full  gap-1 sm:gap-3">
                                 <div class="flex bg-opacity-35  rounded-full p-1 w-7 h-7">
                                     <UIcon name="i-material-symbols-mail" class="w-5 h-5 text-primary-500" />
                                 </div>
@@ -110,7 +110,7 @@
                                             to="mailto:Service@fasttransportation.info">Service@fasttransportation.info</ULink></span>
                                 </div>
                             </div>
-                            <div class="flex w-full  gap-3">
+                            <div class="flex w-full  gap-1 sm:gap-3">
                                 <div class="flex bg-opacity-35 rounded-full p-1 w-7 h-7">
                                     <UIcon name="i-material-symbols-location-on" class="w-5 h-5 text-primary-500" />
                                 </div>
