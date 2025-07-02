@@ -121,10 +121,10 @@
 
                                 <ul
                                     class="list-disc ml-2  marker:none list-inside md:text-[18px] text-black md:font-[400] md:leading-8 font-rubik mt-4 space-y-2">
-                                    <li><b>Full-Service Packing & Unpacking</b> We professionally pack and unpack
+                                    <li><b>Full-Service Packing & Unpacking: </b> We professionally pack and unpack
                                         furniture.</li>
-                                    <li><b>Box Packing:</b>We securely pack your items in the right boxes.</li>
-                                    <li><b>Fragile Item Packing:</b>Extra care for delicate items like glassware and
+                                    <li><b>Box Packing:</b> We securely pack your items in the right boxes.</li>
+                                    <li><b>Fragile Item Packing:</b> Extra care for delicate items like glassware and
                                         antiques.</li>
                                     <li><b> Unpacking Support: </b> We help unpack and organize your space so you can
                                         settle
