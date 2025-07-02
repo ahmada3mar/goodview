@@ -338,7 +338,7 @@ watchEffect(() => {
     margin-left: 30px !important;
     list-style-type: disc;
     font-family: 'Rubik', 'sans-serif';
-    margin: 10px 5px;
+    margin: 10px 25px;
 }
 
 :deep(.blog-content li) {

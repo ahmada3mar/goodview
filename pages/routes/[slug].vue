@@ -7,13 +7,18 @@
         <div
           class="flex flex-col gap-0 lg:gap-10 lg:flex-row text-white max-w-[1360px] w-full mx-auto justify-between px-[30px] md:items-center">
           <div class="relative w-full md:w-[65%] items-baseline justify-center gap-6  py-10 container h-full">
-            <nav class="text-[12px] lg:text-[22px] font-rubik space-x-1 mt-2">
-             
-              <span>
-                <a href="/na" class="hover:underline">New-york</a>
-              </span>
-              <span> / </span>
-              <span class=""> {{ moving_route.title }}</span>
+            <nav class="text-[12px] lg:text-[22px] font-rubik space-x-1 mt-2 flex items-center">
+              <NuxtLink to="/" class="hover:underline">Home</NuxtLink>
+              <span>/</span>
+              <template v-if="fromStateObj">
+                <NuxtLink :to="`/states/${fromStateObj.slug}`" class="hover:underline">{{ fromStateObj.name }}</NuxtLink>
+                <span>/</span>
+              </template>
+              <template v-if="fromCityObj">
+                <NuxtLink :to="`/city/${fromCityObj.slug}`" class="hover:underline">{{ fromCityObj.name }}</NuxtLink>
+                <span>to</span>
+              </template>
+              <span class="">{{ moving_route.title }}</span>
             </nav>
             <h1 class=" text-[28px] md:text-[40px] leading-[1.4em] text-[#EDEDED] lg:text-[48px] mb-4 font-[700] font-jakarta">
               <!-- <strong class=" text-[#ffd343]"> (${{ moving_route.min_cost }})</strong> --> {{ moving_route.title }}
@@ -412,6 +417,7 @@
   </div>
 </template>
 <script>
+import { onMounted, computed } from 'vue'
 
 export default {
   name: 'CityToCity2',
@@ -431,8 +437,29 @@ export default {
       }
     })
 
-    return { moving_route }
+    // Fetch all cities and states
+    const { data: allCities } = await useFetch('https://api.goodview-moving.com/api/city')
+    const { data: allStates } = await useFetch('https://api.goodview-moving.com/api/states')
 
+    // Compute fromCityObj and fromStateObj
+    const fromCityObj = computed(() => {
+      if (!allCities.value || !moving_route.value) return null
+      return allCities.value.find(city => city.id === moving_route.value.moving_from_city?.id)
+    })
+    const fromStateObj = computed(() => {
+      if (!allStates.value || !fromCityObj.value) return null
+      return allStates.value.find(state => String(state.id) === String(fromCityObj.value.state_id))
+    })
+
+    onMounted(() => {
+      if (moving_route.value) {
+        console.log('From:', moving_route.value.moving_from_city?.name)
+        console.log('To:', moving_route.value.moving_to_city?.name)
+        console.log('Moving cost:', moving_route.value.min_cost, 'to', moving_route.value.max_cost)
+      }
+    })
+
+    return { moving_route, fromCityObj, fromStateObj }
   },
   data() {
     return {
@@ -510,6 +537,7 @@ export default {
         { id: 4, name: "Thomas R.", rating: 5, review: "Goodview Moving and Storage was so easy to work with. Quotations were received promptly via phone call and text messages and there were no surprise charges like you may have with other movers during final billing. They also helped with assembling furniture. Thanks for a smooth move!" }
       ],
       windowWidth: typeof window !== "undefined" ? window.innerWidth : 1024,
+      distance: null,
     };
   },
   watch: {
@@ -523,11 +551,11 @@ export default {
   },
   computed: {
     fromCity() {
-      if (!this.moving_route || !this.moving_route.moving_from_city) return '';
+      if (!this.moving_route || !this.moving_route.moving_from_city.name) return '';
       return this.moving_route.moving_from_city.name;
     },
     toCity() {
-      if (!this.moving_route || !this.moving_route.moving_to_city) return '';
+      if (!this.moving_route || !this.moving_route.moving_to_city.name) return '';
       return this.moving_route.moving_to_city.name;
     },
     visibleTestimonials() {
@@ -600,11 +628,24 @@ export default {
         origin: cityA,
         destination: cityB,
         travelMode: google.maps.TravelMode.DRIVING
-      }, function (response, status) {
+      }, (response, status) => {
         if (status === "OK") {
           directionsRenderer.setDirections(response);
+          // Get distance from response
+          if (
+            response.routes &&
+            response.routes[0] &&
+            response.routes[0].legs &&
+            response.routes[0].legs[0] &&
+            response.routes[0].legs[0].distance
+          ) {
+            this.distance = response.routes[0].legs[0].distance.text;
+          } else {
+            this.distance = null;
+          }
         } else {
           console.error('Directions request failed due to ' + status);
+          this.distance = null;
         }
       });
     },
