@@ -7,27 +7,27 @@
         <div
           class="flex flex-col gap-0 lg:gap-10 lg:flex-row text-white max-w-[1360px] w-full mx-auto justify-between px-[30px] md:items-center">
           <div class="relative w-full md:w-[65%] items-baseline justify-center gap-6  py-10 container h-full">
-            <nav class="text-[12px] lg:text-[22px] font-rubik space-x-1 mt-2 flex items-center">
-              <NuxtLink to="/" class="hover:underline">Home</NuxtLink>
-              <span>/</span>
-              <template v-if="fromStateObj">
-                <NuxtLink :to="`/states/${fromStateObj.slug}`" class="hover:underline">{{ fromStateObj.name }}</NuxtLink>
-                <span>/</span>
-              </template>
-              <template v-if="fromCityObj">
-                <NuxtLink :to="`/city/${fromCityObj.slug}`" class="hover:underline">{{ fromCityObj.name }}</NuxtLink>
-                <span>to</span>
-              </template>
-              <span class="">{{ moving_route.title }}</span>
-            </nav>
+            <nav class="text-[14px] lg:text-[22px] font-rubik mt-2  leading-[25px] lg:items-center lg:space-x-1 space-y-1 lg:space-y-0">
+  <template v-if="fromStateObj">
+    <NuxtLink :to="`/states/${fromStateObj.slug}`" class="hover:underline">{{ fromStateObj.name }}</NuxtLink>
+    <span>/</span>
+  </template>
+  <template v-if="fromCityObj">
+    <NuxtLink :to="`/city/${fromCityObj.slug}`" class="hover:underline">{{ fromCityObj.name }}</NuxtLink>
+    <span>/</span>
+  </template>
+  <span>{{ moving_route.title }}</span>
+</nav>
+
             <h1 class=" text-[28px] md:text-[40px] leading-[1.4em] text-[#EDEDED] lg:text-[48px] mb-4 font-[700] font-jakarta">
               <!-- <strong class=" text-[#ffd343]"> (${{ moving_route.min_cost }})</strong> --> {{ moving_route.title }}
             </h1>
             <p class=" font-[300] max-w-3xl text-[18px]  tracking-[.3px] font-rubik leading-[1.6em]">
-              Estimated Cost: A move from {{ moving_route.title }} typically costs between<strong
+              Estimated Cost: A move from  {{ fromCity }} to {{ toCity }} typically costs between<strong
                 class='text-[#ffd343] font-bold'> ${{ moving_route.min_cost }} and ${{ moving_route.max_cost
-                }}.</strong> The total cost and time depend on several factors, including the size of your move, your moving date, and whether you hire professional movers or handle the move yourself.
-            </p>
+                }}.</strong>The total cost and time depend on several factors, including the size of your move, your moving date, and whether you hire professional movers or handle the move yourself.</p>
+                 <p class=" font-[300] max-w-3xl text-[18px]  tracking-[.3px] font-rubik leading-[1.6em]">
+                  For an immediate price estimate, you can request a moving cost estimate.</p>
           </div>
 
           <div class="relative w-full md:w-[35%] flex justify-center py-5">
@@ -88,29 +88,19 @@
             <h2 class="text-xl md:text-[38px] leading-normal font-[600] mb-6 font-jakarta">Cost of {{
               moving_route.title }} with Good View Moving?</h2>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em]">
-              At Good View Moving and Storage, we believe in providing clear, upfront pricing so you can plan your local
-              move with confidence. Based on our experience helping customers relocate along this route, the average
-              cost to {{ moving_route.title }} typically falls between <strong
+              AAt Good View Moving and Storage, we believe in providing clear, upfront pricing so you can +plan your move with confidence. Based on our experience helping customers relocate along this route, the average cost to  move from  {{ fromCity }} to {{ toCity }} typically falls between <strong
                 class='text-[#ffd343]  font-bold'>${{
                   moving_route.min_cost }}</strong> and<strong class='text-[#ffd343]  font-bold'>
                 ${{ moving_route.max_cost }}</strong>
             </p>
 
-            <div class="card-img">
+            <div class="card-img mt-5">
               <!-- Map container only (no distance line) -->
               <div id="map"
                 style="height: 300px; width: 100%; border-radius: 20px; overflow: hidden; position: relative;">
               </div>
-              <div class="flex justify-between text-white mt-2 mb-4 px-2">
-                <p class="font-bold">From: <span class="font-normal">{{ fromCity }}</span></p>
-                <p class="font-bold text-right">To: <span class="font-normal">{{ toCity }}</span></p>
-              </div>
             </div>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">The final price
-              depends on
-              several factors, including the size of your move, the services you select, and your specific moving date.
-              Whether you need full-service packing, local moving services, or simply transportation for your
-              belongings, we offer flexible options to fit your needs and budget.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">The final price depends on several factors, including the size of your move, the services you select, and your specific moving date. Whether you need full-service packing, long distance moving services, or simply transportation for your belongings, we offer flexible options to fit your needs and budget. </p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Here's a breakdown of the average
               moving costs
               for this route:</p>
@@ -135,47 +125,29 @@
               </table>
 
             </div>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Please note: These price ranges are
-              rough
-              estimates based on our customer relocation data. The actual cost may vary depending on the size of your
-              move, additional services required, truck parking access and availability.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Please note: These price ranges are rough estimates based on our customer relocation data. The actual cost may vary depending on the size of your move, additional services required, truck parking access and availability.</p>
             <h2 class="text-xl md:text-[38px] leading-[1.5em] font-[600] mb-6 font-jakarta">Factors Affecting the Cost
               of {{ moving_route.title }}</h2>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">At Good View Moving and Storage, we
-              believe
-              every move is unique — and so is the final cost. Several key factors can influence the price of your move
-              {{ moving_route.title }}.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">At Good View Moving and Storage, we believe every move is unique — and so is the final cost. Several key factors can influence the price of your move from {{ fromCity }} to {{ toCity }}.</p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Here's what can affect your moving
               cost with us:
             </p>
             <ul class='list-disc pl-7 font-rubik'>
               <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong class='font-[600] text-[18px]'>Size
-                  of Your Move: </strong> Larger homes or apartments mean more items to pack, load, and transport, which
-                can increase the overall cost. For example, moving a 2-3 bedroom home will cost more than a small
-                apartment.</li>
-              <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong class='font-[600] text-[18px]'>Type
-                  of Services You Need: </strong>Full-service options, such as professional packing, unpacking,
-                furniture disassembly, or storage, will influence your total moving cost. We offer flexible packages for
-                every need.</li>
+                  of Your Move: </strong> Larger homes or apartments mean more items to pack, load, and transport, which can increase the overall cost. For example, moving a 2-3 bedroom home will cost more than a small apartment.</li>
+              <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong class='font-[600] text-[18px]'>Distance of the Move: </strong>Some customers book long distance moving services for routes beyond city limits, which affects pricing.</li>
               <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong
-                  class='font-[600] text-[18px]'>Accessibility at Pickup and Drop-off Locations: </strong>If our trucks
-                have limited access, elevators are unavailable, or parking is difficult, it may affect the price.</li>
-              <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong class='font-[600] text-[18px]'>Move
-                  Date and Time: </strong>Moving during peak seasons, weekends, or holidays can increase demand, which
-                may raise rates. Booking early with Good View Moving NJ often secures better pricing.</li>
+                  class='font-[600] text-[18px]'>Type of Services You Need: </strong> Full-service options, such as professional packing, unpacking, furniture disassembly, or storage, will influence your total moving cost. We offer flexible packages for every need.</li>
+              <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong class='font-[600] text-[18px]'>Accessibility at Pickup and Drop-off Locations: </strong>If our trucks have limited access, elevators are unavailable, or parking is difficult, it may affect the price.</li>
               <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong
-                  class='font-[600] text-[18px]'>Specialty
-                  Items: </strong>Large or delicate items such as pianos,
-                antiques, or fragile furniture may require extra care and add to the final cost.</li>
-            </ul>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Our goal is to provide affordable
-              local moving
-              services with clear, upfront pricing. Good View Moving and Storage is proud to be among the best local
-              movers serving this route.</p>
-            <h2 class="text-xl md:text-[38px] leading-[1.5em] font-[600] mb-6 font-jakarta">Benefits of Choosing Good
-              View Moving {{ moving_route.title }} Move</h2>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">When you're planning a move {{
-              moving_route.title }}, you need a team you can rely on. At Good View Moving and Storage, we're proud to
+                  class='font-[600] text-[18px]'>Move Date and Time: </strong> Moving during peak seasons, weekends, or holidays can increase demand, which may raise rates. Booking early with Good View Moving often secures better pricing.</li>
+                  <li class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-2"><strong
+                  class='font-[600] text-[18px]'>Specialty Items: </strong>Large or delicate items such as pianos, antiques, or fragile furniture may require extra care and add to the final cost.</li>
+            
+                </ul>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Our goal is to provide affordable long distance moving and local relocation services with clear, upfront pricing. Good View Moving and Storage is proud to be among the best moving companies serving this route.</p>
+            <h2 class="text-xl md:text-[38px] leading-[1.5em] font-[600] mb-6 font-jakarta">Benefits of Choosing Good View Moving for Your {{ fromCity }} to {{ toCity }} Move</h2>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">When you're planning a move from {{ fromCity }} to {{ toCity }}, you need a team you can rely on. At Good View Moving and Storage, we're proud to
               offer
               dependable, affordable, and stress-free moving solutions for both local and long distance moving.</p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Here's why so many customers consider
@@ -184,49 +156,31 @@
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
                 class='font-[600] text-[18px]'>
                 <span style="color: #ffd343; margin-right: 6px;">✓</span>
-                Experienced, Professional Team: </strong> Our movers are trained, licensed, and experienced in handling
-              local moving projects of all sizes. From packing to transport, your belongings are in safe hands.</p>
+                Experienced, Professional Team: </strong>Our movers are trained, licensed, and experienced in handling moves across the country and within your area. From packing to transport, your belongings are in safe hands.</p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
                 class='font-[600] text-[18px]'>
-                <span style="color: #ffd343; margin-right: 6px;">✓</span>Affordable and Transparent Pricing: </strong>
-              We believe in honest, upfront pricing. Whether you're searching for moving companies near me or planning a
-              full-service relocation, we offer solutions that fit your budget.</p>
+                <span style="color: #ffd343; margin-right: 6px;">✓</span> Affordable and Transparent Pricing: </strong> We believe in honest, upfront pricing. Whether you’re looking for out of state movers, or full-service relocation, we offer solutions that fit your budget. </p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
                 class='font-[600] text-[18px]'>
                 <span style="color: #ffd343; margin-right: 6px;">✓</span>
                 Flexible Moving Options: </strong>
-              Every move is different. We provide a range of services, from basic transportation to full-service
-              packing, storage, and specialty item handling. Our local moving services can be customized to meet your
-              specific needs.</p>
+                Every move is different. We provide a range of services, from basic transportation to full-service packing, storage, and specialty item handling. Our long distance moving services can be customized to your needs.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
+                class='font-[600] text-[18px]'>
+                <span style="color: #ffd343; margin-right: 6px;">✓</span> Highly Rated and Trusted:  </strong>
+                We take pride in positive Good View Moving reviews from satisfied customers. Our commitment to reliability, care, and customer service has made us a trusted name in the industry.</p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
                 class='font-[600] text-[18px]'>
                 <span style="color: #ffd343; margin-right: 6px;">✓</span>
-                Highly Rated and Trusted: </strong>We take pride in positive Good View Moving reviews from satisfied
-              customers. Our commitment to reliability, care, and exceptional customer service has established us as a
-              trusted name in the industry.</p>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
-                class='font-[600] text-[18px]'>
-                <span style="color: #ffd343; margin-right: 6px;">✓</span>
-                Stress-Free Moving Process: </strong>Our goal is simple — to make your move smooth and worry-free.
-              Whether you need local movers near me or professional packing help, we're with you every step of the way.
+                Stress-Free Moving Process: </strong>Our goal is simple — to make your move smooth and worry-free. Whether you need local help or expert long distance movers, we’re with you every step of the way.
             </p>
             <h2 class="text-xl md:text-[38px] leading-[1.5em] font-[600] mb-6 font-jakarta">Get an Instant Quote for
               Your Move Today
             </h2>  
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Planning a local move doesn't have to
-              be
-              stressful — let Good View Moving and Storage make it simple. Whether you're relocating within {{ fromCity }}
-              or moving a short distance, we're here to help with transparent pricing and professional service.</p>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">With just a few details, you can
-              receive a fast
-              and free quote tailored to your move. We provide honest estimates based on the size of your move,
-              distance, and any additional services you may need, including packing or storage options.</p>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Wondering How much does a local move
-              usually
-              cost? Start by getting your personalized quote with Good View Moving local moving services.</p>
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Get your instant quote today and see
-              why we're
-              considered one of the best local moving company options for moves {{ moving_route.title }}.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Planning a move doesn’t have to be stressful — let Good View Moving and Storage make it simple. Whether you’re relocating within {{ fromCity }} or heading across the country, we’re here to help with transparent pricing and professional service.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">With just a few details, you can receive a fast and free quote tailored to your move. We provide honest estimates based on the size of your move, distance, and any additional services you may need, including packing or storage options.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Wondering What is the cheapest way to move long-distance? Start by getting your personalized quote with Good View Moving local moving services.</p>
+            <p class="font-[700]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Get your instant quote today and see why we’re considered one of the top-rated movers for both local and long-distance relocations.</p>
             <h2 class="text-4xl font-bold mb-4 mt-12 pb-4 font-jakarta">Frequently Aks Questions</h2>
             <div class="space-y-6 ">
               <div v-for="(faq, index) in faqs" :key="index" class="bg-[#1e1e1e] rounded-lg">
@@ -475,37 +429,30 @@ export default {
       windowWidth: typeof window !== "undefined" ? window.innerWidth : 1024,
       faqs: [
         {
-          question: "How much does a local move usually cost?",
-          answer: "The average cost for a local move is between $300 and $2,500, depending on your home size, services selected, and moving date."
-        },
-        {
-          question: "What is the cheapest day to hire a moving company?",
-          answer: "The cheapest days to hire local movers are typically weekdays, from Monday to Thursday, when demand is lower and rates are more affordable."
-        },
-        {
-          question: "Is Montclair, NJ, a good place to live?",
-          answer: "Yes, Montclair, NJ, is considered a great place to live. The town is renowned for its vibrant arts scene, highly rated schools, diverse community, and convenient access to New York City, making it a popular destination among families and commuters."
-        },
-        {
-          question: "Why is Montclair so popular?",
-          answer: "The cost of a local moving service with Good View Moving and Storage typically ranges from $300 to $2,500. Smaller moves, like a 1-bedroom apartment, often cost between $300 and $950, while larger homes can cost $1,200 to $2,500."
+          question: "What is the cheapest way to move long-distance?",
+          answer: "The cheapest way to move long-distance is by handling the packing, loading, and transportation yourself using a rental truck or trailer. This option is ideal for smaller moves or when you have minimal belongings. For larger moves, sharing truck space through consolidated shipping or comparing rates from multiple long distance moving companies near me can help reduce costs. "
         },
         {
           question: "How much does a local moving service cost?",
           answer: "The cost of a local moving service with Good View Moving and Storage typically ranges from $300 to $2,500. Smaller moves, like a 1-bedroom apartment, often cost between $300 and $950, while larger homes can cost $1,200 to $2,500."
         },
         {
+          question: "How much does it cost to move a 2000 sq ft house?",
+          answer: "The cost to move a 2000 sq ft house varies based on the distance, services required, and accessibility at both locations. For a local move (under 100 miles), the cost to relocate a 2,000 sq ft home typically ranges from $1,500 to $5,000. For long-distance moves (over 100 miles), the average cost increases to around $4,000 to $9,000. "
+        },
+        {
           question: "How much does it cost to move a 1,500 sq. ft. house?",
           answer: "The average cost to move a 1500 sq ft house locally ranges from $700 to $2,000, depending on the amount of furniture, services required, and accessibility at both locations. For an accurate estimate, Good View Moving and Storage provides free, upfront quotes based on your specific move."
         },
         {
-          question: "How far in advance should you hire movers?",
-          answer: "It's recommended to hire local movers at least 4 to 6 weeks in advance, especially during busy seasons like summer or weekends. Booking early helps secure your preferred moving date and often results in better pricing."
+          question: "What is the average cost to move across the United States?",
+          answer: "The average cost to move across the United States ranges from $2,300 to $8,500, depending on the size of your home, the total distance, and any additional services required. Most people spend around $4,500 to $5,000 for a typical long-distance move of 1,000 miles."
         },
         {
-          question: "How do I choose a local moving company?",
-          answer: "To choose the right local moving company, compare reviews, verify licensing and insurance, request clear estimates, and look for reliable, experienced movers. Many customers consider Good View Moving and Storage among the best local movers for affordable and trusted service."
-        }
+          question: "How far in advance should you hire movers?",
+          answer: "It's recommended to hire movers at least 4 to 6 weeks in advance, especially during busy seasons like summer or weekends. Booking early helps secure your preferred moving date and often results in better pricing."
+        },
+        
       ],
       // blogs: [
       //   {
