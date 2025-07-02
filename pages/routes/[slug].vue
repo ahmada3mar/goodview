@@ -159,7 +159,7 @@
                 Experienced, Professional Team: </strong>Our movers are trained, licensed, and experienced in handling moves across the country and within your area. From packing to transport, your belongings are in safe hands.</p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
                 class='font-[600] text-[18px]'>
-                <span style="color: #ffd343; margin-right: 6px;">✓</span> Affordable and Transparent Pricing: </strong> We believe in honest, upfront pricing. Whether you’re looking for out of state movers, or full-service relocation, we offer solutions that fit your budget. </p>
+                <span style="color: #ffd343; margin-right: 6px;">✓</span> Affordable and Transparent Pricing: </strong> We believe in honest, upfront pricing. Whether you're looking for out of state movers, or full-service relocation, we offer solutions that fit your budget. </p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
                 class='font-[600] text-[18px]'>
                 <span style="color: #ffd343; margin-right: 6px;">✓</span>
@@ -172,15 +172,15 @@
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5"><strong
                 class='font-[600] text-[18px]'>
                 <span style="color: #ffd343; margin-right: 6px;">✓</span>
-                Stress-Free Moving Process: </strong>Our goal is simple — to make your move smooth and worry-free. Whether you need local help or expert long distance movers, we’re with you every step of the way.
+                Stress-Free Moving Process: </strong>Our goal is simple — to make your move smooth and worry-free. Whether you need local help or expert long distance movers, we're with you every step of the way.
             </p>
             <h2 class="text-xl md:text-[38px] leading-[1.5em] font-[600] mb-6 font-jakarta">Get an Instant Quote for
               Your Move Today
             </h2>  
-            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Planning a move doesn’t have to be stressful — let Good View Moving and Storage make it simple. Whether you’re relocating within {{ fromCity }} or heading across the country, we’re here to help with transparent pricing and professional service.</p>
+            <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Planning a move doesn't have to be stressful — let Good View Moving and Storage make it simple. Whether you're relocating within {{ fromCity }} or heading across the country, we're here to help with transparent pricing and professional service.</p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">With just a few details, you can receive a fast and free quote tailored to your move. We provide honest estimates based on the size of your move, distance, and any additional services you may need, including packing or storage options.</p>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Wondering What is the cheapest way to move long-distance? Start by getting your personalized quote with Good View Moving local moving services.</p>
-            <p class="font-[700]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Get your instant quote today and see why we’re considered one of the top-rated movers for both local and long-distance relocations.</p>
+            <p class="font-[700]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">Get your instant quote today and see why we're considered one of the top-rated movers for both local and long-distance relocations.</p>
             <h2 class="text-4xl font-bold mb-4 mt-12 pb-4 font-jakarta">Frequently Aks Questions</h2>
             <div class="space-y-6 ">
               <div v-for="(faq, index) in faqs" :key="index" class="bg-[#1e1e1e] rounded-lg">
@@ -372,6 +372,7 @@
 </template>
 <script>
 import { onMounted, computed } from 'vue'
+import { useHead } from '#imports'
 
 export default {
   name: 'CityToCity2',
@@ -390,6 +391,16 @@ export default {
         }
       }
     })
+
+    // Add meta title and description
+    const fromCity = computed(() => moving_route.value?.moving_from_city?.name || '');
+    const toCity = computed(() => moving_route.value?.moving_to_city?.name || '');
+    useHead(computed(() => ({
+      title: moving_route.value?.meta_title || moving_route.value?.title || 'Good View Moving',
+      meta: [
+        { name: 'description', content: `Move from ${fromCity.value} to ${toCity.value} with ease. Good View Moving offers affordable and hassle-free relocation services. Get your free quote today.` }
+      ],
+    })))
 
     // Fetch all cities and states
     const { data: allCities } = await useFetch('https://api.goodview-moving.com/api/city')
