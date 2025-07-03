@@ -106,7 +106,7 @@
                     <ul
                         class="list-disc list-inside underline md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mb-7 mt-4 space-y-2">
                         <li v-for="city in filteredCities" :key="city.id">
-                            <ULink :to="`/city/${city.slug}`"
+                            <ULink :to="`/${state.slug}/${city.slug}`"
                                 class="hover:text-primary-500 text-white transition-colors">
                                 {{ city.name }}
                             </ULink>
@@ -331,6 +331,9 @@ const filteredCities = computed(() => {
     const filtered = city.value.filter(c => Number(c.state_id) === Number(state.value.id));
     return filtered;
 });
+
+const route = useRoute()
+const isRoutePage = computed(() => route.name === 'routes-slug') // or whatever your route name is
 </script>
 <style scoped>
 :deep(.state-content p) {
