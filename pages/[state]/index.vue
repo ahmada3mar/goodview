@@ -89,7 +89,7 @@
 
                 <div class=" state-content" v-html="state.sections[0].content"></div>
             </div>
-          
+
             <div class="max-w-[1020px] px-5 lg:px-0 mx-auto ">
                 <h2 class="text-3xl  font-jakarta md:text-[48px]  leading-normal text-white mb-5 font-extrabold">
                     {{ state.sections[1].title }}</h2>
@@ -344,24 +344,24 @@ const { data: state, error } = await useFetch(`https://api.goodview-moving.com/a
 import { watch, ref as vueRef } from 'vue';
 const faqSchema = vueRef(null);
 watch(
-  () => state.value && state.value.faqs,
-  (faqs) => {
-    if (faqs && Array.isArray(faqs)) {
-      faqSchema.value = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": faqs.map(item => ({
-          "@type": "Question",
-          "name": item.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": item.answer
-          }
-        }))
-      }
-    }
-  },
-  { immediate: true }
+    () => state.value && state.value.faqs,
+    (faqs) => {
+        if (faqs && Array.isArray(faqs)) {
+            faqSchema.value = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(item => ({
+                    "@type": "Question",
+                    "name": item.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer
+                    }
+                }))
+            }
+        }
+    },
+    { immediate: true }
 );
 const { data: city, error: cityError } = await useFetch('https://api.goodview-moving.com/api/city', {
     onResponseError({ response }) {
@@ -425,5 +425,10 @@ const route = useRoute()
     margin-bottom: 1.25rem !important;
     /* mb-5 = 20px */
     font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+:deep(.state-content a:hover) {
+    color: #FFD343 !important;
+    cursor: pointer !important;
 }
 </style>
