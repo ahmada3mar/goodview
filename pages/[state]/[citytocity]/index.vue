@@ -628,4 +628,11 @@ onMounted(() => {
   window.addEventListener("resize", handleResize)
 })
 
+
+useHead(computed(() => ({
+  title: moving_route.value?.meta_title,
+  meta: [
+    { name: 'description', content: `Move from ${fromCity.value} to ${toCity.value} with ease. Good View Moving offers affordable and hassle-free relocation services. Get your free quote today.` }
+  ],
+})))
 </script>
