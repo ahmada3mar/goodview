@@ -1,4 +1,6 @@
 // nuxt.config.ts
+import { resolve } from 'path'
+
 export default defineNuxtConfig(async () => {
   const routes = await getBlogRoutes();
   return {
@@ -11,7 +13,7 @@ export default defineNuxtConfig(async () => {
     modules: [
       "@nuxt/ui",
       "@nuxt/image",
-       "@nuxtjs/sitemap",
+      // "@nuxtjs/sitemap",
       "@nuxtjs/robots",
     ],
 
@@ -102,6 +104,18 @@ export default defineNuxtConfig(async () => {
         routes: await getBlogRoutes(),
         crawlLinks: true,
         fallback: '404.html'
+      }
+    },
+
+    pages: true,
+    hooks: {
+      'pages:extend'(routes) {
+        routes.push({
+          name: 'custom-citytocity-route',
+          path: '/:state/:city-to-:place', // Matches /statename/cityname-to-cityname
+          file: resolve(__dirname, 'pages/[state]/[citytocity]/index.vue')
+        })
+        // The default Nuxt routing will still handle /:state/:city via pages/[state]/[city]/index.vue
       }
     }
   };

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <!-- Breadcrumb Navigation -->
-    
+        <!-- State Page: Dedicated to /[state] routes only -->
         <div class="relative bg-cover bg-center overflow-hidden  lg:h-[650px] flex items-center justify-center"
             :style="`background-image: url(${state.cover})`">
             <div class="absolute inset-0 !bg-gradient-to-t !from-black/80 !to-black/80"></div>
@@ -18,7 +17,7 @@
                                 <span class="mx-2">/</span>
                             </li>
                             <li>
-                                <ULink :to="`/states/${state.slug || id}`" class="hover:text-primary-500">
+                                <ULink :to="`/${state.slug || id}`" class="hover:text-primary-500">
                                     {{ state.name }}
                                 </ULink>
                             </li>
@@ -90,19 +89,14 @@
 
                 <div class=" state-content" v-html="state.sections[0].content"></div>
             </div>
-            <div class="max-w-[1020px] px-5 lg:px-0 mx-auto ">
-
-                <div class="w-[126px] h-[2px] my-5  bg-primary-500"></div>
-
-
-            </div>
+          
             <div class="max-w-[1020px] px-5 lg:px-0 mx-auto ">
                 <h2 class="text-3xl  font-jakarta md:text-[48px]  leading-normal text-white mb-5 font-extrabold">
                     {{ state.sections[1].title }}</h2>
                 <div class="w-[126px] h-[2px] my-5  bg-primary-500"></div>
                 <div class=" text-white state-content" v-html="state.sections[1].content"></div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 my-5 gap-6 mt-6 mb-10">
+                <!-- <div class="grid grid-cols-1 md:grid-cols-2 my-5 gap-6 mt-6 mb-10">
                     <ul
                         class="list-disc list-inside underline md:text-[18px] text-white md:font-[300] md:leading-8 font-rubik mb-7 mt-4 space-y-2">
                         <li v-for="city in filteredCities" :key="city.id">
@@ -113,6 +107,46 @@
                         </li>
                     </ul>
 
+                </div> -->
+
+
+                <div class="flex md:flex-row flex-col justify-between">
+                    <div class="w-full md:w-1/2">
+                        <ul class="list-disc">
+                            <li v-for="city in leftCities" :key="city.id" class="flex text-[18px] items-center mb-2">
+                                <svg fill="#FFFFFF" width="30px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"></path>
+                                    </g>
+                                </svg>
+
+                                <ULink :to="`/${state.slug}/${city.slug}`"
+                                    class="hover:text-primary-500 text-white transition-colors">
+                                    {{ city.name }}
+                                </ULink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <ul class="list-disc">
+                            <li v-for="city in rightCities" :key="city.id"
+                                class="flex items-center text-[18px] mb-[8px]">
+                                <svg fill="#FFFFFF" width="30px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"></path>
+                                    </g>
+                                </svg>
+                                <ULink :to="`/${state.slug}/${city.slug}`"
+                                    class="hover:text-primary-500 text-white transition-colors">
+                                    {{ city.name }}
+                                </ULink>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class=" py-4">
@@ -332,8 +366,18 @@ const filteredCities = computed(() => {
     return filtered;
 });
 
+const leftCities = computed(() => {
+    if (!filteredCities.value) return []
+    const half = Math.ceil(filteredCities.value.length / 2)
+    return filteredCities.value.slice(0, half)
+})
+const rightCities = computed(() => {
+    if (!filteredCities.value) return []
+    const half = Math.ceil(filteredCities.value.length / 2)
+    return filteredCities.value.slice(half)
+})
+
 const route = useRoute()
-const isRoutePage = computed(() => route.name === 'routes-slug') // or whatever your route name is
 </script>
 <style scoped>
 :deep(.state-content p) {
