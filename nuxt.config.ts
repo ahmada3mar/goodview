@@ -13,7 +13,7 @@ export default defineNuxtConfig(async () => {
     modules: [
       "@nuxt/ui",
       "@nuxt/image",
-      // "@nuxtjs/sitemap",
+      "@nuxtjs/sitemap",
       "@nuxtjs/robots",
     ],
 

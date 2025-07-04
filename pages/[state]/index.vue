@@ -341,7 +341,28 @@ const { data: state, error } = await useFetch(`https://api.goodview-moving.com/a
         }
     }
 });
-
+import { watch, ref as vueRef } from 'vue';
+const faqSchema = vueRef(null);
+watch(
+  () => state.value && state.value.faqs,
+  (faqs) => {
+    if (faqs && Array.isArray(faqs)) {
+      faqSchema.value = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+          }
+        }))
+      }
+    }
+  },
+  { immediate: true }
+);
 const { data: city, error: cityError } = await useFetch('https://api.goodview-moving.com/api/city', {
     onResponseError({ response }) {
         console.error('City API Error:', response.status, response._data);
