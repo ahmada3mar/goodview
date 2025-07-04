@@ -99,20 +99,29 @@
                     <QuoteInputs :is-visible="true" />
                 </aside>
             </div>
-            <div class="flex justify-between mx-auto max-w-[1100px] px-[25px] lg:px-[0px] mt-10">
-                <NuxtLink :to="prevBlog ? `/blogs/${prevBlog.slug}` : null" :class="[
-                    'bg-primary-500 font-medium text-[18px] lg:text-[22px] py-2 px-4 lg:px-8  rounded-lg',
-                    prevBlog ? 'hover:bg-black text-black   hover:text-white cursor-pointer' : 'bg-primary-500 text-gray-500 cursor-not-allowed pointer-events-none'
-                ]" tabindex="-1">
-                    Previous
-                </NuxtLink>
-
-                <NuxtLink :to="nextBlog ? `/blogs/${nextBlog.slug}` : null" :class="[
-                    'bg-primary-500  font-medium lg:text-[22px] text-[18px] py-2 px-4 lg:px-8  rounded-lg',
-                    nextBlog ? 'hover:bg-black text-black   hover:text-white cursor-pointer' : 'bg-primary-500 text-gray-500 cursor-not-allowed pointer-events-none'
-                ]" tabindex="-1">
-                    Next
-                </NuxtLink>
+            <div class="flex justify-between mt-5 mx-auto max-w-[1120px]">
+                <!-- Previous Button: left -->
+                <div>
+                    <NuxtLink
+                        v-if="prevBlog"
+                        :to="`/blogs/${prevBlog.slug}`"
+                        class="bg-primary-500 font-medium text-[18px] lg:text-[22px] py-2 px-4 lg:px-8 rounded-lg hover:bg-black text-black hover:text-white cursor-pointer"
+                        tabindex="-1"
+                    >
+                        Previous
+                    </NuxtLink>
+                </div>
+                <!-- Next Button: right -->
+                <div>
+                    <NuxtLink
+                        v-if="nextBlog"
+                        :to="`/blogs/${nextBlog.slug}`"
+                        class="bg-primary-500 font-medium lg:text-[22px] text-[18px] py-2 px-4 lg:px-8 rounded-lg hover:bg-black text-black hover:text-white cursor-pointer"
+                        tabindex="-1"
+                    >
+                        Next
+                    </NuxtLink>
+                </div>
             </div>
             <div v-if="blog.faqs?.length > 0"
                 class=" bg-primary-500 w-full p-3 md:p-10 mt-[115px] lg:mt-[152px]  rounded-none">
