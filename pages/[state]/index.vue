@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- State Page: Dedicated to /[state] routes only -->
-        <div class="relative bg-cover bg-center overflow-hidden  lg:h-[650px] flex items-center justify-center"
+        <div class="relative bg-cover bg-center overflow-hidden  lg:h-[700px] flex items-center justify-center"
             :style="`background-image: url(${state.cover})`">
             <div class="absolute inset-0 !bg-gradient-to-t !from-black/80 !to-black/80"></div>
             <div class="flex flex-row max-w-[1360px] w-full  mx-auto justify-between items-center">

@@ -69,33 +69,37 @@
 </template>
 
 <script setup>
-// City Page Logic for /[state]/[city] only
-import { ref, computed } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
+import { showError } from '#app'
 
 const route = useRoute()
 const citySlug = route.params.city
-const stateSlug = route.params.state
 
-// Fetch all states, routes, and cities
-const { data: allStates, error: statesError } = await useFetch('https://api.goodview-moving.com/api/states')
-const { data: allRoutes, error: routesError } = await useFetch('https://api.goodview-moving.com/api/routes')
-const { data: allCities, error: citiesError } = await useFetch('https://api.goodview-moving.com/api/city')
+const { data: allStates, error: statesError } = useFetch('https://api.goodview-moving.com/api/states')
+const { data: allRoutes, error: routesError } = useFetch('https://api.goodview-moving.com/api/routes')
+const { data: allCities, error: citiesError } = useFetch('https://api.goodview-moving.com/api/city')
 
-if (statesError.value || routesError.value || citiesError.value) {
-  throw showError({
-    statusCode: 500,
-    statusMessage: 'Failed to load data from server. Please try again later.',
-  })
-}
-
-// Find the city object by slug
 const currentCityObj = computed(() => {
   if (!allCities.value) return null;
   return allCities.value.find(city => city.slug === citySlug) || null;
 })
 
-// Map city id to name
+watchEffect(() => {
+  if (statesError.value || routesError.value || citiesError.value) {
+    throw showError({
+      statusCode: 500,
+      statusMessage: 'Failed to load data from server. Please try again later.',
+    })
+  }
+  if (allCities.value && !currentCityObj.value) {
+    throw showError({
+      statusCode: 404,
+      statusMessage: 'City not found',
+    })
+  }
+})
+
 const cityIdToName = computed(() => {
   if (!allCities.value) return {}
   const map = {}
@@ -106,19 +110,16 @@ const cityIdToName = computed(() => {
   return map
 })
 
-// Find the current city name
 const currentCityName = computed(() => {
   if (!currentCityObj.value) return '';
   return currentCityObj.value.name;
 })
 
-// Filter routes where moving_from === current city id
 const filteredRoutes = computed(() => {
   if (!allRoutes.value || !currentCityObj.value) return []
   return allRoutes.value.filter(route => String(route.moving_from) === String(currentCityObj.value.id))
 })
 
-// Find the state object for the current city
 const currentStateObj = computed(() => {
   if (!allStates.value || !currentCityObj.value) return null;
   return allStates.value.find(

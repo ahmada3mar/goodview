@@ -101,7 +101,9 @@
                 ${{ moving_route.max_cost }}</strong>
             </p>
 
-            <div id="map" style="height: 300px; width: 100%; border-radius: 20px; overflow: hidden; position: relative;" class="my-5"></div>
+            <div id="map" style="height: 300px; width: 100%; border-radius: 20px; overflow: hidden; position: relative;" class="my-5">
+              <div style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;cursor:not-allowed;"></div>
+            </div>
             <p class="font-[300]  text-[18px]  tracking-[.3px] font-rubik leading-[1.6em] my-5">The final price depends
               on
               several factors, including the size of your move, the services you select, and your specific moving date.
@@ -392,7 +394,7 @@
               <div>
                 <p class="mb-3 font-jakarta">Get a Free Online Quote</p>
                 <ULink to="/quote/"
-                  class="bg-primary-500 py-2 font-rubik px-3 lg:px-3  rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-bold">
+                  class="bg-primary-500 py-2 font-rubik px-3 lg:px-3  rounded-[10px] border border-primary-500 hover:bg-black hover:text-white text-black font-[500px]">
                   Get a free quote</ULink>
               </div>
             </div>
@@ -503,7 +505,8 @@ function initMap(cityA, cityB) {
       strokeColor: "#4285F4",
       strokeOpacity: 1.0,
       strokeWeight: 5
-    }
+    },
+    suppressMarkers: true
   })
   directionsRenderer.setMap(map)
 
@@ -514,6 +517,19 @@ function initMap(cityA, cityB) {
   }, function (response, status) {
     if (status === "OK") {
       directionsRenderer.setDirections(response)
+
+      // Add custom markers (no info windows)
+      const leg = response.routes[0].legs[0]
+      new google.maps.Marker({
+        position: leg.start_location,
+        map: map,
+        label: "A"
+      })
+      new google.maps.Marker({
+        position: leg.end_location,
+        map: map,
+        label: "B"
+      })
     } else {
       console.error('Directions request failed due to ' + status)
     }

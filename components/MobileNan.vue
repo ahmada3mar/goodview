@@ -25,61 +25,49 @@
       <!-- Services Dropdown -->
       <div>
         <div class="flex items-center hover:bg-primary-500 hover:text-black text-slate-300">
-          <!-- Services Link -->
           <ULink @click="navigateToServices" to="/services/"
             class="flex-1 text-start p-5 text-xl flex items-center gap-4">
             <UIcon name="i-carbon-delivery-truck" class="w-5 h-5 text-inherit" />
             Services
           </ULink>
-
-          <!-- Dropdown Toggle Button -->
           <button @click.stop="toggleServicesDropdown" class="p-5 pr-6 focus:outline-none">
             <UIcon :name="servicesDropdownOpen ? 'i-carbon-chevron-up' : 'i-carbon-chevron-down'"
               class="w-5 h-5 text-inherit transition-transform duration-200" />
           </button>
         </div>
-
         <Transition name="slide">
           <div v-if="servicesDropdownOpen" class="overflow-hidden">
-            <ULink @click="handleLinkClick" to="/services/commercial-moving-service/"
-              class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">
-
-              Commercial Moving
-            </ULink>
-            <ULink @click="handleLinkClick" to="/services/long-distance-moving-service/"
-              class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">
-
-              Long Distance Moving
-            </ULink>
-            <ULink @click="handleLinkClick" to="/services/residential-moving-service/"
-              class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">
-
-              Residential Moving
-            </ULink>
-            <ULink @click="handleLinkClick" to="/services/packing-and-unpacking-service/"
-              class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">
-
-              Packing and Unpacking
-            </ULink>
-            <ULink @click="handleLinkClick" to="/services/furniture-assembly-and-disassembly-service/"
-              class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">
-
-              Furniture Assembly and Disassembly
-            </ULink>
-            <ULink @click="handleLinkClick" to="/services/specialty-moving-service/"
-              class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">
-
-              Specialty Moving
-            </ULink>
-            <ULink @click="handleLinkClick" to="/services/storage-service/"
-              class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">
-
-              Storage Units
-            </ULink>
+            <ULink @click="handleLinkClick" to="/services/commercial-moving-service/" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">Commercial Moving</ULink>
+            <ULink @click="handleLinkClick" to="/services/long-distance-moving-service/" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">Long Distance Moving</ULink>
+            <ULink @click="handleLinkClick" to="/services/residential-moving-service/" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">Residential Moving</ULink>
+            <ULink @click="handleLinkClick" to="/services/packing-and-unpacking-service/" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">Packing and Unpacking</ULink>
+            <ULink @click="handleLinkClick" to="/services/furniture-assembly-and-disassembly-service/" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">Furniture Assembly and Disassembly</ULink>
+            <ULink @click="handleLinkClick" to="/services/specialty-moving-service/" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">Specialty Moving</ULink>
+            <ULink @click="handleLinkClick" to="/services/storage-service/" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">Storage Units</ULink>
           </div>
         </Transition>
       </div>
-
+      <!-- routes Dropdown -->
+      <div>
+        <div class="flex items-center hover:bg-primary-500 hover:text-black text-slate-300">
+          <div class="flex-1 text-start p-5 text-xl flex items-center gap-4">
+            <UIcon name="i-carbon-delivery-truck" class="w-5 h-5 text-inherit" />
+            Routes
+          </div>
+          <button @click.stop="toggleRoutesDropdown" class="p-5 pr-6 focus:outline-none">
+            <UIcon :name="routesDropdownOpen ? 'i-carbon-chevron-up' : 'i-carbon-chevron-down'"
+              class="w-5 h-5 text-inherit transition-transform duration-200" />
+          </button>
+        </div>
+        <Transition name="slide">
+          <div v-if="routesDropdownOpen" class="overflow-hidden">
+            <ULink @click="handleLinkClick" to="/california" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">California</ULink>
+            <ULink @click="handleLinkClick" to="/north-carolina" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">North Carolina</ULink>
+            <ULink @click="handleLinkClick" to="/new-jersey" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta  text-lg flex items-center gap-4">New Jersey</ULink>
+            <ULink @click="handleLinkClick" to="/new-york" class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-4 font-jakarta text-lg flex items-center gap-4">New York</ULink>
+          </div>
+        </Transition>
+      </div>
       <!-- Tips -->
       <ULink @click="slideover.close()" to="/tips/"
         class="hover:bg-primary-500 hover:text-black text-slate-300 text-start p-5 text-xl flex items-center gap-4">
@@ -120,24 +108,28 @@
 <script setup>
 const slideover = useSlideover()
 const servicesDropdownOpen = ref(false)
+const routesDropdownOpen = ref(false)
 
 const toggleServicesDropdown = () => {
   servicesDropdownOpen.value = !servicesDropdownOpen.value
+  if (servicesDropdownOpen.value) routesDropdownOpen.value = false
+}
+const toggleRoutesDropdown = () => {
+  routesDropdownOpen.value = !routesDropdownOpen.value
+  if (routesDropdownOpen.value) servicesDropdownOpen.value = false
 }
 
 const navigateToServices = (e) => {
-  // Only navigate if dropdown is closed
   if (!servicesDropdownOpen.value) {
     slideover.close()
-    return true // Allow default navigation
+    return true
   }
-  // If dropdown is open, prevent navigation and just close dropdown
   e.preventDefault()
   servicesDropdownOpen.value = false
 }
-
 const handleLinkClick = () => {
   servicesDropdownOpen.value = false
+  routesDropdownOpen.value = false
   slideover.close()
 }
 </script>

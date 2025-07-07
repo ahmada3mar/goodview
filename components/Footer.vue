@@ -1,7 +1,7 @@
     <template>
         <div class="bg-black py-5 footer rounded-none text-white">
             <div class="container mx-auto">
-                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-12 p-10">
+                <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1  gap-12 p-10">
                     <!-- Logo and Description -->
                     <div class="flex flex-col w-full  mx-auto   gap-5 items-start ">
                         <img class="" src="/imgs/good-view-logo-white.png" alt="good view logo" />
@@ -48,6 +48,8 @@
                             <ULink to="/" class="text-start font-rubik text-[16px] hover:text-primary-500">Home</ULink>
                             <ULink to="/about-us" class="text-start font-rubik text-[16px]  hover:text-primary-500">
                                 About Us</ULink>
+                            <ULink to="/tips/" class="text-start font-rubik text-[16px]  hover:text-primary-500">
+                                Tips for the move</ULink>
                             <ULink to="/help" class="text-start font-rubik text-[16px] hover:text-primary-500">Help
                             </ULink>
                             <ULink target="_blank"
@@ -59,6 +61,7 @@
                             </ULink>
                         </div>
                     </div>
+
 
                     <!-- Services -->
                     <div class="flex flex-col w-full  mx-auto  gap-5">
@@ -86,7 +89,23 @@
                                 class="text-start font-rubik text-[16px] hover:text-primary-500">Storage Units</ULink>
                         </div>
                     </div>
-
+                    <!-- Routes -->
+                    <div class="flex flex-col w-full  mx-auto  gap-5">
+                        <h3 class="text-white font-jakarta  text-[24px] font-bold">Routes</h3>
+                        <div class="flex w-full flex-col gap-2 ">
+                            <ULink to="/california" class="text-start font-rubik text-[16px] hover:text-primary-500">
+                                California
+                            </ULink>
+                            <ULink to="/north-carolina"
+                                class="text-start font-rubik text-[16px] hover:text-primary-500">North Carolina
+                            </ULink>
+                            <ULink to="/new-jersey" class="text-start font-rubik text-[16px] hover:text-primary-500">New
+                                Jersey
+                            </ULink>
+                            <ULink to="/new-york" class="text-start font-rubik text-[16px] hover:text-primary-500">New
+                                York</ULink>
+                        </div>
+                    </div>
                     <!-- Contacts -->
                     <div class="flex flex-col w-full  mx-auto  gap-5">
                         <h3 class="text-white font-jakarta  text-[24px] font-bold">Contacts</h3>
@@ -106,8 +125,10 @@
                                 </div>
                                 <div itemscope itemtype="http://schema.org/LocalBusiness"
                                     class="flex bg-opacity-35 rounded-full hover:text-primary-500   font-rubik text-[16px] p-1 text-white font-[400]">
-                                    <span itemprop="email"><ULink
-                                            to="mailto:Service@fasttransportation.info">Service@fasttransportation.info</ULink></span>
+                                    <span itemprop="email">
+                                        <ULink to="mailto:Service@fasttransportation.info">
+                                            Service@fasttransportation.info</ULink>
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex w-full  gap-1 sm:gap-3">

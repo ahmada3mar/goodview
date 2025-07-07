@@ -10,10 +10,10 @@
 
         <!-- Social Icons / Navigation Links -->
         <div class="hidden h-full lg:flex items-center gap-1 lg:gap-[6px] xl:gap-10 text-sm font-bold text-white">
-          <ULink to="/about-us/"
+          <!-- <ULink to="/about-us/"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
-            About us</ULink>
-          <div class="relative" @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
+            About us</ULink> -->
+          <div class="relative" @mouseenter="showDropdown1 = true" @mouseleave="showDropdown1 = false">
             <ULink to="/services/"
               class="flex items-center font-jakarta with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
               <div class="flex items-center">
@@ -23,7 +23,7 @@
             </ULink>
 
             <!-- Dropdown Menu (Only Shows on Hover) -->
-            <div v-if="showDropdown"
+            <div v-if="showDropdown1"
               class="absolute left-0  gap-2  w-[250px] bg-primary-500 text-black   shadow-lg z-50">
               <ULink to="/services/commercial-moving-service/"
                 class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">Commerical Moving
@@ -54,16 +54,40 @@
             </div>
           </div>
 
-          <ULink to="/tips/"
-            class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
-            Tips for the move</ULink>
+          <!-- Dropdown Menu (Only Shows on Hover) -->
+          <div class="relative" @mouseenter="showDropdown2 = true" @mouseleave="showDropdown2 = false">
+            <div
+              class="flex items-center font-jakarta with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
+              <div class="flex items-center">
+                Routes
+                <UIcon role="button" name="i-carbon-add" class="w-5 h-5 text-primary-500" />
+              </div>
+            </div>
+
+            <!-- Dropdown Menu (Only Shows on Hover) -->
+            <div v-if="showDropdown2"
+              class="absolute left-0  gap-2  w-[250px] bg-primary-500 text-black   shadow-lg z-50">
+              <ULink to="/california" class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                California
+              </ULink>
+              <ULink to="/north-carolina"
+                class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">North Carolina
+              </ULink>
+              <ULink to="/new-jersey" class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">
+                New Jersey
+              </ULink>
+              <ULink to="/new-york" class="block px-4 py-2 hover:bg-black hover:text-white text-[16px] font-jakarta">New
+                York
+              </ULink>
+
+            </div>
+          </div>
           <ULink to="/blogs/"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             Blogs</ULink>
           <ULink to="/help/"
             class="flex items-center with-icon hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
             <div class="flex items-center">Help
-              <UIcon role="button" name="i-carbon-add" class="w-5 h-5 text-primary-500" />
             </div>
           </ULink>
           <a class="text-gray-100 font-jakarta font-semibold" href="tel:+19737821339">+1 973-782-1339</a>
@@ -89,7 +113,8 @@ export default {
     return {
       expand: false,
       SideBar: markRaw(SideBar),
-      showDropdown: false, // Dropdown visibility state
+      showDropdown1: false, // First dropdown visibility
+      showDropdown2: false, // Second dropdown visibility
     };
   }
 };
