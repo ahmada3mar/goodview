@@ -120,7 +120,6 @@ export default defineNuxtConfig(async () => {
           path: '/:state/:city',
           file: resolve(__dirname, 'pages/city/[city]/index.vue')
         });
-        // The default Nuxt routing will still handle /:state/:city via pages/[state]/[city]/index.vue
       }
     }
   };
