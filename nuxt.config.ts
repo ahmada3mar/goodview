@@ -109,12 +109,17 @@ export default defineNuxtConfig(async () => {
 
     pages: true,
     hooks: {
-      'pages:extend'(routes) {
+      'pages:extend'(routes: any[]) {
         routes.push({
           name: 'custom-citytocity-route',
-          path: '/:state/:city-to-:place', // Matches /statename/cityname-to-cityname
-          file: resolve(__dirname, 'pages/[state]/[citytocity]/index.vue')
-        })
+          path: '/:state/:city-to-:place',
+          file: resolve(__dirname, 'pages/routes/[citytocity]/index.vue')
+        });
+        routes.push({
+          name: 'custom-city-route',
+          path: '/:state/:city',
+          file: resolve(__dirname, 'pages/city/[city]/index.vue')
+        });
         // The default Nuxt routing will still handle /:state/:city via pages/[state]/[city]/index.vue
       }
     }
