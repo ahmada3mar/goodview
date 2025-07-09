@@ -8,7 +8,7 @@
           <img class="my-5" src="/imgs/good-view-logo-white.png" alt="good view logo" />
         </ULink>
 
-        <!-- Social Icons / Navigation Links -->
+
         <div class="hidden h-full lg:flex items-center gap-1 lg:gap-[6px] xl:gap-10 text-sm font-bold text-white">
           <!-- <ULink to="/about-us/"
             class="flex items-center font-jakarta hover:bg-primary-500 h-full hover:text-black py-2 px-2 md:py-4 lg:px-3">
@@ -22,7 +22,7 @@
               </div>
             </ULink>
 
-            <!-- Dropdown Menu (Only Shows on Hover) -->
+
             <div v-if="showDropdown1"
               class="absolute left-0  gap-2  w-[250px] bg-primary-500 text-black   shadow-lg z-50">
               <ULink to="/services/commercial-moving-service/"

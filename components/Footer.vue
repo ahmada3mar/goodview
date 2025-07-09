@@ -89,7 +89,7 @@
                                 class="text-start font-rubik text-[16px] hover:text-primary-500">Storage Units</ULink>
                         </div>
                     </div>
-                    <!-- Routes -->
+
                     <div class="flex flex-col w-full  mx-auto  gap-5">
                         <h3 class="text-white font-jakarta  text-[24px] font-bold">Routes</h3>
                         <div class="flex w-full flex-col gap-2 ">
@@ -106,7 +106,7 @@
                                 York</ULink>
                         </div>
                     </div>
-                    <!-- Contacts -->
+
                     <div class="flex flex-col w-full  mx-auto  gap-5">
                         <h3 class="text-white font-jakarta  text-[24px] font-bold">Contacts</h3>
                         <div class="justify-center">
