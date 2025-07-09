@@ -301,18 +301,10 @@
                         </div>
                     </div>
                 </div>
-
-
                 <Trusted />
             </div>
-
-
-
-
-
         </div>
     </div>
-
 </template>
 
 <script setup>

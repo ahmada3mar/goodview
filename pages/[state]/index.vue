@@ -252,7 +252,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-black">
+        <div class="bg-black px-[20px]">
             <div class=" max-w-[1020px] mx-auto py-6 ">
                 <h2 class="text-4xl font-bold mb-4 mt-12 pb-4 text-white font-jakarta">Frequently Asked Questions</h2>
                 <div class="space-y-6 text-white">
