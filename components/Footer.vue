@@ -43,7 +43,7 @@
 
                     <!-- Quick Links -->
                     <div class="flex flex-col  w-full  mx-auto  gap-5">
-                        <h3 class="text-white font-jakarta  text-[24px] font-bold">Quick Links</h3>
+                        <h2 class="text-white font-jakarta  text-[24px] font-bold">Quick Links</h2>
                         <div class="flex w-full flex-col gap-2  ">
                             <ULink to="/" class="text-start font-rubik text-[16px] hover:text-primary-500">Home</ULink>
                             <ULink to="/about-us" class="text-start font-rubik text-[16px]  hover:text-primary-500">
@@ -65,7 +65,7 @@
 
                     <!-- Services -->
                     <div class="flex flex-col w-full  mx-auto  gap-5">
-                        <h3 class="text-white font-jakarta  text-[24px] font-bold">Services</h3>
+                        <h2 class="text-white font-jakarta  text-[24px] font-bold">Services</h2>
                         <div class="flex w-full flex-col gap-2 ">
                             <ULink to="/services/residential-moving-service"
                                 class="text-start font-rubik text-[16px] hover:text-primary-500">Residential Moving
@@ -91,7 +91,7 @@
                     </div>
 
                     <div class="flex flex-col w-full  mx-auto  gap-5">
-                        <h3 class="text-white font-jakarta  text-[24px] font-bold">Routes</h3>
+                        <h2 class="text-white font-jakarta  text-[24px] font-bold">Routes</h2>
                         <div class="flex w-full flex-col gap-2 ">
                             <ULink to="/california" class="text-start font-rubik text-[16px] hover:text-primary-500">
                                 California
