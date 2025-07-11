@@ -194,7 +194,8 @@
                             </div>
                         </div>
                         <button
-                            class="absolute left-[1px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition disabled:opacity-40 z-10"
+                        aria-label="Previous"
+                            class="   absolute left-[1px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition disabled:opacity-40 z-10"
                             @click="prevSlide">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -202,7 +203,8 @@
                             </svg>
                         </button>
                         <button
-                            class="absolute right-[3px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition z-10"
+                        aria-label="Next Slide"
+                            class="absolute   right-[3px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition z-10"
                             @click="nextSlide">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -221,12 +223,11 @@
             <div class="flex flex-col px-5 lg:px-0 container md:flex-row items-center py-[90px] mx-auto gap-[4.5rem]">
 
                 <!-- Image Section (Left - 40%) -->
-                <div class="w-full md:w-[40%] card-img">
-                    <img alt="About us"
-                        class="lazy-image opacity-0 rounded-[10px] h-[450px] transition-opacity duration-500 ease-in-out w-full  object-cover"
-                        v-lazy="'/imgs/quote2.webp'" />
-                </div>
-
+              <div class="w-full md:w-[40%] card-img flex items-start justify-center">
+    <img alt="Get Your Free Moving Estimate"
+        class="rounded-[10px] w-full h-auto "
+        v-lazy="'/imgs/quote2.webp'" />
+</div>
                 <!-- Text Section (Right - 60%) -->
                 <div class="w-full md:w-[60%]">
                     <h2 class="text-3xl font-jakarta md:text-[48px] leading-normal text-white mb-5 font-extrabold">

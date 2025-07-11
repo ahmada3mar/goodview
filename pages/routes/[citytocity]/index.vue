@@ -312,6 +312,7 @@
                     </div>
                   </div>
                   <button
+                    aria-label="Previous Slide"
                     class="absolute left-[9px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center  hover:scale-110 transition disabled:opacity-40 z-10"
                     @click="prevSlide">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -320,6 +321,7 @@
                   </svg>
                 </button>
                 <button
+                aria-label="Next Slide"
                   class="absolute right-[3px] top-1/2 -translate-y-1/2 w-[39px] h-[39px] bg-[#ffd343] text-black rounded-full shadow-xl flex items-center justify-center  hover:scale-110 transition z-10"
                   @click="nextSlide">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -412,7 +414,7 @@
                   <NuxtLink :to="`/blogs/${blog.slug}`">
                     <div class="flex gap-3 group cursor-pointer">
                       <div class="flex-shrink-0">
-                        <img :src="blog.image" :alt="blog.title"
+                        <img :src="blog.image"  alt="blog image"
                           class="w-16 h-12 object-cover rounded-lg border border-gray-700 group-hover:border-[#FFD343] transition-colors duration-200" />
                       </div>
                       <div class="flex-1">
