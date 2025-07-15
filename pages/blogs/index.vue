@@ -54,7 +54,7 @@
                                                     {{ blog.shortDescription }}
                                                 </p>
                                             </div>
-                                            <NuxtLink :to="`/blogs/${blog.slug}`"
+                                            <NuxtLink :to="`/blogs/${blog.slug}/`"
                                                 class="text-center rounded-[10px] text-sm font-jakarta mb-0 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
                                                 Read More
                                             </NuxtLink>
