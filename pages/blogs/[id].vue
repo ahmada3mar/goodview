@@ -292,6 +292,51 @@ watchEffect(() => {
     meta,
     style,
     titleTemplate: "%s",
+    script: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": blog.value.title,
+          "image": blog.value.image,
+          "datePublished": blog.value.date,
+          "author": {
+            "@type": "Person",
+            "name": blog.value.author
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Good View Moving & Storage",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://goodviewmoving.com/imgs/good-view-logo.png"
+            }
+          },
+          "description": blog.value.seo?.[0]?.description,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://goodviewmoving.com/blogs/${id}`
+          }
+        })
+      },
+      // Add FAQPage schema if FAQs exist
+      blog.value.faqs?.length > 0 ? {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": blog.value.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.answer
+            }
+          }))
+        })
+      } : null
+    ].filter(Boolean) // Remove null values if no FAQs
   });
 });
 </script>
