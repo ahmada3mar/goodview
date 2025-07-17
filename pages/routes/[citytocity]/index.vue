@@ -1028,6 +1028,23 @@ useHead(
         content: `Move from ${fromCity.value} to ${toCity.value} with ease. Good View Moving offers affordable and hassle-free relocation services. Get your free quote today.`,
       },
     ],
+    script: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.value.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.answer
+            }
+          }))
+        })
+      }
+    ]
   }))
 );
 </script>
