@@ -897,7 +897,7 @@ onMounted(async () => {
     if (!document.getElementById("google-maps-script")) {
       const script = document.createElement("script");
       script.id = "google-maps-script";
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCZn95cE65IOrsuK3h5j9n4QPgLA99uDaQ&libraries=places,geometry,directions&callback=initMap&loading=async`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAugC08PfRftIfSHsZ3scsMZK1EY249qus&libraries=places,geometry,directions&callback=initMap&loading=async`;
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);

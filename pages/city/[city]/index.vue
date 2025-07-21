@@ -4,14 +4,9 @@
     <div class="bg-black text-white">
       <div class="max-w-4xl mx-auto px-6 py-8">
         <!-- Breadcrumb -->
-        <nav
-          class="flex items-center space-x-2 font-jakarta text-sm text-gray-400 mb-8"
-        >
+        <nav class="flex items-center space-x-2 font-jakarta text-sm text-gray-400 mb-8">
           <template v-if="currentStateObj">
-            <NuxtLink
-              :to="`/${currentStateObj.slug}/`"
-              class="hover:text-white transition-colors"
-            >
+            <NuxtLink :to="`/${currentStateObj.slug}/`" class="hover:text-white transition-colors">
               {{ currentStateObj.name }}
             </NuxtLink>
             <span>/</span>
@@ -19,9 +14,7 @@
           <span class="text-white">{{ currentCityName }}</span>
         </nav>
         <!-- Main Title -->
-        <h1
-          class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight"
-        >
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
           Routes from {{ currentCityName }}
         </h1>
         <p class="font-[300] max-w-3xl font-rubik leading-[1.6rem] mb-8">
@@ -32,34 +25,16 @@
           <div class="flex md:flex-row flex-col justify-between">
             <div class="w-full md:w-1/2">
               <ul class="list-disc">
-                <li
-                  v-for="route in leftRoutes"
-                  :key="route.id"
-                  class="flex items-center text-[18px] mb-2"
-                >
-                  <svg
-                    fill="#FFFFFF"
-                    width="30px"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                <li v-for="route in leftRoutes" :key="route.id" class="flex items-center text-[18px] mb-2">
+                  <svg fill="#FFFFFF" width="30px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"
-                      ></path>
+                      <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"></path>
                     </g>
                   </svg>
 
-                  <NuxtLink
-                    :to="`/${currentStateObj.slug}/${route.slug}/`"
-                    class="hover:underline"
-                  >
+                  <NuxtLink :to="`/${currentStateObj.slug}/${route.slug}/`" class="hover:underline">
                     {{ cityIdToName[route.moving_from] }} to
                     {{ cityIdToName[route.moving_to] }}
                   </NuxtLink>
@@ -68,34 +43,16 @@
             </div>
             <div class="w-full md:w-1/2">
               <ul class="list-disc">
-                <li
-                  v-for="route in rightRoutes"
-                  :key="route.id"
-                  class="flex items-center text-[18px] mb-2"
-                >
-                  <svg
-                    fill="#FFFFFF"
-                    width="30px"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                <li v-for="route in rightRoutes" :key="route.id" class="flex items-center text-[18px] mb-2">
+                  <svg fill="#FFFFFF" width="30px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"
-                      ></path>
+                      <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"></path>
                     </g>
                   </svg>
 
-                  <NuxtLink
-                    :to="`/${currentStateObj.slug}/${route.slug}/`"
-                    class="hover:underline"
-                  >
+                  <NuxtLink :to="`/${currentStateObj.slug}/${route.slug}/`" class="hover:underline">
                     {{ cityIdToName[route.moving_from] }} to
                     {{ cityIdToName[route.moving_to] }}
                   </NuxtLink>
@@ -185,4 +142,17 @@ const rightRoutes = computed(() => {
   const half = Math.ceil(filteredRoutes.value.length / 2);
   return filteredRoutes.value.slice(half);
 });
+useHead(
+  computed(() => ({
+    title: `${currentCityName.value} ${currentStateObj.value ? currentStateObj.value.abv.toUpperCase() : ''
+      } Movers – Local and Long Distance`,
+    meta: [
+      {
+        name: "description",
+        content: `Looking for reliable movers in ${currentCityName.value}${currentStateObj.value ? `, ${currentStateObj.value.abv.toUpperCase()}` : ''
+          }? Good View Moving offers local and long-distance moving services with free quotes and expert care.`,
+      },
+    ],
+  }))
+);
 </script>
