@@ -121,6 +121,12 @@ export default defineNuxtConfig(async () => {
           file: resolve(__dirname, 'pages/city/[city]/index.vue')
         });
       }
+    },
+
+    runtimeConfig: {
+      public: {
+        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY
+      }
     }
   };
 });
