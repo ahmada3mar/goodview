@@ -1,8 +1,35 @@
 <template>
     <div class="flex flex-col h-full">
         <Banner background="/imgs/services.jpg" class="md:h-[25rem]" title="Our Blog"
-            text="Stay updated with the latest moving tips, guide, checklist and insights." />
+            text="Stay updated with the latest moving tips, guide, checklist and insights.">
+            <template #body>
+                <form @submit.prevent
+                    class="flex items-center gap-2 font-jakarta max-w-lg w-full mx-auto bg-[#171820]  backdrop-blur-md border border-zinc-700 shadow-xl rounded-xl px-2 py-2 sm:px-4 sm:py-3">
+                    <div class="relative flex-1 w-full">
+                        <input type="search" v-model="searchQuery" placeholder="Search blogs..." id="blog.title"
+                            class="w-full bg-zinc-800/80 font-jakarta text-white placeholder-white outline-none px-2 py-2 sm:px-3 sm:py-2 focus:ring-2 focus:ring-primary-500 rounded-lg pr-8" />
+                        <button v-if="searchQuery" type="button" @click="searchQuery = ''"
+                            class="absolute right-2 top-1/2 -translate-y-1/2 text-white hover:text-primary-500 transition p-0.5"
+                            aria-label="Clear search">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="submit"
+                        class="flex items-center gap-1  bg-black text-primary-500  font-semibold px-3 py-2 sm:px-5 rounded-lg transition-all duration-200 shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+                        </svg>
 
+                    </button>
+                </form>
+            </template>
+        </Banner>
 
         <div v-if="blogs.length > 0" class="bg-white w-full p-3 md:p-10 rounded-none">
             <div class="container">
@@ -20,8 +47,6 @@
                 }" class="transition-all duration-1000 ease-in-out  w-full  mt-48 rounded-none">
 
                     <div class="bg-black container flex flex-wrap flex-col  gap-5 -mt-36 rounded-[10px]   p-4 lg:p-10">
-
-
                         <!-- Text Section -->
                         <div class="flex-1 flex flex-col">
                             <!-- <h2 class="text-3xl md:text-4xl font-jakarta font-extrabold text-stone-300">Articles</h2> -->
@@ -43,16 +68,12 @@
                                         <div
                                             class="flex flex-col lg:pl-[20px] xl:max-w-[50%] text-start text-xl text-white justify-between">
                                             <div class="lg:min-h-[135px] min-h-[160px]">
-                                                <h2
-                                                    class="font-jakarta font-[600]  mt-3 lg:mt-0 leading-[30px] lg:leading-[35px]  text-[20px] lg:text-[24px] ">
-                                                    {{
-                                                        blog.title }}</h2>
+                                                <h2 class="font-jakarta font-[600]  mt-3 lg:mt-0 leading-[30px] lg:leading-[35px]  text-[20px] lg:text-[24px] "
+                                                    v-html="highlight(blog.title)"></h2>
                                                 <p class="text-sm font-jakarta mt-3 text-white">Published Date: {{
                                                     blog.date }}</p>
-                                                <p
-                                                    class="text-[16px] font-[300] tracking-[.3px] font-rubik mt-[13px] lg:mt-5 line-clamp-3">
-                                                    {{ blog.shortDescription }}
-                                                </p>
+                                                <p class="text-[16px] font-[300] tracking-[.3px] font-rubik mt-[13px] lg:mt-5 line-clamp-3"
+                                                    v-html="highlight(blog.shortDescription)"></p>
                                             </div>
                                             <NuxtLink :to="`/blogs/${blog.slug}/`"
                                                 class="text-center rounded-[10px] text-sm font-jakarta mb-0 mt-[25px] bg-black hover:bg-primary-500 hover:text-black transition-all px-12 md:px-16 lg:px-4 xl:px-8 py-3 font-bold w-full lg:w-auto">
@@ -202,6 +223,8 @@
 
 
 <script setup>
+import { subMinutes } from 'date-fns'
+
 useHead({
     title: "Moving Blog - Expert Advice ",
     meta: [
@@ -213,6 +236,7 @@ useHead({
 const blogs = ref([])
 const pageSize = 10     // Set page size to 10
 const currentPage = ref(1)
+const searchQuery = ref("")
 
 // Single fetchBlogs function
 const fetchBlogs = () => {
@@ -222,15 +246,27 @@ const fetchBlogs = () => {
     })
 }
 
+// Computed property for filtered blogs
+const filteredBlogs = computed(() => {
+    if (!searchQuery.value) return blogs.value
+    const q = searchQuery.value.toLowerCase()
+    return blogs.value.filter(blog =>
+        (blog.title && blog.title.toLowerCase().includes(q)) ||
+        (blog.shortDescription && blog.shortDescription.toLowerCase().includes(q)) ||
+        (blog.description && blog.description.toLowerCase().includes(q)) ||
+        (blog.id && String(blog.id).toLowerCase().includes(q))
+    )
+})
+
 // Computed properties for pagination
 const paginatedBlogs = computed(() => {
     const start = (currentPage.value - 1) * pageSize
     const end = start + pageSize
-    return blogs.value.slice(start, end)
+    return filteredBlogs.value.slice(start, end)
 })
 
 const hasNextPage = computed(() => {
-    const nextSlice = blogs.value.slice(currentPage.value * pageSize)
+    const nextSlice = filteredBlogs.value.slice(currentPage.value * pageSize)
     return nextSlice.length > 0
 })
 
@@ -322,6 +358,12 @@ onBeforeUnmount(() => {
     window.removeEventListener('mousemove', updateGradients)
 })
 
+function highlight(text) {
+    if (!searchQuery.value || !text) return text;
+    const q = searchQuery.value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // escape regex
+    return text.replace(new RegExp(q, 'gi'), match => `<mark>${match}</mark>`);
+}
+
 // const regularBlogs = computed(() => blogs.value.slice(0, 10))
 // const moreBlogs = computed(() => blogs.value.slice(10))
 
@@ -345,3 +387,12 @@ onBeforeUnmount(() => {
 
 // const query = useRoute()
 </script>
+
+<style scoped>
+/* Hide default clear (X) button in Chrome, Safari, Edge */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+</style>
