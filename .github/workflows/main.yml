@@ -29,6 +29,9 @@ jobs:
         
       - name: Install all dependencies
         run: yarn
+        
+      - name: Set Google Maps API Key
+        run: echo "GOOGLE_MAPS_API_KEY=${{ secrets.GOOGLE_MAPS_API_KEY }}" >> $GITHUB_ENV
 
       - name: Build
         run: yarn generate # The build command of your project
