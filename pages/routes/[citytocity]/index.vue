@@ -504,7 +504,7 @@
 <script setup>
 import { ref, computed, onMounted, nextTick, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { useHead, showError } from "#imports";
+import { useHead } from "#imports";
 
 const route = useRoute();
 const router = useRouter();
@@ -841,47 +841,4 @@ useHead(
     ]
   }))
 );
-
-// Place the validation after all relevant refs/computed are defined
-import { watchEffect } from 'vue';
-
-watchEffect(() => {
-  // Wait until all required data is loaded
-  if (!allCities.value || !allStates.value) return;
-
-  if (movingRouteError.value || citiesError.value || statesError.value) {
-    throw showError({
-      statusCode: 500,
-      statusMessage: 'Failed to load data',
-    });
-  }
-  if (!moving_route.value) {
-    throw showError({
-      statusCode: 404,
-      statusMessage: 'Route not found',
-    });
-  }
-  if (!moving_route.value.moving_from_city || !moving_route.value.moving_to_city) {
-    throw showError({
-      statusCode: 500,
-      statusMessage: 'Invalid route data',
-    });
-  }
-  // Validate state and city match the route
-  const fromCityObj = allCities.value.find(c => c.id === moving_route.value.moving_from_city.id);
-  const fromStateObj = allStates.value.find(s => String(s.id) === String(fromCityObj?.state_id));
-  if (fromStateObj && route.params.state && route.params.state !== fromStateObj.slug) {
-    throw showError({
-      statusCode: 404,
-      statusMessage: `This route belongs to ${fromStateObj.name}`,
-    });
-  }
-  if (fromCityObj && route.params.city && route.params.city !== fromCityObj.slug) {
-    throw showError({
-      statusCode: 404,
-      statusMessage: `This route belongs to ${fromCityObj.name}`,
-    });
-  }
-});
-
 </script>
