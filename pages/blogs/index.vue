@@ -7,9 +7,9 @@
                     class="flex items-center gap-2 font-jakarta max-w-lg w-full mx-auto bg-[#171820]  backdrop-blur-md border border-zinc-700 shadow-xl rounded-xl px-2 py-2 sm:px-4 sm:py-3">
                     <div class="relative flex-1 w-full">
                         <input type="search" v-model="searchQuery" placeholder="Search blogs..." id="blog.title"
-                            class="w-full bg-zinc-800/80 font-jakarta text-white placeholder-white outline-none px-2 py-2 sm:px-3 sm:py-2 focus:ring-2 focus:ring-primary-500 rounded-lg pr-16" />
+                            class="w-full bg-zinc-800/80 font-jakarta text-white placeholder-white outline-none px-2 py-2 sm:px-3 sm:py-2 focus:ring-2 focus:ring-primary-500 rounded-lg pr-8" />
                         <button v-if="searchQuery" type="button" @click="searchQuery = ''"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center text-white hover:text-primary-500 transition w-6 h-6"
+                            class="absolute right-2 top-1/2 -translate-y-1/2 text-white hover:text-primary-500 transition p-0.5"
                             aria-label="Clear search">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -388,4 +388,11 @@ function highlight(text) {
 // const query = useRoute()
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Hide default clear (X) button in Chrome, Safari, Edge */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+</style>

@@ -1,6 +1,5 @@
 // nuxt.config.ts
 import { resolve } from 'path'
-import type { NuxtPage } from 'nuxt/schema';
 
 export default defineNuxtConfig(async () => {
   const routes = await getBlogRoutes();
@@ -110,13 +109,12 @@ export default defineNuxtConfig(async () => {
 
     pages: true,
     hooks: {
-      'pages:extend'(routes: NuxtPage[]) {
+      'pages:extend'(routes: any[]) {
         routes.push({
           name: 'custom-citytocity-route',
           path: '/:state/:city-to-:place',
           file: resolve(__dirname, 'pages/routes/[citytocity]/index.vue')
         });
-
         routes.push({
           name: 'custom-city-route',
           path: '/:state/:city',
