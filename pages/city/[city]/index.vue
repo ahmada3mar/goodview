@@ -90,16 +90,38 @@ const currentCityObj = computed(() => {
 });
 
 watchEffect(() => {
+  // Wait until all required data is loaded
+  if (!allCities.value || !allStates.value) return;
+
+  // API errors
   if (statesError.value || routesError.value || citiesError.value) {
     throw showError({
       statusCode: 500,
       statusMessage: "Failed to load data from server. Please try again later.",
     });
   }
+
+  // City not found
   if (allCities.value && !currentCityObj.value) {
     throw showError({
       statusCode: 404,
       statusMessage: "City not found",
+    });
+  }
+
+  // Validate state and city match the route
+  const cityObj = allCities.value.find(c => c.slug === route.params.city);
+  const stateObj = allStates.value.find(s => String(s.id) === String(cityObj?.state_id));
+  if (stateObj && route.params.state && route.params.state !== stateObj.slug) {
+    throw showError({
+      statusCode: 404,
+      statusMessage: `This city belongs to ${stateObj.name}`,
+    });
+  }
+  if (cityObj && route.params.city && route.params.city !== cityObj.slug) {
+    throw showError({
+      statusCode: 404,
+      statusMessage: `This city belongs to ${cityObj.name}`,
     });
   }
 });
