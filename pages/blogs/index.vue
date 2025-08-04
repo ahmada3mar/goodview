@@ -6,26 +6,19 @@
                 <form @submit.prevent
                     class="flex items-center gap-2 font-jakarta max-w-lg w-full mx-auto bg-[#171820]  backdrop-blur-md border border-zinc-700 shadow-xl rounded-xl px-2 py-2 sm:px-4 sm:py-3">
                     <div class="relative flex-1 w-full">
-                        <input
-                            type="search"
-                            v-model="searchQuery"
-                            placeholder="Search blogs..."
-                            id="blog.title"
-                            class="w-full bg-zinc-800/80 font-jakarta text-white placeholder-white outline-none px-2 py-2 sm:px-3 sm:py-2 focus:ring-2 focus:ring-primary-500 rounded-lg pr-16"
-                        />
-                        <button
-                            v-if="searchQuery"
-                            type="button"
-                            @click="searchQuery = ''"
+                        <input type="search" v-model="searchQuery" placeholder="Search blogs..." id="blog.title"
+                            class="w-full bg-zinc-800/80 font-jakarta text-white placeholder-white outline-none px-2 py-2 sm:px-3 sm:py-2 focus:ring-2 focus:ring-primary-500 rounded-lg pr-16" />
+                        <button v-if="searchQuery" type="button" @click="searchQuery = ''"
                             class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center text-white hover:text-primary-500 transition w-6 h-6"
-                            aria-label="Clear search"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            aria-label="Clear search">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
                     </div>
-                    <button type="submit"
+                    <button type="submit" aria-label=" search"
                         class="flex items-center gap-1  bg-black text-primary-500  font-semibold px-3 py-2 sm:px-5 rounded-lg transition-all duration-200 shadow">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -395,5 +388,4 @@ function highlight(text) {
 // const query = useRoute()
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
