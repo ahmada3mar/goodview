@@ -652,12 +652,16 @@ function tryInitMap() {
   if (
     fromCityObj.value &&
     toCityObj.value &&
+    fromStateObj.value &&
+    toStateObj.value &&
     typeof window.google !== "undefined" &&
     window.google.maps &&
     mapRef.value
   ) {
     nextTick(() => {
-      initMap(fromCityObj.value.name, toCityObj.value.name);
+      const fromFull = `${fromCityObj.value.name}, ${fromStateObj.value.name}`;
+      const toFull = `${toCityObj.value.name}, ${toStateObj.value.name}`;
+      initMap(fromFull, toFull);
     });
   }
 }
