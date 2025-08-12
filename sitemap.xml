@@ -709,6 +709,105 @@
         </image:image>
     </url>
     <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-charlotte/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-edison-township/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-hoboken/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-jersey-city/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-montclair/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-newark/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-paterson/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-princeton/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-princeton-junction/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-summit/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/albany-to-trenton/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
         <loc>https://goodview-moving.com/new-york/buffalo/</loc>
         <image:image>
             <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
@@ -1808,6 +1907,15 @@
     </url>
     <url>
         <loc>https://goodview-moving.com/new-york/syracuse/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/north-carolina/albany-to-ridgewood/</loc>
         <image:image>
             <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
         </image:image>
@@ -4303,4 +4411,4 @@
         </image:image>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.4.3 at 2025-08-11T13:26:12.236Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.4.3 at 2025-08-12T05:17:35.661Z -->
