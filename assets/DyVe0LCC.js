@@ -1,1 +1,0 @@
-import{_ as a,c,o as _,d as e,r as s,ba as r,bb as l}from"./Cv6apZBZ.js";const d={};function f(o,m){const n=r,t=l;return _(),c("div",null,[e(n),s(o.$slots,"default"),e(t)])}const u=a(d,[["render",f]]);export{u as default};
