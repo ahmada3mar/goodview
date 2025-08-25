@@ -2632,6 +2632,51 @@
         </image:image>
     </url>
     <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-apex/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-charlotte/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-durham/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-edison-township/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-greensboro/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
         <loc>https://goodview-moving.com/new-york/syracuse-to-hoboken/</loc>
         <image:image>
             <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
@@ -2659,6 +2704,24 @@
         </image:image>
     </url>
     <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-newark/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-paterson/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
         <loc>https://goodview-moving.com/new-york/syracuse-to-princeton/</loc>
         <image:image>
             <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
@@ -2668,7 +2731,43 @@
         </image:image>
     </url>
     <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-princeton-junction/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
         <loc>https://goodview-moving.com/new-york/syracuse-to-ridgewood/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-summit/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-trenton/</loc>
+        <image:image>
+            <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://goodview-moving.com/assets/UIHere.DY1fJmn5.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://goodview-moving.com/new-york/syracuse-to-wilmington/</loc>
         <image:image>
             <image:loc>https://goodview-moving.com/imgs/good-view-logo-white.png</image:loc>
         </image:image>
@@ -5164,4 +5263,4 @@
         </image:image>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.4.3 at 2025-08-22T12:18:54.107Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.4.3 at 2025-08-25T07:30:50.418Z -->
