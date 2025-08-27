@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-full">
     <Banner background="/imgs/banner-mini.webp" class="lg:h-[calc(71dvh-2rem)] "
-      title="Reliable, Affordable, and Hassle-Free Moving Services!" text="Make every step seamless & professional.
+      title="Reliable, Affordable, and Hassle-" subtitle="Free Moving Services!" text="Make every step seamless & professional.
       We offer affordable moving with transparent costs to fit your budget.">
 
       <template #body="isVisible">
@@ -11,42 +11,37 @@
 
     </Banner>
 
-    <div class="mx-auto container px-5 overflow-hidden bg-white">
+    <div class="mx-auto container px-5  my-[40px] itmes-center overflow-hidden bg-white">
+      <Trusted2 />
       <div class="flex flex-wrap p-0 gap-1 lg:gap-10 justify-between">
-        <!-- Text Section -->
-        <div ref="scrollElement" :class="{
-          'opacity-100 translate-x-0': isVisible,
-          'opacity-0 -translate-x-36': !isVisible,
-        }" class="transition-all delay-300 duration-1000 ease-in-out flex flex-col gap-2 md:pb-56 pb-8 pt-16 flex-1">
-          <h2 class=" font-jakarta md:text-4xl mb-5 font-extrabold">Decades of Moving Experience, Built on Trust</h2>
-          <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-            Good View Moving & Storage started as a family business in New Jersey and is now a third-generation
-            full-service
-            moving company. With years of experience in professional moving services, we've built a reputation for
-            reliable
-            moves, both local and long-distance.
-          </p>
-          <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-            Our expert team ensures a smooth moving process, offering everything from packing to secure storage
-            solutions.
-            But don't just take our word for it—our Good View Moving reviews speak for themselves.
-          </p>
-          <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
-            <b>Need a stress-free move</b> ? <b>
-              <ULink target="_blank" to="/quote"
-                class="font-[500] hover:font-[700] hover:decoration-primary-500  underline ">
-                Get a free moving quote today!</ULink>
-            </b>
-          </p>
-        </div>
-
-        <!-- Image Section -->
+        <!-- Image Left -->
         <div :class="{
           'opacity-100 translate-x-0': isVisible,
           'opacity-0 translate-x-36': !isVisible,
         }"
-          class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 lg:w-1/2 flex pb-24 lg:pb-2 md:hidden flex-col justify-center lg:flex">
+          class="transition-all delay-300 duration-1000 ease-in-out relative rounded-2xl p-2 w-full lg:w-1/2 flex pb-8 lg:pb-[4.5rem] flex-col justify-center">
           <img alt="truck image" class="w-full h-auto rounded-none" v-lazy="'/imgs/new_truck.webp'" />
+        </div>
+        <!-- Text Right -->
+        <div ref="scrollElement" :class="{
+          'opacity-100 translate-x-0': isVisible,
+          'opacity-0 -translate-x-36': !isVisible,
+        }"
+          class="transition-all delay-300 duration-1000 ease-in-out flex flex-col gap-2 w-full lg:w-1/2 md:pb-56 pb-8 lg:pt-16 flex-1">
+          <h2 class=" font-outfit md:text-[52px] leading-[1.2em] mb-5 font-[700]">Decades of Moving Experience, Built on
+            Trust</h2>
+          <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+            Good View Moving & Storage started as a family business in New Jersey and is now a third-generation
+            full-service moving company. With years of experience in professional moving services, we've built a
+            reputation
+            for
+            reliable moves, both local and long-distance.
+          </p>
+          <p class="text-lg font-rubik md:text-[18px] md:font-[300] md:leading-8">
+            Our expert team ensures a smooth moving process, offering everything from packing to secure storage
+            solutions. But don't just take our word for it—our Good View Moving reviews speak for themselves.
+          </p>
+
         </div>
       </div>
     </div>
@@ -95,10 +90,5 @@ onUnmounted(() => {
   if (observer) {
     observer.disconnect()
   }
-
-  return {
-    isVisible,
-    scrollElement
-  };
 })
 </script>
