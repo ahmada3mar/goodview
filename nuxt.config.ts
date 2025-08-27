@@ -70,6 +70,10 @@ export default defineNuxtConfig(async () => {
             rel: "stylesheet",
             href: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap",
           },
+          {
+            rel: "stylesheet",
+            href: "https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap",
+          },
         ],
         htmlAttrs: {
           lang: "en-US",

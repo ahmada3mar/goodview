@@ -345,21 +345,33 @@ const { data: state, error } = await useFetch(
 import { watch, ref as vueRef } from "vue";
 const faqSchema = vueRef(null);
 watch(
-  () => state.value && state.value.faqs,
-  (faqs) => {
-    if (faqs && Array.isArray(faqs)) {
-      faqSchema.value = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faqs.map((item) => ({
-          "@type": "Question",
-          name: item.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.answer,
+  () => faqSchema.value,
+  (schema) => {
+    if (schema) {
+      useHead({
+        script: [
+          {
+            type: 'application/ld+json',
+            children: JSON.stringify(schema),
           },
-        })),
-      };
+        ],
+      });
+    }
+  },
+  { immediate: true }
+);
+watch(
+  () => faqSchema.value,
+  (schema) => {
+    if (schema) {
+      useHead({
+        script: [
+          {
+            type: 'application/ld+json',
+            children: JSON.stringify(schema),
+          },
+        ],
+      });
     }
   },
   { immediate: true }

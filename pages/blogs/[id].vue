@@ -282,7 +282,7 @@ watchEffect(() => {
       },
       {
         name: "robots",
-        content: "Not Specified",
+        content: "index,follow",
       }
     );
   });
@@ -342,7 +342,7 @@ watchEffect(() => {
 </script>
 <style scoped>
 :deep(.blog-content p) {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   margin-top: 15px !important;
   line-height: 34px !important;
   color: black !important;
@@ -365,7 +365,7 @@ watchEffect(() => {
   font-weight: 600 !important;
   line-height: 30px !important;
   color: black !important;
-  font-family: "Rubik", "sans-serif" v;
+  font-family: "Rubik", "sans-serif";
 }
 
 :deep(.blog-content table) {
@@ -392,6 +392,7 @@ watchEffect(() => {
 }
 
 :deep(.blog-content li) {
+  font-weight: 300 !important;
   margin-top: 15px !important;
   line-height: 34px !important;
   color: black !important;
@@ -401,7 +402,7 @@ watchEffect(() => {
 
 @media (max-width: 575px) {
   :deep(.blog-content p) {
-    font-weight: 400 !important;
+    font-weight: 300 !important;
     margin-top: 15px !important;
     line-height: 30px !important;
     color: black !important;
@@ -424,7 +425,7 @@ watchEffect(() => {
     font-weight: 600 !important;
     line-height: 30px !important;
     color: black !important;
-    font-family: "Rubik", "sans-serif" v;
+    font-family: "Rubik", "sans-serif";
   }
 
   :deep(.blog-content li) {

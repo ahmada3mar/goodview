@@ -33,6 +33,7 @@ export default <Partial<Config>>{
       inter: ['Inter', 'sans-serif'],
       jakarta: ['Plus Jakarta Sans', 'sans-serif'],
       rubik: ['Rubik', 'sans-serif'],
+      outfit: ['Outfit', 'sans-serif'],
     },
   },
 }
