@@ -741,7 +741,7 @@
                             class="rounded-[10px] md:block hidden card-img xl:min-w-[450px] sm:min-w-96 min-w-0 h-96 md:h-auto overflow-hidden  w-full">
                             <img alt="goodview contact us"
                                 class="lazy-image opacity-0 transition-opacity duration-500 ease-in-out w-full h-full object-cover rounded-none"
-                                v-lazy="'/imgs/contact_us.webp'" />
+                                v-lazy="'/imgs/contactus.webp'" />
                         </div>
 
                     </div>
