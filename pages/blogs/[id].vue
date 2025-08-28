@@ -457,6 +457,7 @@ watchEffect(() => {
   text-decoration: underline !important;
   font-family: "Plus Jakarta Sans" !important;
   color: #18181b !important;
+  font-weight: 400 !important;
   transition: all 0.3s ease !important;
 }
 

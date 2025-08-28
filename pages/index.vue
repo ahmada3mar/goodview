@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col h-full">
-    <Banner background="/imgs/banner-mini.webp" class="lg:h-[calc(71dvh-2rem)] "
+    <Banner background="/imgs/banner-mini.webp" class="lg:h-[652px] "
       title="Reliable, Affordable, and Hassle-" subtitle="Free Moving Services!" text="Make every step seamless & professional.
       We offer affordable moving with transparent costs to fit your budget.">
 

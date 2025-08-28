@@ -11,7 +11,7 @@
                     Get in touch with us for a personalized moving quote and experience a smooth relocation experience.
                 </p>
                 <UButton label="Free Moving Quote" to="/quote" size="xl"
-                    class="px-3 bg-black md:px-7 rounded-[10px] font-jakarta hover:bg-primary-500 hover:text-slate-300 flex justify-center items-center mx-auto text-white font-bold" />
+                    class="px-3 bg-black md:px-7 rounded-[10px] font-jakarta hover:bg-primary-500 hover:text-black flex justify-center items-center mx-auto text-white font-bold" />
             </div>
         </div>
     </div>
