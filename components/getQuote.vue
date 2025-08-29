@@ -1,5 +1,5 @@
 <template>
-    <div class="px-[20px]">
+    <div class="px-[20px]  pt-8">
         <div class="max-w-5xl mx-auto my-8 rounded-2xl overflow-hidden "
             style="background: url('/imgs/bg-home4.webp') center/cover no-repeat;">
             <div

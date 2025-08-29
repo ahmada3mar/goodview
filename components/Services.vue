@@ -241,7 +241,7 @@
                     class="w-full flex flex-col lg:flex-row items-center justify-between bg-white rounded-[10px] shadow-md mt-10 px-5 py-10 gap-10">
                     <!-- Text Content -->
                     <div class="flex-1 max-w-xl">
-                        <h2 class="text-2xl  md:text-[42px] leading-[52px] font-jakarta font-extrabold mb-6 text-black">
+                        <h2 class="text-2xl  md:text-[42px]  leading-normal font-jakarta font-extrabold mb-6 text-black">
                             Trusted by Thousands Here’s Why
                             <span class="text-primary-500"> Customers Love Us</span>
                         </h2>
@@ -327,7 +327,7 @@
                             v-lazy="'/imgs/trusted-customer.webp'" />
                     </div>
                 </div>
-                <section class="bg-[#171820] rounded-[10px] text-white mt-5 py-16">
+                <section class="bg-[#171820] rounded-[10px] text-white mt-5 py-6 lg:py-16">
                     <div class="max-w-7xl mx-auto px-4 text-center">
                         <h2 class="text-3xl md:text-4xl font-jakarta font-semibold mb-6">Why Choose Good View Moving
                         </h2>
@@ -481,7 +481,7 @@
     </UForm> -->
                         <!-- </div> -->
                         <div
-                            class=" flex flex-col bg-black px-[10px] lg:px-0 max-w-full xl:max-w-[550px] rounded-[10px] w-full">
+                            class=" flex flex-col bg-black px-[20px] lg:px-0 max-w-full xl:max-w-[550px] rounded-[10px] w-full">
                             <div class="flex flex-col">
                                 <h2 class=" mt-[20px] text-4xl text-center font-bold text-white  ">
                                     Free Moving Quote
@@ -752,7 +752,7 @@
             </div>
 
         </div>
-        <section class="bg-white py-20">
+        <section class="bg-white lg:py-16 py-10">
             <div class="max-w-4xl mx-auto px-[20px]">
                 <div class="text-center mb-10">
                     <span class="text-primary-500 text-[21px] font-[500] font-jakarta pb-6">Frequently Asked
