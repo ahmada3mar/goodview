@@ -97,6 +97,10 @@
             </ULink>
             <ULink to="/new-york/" class="text-start font-rubik text-[16px] hover:text-primary-500">New York
             </ULink>
+            <ULink to="/georgia/" class="text-start font-rubik text-[16px] hover:text-primary-500">Georgia
+            </ULink>
+            <ULink to="/texas/" class="text-start font-rubik text-[16px] hover:text-primary-500">Texas
+            </ULink>
           </div>
         </div>
 
